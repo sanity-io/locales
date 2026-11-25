@@ -211,7 +211,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Rediger mediefil',
   /** Title for the upload dialog (component mode) */
-  'asset-sources.media-library.upload-dialog.title': 'Last opp til Media Library',
+  'asset-sources.media-library.upload-dialog.title': 'Last opp til Mediebibliotek',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Bruker den eksisterende filen funnet i biblioteket.',
@@ -1547,7 +1547,7 @@ export default removeUndefinedLocaleResources({
     'Klarte ikke å sette versjonen til å være upublisert på utgivelsen',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Vellykket satt <strong>{{title}}</strong> til å være upublisert på utgivelsen',
+    '<strong>{{title}}</strong> er satt til å avpubliseres i utgivelsen',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Vis utgivelse',
   /** Action message for when the view scheduled drafts is pressed */
@@ -1574,7 +1574,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.created-date': 'Opprettet {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
   'release.chip.tooltip.draft-disabled.live-edit':
-    'Dette dokumentet er i live redigeringsmodus, utkast er deaktivert',
+    'Dette dokumentet er i "Live Edit"-modus, utkast er deaktivert',
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': 'Redigert {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
@@ -1616,7 +1616,7 @@ export default removeUndefinedLocaleResources({
     'Behold mine planlagte endringer ved å kopiere dem til utkast (anbefales)',
   /** Explanation text shown when scheduled draft has different changes than current draft */
   'release.dialog.delete-schedule-draft.different-changes-explanation':
-    'Ditt planlagte utkast har forskjellige endringer enn ditt nåværende utkast.',
+    'Det planlagte utkastet ditt har andre endringer enn det nåværende utkastet ditt.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Slett planlagt utkast',
   /** Body text for change schedule dialog */
@@ -1642,7 +1642,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Publiser utkast nå',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Den tiltenkte utgivelsestiden brukes til å lage bedre forhåndsvisninger og hint om hvorvidt dokumenter er i konflikt.',
+    'Dette er kun for planlegging, forhåndsvisninger og hint om hvorvidt dokumenter er i konflikt. Å angi et tidspunkt her planlegger ikke utgivelsen din. Du må fortsatt kjøre eller planlegge utgivelsen når alle dokumentene er klare.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Du kan alltid endre det senere.',
   /** Title for tooltip to explain release time */
@@ -1664,7 +1664,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Publisert',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Utgivelser',
+  'release.navbar.tooltip': 'Vis planlegging',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Utgivelse uten tittel',
   /** Description for warning that the published schedule time is in the past */
@@ -1692,7 +1692,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
-  'release.toast.not-found-release.title': "Utgivelsen '{{title}}' kunne ikke bli funnet",
+  'release.toast.not-found-release.title': "Utgivelsen '{{title}}' ble ikke funnet",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
     'Kunne ikke pause det planlagte utkastet <strong>{{title}}</strong>: {{error}}',

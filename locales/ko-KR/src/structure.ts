@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': '문서 ID 복사',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': '문서 URL 복사',
+  'action.copy-document-url.label': '복사',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': '문서 URL 복사',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -122,7 +122,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    '아카이브된 <VersionBadge>릴리스</VersionBadge>의 일부로서 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
+    '이 문서 버전은 보관된 <VersionBadge>{{title}}</VersionBadge> 릴리스에 속해 있습니다',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': '이 예약된 초안은 보관되었습니다',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -143,12 +143,12 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': '이 문서 유형은 더 이상 사용되지 않습니다.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': '초안 버리기',
+  'banners.live-edit-draft-banner.discard.tooltip': '편집을 계속하려면 초안을 버리세요.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': '편집을 계속하려면 게시',
+  'banners.live-edit-draft-banner.publish.tooltip': '편집을 계속하려면 초안을 게시하세요.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    '타입 <strong>{{schemaType}}</strong>에 <code>liveEdit</code>가 활성화되어 있지만, 이 문서의 초안 버전이 존재합니다. 라이브 편집을 계속하려면 초안을 게시하거나 버려야 합니다.',
+    '<strong>{{schemaType}}</strong> 유형에 <code>liveEdit</code>이 활성화되어 있지만, 이 문서의 초안 버전이 존재합니다. 라이브 편집을 계속하려면 초안을 게시하거나 버려야 합니다.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': '초안 비교',
   /** Tooltip when compare draft is disabled because the published document does not exist */
@@ -166,17 +166,17 @@ export default removeUndefinedLocaleResources({
     '편집 중에 일정이 일시 중지되었습니다. 일정을 다시 활성화하거나 새 날짜를 선택하려면 일정을 누르세요.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    '귀하의 역할 <Roles/>은 이 문서를 생성할 권한이 없습니다.',
+    '귀하의 역할 <Roles/>에는 이 문서를 게시할 권한이 없습니다.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    '귀하의 역할 <Roles/>은 이 문서를 업데이트할 권한이 없습니다.',
+    '귀하의 역할 <Roles/>에는 이 문서를 편집할 권한이 없습니다.',
   /** The pending text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.sent': '편집 요청이 전송되었습니다',
   /** The text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.text': '편집 요청하기',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
-    '<VersionBadge>릴리스</VersionBadge>의 일부로서 발행된 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
+    '<VersionBadge>{{title}}</VersionBadge>의 일부로 게시된 읽기 전용 문서를 보고 있습니다. 편집할 수 없습니다',
   /** Action that switches from the published perspective to drafts */
   'banners.published.see-draft.action': '초안 보기',
   /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
@@ -217,7 +217,8 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-single':
     '이 문서는 <VersionBadge/> 릴리스의 일부입니다',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': '<Label>{{title}}</Label> 릴리스에 포함되지 않았습니다.',
+  'banners.release.not-in-release':
+    '<VersionBadge>{{title}}</VersionBadge> 릴리스에 포함되지 않았습니다.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
     '릴리스에 문서가 추가될 때까지 잠시만 기다려 주십시오. 몇 초 이상 걸리지 않을 것입니다.',
@@ -228,7 +229,7 @@ export default removeUndefinedLocaleResources({
     '선택한 문서 리비전을 찾을 수 없습니다. 기록 목록에서 다른 항목을 선택해 주세요.',
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
-    '이 문서에 대한 예약된 초안이 존재합니다. 지금 변경 사항을 게시하면 예약이 실행될 때 덮어쓰게 됩니다.',
+    '이 문서에 대한 예약된 초안이 존재합니다. 지금 변경 사항을 게시하면 예약이 실행될 때 해당 변경 사항이 덮어써집니다.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '이 문서는 <VersionBadge>{{title}}</VersionBadge> 릴리스의 일부로 발행 취소될 예정입니다',
@@ -254,7 +255,7 @@ export default removeUndefinedLocaleResources({
   'banners.variant.waiting.title': '변형에 문서 추가 중…',
 
   /** Browser/tab title when creating a new document of a given type */
-  'browser-document-title.new-document': '새로운 {{schemaType}}',
+  'browser-document-title.new-document': '새 {{schemaType}}',
   /** Browser/tab title when editing a document where the title cannot be resolved from preview configuration */
   'browser-document-title.untitled-document': '제목 없음',
 
@@ -263,13 +264,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': '문서 작업',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': '모든 패널 접기',
+  'buttons.focus-pane-button.aria-label.collapse': '집중 모드 종료(탐색 메뉴 표시)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': '패널에 집중',
+  'buttons.focus-pane-button.aria-label.focus': '집중 모드 시작(탐색 메뉴 숨기기)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': '모든 패널 접기',
+  'buttons.focus-pane-button.tooltip.collapse': '집중 모드 종료',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': '패널에 집중',
+  'buttons.focus-pane-button.tooltip.focus': '집중 모드 시작',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': '오른쪽으로 창 분할',
   /** The tool tip for the split pane button on the document panel header */
@@ -285,7 +286,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.editable.linked-text': '이 문서는 Canvas에서 편집할 수 있습니다.',
   /** The description for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-description':
-    'Canvas를 사용하면 자유롭게 작성한 다음 Studio에서 수동으로 필드 별로 복사하지 않고도 내용을 업데이트할 수 있습니다.',
+    'Canvas를 사용하면 자유롭게 작성한 다음, 필드별로 일일이 복사할 필요 없이 Studio에서 콘텐츠를 업데이트할 수 있습니다.',
   /** The heading for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-heading': '자유 형식 글쓰기',
   /** The text for the canvas linked banner when the document is a draft */
@@ -298,7 +299,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': '더 알아보기',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas는 자유 형식의 편집기에서 작성을 하면서 자동으로 스튜디오로 구조화된 콘텐츠로 매핑되게 해주는 기능입니다 - 입력하는 대로.',
+    'Canvas에서는 자유 형식 편집기로 작성하면 입력하는 즉시 Studio에 구조화된 콘텐츠로 자동 매핑됩니다.',
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': '아이디어 우선 작성',
 
@@ -310,13 +311,13 @@ export default removeUndefinedLocaleResources({
     '이 뷰는 이 문서의 특정 버전에서 발생한 변경 사항을 보여줍니다. 다른 버전을 선택하여 해당 변경 사항을 확인하세요',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '에서',
-  'changes.tab.history': '역사',
+  'changes.tab.history': '기록',
   'changes.tab.review-changes': '변경 사항 검토',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': '까지',
 
   /** The error message shown when the specified document comparison mode is not supported */
-  'compare-version.error.invalidModeParam': '"{{input}}"는 지원되지 않는 문서 비교 모드입니다.',
+  'compare-version.error.invalidModeParam': '"{{input}}"은(는) 지원되지 않는 문서 비교 모드입니다.',
   /** The error message shown when the next document for comparison could not be extracted from the URL */
   'compare-version.error.invalidNextDocumentParam': '다음 문서 매개변수가 유효하지 않습니다.',
   /** The error message shown when the document comparison URL could not be parsed */
@@ -536,13 +537,13 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    '문서 변경 사항을 불러올 수 없습니다. 아마도 귀하의 플랜의 기록 보존 정책 때문일 것입니다. 이것은 <strong>{{version}}</strong> 버전이 <strong>published</strong> 버전과 어떻게 비교되는지 보여줍니다.',
+    '문서 변경 사항을 불러올 수 없습니다. 플랜의 기록 보존 정책 때문일 수 있습니다. 여기에서는 <strong>{{version}}</strong> 버전이 <strong>게시된</strong> 버전과 어떻게 다른지 보여줍니다.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': '발행된 것과 비교',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 문서 검사',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': '<VersionBadge>드래프트</VersionBadge> 문서 열기',
+  'events.open.draft': '<VersionBadge>초안</VersionBadge> 문서 열기',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> 릴리스 열기',
 
@@ -557,7 +558,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the schema type not found in the incoming references input */
   'incoming-references-input.schema-type-not-found': '스키마 유형 {{type}}을(를) 찾을 수 없습니다',
   /** The text for the type to search in the incoming references input */
-  'incoming-references-input.type-to-search': '검색할 유형 입력',
+  'incoming-references-input.type-to-search': '입력하여 검색',
   /** The text for the loading state in the incoming references input */
   'incoming-references-input.types-loading': '문서를 불러오는 중...',
   /** The text for the loading state in the incoming references input */
@@ -696,7 +697,7 @@ export default removeUndefinedLocaleResources({
     '문서 URL이 클립보드에 복사되었습니다',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
-    '<Strong>{{title}}</Strong>가 릴리스에 추가되었습니다',
+    '<Strong>{{title}}</Strong>이(가) 릴리스에 추가되었습니다',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '문서가 성공적으로 삭제되었습니다',
   /** The text when a discard changes operation succeeded  */
@@ -817,8 +818,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': '펼치기',
   /** The text for the published event menu tooltip when the release is not found */
-  'timeline-item.not-found-release.tooltip':
-    '아이디 "{{releaseId}}"를 가진 릴리스를 찾을 수 없습니다',
+  'timeline-item.not-found-release.tooltip': 'ID가 "{{releaseId}}"인 릴리스를 찾을 수 없습니다',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
   'toggle-inline-changes.menu-item.title': '인라인 변경',

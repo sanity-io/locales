@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Copia ID documento',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Copia URL documento',
+  'action.copy-document-url.label': 'Copia',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Copia URL documento',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
     'Questo documento non esiste ancora o è già stato eliminato',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    "Questo documento non può essere eliminato poiché esiste all'interno delle pubblicazioni programmate",
+    'Questo documento non può essere eliminato perché esiste in release pianificate',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'La release o la variante selezionata non contiene questo documento',
@@ -30,7 +30,7 @@ export default removeUndefinedLocaleResources({
     'Sei sicuro di voler annullare tutte le modifiche dall’ultima pubblicazione?',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes-draft':
-    'Sei sicuro di voler scartare tutte le modifiche ed eliminare questo documento draft?',
+    'Sei sicuro di voler scartare tutte le modifiche ed eliminare questo documento in bozza?',
   /**Header for the confirm discard dialog */
   'action.discard-changes.confirm-dialog.header.text': 'Scartare le modifiche?',
   /** Tooltip when action is disabled because the document has no unpublished changes */
@@ -125,9 +125,9 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Stai visualizzando un documento in sola lettura che è stato archiviato come parte di <VersionBadge>{{title}}</VersionBadge>. Non può essere modificato',
+    'Questa versione del documento appartiene alla release archiviata <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': 'Questa bozza programmata è archiviata',
+  'banners.archived-scheduled-draft.description': 'Questa bozza pianificata è archiviata',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Impossibile creare un documento bozza.',
@@ -147,12 +147,13 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Questo tipo di documento è stato deprecato.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Scarta bozza',
+  'banners.live-edit-draft-banner.discard.tooltip': 'Scarta la bozza per continuare a modificare.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Pubblica per continuare a modificare',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Pubblica la bozza per continuare a modificare.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    'Il tipo <strong>{{schemaType}}</strong> ha <code>liveEdit</code> abilitato, ma esiste una versione bozza di questo documento. Pubblica o scarta la bozza per continuare a modificarlo dal vivo.',
+    'Il tipo <strong>{{schemaType}}</strong> ha <code>liveEdit</code> abilitato, ma esiste una versione bozza di questo documento. Pubblica o scarta la bozza per continuare a modificarlo in tempo reale.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Confronta bozza',
   /** Tooltip when compare draft is disabled because the published document does not exist */
@@ -170,10 +171,10 @@ export default removeUndefinedLocaleResources({
     'Pianificazione in pausa durante la modifica. Premere Pianifica per riattivare o scegliere una nuova data.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Il tuo ruolo <Roles/> non ha i permessi per creare questo documento.',
+    'Il tuo ruolo <Roles/> non ha il permesso di pubblicare questo documento.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'I tuoi ruoli <Roles/> non hanno i permessi per creare questo documento.',
+    'I tuoi ruoli <Roles/> non hanno il permesso di pubblicare questo documento.',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Il tuo ruolo <Roles/> non ha i permessi per aggiornare questo documento.',
@@ -213,18 +214,18 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-end_one': 'release',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-end_other': 'releases',
+  'banners.release.navigate-to-edit-description-end_other': 'release',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
     'Questo documento fa parte della release <VersionBadge/> e di {{count}} altra release.',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    'Questo documento fa parte della release <VersionBadge/> e di altre {{count}} releases',
+    'Questo documento fa parte della release <VersionBadge/> e di altre {{count}} release',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
   'banners.release.navigate-to-edit-description-none':
-    'Questo documento non fa parte di nessun rilascio',
+    'Questo documento non fa parte di nessuna release',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
     'Questo documento fa parte della release <VersionBadge/>',
@@ -241,10 +242,10 @@ export default removeUndefinedLocaleResources({
     "Non siamo riusciti a trovare la revisione del documento selezionata, si prega di selezionare un'altra voce dall'elenco della cronologia.",
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
-    'Esiste una bozza programmata per questo documento. Se pubblichi modifiche ora, verranno sovrascritte quando verrà eseguito il programma.',
+    'Esiste una bozza pianificata per questo documento. Se pubblichi le modifiche ora, verranno sovrascritte quando verrà eseguita la pianificazione.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Questo documento sarà ritirato come parte della release <VersionBadge>{{title}}</VersionBadge>',
+    'Questo documento sarà ritirato dalla pubblicazione come parte della release <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Mostrando la versione <strong>pubblicata</strong> attuale:',
@@ -277,13 +278,14 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Azioni documento',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Comprimi tutti i riquadri',
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Esci dalla modalità focus (mostra la navigazione)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Concentrati sul riquadro',
+  'buttons.focus-pane-button.aria-label.focus': 'Entra in modalità focus (nascondi la navigazione)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Comprimi tutti i riquadri',
+  'buttons.focus-pane-button.tooltip.collapse': 'Esci dalla modalità focus',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Concentrati sul riquadro',
+  'buttons.focus-pane-button.tooltip.focus': 'Entra in modalità focus',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dividi pannello a destra',
   /** The tool tip for the split pane button on the document panel header */
@@ -303,16 +305,16 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-heading': 'Scrittura libera',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': 'Questo documento bozza è collegato a Canvas',
+  'canvas.banner.linked-text.draft': 'Questo documento in bozza è collegato a Canvas',
   /** The text for the canvas linked banner when the document is a live document */
   'canvas.banner.linked-text.published': 'Questo documento live è collegato a Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': 'Questo documento versione è collegato a Canvas',
+  'canvas.banner.linked-text.version': 'Questa versione del documento è collegata a Canvas',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': 'Scopri di più',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas ti permette di scrivere in un editor libero che mappa automaticamente al Studio come contenuto strutturato - mentre digiti.',
+    'Canvas ti permette di scrivere in un editor libero che si mappa automaticamente sullo Studio come contenuto strutturato, mentre digiti.',
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': "Scrittura incentrata sull'idea",
 
@@ -341,7 +343,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam':
     'Il parametro del documento precedente non è valido.',
   /** The error message shown when releases failed to load */
-  'compare-version.error.loadReleases.title': 'Caricamento delle pubblicazioni non riuscito',
+  'compare-version.error.loadReleases.title': 'Caricamento delle release non riuscito',
   /** The error message shown when document versions or variants failed to load */
   'compare-version.error.loadVersions.title': 'Impossibile caricare le versioni',
 
@@ -645,7 +647,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the document header title if no other title can be determined */
   'panes.document-header-title.untitled.text': 'Senza titolo',
   /** The help text saying that we'll retry fetching the document list */
-  'panes.document-list-pane.error.retrying': 'Riprova…',
+  'panes.document-list-pane.error.retrying': 'Nuovo tentativo in corso…',
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text': 'Errore: <Code>{{error}}</Code>',
   /** The error text on the document list pane */
@@ -655,8 +657,9 @@ export default removeUndefinedLocaleResources({
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': "Impossibile recuperare gli elementi dell'elenco",
   /** The help text saying that we'll retry fetching the document list */
-  'panes.document-list-pane.error.will-retry-automatically_one': 'Riprova…',
-  'panes.document-list-pane.error.will-retry-automatically_other': 'Riprova… (#{{count}}).',
+  'panes.document-list-pane.error.will-retry-automatically_one': 'Nuovo tentativo in corso…',
+  'panes.document-list-pane.error.will-retry-automatically_other':
+    'Nuovo tentativo in corso… (#{{count}}).',
   /** The text of the document list pane if more than a maximum number of documents are returned */
   'panes.document-list-pane.max-items.text': 'Visualizzazione di un massimo di {{limit}} documenti',
   /** The text of the document list pane if no documents are found for a specified type */
@@ -833,5 +836,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'Release con id "{{releaseId}}" non trovata',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': 'Modifiche in linea',
+  'toggle-inline-changes.menu-item.title': 'Modifiche inline',
 })

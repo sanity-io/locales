@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the activity event when the release is unscheduled */
   'activity.event.unschedule': 'Merkitty ajastamattomaksi',
   /** Tooltip/label for the button that closes the activity overlay panel */
-  'activity.panel.close': 'Sulje toiminto',
+  'activity.panel.close': 'Sulje toiminta',
   /** The loading text for when releases are loading */
   'activity.panel.error': 'Julkaisun toiminnan hakemisessa tapahtui virhe',
   /** The loading text for when releases are loading */

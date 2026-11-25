@@ -67,7 +67,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Kiểm tra',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': 'Tài liệu sẽ không được xuất bản, không hiển thị lỗi xác thực',
+  'panel.unpublish-message': 'Tài liệu sắp bị hủy xuất bản, không hiển thị lỗi xác thực',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug phải có một giá trị',

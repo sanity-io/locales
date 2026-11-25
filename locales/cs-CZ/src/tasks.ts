@@ -22,13 +22,13 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': 'Přejít na předchozí úkol',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'Jste si jisti, že chcete smazat tento úkol?',
+  'dialog.remove-task.body': 'Po smazání nelze úkol obnovit.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Zrušit',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': 'Odstranit',
+  'dialog.remove-task.buttons.confirm.text': 'Smazat',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': 'Odstranit úkol',
+  'dialog.remove-task.title': 'Smazat tento úkol?',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
   'document.footer.open-tasks.placeholder_one': 'Otevřít úkol',
@@ -70,7 +70,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.status.list.closed.subscribed.text':
     'Úkoly, na které jste přihlášeni a jsou označené jako hotové, se zobrazí zde',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.heading': 'Jste v pořádku',
+  'empty-state.status.list.open.assigned.heading': 'Máte vše hotovo',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text': 'Nové úkoly přiřazené vám se zobrazí zde',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
@@ -87,7 +87,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Nenalezeni žádní uživatelé',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'Vyberte uživatelské jméno',
+  'form.input.assignee.search.placeholder': 'Vyberte přiřazeného uživatele',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Neoprávněný',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -111,7 +111,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': 'Schéma nenalezeno',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': 'Vyberte dokument',
+  'form.input.target.search.placeholder': 'Vyberte cílový dokument',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Název úkolu',
   /** The status error message presented when the user does not supply a title */
@@ -159,7 +159,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the Active Document Tab */
   'tab.document.label': 'Aktivní dokument',
   /** Label for the Subscribed Tab */
-  'tab.subscribed.label': 'Přihlášeno',
+  'tab.subscribed.label': 'Sledované',
 
   /** Tooltip for the tasks navbar icon */
   'toolbar.tooltip': 'Úkoly',

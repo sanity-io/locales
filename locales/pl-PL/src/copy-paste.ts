@@ -13,8 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     'Dostęp do schowka jest wymagany, aby skopiować tę treść. Zezwól na uprawnienia do schowka w ustawieniach przeglądarki, a następnie spróbuj skopiować ponownie.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Twoja przeglądarka nie obsługuje tej akcji',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Dostęp do schowka zablokowany',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Pusta wartość, nic do skopiowania',
   /** --- On copy --- */

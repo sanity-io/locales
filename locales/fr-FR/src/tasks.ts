@@ -88,7 +88,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Non assigné',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': 'Définir le destinataire',
+  'form.input.assignee.no-user-assigned.tooltip': 'Définir la personne assignée',
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Aucun utilisateur trouvé',
   /** Placeholder text used in the search box in the assignee input */
@@ -96,7 +96,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Non autorisé',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': 'Changer le destinataire',
+  'form.input.assignee.user-assigned.tooltip': 'Changer la personne assignée',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Utilisateur non trouvé',
   /** The label used in the create more toggle */
@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   'list.empty.text': 'Aucune tâche',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
   'list.feedback.text':
-    'Aidez-nous à améliorer, <Link>partagez vos commentaires sur les Tâches</Link> ',
+    'Aidez-nous à nous améliorer, <Link>partagez vos commentaires sur les Tâches</Link> ',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Copier le lien vers la tâche',
@@ -150,7 +150,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'Ajouter un commentaire...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': 'Mettez à niveau pour commenter sur les tâches',
+  'panel.comment.placeholder.upsell': 'Mettez à niveau pour commenter les tâches',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'Créer',
   /** The title used in the drafts pulldown */

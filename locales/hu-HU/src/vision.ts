@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Ez az API-verzió nem támogatja az összetett perspektívákat. Használja a(z) {{apiVersion}} vagy újabb verziót.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Ez az API-verzió nem támogatja a tartalomváltozatokat. Használja a kísérleti API-verziót ({{apiVersion}}).',
+    'Ez az API-verzió nem támogatja a tartalomváltozatokat. Használja a(z) {{apiVersion}} vagy újabb verziót.',
   /** Label for "Query" editor/input */
   'query.label': 'Lekérdezés',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'API verzió',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'Ha egy variáns van kiválasztva, az API verziónak vX-nek kell lennie.',
+    'Ha egy változat van kiválasztva, az API-verziónak a következőnek kell lennie: {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Egyéni API verzió',
   /** Label for the "Dataset" dropdown in vision settings */

@@ -63,6 +63,5 @@ export default removeUndefinedLocaleResources({
     'Du fjernar lenkja for <strong>“{{documentTitle}}”</strong> frå Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
-  'navigate-to-canvas-doc.error.missing-permissions':
-    'Manglande tillatingar for å navigere til Canvas',
+  'navigate-to-canvas-doc.error.missing-permissions': 'Manglar løyve til å navigere til Canvas',
 })

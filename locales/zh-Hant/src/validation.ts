@@ -67,7 +67,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': '驗證',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': '文檔將要取消發布，不顯示任何驗證錯誤',
+  'panel.unpublish-message': '文件即將取消發布，不顯示任何驗證錯誤',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug 必須有一個值',

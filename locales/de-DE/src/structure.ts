@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Dokument-ID kopieren',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Dokumenten-URL kopieren',
+  'action.copy-document-url.label': 'Kopieren',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Dokument-URL kopieren',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -170,19 +170,19 @@ export default removeUndefinedLocaleResources({
     'Der Arbeitsbereich hat Entwürfe nicht aktiviert, aber es existiert eine Entwurfsversion dieses Dokuments.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'Zeitplan pausiert während der Bearbeitung. Drücken Sie auf Zeitplan, um ihn zu reaktivieren oder wählen Sie ein neues Datum.',
+    'Zeitplan während der Bearbeitung pausiert. Klicken Sie auf „Zeitplan“, um ihn zu reaktivieren, oder wählen Sie ein neues Datum.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Ihre Rolle <Roles/> hat keine Berechtigungen, um dieses Dokument zu erstellen.',
+    'Ihre Rolle <Roles/> hat keine Berechtigung, dieses Dokument zu veröffentlichen.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Ihre Rollen <Roles/> haben keine Berechtigungen, um dieses Dokument zu erstellen.',
+    'Ihre Rollen <Roles/> haben keine Berechtigung, dieses Dokument zu veröffentlichen.',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'Ihre Rolle <Roles/> hat keine Berechtigungen, um dieses Dokument zu aktualisieren.',
+    'Ihre Rolle <Roles/> hat keine Berechtigung, dieses Dokument zu bearbeiten.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    'Ihre Rollen <Roles/> haben keine Berechtigungen, um dieses Dokument zu aktualisieren.',
+    'Ihre Rollen <Roles/> haben keine Berechtigung, dieses Dokument zu bearbeiten.',
   /** The pending text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.sent': 'Editor-Anfrage gesendet',
   /** The text for the request permission button that appears for viewer roles */
@@ -279,13 +279,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumentaktionen',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Alle Bereiche zusammenklappen',
+  'buttons.focus-pane-button.aria-label.collapse': 'Fokusmodus beenden (Navigation anzeigen)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Bereich fokussieren',
+  'buttons.focus-pane-button.aria-label.focus': 'Fokusmodus aktivieren (Navigation ausblenden)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Alle Bereiche zusammenklappen',
+  'buttons.focus-pane-button.tooltip.collapse': 'Fokusmodus beenden',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Bereich fokussieren',
+  'buttons.focus-pane-button.tooltip.focus': 'Fokusmodus aktivieren',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Teile das Fenster rechts',
   /** The tool tip for the split pane button on the document panel header */

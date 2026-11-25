@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Obecna wersja',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Jak zaktualizować',
+  'about-dialog.version-info.how-to-upgrade': 'Zaktualizuj teraz',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Najnowsza wersja',
   /** Info text when auto updates is enabled and a new version is available */
@@ -39,7 +39,7 @@ export default removeUndefinedLocaleResources({
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': 'Przeładuj Studio, aby zaktualizować',
   /** "Development" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.development': 'Rozwój',
+  'about-dialog.version-info.tooltip.development': 'Wersja deweloperska',
   /** "New version available" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.new-version-available': 'Dostępna nowa wersja',
   /** "Prerelease" tooltip in About-dialog */
@@ -187,7 +187,7 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Obrazy przestrzeni roboczej',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Coś poszło nie tak podczas próby rozwiązania problemu z Biblioteką Mediów dla tego projektu.',
+    'Coś poszło nie tak podczas próby odnalezienia Biblioteki Mediów dla tego projektu.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
     'Nie skonfigurowano biblioteki multimediów dla tej organizacji.',
@@ -402,7 +402,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Usunięte',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Wybrałeś tę samą <strong>od</strong> i <strong>do</strong> wersję, proszę wybrać różne wersje, aby porównać zmiany między nimi.',
+    'Wybrano tę samą wersję jako <strong>od</strong> i <strong>do</strong>. Wybierz różne wersje, aby porównać zmiany między nimi.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'Wybrano tę samą wersję',
   /** Title for the Review Changes pane */
@@ -565,7 +565,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in document versions status for a published (non-live-edit) document */
   'document-status.published-at': 'Opublikowano {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': 'Rewizja z dnia <em>{{date}}</em>',
+  'document-status.revision-from': 'Wersja z dnia <em>{{date}}</em>',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'Nie znaleziono wersji',
 
@@ -1411,7 +1411,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Odśwież',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio zostało zaktualizowane',
+  'package-version.new-package-available.title': 'Sanity Studio jest gotowe do aktualizacji!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Zarządzaj członkami',
@@ -1460,14 +1460,14 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Edytuj harmonogram',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Nowe Wydanie',
+  'release.action.new-release': 'Nowe wydanie',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Nie masz uprawnień do wykonania tej akcji',
   /** Action message for running a scheduled draft immediately */
   'release.action.publish-now': 'Opublikuj teraz',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Spróbuj ponownie lub sprawdź swoje połączenie. Dokument nadal będzie nieopublikowany po wydaniu.',
+    'Spróbuj ponownie lub sprawdź połączenie. Dokument nadal zostanie cofnięty z publikacji wraz z wydaniem.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
     'Nie udało się cofnąć ustawienia niepublikowania przy wydaniu.',
@@ -1533,20 +1533,20 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.title': 'Nowe wydanie',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
-    'Usunąć ten zaplanowany draft? Twój draft jest już aktualny.',
+    'Usunąć ten zaplanowany szkic? Twój szkic jest już aktualny.',
   /** Body text when deleting scheduled draft and changes will be saved to draft */
   'release.dialog.delete-schedule-draft.body-will-save-to-draft':
-    'Usunąć ten zaplanowany draft? Twoje zmiany zostaną zapisane do draftu.',
+    'Usunąć ten zaplanowany szkic? Twoje zmiany zostaną zapisane w szkicu.',
   /** Body text when deleting scheduled draft with checkbox shown for user choice */
-  'release.dialog.delete-schedule-draft.body-with-choice': 'Usunąć ten zaplanowany draft?',
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Usunąć ten zaplanowany szkic?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Tak, usuń harmonogram',
   /** Checkbox label for copying scheduled draft to draft before deletion */
   'release.dialog.delete-schedule-draft.copy-checkbox':
-    'Zachowaj moje zaplanowane zmiany, kopiując je do draftu (zalecane)',
+    'Zachowaj moje zaplanowane zmiany, kopiując je do szkicu (zalecane)',
   /** Explanation text shown when scheduled draft has different changes than current draft */
   'release.dialog.delete-schedule-draft.different-changes-explanation':
-    'Twój zaplanowany draft zawiera inne zmiany niż Twój obecny draft.',
+    'Twój zaplanowany szkic zawiera inne zmiany niż Twój obecny szkic.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Usuń zaplanowany szkic',
   /** Body text for change schedule dialog */
@@ -1572,7 +1572,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Opublikuj szkic teraz',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Przewidywany czas wydania jest używany do tworzenia lepszych podglądów i wskazówek, czy dokumenty są sprzeczne.',
+    'Służy to wyłącznie do planowania, podglądów i wskazówek, czy dokumenty są ze sobą w konflikcie. Ustawienie tutaj czasu nie zaplanuje wydania. Nadal trzeba będzie uruchomić lub zaplanować wydanie, gdy wszystkie dokumenty będą gotowe.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Zawsze możesz to później zmienić.',
   /** Title for tooltip to explain release time */
@@ -1594,7 +1594,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Opublikowane',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Wydania',
+  'release.navbar.tooltip': 'Zobacz harmonogram',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Wydanie bez tytułu',
   /** Description for warning that the published schedule time is in the past */
@@ -1660,7 +1660,7 @@ export default removeUndefinedLocaleResources({
   'release.tooltip.locked':
     'To wydanie zostało zaplanowane. Anuluj planowanie, aby dodać więcej dokumentów.',
   /** Label for the release type 'as soon as possible' */
-  'release.type.asap': 'ASAP',
+  'release.type.asap': 'Jak najszybciej',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
   'release.type.scheduled': 'W wyznaczonym czasie',
   /** Label for the release type 'undecided' */
@@ -1674,7 +1674,7 @@ export default removeUndefinedLocaleResources({
   'releases.upsell.misconfiguration.header': 'Problem z konfiguracją wydań treści',
   /** Message shown in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.message':
-    'Wydań treści są włączone dla Twojego projektu, ale wydaje się, że istnieje problem z konfiguracją limitów wydań. Prosimy o kontakt z pomocą techniczną, aby właściwie skonfigurować wydań treści.',
+    'Wydania treści są włączone dla Twojego projektu, ale wygląda na to, że występuje problem z konfiguracją limitów wydań. Skontaktuj się z pomocą techniczną, aby prawidłowo skonfigurować wydania treści.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Zaplanuj',
@@ -2088,10 +2088,10 @@ export default removeUndefinedLocaleResources({
     'Wystąpił błąd podczas pobierania zmian w dokumencie.',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-version-description':
-    'Włącz API wydarzeń przez konfigurację Studio, aby wyświetlić historię dokumentu.',
+    'Włącz API zdarzeń w konfiguracji Studio, aby wyświetlić historię dokumentu.',
   /** Title for error when the timeline for the given version document can't be loaded */
   'timeline.error.load-document-changes-version-title':
-    'Historia wersji dokumentów jest dostępna tylko przez API wydarzeń.',
+    'Historia wersji dokumentów jest dostępna tylko przez API zdarzeń.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Po zmianie zawartości dokumentu, wersje dokumentu pojawią się w tym menu.',

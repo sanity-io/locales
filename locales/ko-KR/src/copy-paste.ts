@@ -13,8 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     '이 내용을 복사하려면 클립보드 접근이 필요합니다. 브라우저 설정에서 클립보드 권한을 허용한 후 다시 복사해 보세요.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    '브라우저가 이 작업을 지원하지 않습니다',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': '클립보드 접근이 차단되었습니다',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '빈 값, 복사할 것 없음',
   /** --- On copy --- */

@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Ta wersja API nie obsługuje złożonych perspektyw. Użyj wersji {{apiVersion}} lub nowszej.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Ta wersja API nie obsługuje wariantów treści. Użyj eksperymentalnej wersji API ({{apiVersion}}).',
+    'Ta wersja API nie obsługuje wariantów treści. Użyj {{apiVersion}} lub nowszej.',
   /** Label for "Query" editor/input */
   'query.label': 'Zapytanie',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -132,7 +132,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspective-label': 'Perspektywa',
   /** Notification about previewDrafts to drafts rename */
   'settings.perspective.preview-drafts-renamed-to-drafts.description':
-    'Perspektywa "<code>previewDrafts</code>" została przemianowana na "<code>drafts</code>" i jest teraz przestarzała. Zmiana ta jest skuteczna dla wszystkich wersji z obsługą perspektywy (>= v2021-03-25).',
+    'Perspektywa "<code>previewDrafts</code>" została przemianowana na "<code>drafts</code>" i jest teraz przestarzała. Ta zmiana obowiązuje dla wszystkich wersji z obsługą perspektyw (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Czytaj dokumentację',
   /** Option for selecting default perspective */

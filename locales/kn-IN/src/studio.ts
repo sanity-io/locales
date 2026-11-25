@@ -1377,7 +1377,7 @@ export default removeUndefinedLocaleResources({
     'ಈ ದಾಖಲೆಯನ್ನು ಅಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
-    'ನೀವು ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಅಳಿಸಲು ಅನುಮತಿಯಿಲ್ಲ.',
+    'ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಅಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'ಈ ದಾಖಲೆಯಲ್ಲಿನ ಬದಲಾವಣೆಗಳನ್ನು ತ್ಯಜಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
@@ -1386,10 +1386,10 @@ export default removeUndefinedLocaleResources({
     'ಈ ದಾಖಲೆಯನ್ನು ನಕಲಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
-    'ನೀವು ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಸಂಪಾದಿಸಲು ಅನುಮತಿಯಿಲ್ಲ.',
+    'ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಸಂಪಾದಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
-    'ನೀವು ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಜಾರಿಗೊಳಿಸಲು ಅನುಮತಿಯಿಲ್ಲ.',
+    'ವೇಳಾಪಟ್ಟಿಗಳನ್ನು ಜಾರಿಗೊಳಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'ಈ ದಾಖಲೆಯನ್ನು ಪ್ರಕಟಿಸಲು ನಿಮಗೆ ಅನುಮತಿ ಇಲ್ಲ.',
@@ -1451,7 +1451,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'ಮರುಲೋಡ್ ಮಾಡಿ',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio ನವೀಕರಿಸಲಾಗಿದೆ',
+  'package-version.new-package-available.title': 'Sanity Studio ನವೀಕರಿಸಲು ಸಿದ್ಧವಾಗಿದೆ!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'ಸದಸ್ಯರನ್ನು ನಿರ್ವಹಿಸಿ',
@@ -2231,7 +2231,7 @@ export default removeUndefinedLocaleResources({
   /** Label to close the sidebar */
   'tree-editing-dialog.sidebar.action.close': 'ಸೈಡ್‌ಬಾರ್ ಮುಚ್ಚಿ',
   /** Collapse label the menu item in the sidebar  */
-  'tree-editing-dialog.sidebar.action.collapse': 'ಸಂಕುಚಿತ',
+  'tree-editing-dialog.sidebar.action.collapse': 'ಸಂಕೋಚಿಸಿ',
   /** Label to close the dialog */
   'tree-editing-dialog.sidebar.action.done': 'ಮುಗಿದಿದೆ',
   /** Exapnd label the menu item in the sidebar  */

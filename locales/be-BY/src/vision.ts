@@ -71,10 +71,10 @@ export default removeUndefinedLocaleResources({
   'query.error.line': 'Радок',
   /** Extra explanation when a 400 is returned for a release perspective on an old API version */
   'query.error.unsupported-release-perspective':
-    'Гэта версія API не падтрымлівае складаныя перспектывы. Выкарыстоўвайце {{apiVersion}} або пазнейшую версію.',
+    'Гэтая версія API не падтрымлівае складаныя перспектывы. Выкарыстоўвайце {{apiVersion}} або пазнейшую версію.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Гэта версія API не падтрымлівае варыянты кантэнту. Выкарыстоўвайце эксперыментальную версію API ({{apiVersion}}).',
+    'Гэтая версія API не падтрымлівае варыянты кантэнту. Выкарыстоўвайце {{apiVersion}} або пазнейшую версію.',
   /** Label for "Query" editor/input */
   'query.label': 'Запыт',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */

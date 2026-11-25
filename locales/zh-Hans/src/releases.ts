@@ -342,7 +342,7 @@ export default removeUndefinedLocaleResources({
     '这将还原 {{releaseDocumentsLength}} 个文档版本。',
   /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
   'revert-dialog.confirm-revert.history-unavailable-card_other':
-    '{{count}} 个文档的先前状态在文档历史记录中已不可用，因此无法撤销该发布。',
+    '{{count}} 个文档的先前状态在文档历史记录中已不可用，因此无法还原该发布。',
   /** Shown in the revert dialog while the previous state of each document is being looked up */
   'revert-dialog.confirm-revert.resolving': '正在检查文档历史记录…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
@@ -357,7 +357,7 @@ export default removeUndefinedLocaleResources({
   'revert-dialog.confirm-revert.title': '您确定要还原"{{title}}"版本吗？',
   /** Error card in the revert dialog when the previous state of some documents could not be determined */
   'revert-dialog.confirm-revert.unresolved-card_other':
-    '无法确定 {{count}} 个文档的先前状态，因此无法撤销该发布。',
+    '无法确定 {{count}} 个文档的先前状态，因此无法还原该发布。',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     '此版本中的文档在发布后已被修改。还原将覆盖这些更改。',

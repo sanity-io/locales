@@ -12,9 +12,9 @@ export default removeUndefinedLocaleResources({
   /** Label for setting up a listener */
   'action.listen-execute': '監聽',
   /** Label for query loading table */
-  'action.load-queries': '加載查詢',
+  'action.load-queries': '載入查詢',
   /** Label for loading a query */
-  'action.load-query': '加載查詢',
+  'action.load-query': '載入查詢',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': '取消',
   /** Label for executing the query, eg doing a fetch */
@@ -24,7 +24,7 @@ export default removeUndefinedLocaleResources({
   /** Label for saving a personal query */
   'action.save-personal-query': '另存為個人',
   /** Label for saving a query */
-  'action.save-query': '保存查詢',
+  'action.save-query': '儲存查詢',
   /** Label for saving a shared query */
   'action.save-shared-query': '另存為共用',
   /** Label for unsharing a query */
@@ -46,9 +46,9 @@ export default removeUndefinedLocaleResources({
   /** Label for query type "personal" */
   'label.personal': '個人的',
   /** Label for savedAt date */
-  'label.saved-at': '保存於',
+  'label.saved-at': '儲存於',
   /** Saved queries */
-  'label.saved-queries': '已保存的查詢',
+  'label.saved-queries': '已儲存的查詢',
   /** Search queries */
   'label.search-queries': '搜索查詢',
   /** Share query */
@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     '此 API 版本不支援複雜視角(perspectives)。請使用 {{apiVersion}} 或更新版本。',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    '此 API 版本不支援內容變體(content variants)。請使用實驗性 API 版本({{apiVersion}})。',
+    '此 API 版本不支援內容變體。請使用 {{apiVersion}} 或更新版本。',
   /** Label for "Query" editor/input */
   'query.label': '查詢',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -89,7 +89,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text shown when the query result is not encodable as CSV */
   'result.save-result-as-csv.not-csv-encodable': '結果無法編碼為 CSV',
   /** Label for "Save result as" result action */
-  'result.save-result-as-format': '將結果保存為 <SaveResultButtons/>',
+  'result.save-result-as-format': '將結果儲存為 <SaveResultButtons/>',
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)
@@ -97,9 +97,9 @@ export default removeUndefinedLocaleResources({
   'result.timing-not-applicable': '不適用',
 
   /** Query already saved error label */
-  'save-query.already-saved': '查詢已保存',
+  'save-query.already-saved': '查詢已儲存',
   /** Save error label */
-  'save-query.error': '保存查詢時出錯',
+  'save-query.error': '儲存查詢時出錯',
   /** Save personal copy success label */
   'save-query.personal-copy-success': '個人副本已儲存',
   /** Warning displayed before sharing a query */
@@ -107,14 +107,14 @@ export default removeUndefinedLocaleResources({
   /** Save shared query success label */
   'save-query.shared-success': '共用查詢已儲存',
   /** Save success label */
-  'save-query.success': '查詢已保存',
+  'save-query.success': '查詢已儲存',
   /** Save unshared query success label */
   'save-query.unshared-success': '查詢已移至個人',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 版本',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
-  'settings.api-version-locked-for-variant': '選取變體時,API 版本需要為 vX。',
+  'settings.api-version-locked-for-variant': '選取變體時，API 版本必須為 {{apiVersion}}。',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': '自定義 API 版本',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -139,7 +139,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.description': '視角允許您的查詢針對數據集中不同的「視圖」運行',
   /** Description for upcoming default perspective change */
   'settings.perspectives.new-default.description':
-    '預設視角將從「<code>raw</code>」更改為「<code>published</code>」在即將到來的 API 版本中。請查閱文檔以獲取更多詳情。',
+    '在即將推出的 API 版本中，預設視角將從「<code>raw</code>」變更為「<code>published</code>」。詳情請參閱文件。',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '固定發布',
   /** Label for the scheduled drafts perspective */

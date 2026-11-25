@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versão atual',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Como atualizar',
+  'about-dialog.version-info.how-to-upgrade': 'Atualizar agora',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Última versão',
   /** Info text when auto updates is enabled and a new version is available */
@@ -198,13 +198,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Imagens do Espaço de Trabalho',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Algo deu errado ao tentar resolver a Biblioteca de Mídia para este projeto.',
+    'Algo deu errado ao tentar resolver a Media Library para este projeto.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'Nenhuma biblioteca de mídia foi provisionada para esta organização.',
+    'Nenhuma Media Library foi provisionada para esta organização.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': 'Biblioteca de Mídia',
-  'asset-sources.media-library.image.title': 'Biblioteca de Mídia',
+  'asset-sources.media-library.file.title': 'Media Library',
+  'asset-sources.media-library.image.title': 'Media Library',
   /** Done button text */
   'asset-sources.media-library.open-in-source-dialog.button.done': 'Concluído',
   /** Select new asset button text with target title */
@@ -223,7 +223,7 @@ export default removeUndefinedLocaleResources({
     "Arquivo: '{{filename}}' já existe",
 
   /** Label when a release has been deleted by a different user */
-  'banners.deleted-bundle-banner.text': "O '<strong>{{title}}</strong>' lançamento foi excluído.",
+  'banners.deleted-bundle-banner.text': "O release '<strong>{{title}}</strong>' foi excluído.",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Ir para o próximo mês',
@@ -1408,7 +1408,7 @@ export default removeUndefinedLocaleResources({
     'Você não tem permissão para excluir este documento.',
   /** The explanation when unable to delete a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_delete-schedules':
-    'Você não tem permissão para excluir agendas.',
+    'Você não tem permissão para excluir agendamentos.',
   /** The explanation when unable to discard changes in a particular document */
   'insufficient-permissions-message.not-authorized-explanation_discard-changes':
     'Você não tem permissão para descartar as alterações neste documento.',
@@ -1417,10 +1417,10 @@ export default removeUndefinedLocaleResources({
     'Você não tem permissão para duplicar este documento.',
   /** The explanation when unable to edit a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_edit-schedules':
-    'Você não tem permissão para editar agendas.',
+    'Você não tem permissão para editar agendamentos.',
   /** The explanation when unable to execute a schedule on scheduled publishing */
   'insufficient-permissions-message.not-authorized-explanation_execute-schedules':
-    'Você não tem permissão para executar agendas.',
+    'Você não tem permissão para executar agendamentos.',
   /** The explanation when unable to publish a particular document */
   'insufficient-permissions-message.not-authorized-explanation_publish-document':
     'Você não tem permissão para publicar este documento.',
@@ -1482,7 +1482,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Recarregar',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio foi atualizado',
+  'package-version.new-package-available.title': 'O Sanity Studio está pronto para ser atualizado!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Gerenciar membros',
@@ -1508,21 +1508,21 @@ export default removeUndefinedLocaleResources({
   'relative-time.just-now': 'agora mesmo',
 
   /** Action message to add document to new release */
-  'release.action.add-to-new-release': 'Adicionar ao lançamento',
+  'release.action.add-to-new-release': 'Adicionar ao release',
   /** Action message to add document to release */
   'release.action.add-to-release': 'Adicionar ao {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': 'Documento já existe no lançamento',
+  'release.action.already-exists-in-release': 'Documento já existe no release',
   /** Action message for when document is already in release  */
-  'release.action.already-in-release': 'Já está no lançamento {{title}}',
+  'release.action.already-in-release': 'Já está no release {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
   'release.action.copy-to': 'Copiar versão para',
   /** Action message for creating new releases */
-  'release.action.create-new': 'Novo lançamento',
+  'release.action.create-new': 'Novo release',
   /** Description for toast when version creation failed */
   'release.action.create-version.failure': 'Falha ao criar versão',
   /** Action message for deleting a scheduled publish */
-  'release.action.delete-schedule': 'Excluir cronograma',
+  'release.action.delete-schedule': 'Excluir agendamento',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Descartar versão',
   /** Description for toast when version discarding failed */
@@ -1530,11 +1530,11 @@ export default removeUndefinedLocaleResources({
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
   'release.action.edit-details': 'Editar detalhes',
   /** Action message for editing the schedule of a scheduled publish */
-  'release.action.edit-schedule': 'Editar cronograma',
+  'release.action.edit-schedule': 'Editar agendamento',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Novo Lançamento',
+  'release.action.new-release': 'Novo release',
   'release.action.new-release.limit-reached_other':
-    'Este espaço de trabalho está limitado a {{count}} lançamentos',
+    'Este espaço de trabalho está limitado a {{count}} releases',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Você não tem permissão para realizar esta ação',
   /** Action message for running a scheduled draft immediately */
@@ -1555,14 +1555,14 @@ export default removeUndefinedLocaleResources({
   'release.action.schedule-publish': 'Agendar publicação',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
-    'Falha ao definir a versão para não ser publicada no lançamento',
+    'Falha ao definir a versão para não ser publicada no release',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Definido com sucesso <strong>{{title}}</strong> para não ser publicado no lançamento',
+    'Definido com sucesso <strong>{{title}}</strong> para não ser publicado no release',
   /** Action message for when the view release is pressed */
-  'release.action.view-release': 'Visualizar lançamento',
+  'release.action.view-release': 'Visualizar release',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': 'Ver rascunhos programados',
+  'release.action.view-scheduled-drafts': 'Ver rascunhos agendados',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Agendado para publicação em {{date}}',
   /** Label for button to show other variants in the document perspective list */
@@ -1580,7 +1580,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Publicado',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': 'Este lançamento está arquivado e não pode ser editado.',
+  'release.chip.tooltip.archived': 'Este release está arquivado e não pode ser editado.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Criado {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1605,13 +1605,13 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'Data desconhecida',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': 'Esta versão foi excluída',
+  'release.deleted-tooltip': 'Este release foi excluído',
   /** Title for copying version to a new release dialog */
-  'release.dialog.copy-to-release.title': 'Copiar versão para nova versão',
+  'release.dialog.copy-to-release.title': 'Copiar versão para novo release',
   /** Title for action create a release */
-  'release.dialog.create.confirm': 'Criar lançamento',
+  'release.dialog.create.confirm': 'Criar release',
   /** Title for creating releases dialog */
-  'release.dialog.create.title': 'Nova versão',
+  'release.dialog.create.title': 'Novo release',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
     'Excluir este rascunho agendado? Seu rascunho já está atualizado.',
@@ -1621,7 +1621,7 @@ export default removeUndefinedLocaleResources({
   /** Body text when deleting scheduled draft with checkbox shown for user choice */
   'release.dialog.delete-schedule-draft.body-with-choice': 'Excluir este rascunho agendado?',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': 'Sim, excluir cronograma',
+  'release.dialog.delete-schedule-draft.confirm': 'Sim, excluir agendamento',
   /** Checkbox label for copying scheduled draft to draft before deletion */
   'release.dialog.delete-schedule-draft.copy-checkbox':
     'Manter minhas alterações agendadas copiando-as para o rascunho (recomendado)',
@@ -1629,14 +1629,13 @@ export default removeUndefinedLocaleResources({
   'release.dialog.delete-schedule-draft.different-changes-explanation':
     'Seu rascunho agendado tem alterações diferentes do seu rascunho atual.',
   /** Header for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.header': 'Excluir rascunho programado',
+  'release.dialog.delete-schedule-draft.header': 'Excluir rascunho agendado',
   /** Body text for change schedule dialog */
-  'release.dialog.edit-schedule.body':
-    'Selecione uma nova data e hora para a publicação programada.',
+  'release.dialog.edit-schedule.body': 'Selecione uma nova data e hora para a publicação agendada.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': 'Atualizar cronograma',
+  'release.dialog.edit-schedule.confirm': 'Atualizar agendamento',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': 'Alterar cronograma',
+  'release.dialog.edit-schedule.header': 'Alterar agendamento',
   /** Label for the save action in the edit release dialog */
   'release.dialog.edit.confirm': 'Salvar',
   /** Field label for the release description in the edit release dialog */
@@ -1647,24 +1646,24 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit.title-label': 'Título',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
-    'Tem certeza de que deseja publicar este rascunho programado imediatamente?',
+    'Tem certeza de que deseja publicar este rascunho agendado imediatamente?',
   /** Confirm button text for running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.confirm': 'Sim, executar agora',
   /** Header for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.header': 'Publicar rascunho agora',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'O tempo de lançamento pretendido é usado para criar melhores pré-visualizações e dicas sobre se os documentos estão em conflito.',
+    'Isto é apenas para planejamento, pré-visualizações e dicas sobre possíveis conflitos entre documentos. Definir uma hora aqui não agenda o release. Você ainda precisará executar ou agendar o release quando todos os documentos estiverem prontos.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Você sempre pode mudar isso mais tarde.',
   /** Title for tooltip to explain release time */
-  'release.dialog.tooltip.title': 'Tempo aproximado de lançamento',
+  'release.dialog.tooltip.title': 'Hora aproximada do release',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholder-describe-release': 'Descreva a versão…',
+  'release.form.placeholder-describe-release': 'Descreva o release…',
   /** Tooltip for button to hide release visibility */
-  'release.layer.hide': 'Ocultar versão',
+  'release.layer.hide': 'Ocultar release',
   /** Label for the release menu */
-  'release.menu.label': 'Menu de lançamento',
+  'release.menu.label': 'Menu do release',
   /** Menu item label for scheduled drafts */
   'release.menu.scheduled-drafts': 'Ver Rascunhos Agendados',
   /** Tooltip for the release menu */
@@ -1676,59 +1675,58 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Publicado',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Versões',
+  'release.navbar.tooltip': 'Ver agendamento',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'Versão sem título',
+  'release.placeholder-untitled-release': 'Release sem título',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning':
-    'Programe para um horário e data futuros.',
+  'release.schedule-dialog.publish-date-in-past-warning': 'Agende para uma data e hora futuras.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publicar em',
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.description': 'Este lançamento foi desafixado',
+  'release.toast.archived-release.description': 'Este release foi desafixado',
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.title': "A versão '{{title}}' foi arquivada",
+  'release.toast.archived-release.title': "O release '{{title}}' foi arquivado",
   /** The toast title that will be shown the creating a release fails */
-  'release.toast.create-release-error.title': 'Falha ao criar versão',
+  'release.toast.create-release-error.title': 'Falha ao criar release',
   /** Error toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.error':
-    'Falha ao excluir o documento de rascunho programado <strong>{{title}}</strong>: {{error}}',
+    'Falha ao excluir o documento de rascunho agendado <strong>{{title}}</strong>: {{error}}',
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
-    'O documento de rascunho programado <strong>{{title}}</strong> foi excluído.',
+    'O documento de rascunho agendado <strong>{{title}}</strong> foi excluído.',
   /** The toast title shown when saving edits to a release's details fails */
   'release.toast.edit-release-error.title': 'Falha ao salvar os detalhes do release',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
-  'release.toast.not-found-release.title': "O lançamento '{{title}}' não pôde ser encontrado",
+  'release.toast.not-found-release.title': "O release '{{title}}' não pôde ser encontrado",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
     'Falha ao pausar o documento de rascunho agendado <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
-    'Falha ao publicar o documento de rascunho programado <strong>{{title}}</strong>: {{error}}',
+    'Falha ao publicar o documento de rascunho agendado <strong>{{title}}</strong>: {{error}}',
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
-    'O documento de rascunho programado <strong>{{title}}</strong> foi publicado.',
+    'O documento de rascunho agendado <strong>{{title}}</strong> foi publicado.',
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.description': 'Este lançamento foi desafixado',
+  'release.toast.published-release.description': 'Este release foi desafixado',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.title': "O lançamento '{{title}}' foi publicado",
+  'release.toast.published-release.title': "O release '{{title}}' foi publicado",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
-    'Falha ao reprogramar o documento de rascunho programado <strong>{{title}}</strong>: {{error}}',
+    'Falha ao reagendar o documento de rascunho agendado <strong>{{title}}</strong>: {{error}}',
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
-    'O documento de rascunho programado <strong>{{title}}</strong> foi reprogramado.',
+    'O documento de rascunho agendado <strong>{{title}}</strong> foi reagendado.',
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': 'Falha ao agendar o rascunho: {{error}}',
   /** Success toast for scheduling a paused draft */
@@ -1736,31 +1734,31 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'O rascunho programado foi publicado',
+  'release.toast.scheduled-draft-published.title': 'O rascunho agendado foi publicado',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Uma versão deste documento já foi adicionada',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
   'release.tooltip.locked':
-    'Este lançamento foi agendado. Desagende para adicionar mais documentos.',
+    'Este release foi agendado. Desagende-o para adicionar mais documentos.',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'O mais rápido possível',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
   'release.type.scheduled': 'Em um horário determinado',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'Indeciso',
+  'release.type.undecided': 'Indefinido',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Ver todas as versões do documento',
 
   /** Button text for contacting support in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.contact-support': 'Contatar Suporte',
   /** Header for the releases misconfiguration dialog */
-  'releases.upsell.misconfiguration.header': 'Problema de configuração de lançamentos de conteúdo',
+  'releases.upsell.misconfiguration.header': 'Problema de configuração de releases de conteúdo',
   /** Message shown in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.message':
-    'Os lançamentos de conteúdo estão habilitados para o seu projeto, mas parece haver um problema de configuração com os limites de seus lançamentos. Por favor, contate o suporte para ter seus lançamentos de conteúdo configurados corretamente.',
+    'Os releases de conteúdo estão habilitados para o seu projeto, mas parece haver um problema de configuração com os limites dos seus releases. Por favor, contate o suporte para ter seus releases de conteúdo configurados corretamente.',
 
   /** Confirm button text for the schedule publish dialog */
-  'schedule-publish-dialog.confirm': 'Programar',
+  'schedule-publish-dialog.confirm': 'Agendar',
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': 'Selecione quando este documento deve ser publicado.',
   /** Header for the schedule publish dialog */
@@ -2170,7 +2168,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.action.search-for-timezone-placeholder': 'Pesquisar por uma cidade ou fuso horário',
   'time-zone.action.select-local-time-zone': 'Selecionar fuso horário local',
   'time-zone.dialog-info.content-releases':
-    'O fuso horário selecionado mudará como as datas são representadas nos lançamentos de conteúdo.',
+    'O fuso horário selecionado mudará como as datas são representadas nos releases de conteúdo.',
   'time-zone.dialog-info.input':
     'O fuso horário selecionado mudará como as datas são representadas apenas para esta entrada neste documento.',
   'time-zone.dialog-info.scheduled-publishing':
@@ -2178,7 +2176,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.local-time': 'hora local',
   'time-zone.time-zone': 'Fuso horário',
   'time-zone.time-zone-tooltip-content-releases':
-    'Exibindo lançamentos em {{alternativeName}} GMT{{offset}}',
+    'Exibindo releases em {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-input':
     'Exibindo <em>{{title}}</em> em {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':
@@ -2228,9 +2226,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was initially created, with a timestamp */
   'timeline.operation.created-initial_timestamp': 'Criado: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been deleted */
-  'timeline.operation.deleted': 'Eliminado',
+  'timeline.operation.deleted': 'Excluído',
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
-  'timeline.operation.deleted_timestamp': 'Eliminado: {{timestamp, datetime}}',
+  'timeline.operation.deleted_timestamp': 'Excluído: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft document has been created*/
   'timeline.operation.draft-created': 'Rascunho criado',
   /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
@@ -2254,9 +2252,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was published, with a timestamp */
   'timeline.operation.published_timestamp': 'Publicado: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': 'Não publicado',
+  'timeline.operation.unpublished': 'Despublicado',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
-  'timeline.operation.unpublished_timestamp': 'Não publicado: {{timestamp, datetime}}',
+  'timeline.operation.unpublished_timestamp': 'Despublicado: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been created */
   'timeline.operation.version-created': 'Versão criada',
   /** Label shown in review changes timeline when a document version has been created, with a timestamp */

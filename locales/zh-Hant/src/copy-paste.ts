@@ -6,20 +6,20 @@ export default removeUndefinedLocaleResources({
   /** Text on the field action button to copy a field */
   'copy-paste.field-action-copy-button.field.title': '複製欄位',
   /** Text on the field action button to paste a document */
-  'copy-paste.field-action-paste-button.document.title': '粘貼文件',
+  'copy-paste.field-action-paste-button.document.title': '貼上文件',
   /** Text on the field action button to paste a field */
-  'copy-paste.field-action-paste-button.field.title': '粘貼欄位',
+  'copy-paste.field-action-paste-button.field.title': '貼上欄位',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     '需要剪貼簿訪問權限才能複製此內容。請在瀏覽器設置中允許剪貼簿權限，然後再試著複製一次。',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title': '您的瀏覽器不支持此操作',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': '剪貼簿存取遭到封鎖',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空值，沒有可複製的內容',
   /** --- On copy --- */
   /** The error message that is shown when schema types are incompatible */
   'copy-paste.on-copy.validation.schema-type-incompatible.title':
-    '無法解析路徑的模式類型：{{path}}',
+    '無法解析路徑的架構類型：{{path}}',
   /** The validation message that is shown when array types are incompatible */
   'copy-paste.on-paste.validation.array-type-incompatible.description':
     '此陣列欄位不允許類型為 "{{type}}" 的值',
@@ -27,9 +27,9 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.array-value-incompatible.description':
     '此陣列欄位不允許類型為 "{{type}}" 的值',
   /** The validation message that is shown when the clipboard is empty */
-  'copy-paste.on-paste.validation.clipboard-empty.title': '沒有可粘貼的內容',
+  'copy-paste.on-paste.validation.clipboard-empty.title': '沒有可貼上的內容',
   /** The validation message that is shown when the clipboard item is invalid */
-  'copy-paste.on-paste.validation.clipboard-invalid.title': '剪貼板項目無效',
+  'copy-paste.on-paste.validation.clipboard-invalid.title': '剪貼簿項目無效',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     '不允許將 "{{sourceSchemaType}}" 放在 "{{targetSchemaType}}" 中',
@@ -39,7 +39,7 @@ export default removeUndefinedLocaleResources({
   /** The error message that is shown when the MIME type validation fails */
   'copy-paste.on-paste.validation.mime-type-validation-failed.description': 'MIME 類型驗證失敗',
   /** The warning message that is shown when not all values can be pasted */
-  'copy-paste.on-paste.validation.partial-warning.title': '無法粘貼所有值',
+  'copy-paste.on-paste.validation.partial-warning.title': '無法貼上所有值',
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
     '此欄位不允許類型為 "{{type}}" 的值',
@@ -59,10 +59,10 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.reference-validation-failed.description':
     '參照的文件 "{{ref}}" 不存在',
   /** The validation message that is shown when the source and target schema types are incompatible */
-  'copy-paste.on-paste.validation.schema-type-incompatible.description': '源和目標模式類型不兼容',
+  'copy-paste.on-paste.validation.schema-type-incompatible.description': '來源和目標架構類型不相容',
   /** The validation message that is shown when schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.title':
-    '無法解析路徑的模式類型：{{path}}',
+    '無法解析路徑的架構類型：{{path}}',
   /** The validation message that is shown when string values are incompatible */
   'copy-paste.on-paste.validation.string-value-incompatible.description':
     '值 "{{value}}" 不允許在 "{{allowedStrings}}" 中',

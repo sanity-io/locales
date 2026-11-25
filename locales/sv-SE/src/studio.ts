@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatiska uppdateringar',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Hur man aktiverar',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Aktivera',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Hantera version',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Nuvarande version',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Hur man uppgraderar',
+  'about-dialog.version-info.how-to-upgrade': 'Uppdatera nu',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Senaste versionen',
   /** Info text when auto updates is enabled and a new version is available */
@@ -194,7 +194,7 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Arbetsytebilder',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Något gick fel när vi försökte lösa Media Library för detta projekt.',
+    'Något gick fel när Media Library för det här projektet skulle hittas.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
     'Inget mediebibliotek har tillhandahållits för denna organisation.',
@@ -1532,7 +1532,7 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Publicera nu',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Försök igen eller kontrollera din anslutning. Dokumentet kommer fortfarande att vara opublicerat vid publicering.',
+    'Försök igen eller kontrollera din anslutning. Dokumentet kommer fortfarande att avpubliceras när releasen publiceras.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
     'Misslyckades med att återställa inställningen att avpublicera vid publicering.',
@@ -1587,9 +1587,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.not-published': 'Ej publicerad',
   'release.chip.tooltip.other-variants_one': 'En variant',
   'release.chip.tooltip.other-variants_other': '{{count}} varianter',
-  'release.chip.tooltip.other-versions_one': 'En ytterligare version utanför utgivningar',
-  'release.chip.tooltip.other-versions_other':
-    '{{count}} ytterligare versioner utanför utgivningar',
+  'release.chip.tooltip.other-versions_one': 'En ytterligare version utanför releaser',
+  'release.chip.tooltip.other-versions_other': '{{count}} ytterligare versioner utanför releaser',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicerad {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1664,7 +1663,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Åtgärder',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'Visa innehållsutgivningar',
+  'release.menu.view-releases': 'Visa innehållsreleaser',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Utkast',
   /** Label for published releases in navbar */
@@ -1726,7 +1725,7 @@ export default removeUndefinedLocaleResources({
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': 'Misslyckades med att schemalägga utkast: {{error}}',
   /** Success toast for scheduling a paused draft */
-  'release.toast.schedule-publish.success': 'Utkastet har schemalagts framgångsrikt',
+  'release.toast.schedule-publish.success': 'Utkastet har schemalagts',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */

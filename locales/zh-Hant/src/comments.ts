@@ -70,12 +70,12 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': '新增留言',
 
-  'inline-add-comment-button.disabled-overlap-title': '評論不能重疊',
+  'inline-add-comment-button.disabled-overlap-title': '留言不能重疊',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': '添加評論',
+  'inline-add-comment-button.title': '新增留言',
 
   /** The title of the error card shown in the comments inspector */
-  'inspector-error.title': '載入評論時出了些問題',
+  'inspector-error.title': '載入留言時出了些問題',
 
   /** Aria label for the breadcrumb button showing the field path. `{{field}}` is the last (most specific) field. */
   'list-item.breadcrumb-button-go-to-field-aria-label': '前往{{field}}字段',
@@ -110,7 +110,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': '重試',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': '已刪除評論的文本',
+  'list-item.missing-referenced-value-tooltip-content': '留言所針對的文字已被刪除',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': '打開留言操作選單',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */

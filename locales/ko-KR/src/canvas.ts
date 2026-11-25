@@ -7,7 +7,7 @@ export default removeUndefinedLocaleResources({
   'action.link-document': 'Canvas에 링크',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
   'action.link-document-disabled.initial-value-not-resolved':
-    '문서 초기 값이 해결될 때까지 기다려 주세요',
+    '문서 초기값이 준비될 때까지 기다려 주세요',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
   'action.link-document-disabled.missing-permissions': '이 문서를 Canvas에 링크할 권한이 없습니다',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */

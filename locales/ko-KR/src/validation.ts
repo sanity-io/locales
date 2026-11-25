@@ -76,7 +76,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': '유효성 검사',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': '문서가 공개 취소될 예정이므로, 검증 오류는 표시되지 않습니다',
+  'panel.unpublish-message': '문서가 게시 취소될 예정이므로, 검증 오류는 표시되지 않습니다',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug는 값이 있어야 합니다',

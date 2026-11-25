@@ -122,7 +122,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Estás viendo un documento de solo lectura que fue archivado como parte de <VersionBadge>{{title}}</VersionBadge>. No se puede editar',
+    'Esta versión del documento pertenece al lanzamiento archivado <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Este borrador programado está archivado',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -136,7 +136,7 @@ export default removeUndefinedLocaleResources({
     'Elija un destino para este documento:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    'La versión <VersionBadge>{{title}}</VersionBadge> no está activa.',
+    'El lanzamiento <VersionBadge>{{title}}</VersionBadge> no está activo.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Restaurar la versión más reciente',
   /** The text content for the deleted document banner */
@@ -167,10 +167,10 @@ export default removeUndefinedLocaleResources({
     'Programación pausada mientras se edita. Presione Programar para reactivar o elija una nueva fecha.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Tu rol <Roles/> no tiene permisos para crear este documento.',
+    'Tu rol <Roles/> no tiene permisos para publicar este documento.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Tus roles <Roles/> no tienen permisos para crear este documento.',
+    'Tus roles <Roles/> no tienen permisos para publicar este documento.',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Tu rol <Roles/> no tiene permisos para actualizar este documento.',
@@ -197,7 +197,7 @@ export default removeUndefinedLocaleResources({
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
   'banners.release.action.add-to-bundle': 'Añadir al bundle',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.add-to-release': 'Añadir a la publicación',
+  'banners.release.action.add-to-release': 'Añadir al lanzamiento',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.open-to-edit': 'Abrir lanzamiento para editar',
   /** Toast description in case an error occurs when adding a document to a release  */
@@ -227,7 +227,7 @@ export default removeUndefinedLocaleResources({
     'Este documento es parte del lanzamiento <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release':
-    'No está en la publicación <VersionBadge>{{title}}</VersionBadge>.',
+    'No está en el lanzamiento <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
     'Por favor, espere mientras el documento se agrega al lanzamiento. No debería tardar más de unos segundos.',
@@ -241,7 +241,7 @@ export default removeUndefinedLocaleResources({
     'Existe un borrador programado para este documento. Si publicas cambios ahora, serán sobrescritos cuando se ejecute la programación.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Este documento será despublicado como parte de la publicación <VersionBadge>{{title}}</VersionBadge>',
+    'Este documento se despublicará como parte del lanzamiento <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Mostrando la versión <strong>publicada</strong> actual:',
@@ -274,13 +274,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Acciones del documento',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Colapsar todos los paneles',
+  'buttons.focus-pane-button.aria-label.collapse': 'Salir del modo de enfoque (mostrar navegación)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Enfocar panel',
+  'buttons.focus-pane-button.aria-label.focus': 'Entrar en modo de enfoque (ocultar navegación)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Colapsar todos los paneles',
+  'buttons.focus-pane-button.tooltip.collapse': 'Salir del modo de enfoque',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Enfocar panel',
+  'buttons.focus-pane-button.tooltip.focus': 'Entrar en modo de enfoque',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dividir panel a la derecha',
   /** The tool tip for the split pane button on the document panel header */
@@ -296,7 +296,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.editable.linked-text': 'Este documento se puede editar en Canvas.',
   /** The description for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-description':
-    'Canvas le permite escribir libremente, luego actualizar el contenido en Studio sin copiar manualmente campo por campo.',
+    'Canvas te permite escribir con libertad y luego actualizar el contenido en Studio sin tener que copiarlo manualmente campo por campo.',
   /** The heading for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-heading': 'Escritura de forma libre',
   /** The text for the canvas linked banner when the document is a draft */
@@ -333,7 +333,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidNextDocumentParam':
     'El parámetro del siguiente documento es inválido.',
   /** The error message shown when the document comparison URL could not be parsed */
-  'compare-version.error.invalidParams.title': 'Incapaz de comparar documentos',
+  'compare-version.error.invalidParams.title': 'No se pueden comparar los documentos',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam':
     'El parámetro del documento anterior es inválido.',
@@ -541,9 +541,9 @@ export default removeUndefinedLocaleResources({
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspeccionar documento <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': 'Abrir documento <VersionBadge>draft</VersionBadge>',
+  'events.open.draft': 'Abrir documento <VersionBadge>borrador</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
-  'events.open.release': 'Abrir publicación <VersionBadge>{{releaseTitle}}</VersionBadge>',
+  'events.open.release': 'Abrir lanzamiento <VersionBadge>{{releaseTitle}}</VersionBadge>',
 
   /** The text for the add reference item in the incoming references input */
   'incoming-references-input.add-reference-item': 'Agregar elemento',
@@ -702,7 +702,7 @@ export default removeUndefinedLocaleResources({
     'URL del documento copiada al portapapeles',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
-    '<Strong>{{title}}</Strong> fue añadido a la publicación',
+    '<Strong>{{title}}</Strong> se ha añadido al lanzamiento',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete':
     'El documento fue eliminado con éxito',
@@ -724,7 +724,7 @@ export default removeUndefinedLocaleResources({
     'El documento fue despublicado. Se ha creado un borrador a partir de la última versión publicada.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'La versión dejará de publicarse cuando se publique el release',
+    'La versión se despublicará cuando se publique el lanzamiento',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Sin título',
   /** The loading message for the document not found pane */

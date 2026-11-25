@@ -11,10 +11,10 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': 'Indsæt felt',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
-    'Adgang til udklipsholder kræves for at kopiere dette indhold. Tillad udklipsholder tilladelser i dine browserindstillinger, og prøv at kopiere igen.',
+    'Adgang til udklipsholderen er påkrævet for at kopiere dette indhold. Tillad udklipsholdertilladelser i dine browserindstillinger, og prøv at kopiere igen.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Din browser understøtter ikke denne handling',
+    'Adgang til udklipsholderen er blokeret',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tom værdi, intet at kopiere',
   /** --- On copy --- */
@@ -30,7 +30,7 @@ export default removeUndefinedLocaleResources({
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Intet at indsætte',
   /** The validation message that is shown when the clipboard item is invalid */
-  'copy-paste.on-paste.validation.clipboard-invalid.title': 'Ugyldigt udklipsholder element',
+  'copy-paste.on-paste.validation.clipboard-invalid.title': 'Ugyldigt element i udklipsholderen',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
     'En "{{sourceSchemaType}}" er ikke tilladt i en "{{targetSchemaType}}"',

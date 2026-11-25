@@ -511,7 +511,7 @@ export default removeUndefinedLocaleResources({
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Svi korisnici (Zadano)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': 'Kreiraj varijantu',
+  'document-group.create-variant': 'Stvori verziju',
   /** The header label for the variant creation flow once a variant definition has been selected */
   'document-group.create-variant.for-target': 'Kreiraj varijantu za {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
@@ -1474,7 +1474,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Ponovno učitaj',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio je ažuriran',
+  'package-version.new-package-available.title': 'Sanity Studio je spreman za ažuriranje!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Upravljanje članovima',

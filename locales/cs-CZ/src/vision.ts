@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Tato verze API nepodporuje komplexní perspektivy. Použijte verzi {{apiVersion}} nebo novější.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Tato verze API nepodporuje varianty obsahu. Použijte experimentální verzi API ({{apiVersion}}).',
+    'Tato verze API nepodporuje varianty obsahu. Použijte verzi {{apiVersion}} nebo novější.',
   /** Label for "Query" editor/input */
   'query.label': 'Dotaz',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */

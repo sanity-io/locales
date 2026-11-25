@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'Verzija API-ja',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'Kada je odabrana varijanta, verzija API-ja mora biti vX.',
+    'Kada je odabrana varijanta, verzija API-ja mora biti {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Prilagođena verzija API-ja',
   /** Label for the "Dataset" dropdown in vision settings */

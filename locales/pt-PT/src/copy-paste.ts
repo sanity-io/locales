@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
     'Acesso à área de transferência necessário para copiar este conteúdo. Permita as permissões da área de transferência nas configurações do seu navegador e tente copiar novamente.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Seu navegador não suporta esta ação',
+    'Acesso à área de transferência bloqueado',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Valor vazio, nada para copiar',
   /** --- On copy --- */

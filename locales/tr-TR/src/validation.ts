@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Resim gerekli',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': 'Medya Kütüphanesinde varlık bulunamadı',
+  'object.media-not-found': "Varlık Media Library'de bulunamadı",
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': 'Medya Kütüphanesi varlığına bir referans olmalı',
+  'object.not-media-library-asset': 'Media Library varlığına bir referans olmalı',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Bir belgeye referans olmalıdır',
   /** Object references a document which is not published */

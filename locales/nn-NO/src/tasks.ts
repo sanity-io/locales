@@ -22,7 +22,7 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': 'Gå til førre oppgåve',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'Når ei oppgåve er sletta, kan den ikkje hentast tilbake.',
+  'dialog.remove-task.body': 'Når ei oppgåve er sletta, kan ho ikkje hentast tilbake.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Avbryt',
   /** The label for the confirmation button on the remove task dialog */

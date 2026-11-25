@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatické aktualizace',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Jak povolit',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Povolit',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Spravovat verzi',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Současná verze',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Jak aktualizovat',
+  'about-dialog.version-info.how-to-upgrade': 'Aktualizovat nyní',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Nejnovější verze',
   /** Info text when auto updates is enabled and a new version is available */
@@ -64,7 +64,7 @@ export default removeUndefinedLocaleResources({
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': 'Zavřít',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
-  'announcement.floating-button.dismiss-label': 'Odmítnout oznámení',
+  'announcement.floating-button.dismiss-label': 'Zavřít oznámení',
   /**Aria label to be used in the floating button in the studio announcement card */
   'announcement.floating-button.open-label': 'Otevřít oznámení',
 
@@ -363,7 +363,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Načítání změn…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    'Nemohli jsme najít revizi dokumentu s id: <code>{{revisionId}}</code>, kterou se snažíte porovnat. <Break/> To je pravděpodobně kvůli politice uchovávání historie vašeho plánu. <Break/> Prosím, vyberte jiný <strong>From</strong> záznam.',
+    'Revizi dokumentu s id <code>{{revisionId}}</code>, kterou chcete porovnat, se nepodařilo najít. <Break/> Pravděpodobně je to způsobeno zásadami uchovávání historie vašeho plánu. <Break/> Vyberte prosím jiný záznam <strong>Od</strong>.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Upravte dokument nebo vyberte starší verzi v časové ose, aby se v tomto panelu zobrazil seznam změn.',
@@ -413,7 +413,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Odebráno',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Vybrali jste stejnou revizi <strong>from</strong> a <strong>to</strong>, prosím vyberte různé revize pro porovnání změn mezi nimi.',
+    'Vybrali jste stejnou revizi <strong>od</strong> i <strong>do</strong>. Vyberte prosím různé revize, abyste mohli porovnat změny mezi nimi.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'Vybrána stejná revize',
   /** Title for the Review Changes pane */
@@ -508,7 +508,7 @@ export default removeUndefinedLocaleResources({
   /** The label given to a document group's base variant */
   'document-group.base-variant': 'Všichni uživatelé (výchozí)',
   /** The header label for the variant creation flow before a variant definition has been selected */
-  'document-group.create-variant': 'Vytvořit variantu',
+  'document-group.create-variant': 'Vytvořit verzi',
   /** The header label for the variant creation flow once a variant definition has been selected */
   'document-group.create-variant.for-target': 'Vytvořit variantu pro {{variantDefinitionName}}',
   /** The heading for the option to create a variant as a draft */
@@ -961,7 +961,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.vector-warning.expand-developer-info': 'Zobrazit informace pro vývojáře',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
   'inputs.imagetool.vector-warning.title':
-    'Upozornění: Hotspot a ořez nemusí být na tomto obrázku aplikovány, kde je prezentován.',
+    'Upozornění: Hotspot a ořez se u tohoto obrázku nemusí použít všude, kde se zobrazuje.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Převést na <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1530,16 +1530,16 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Publikovat nyní',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Zkuste to prosím znovu nebo zkontrolujte své připojení. Dokument bude stále nepublikován po vydání.',
+    'Zkuste to prosím znovu nebo zkontrolujte své připojení. Dokument bude při vydání stále odpublikován.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Nepodařilo se vrátit z nastavení na nepublikování při vydání.',
+    'Nepodařilo se zrušit nastavení odpublikování při vydání.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Nyní můžete tuto verzi upravovat.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Úspěšně vráceno z nastavení na nepublikování při vydání.',
+    'Nastavení odpublikování při vydání bylo úspěšně zrušeno.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Naplánovat publikaci',
   /** Error message for when a version is set to be unpublished */
@@ -1642,7 +1642,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Publikovat koncept nyní',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Předpokládaný čas vydání se používá k vytvoření lepších náhledů a nápověd, zda dokumenty konfliktní.',
+    'Slouží pouze k plánování, náhledům a upozorněním na případné konflikty mezi dokumenty. Nastavením času zde své vydání nenaplánujete. Jakmile budou všechny dokumenty připravené, budete vydání stále muset spustit nebo naplánovat.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Vždy to můžete později změnit.',
   /** Title for tooltip to explain release time */
@@ -1664,18 +1664,18 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Publikováno',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Vydání',
+  'release.navbar.tooltip': 'Zobrazit plánování',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Nepojmenované vydání',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning':
     'Naplánujte toto vydání na budoucí čas a datum.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': 'Naplánovat na',
+  'release.schedule-dialog.select-publish-date-label': 'Publikovat dne',
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.description': 'Toto vydání bylo odšpendleno',
+  'release.toast.archived-release.description': 'Toto vydání bylo odepnuto',
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
@@ -1706,7 +1706,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.description': 'Toto vydání bylo odšpendleno',
+  'release.toast.published-release.description': 'Toto vydání bylo odepnuto',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    **/
@@ -2207,9 +2207,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'Smazáno: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft document has been created*/
-  'timeline.operation.draft-created': 'Vytvořen návrh',
+  'timeline.operation.draft-created': 'Koncept vytvořen',
   /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
-  'timeline.operation.draft-created_timestamp': 'Vytvořen návrh: {{timestamp, datetime}}',
+  'timeline.operation.draft-created_timestamp': 'Koncept vytvořen: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'Zahozený koncept',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */

@@ -9,7 +9,7 @@ export default removeUndefinedLocaleResources({
   'invalid-video-warning.title': '影片值無效',
 
   /** Video error fallback description */
-  'video-error.description': '影片加載失敗',
+  'video-error.description': '影片載入失敗',
   /** Retry button text for video loading errors */
   'video-error.retry-button.text': '重試',
 })

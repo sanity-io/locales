@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatiske oppdateringar',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Korleis aktivere',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Aktiver',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Handter versjon',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Gjeldande versjon',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Korleis oppgradere',
+  'about-dialog.version-info.how-to-upgrade': 'Oppdater no',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Siste versjon',
   /** Info text when auto updates is enabled and a new version is available */
@@ -126,7 +126,7 @@ export default removeUndefinedLocaleResources({
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
-    'Feil ved innsetting av eigedel. Sjå konsollen for meir informasjon.',
+    'Feil ved innsetting av ressurs. Sjå konsollen for meir informasjon.',
   /** Toast title shown when the list of assets failed to load */
   'asset-source.dialog.load-error': 'Klarte ikkje å laste inn ressursar',
   /** Select asset dialog load more items */
@@ -190,8 +190,8 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description': 'Sjå konsollen for meir informasjon.',
   'asset-sources.common.uploader.upload-failed.title': 'Opplasting mislukka',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': 'Arbeidsområde filer',
-  'asset-sources.dataset.image.title': 'Arbeidsområde bilder',
+  'asset-sources.dataset.file.title': 'Arbeidsområdefiler',
+  'asset-sources.dataset.image.title': 'Arbeidsområdebilete',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Noko gjekk gale med å finne Media Library for dette prosjektet.',
@@ -205,11 +205,11 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.open-in-source-dialog.button.done': 'Ferdig',
   /** Select new asset button text with target title */
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset':
-    'Vel ny eigedom for “{{targetTitle}}”',
+    'Vel ny ressurs for “{{targetTitle}}”',
   'asset-sources.media-library.open-in-source-dialog.button.select-new-asset-fallback':
-    'Vel ny eigedom',
+    'Vel ny ressurs',
   /** Title for the open in source dialog */
-  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger eigedom',
+  'asset-sources.media-library.open-in-source-dialog.title': 'Rediger ressurs',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'Last opp til Media Library',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
@@ -413,9 +413,9 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Fjerna',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Du har valt same <strong>frå</strong> og <strong>til</strong> revisjon, vennligst vel forskjellige revisjonar for å samanlikne endringane mellom dei.',
+    'Du har valt same <strong>frå</strong>- og <strong>til</strong>-revisjon. Vel ulike revisjonar for å samanlikne endringane mellom dei.',
   /** Same Revision Selected title in the Review Changes pane */
-  'changes.same-revision-selected-title': 'Same revisjon valt',
+  'changes.same-revision-selected-title': 'Same revisjon vald',
   /** Title for the Review Changes pane */
   'changes.title': 'Gå gjennom endringar',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
@@ -849,7 +849,7 @@ export default removeUndefinedLocaleResources({
   /** Upload failed */
   'inputs.file.upload-failed.title': 'Opplasting feila',
   /** Private access policy badge label */
-  'inputs.files.common.access-policy.private.label': 'Privat eigedom',
+  'inputs.files.common.access-policy.private.label': 'Privat ressurs',
   /** Private access policy badge tooltip */
   'inputs.files.common.access-policy.private.tooltip': 'CDN-tilgang avgrensa til signerte URL-ar',
   /** Clear field */
@@ -927,7 +927,7 @@ export default removeUndefinedLocaleResources({
   'inputs.image.drag-overlay.this-field-is-read-only': 'Dette feltet er berre lese',
   /** Image could not be loaded due to possible access restrictions */
   'inputs.image.error.possible-access-restriction':
-    'Kunne ikkje laste bilde. Dette kan skyldast tilgangsavgrensingar.',
+    'Kunne ikkje laste bilete. Dette kan skyldast tilgangsavgrensingar.',
   /** Unknown member kind: `{{kind}}` */
   'inputs.image.error.unknown-member-kind': 'Ukjend medlemstype: {{kind}}',
   /** Edit hotspot and crop */
@@ -957,12 +957,12 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "Asset Pipeline støttar ikkje hotspot og crop for vektorformat. For å aktivere hotspot & crop, eksporter dette bildet til eit av dei støtta rasterformatene. Til dømes: <code>fm=jpg</code> til <ImageUrlDocumentationLink>bilete-URLen</ImageUrlDocumentationLink> eller kall <code>.format('png')</code> med <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+    "Asset Pipeline støttar ikkje hotspot og crop for vektorformat. For å aktivere hotspot & crop, eksporter dette biletet til eit av dei støtta rasterformatene. Til dømes: <code>fm=jpg</code> til <ImageUrlDocumentationLink>bilete-URLen</ImageUrlDocumentationLink> eller kall <code>.format('png')</code> med <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': 'Sjå utviklarinfo',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
   'inputs.imagetool.vector-warning.title':
-    'Åtvaring: Hotspot og crop kan hende ikkje blir brukt på dette bildet der det er presentert.',
+    'Åtvaring: Hotspot og crop blir kanskje ikkje brukt på dette biletet der det blir vist.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Konverter til <code>{{targetType}}</code>',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1473,7 +1473,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Last inn på nytt',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio blei oppdatert',
+  'package-version.new-package-available.title': 'Sanity Studio er klar for oppdatering!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Administrer medlemmar',
@@ -1522,9 +1522,9 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Rediger tidsplan',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Ny Utgjeving',
+  'release.action.new-release': 'Ny utgjeving',
   'release.action.new-release.limit-reached_other':
-    'Denne arbeidsområdet er begrensa til {{count}} utgjevingar',
+    'Dette arbeidsområdet er avgrensa til {{count}} utgjevingar',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikkje løyve til å utføre denne handlinga',
   /** Action message for running a scheduled draft immediately */
@@ -1548,7 +1548,7 @@ export default removeUndefinedLocaleResources({
     'Klarte ikkje å setje versjonen til å bli avpublisert på utgjeving',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Vellukka sett <strong>{{title}}</strong> til å bli avpublisert på utgjeving',
+    '<strong>{{title}}</strong> er no sett til å bli avpublisert ved utgjeving',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Vis utgjeving',
   /** Action message for when the view scheduled drafts is pressed */
@@ -1643,7 +1643,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Publiser utkast no',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Den tenkte utgjevingstida blir brukt til å lage betre førehandsvisningar og hint om korvidt dokument konflikterar.',
+    'Dette er berre for planlegging, førehandsvisningar og hint om dokument er i konflikt. Å setje ei tid her planlegg ikkje utgjevinga di. Du må framleis køyre eller planleggje utgjevinga når alle dokumenta er klare.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Du kan alltid endre det seinare.',
   /** Title for tooltip to explain release time */
@@ -1665,9 +1665,9 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Publisert',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Utgjevingar',
+  'release.navbar.tooltip': 'Vis planlegging',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'Utan tittel på utgjeving',
+  'release.placeholder-untitled-release': 'Utgjeving utan tittel',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Planlegg for ein framtidig tid og dato.',
   /** Label for date picker when scheduling a release */
@@ -1713,23 +1713,23 @@ export default removeUndefinedLocaleResources({
   'release.toast.published-release.title': "Utgjevinga '{{title}}' blei publisert",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
-    'Klarte ikkje å planleggje det planlagde utkastdokumentet på nytt <strong>{{title}}</strong>: {{error}}',
+    'Klarte ikkje å planleggje det planlagde utkastdokumentet <strong>{{title}}</strong> på nytt: {{error}}',
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
     'Det planlagde utkastdokumentet <strong>{{title}}</strong> har blitt planlagt på nytt.',
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': 'Klarte ikkje å planlegge utkast: {{error}}',
   /** Success toast for scheduling a paused draft */
-  'release.toast.schedule-publish.success': 'Planla utkastet vellukka',
+  'release.toast.schedule-publish.success': 'Utkastet er planlagt',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'Den planlagde utkastet blei publisert',
+  'release.toast.scheduled-draft-published.title': 'Det planlagde utkastet blei publisert',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Ein versjon av dette dokumentet har allereie blitt lagt til',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
   'release.tooltip.locked':
-    'Denne utgjevinga har blitt planlagt. Avplanlegg den for å legge til fleire dokument.',
+    'Denne utgjevinga har blitt planlagt. Avplanlegg ho for å leggje til fleire dokument.',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'Så snart som mogleg',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
@@ -2270,7 +2270,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'Opne sidefeltet',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': 'Krev dette prosjektet',
+  'user-menu.action.claim-project': 'Gjer krav på dette prosjektet',
   /** Label for button showing the free trial days left */
   'user-menu.action.free-trial_one': '{{count}} dag att i prøveperioden',
   'user-menu.action.free-trial_other': '{{count}} dagar att i prøveperioden',

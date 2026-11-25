@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Atualizações automáticas',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Como ativar',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Ativar',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Gerenciar versão',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versão atual',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Como atualizar',
+  'about-dialog.version-info.how-to-upgrade': 'Atualizar agora',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Última versão',
   /** Info text when auto updates is enabled and a new version is available */
@@ -1547,13 +1547,13 @@ export default removeUndefinedLocaleResources({
     'Por favor, tente novamente ou verifique sua conexão. O documento ainda será despublicado ao ser lançado.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Falha ao reverter a configuração para despublicar na liberação.',
+    'Falha ao reverter a configuração de despublicação no lançamento.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Agora você pode editar esta versão.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Revertido com sucesso a configuração para despublicar na liberação.',
+    'Configuração de despublicação no lançamento revertida com sucesso.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Agendar publicação',
   /** Error message for when a version is set to be unpublished */
@@ -1709,7 +1709,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "O lançamento '{{title}}' não pôde ser encontrado",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Falha ao pausar o documento agendado <strong>{{title}}</strong>: {{error}}',
+    'Falha ao pausar o documento de rascunho agendado <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Falha ao publicar o documento de rascunho agendado <strong>{{title}}</strong>: {{error}}',
@@ -1737,7 +1737,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'O rascunho programado foi publicado',
+  'release.toast.scheduled-draft-published.title': 'O rascunho agendado foi publicado',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Uma versão deste documento já foi adicionada',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */

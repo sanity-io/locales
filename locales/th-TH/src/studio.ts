@@ -40,7 +40,7 @@ export default removeUndefinedLocaleResources({
   /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
   'about-dialog.version-info.deprecated.reason': 'เหตุผล: {{reason}}',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'วิธีการอัปเกรด',
+  'about-dialog.version-info.how-to-upgrade': 'อัปเดตตอนนี้',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'เวอร์ชันล่าสุด',
   /** Info text when auto updates is enabled and a new version is available */
@@ -214,10 +214,10 @@ export default removeUndefinedLocaleResources({
     'เกิดข้อผิดพลาดในการพยายามเชื่อมต่อกับ Media Library สำหรับโปรเจคนี้',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'ไม่มีห้องสมุดสื่อที่ได้รับการจัดสรรสำหรับองค์กรนี้',
+    'ไม่มี Media Library ที่ได้รับการจัดสรรสำหรับองค์กรนี้',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': 'ห้องสมุดสื่อ',
-  'asset-sources.media-library.image.title': 'ห้องสมุดสื่อ',
+  'asset-sources.media-library.file.title': 'Media Library',
+  'asset-sources.media-library.image.title': 'Media Library',
   /** Done button text */
   'asset-sources.media-library.open-in-source-dialog.button.done': 'เสร็จสิ้น',
   /** Select new asset button text with target title */
@@ -237,9 +237,9 @@ export default removeUndefinedLocaleResources({
   'asset-sources.media-library.upload-dialog.title': 'อัปโหลดไปยัง Media Library',
 
   /** Banner shown on a document when the selected release has been archived */
-  'banners.archived-release-banner.text': "รีลีส '<strong>{{title}}</strong>' ได้ถูกเก็บถาวรแล้ว",
+  'banners.archived-release-banner.text': "release '<strong>{{title}}</strong>' ถูกเก็บถาวรแล้ว",
   /** Label when a release has been deleted by a different user */
-  'banners.deleted-bundle-banner.text': "การปล่อย '<strong>{{title}}</strong>' ถูกลบแล้ว",
+  'banners.deleted-bundle-banner.text': "release '<strong>{{title}}</strong>' ถูกลบแล้ว",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'ไปยังเดือนถัดไป',
@@ -370,7 +370,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'กำลังโหลดการเปลี่ยนแปลง…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    'เราไม่สามารถหาการแก้ไขเอกสารด้วยไอดี: <code>{{revisionId}}</code> ที่คุณกำลังพยายามเปรียบเทียบได้ <Break/> นี่อาจเป็นเพราะนโยบายการเก็บประวัติของแผนของคุณ <Break/> กรุณาเลือก <strong>From</strong> ที่แตกต่างกัน',
+    'เราไม่พบการแก้ไขเอกสารที่มี ID: <code>{{revisionId}}</code> ซึ่งคุณพยายามเปรียบเทียบ <Break/> ซึ่งอาจเป็นเพราะนโยบายการเก็บประวัติของแผนของคุณ <Break/> โปรดเลือกรายการ <strong>จาก</strong> อื่น',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'แก้ไขเอกสารหรือเลือกเวอร์ชันที่เก่ากว่าในไทม์ไลน์เพื่อดูรายการการเปลี่ยนแปลงที่ปรากฏในแผงนี้',
@@ -419,7 +419,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'ถูกลบ',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'คุณได้เลือกการแก้ไข <strong>from</strong> และ <strong>to</strong> ที่เหมือนกัน, กรุณาเลือกการแก้ไขที่แตกต่างกันเพื่อเปรียบเทียบการเปลี่ยนแปลงระหว่างพวกเขา',
+    'คุณเลือกการแก้ไข <strong>จาก</strong> และ <strong>ไปยัง</strong> เป็นรายการเดียวกัน โปรดเลือกการแก้ไขที่ต่างกันเพื่อเปรียบเทียบการเปลี่ยนแปลงระหว่างกัน',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'เลือกการแก้ไขเดียวกัน',
   /** Title for the Review Changes pane */
@@ -445,13 +445,13 @@ export default removeUndefinedLocaleResources({
 
   /** Tooltip when a variant has more than one condition that is not in the configured list. */
   'conditions.mismatch.multiple':
-    'เวอร์เรียนต์นี้ใช้เงื่อนไขที่ไม่ได้ถูกกำหนดค่าไว้อีกต่อไป แก้ไขเวอร์เรียนต์เพื่อแก้ไขปัญหานี้',
+    'variant นี้ใช้เงื่อนไขที่ไม่ได้ถูกกำหนดค่าไว้อีกต่อไป แก้ไข variant เพื่อแก้ไขปัญหานี้',
   /** Tooltip when a stored condition key is not in the configured list. */
   'conditions.mismatch.unknown-key':
-    'เงื่อนไข "{{key}}" ไม่อยู่ในรายการที่กำหนดค่าไว้ แก้ไขเวอร์เรียนต์เพื่อแก้ไขปัญหานี้',
+    'เงื่อนไข "{{key}}" ไม่อยู่ในรายการที่กำหนดค่าไว้ แก้ไข variant เพื่อแก้ไขปัญหานี้',
   /** Tooltip when a stored condition value is not in the configured list for that key. */
   'conditions.mismatch.unknown-value':
-    'ค่า "{{value}}" ไม่ถูกต้องสำหรับ "{{key}}" แก้ไขเวอร์เรียนต์เพื่อแก้ไขปัญหานี้',
+    'ค่า "{{value}}" ไม่ถูกต้องสำหรับ "{{key}}" แก้ไข variant เพื่อแก้ไขปัญหานี้',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -505,20 +505,19 @@ export default removeUndefinedLocaleResources({
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'จัดการเวอร์ชัน',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
-  'document-group-inventory.feedback.sentiment-label':
-    'เวอร์ชันใหม่ของ inventory ใช้งานง่ายหรือยากเพียงใด?',
+  'document-group-inventory.feedback.sentiment-label': 'คลังเวอร์ชันใหม่ใช้งานง่ายหรือยากเพียงใด?',
   /** The label for the input that filters the variants in the document group inventory */
   'document-group-inventory.filter-string.label': 'กรอง {{subject}}',
   /** The document inventory title (plural) */
   'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': 'กำลังดู',
+  'document-group-inventory.viewing-item-label': 'กำลังแก้ไข',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': 'ผู้ใช้ทั้งหมด (ค่าเริ่มต้น)',
+  'document-group.base-variant': 'ค่าเริ่มต้น',
   /** The text of the actions that open the variant creation form and confirm the creation */
-  'document-group.create-variant': 'สร้าง variant',
+  'document-group.create-variant': 'สร้างเวอร์ชัน',
   /** Describes the variant creation form's picker for the version the new variant starts from */
   'document-group.create-variant.base-description': 'เริ่มต้นจากอะไร',
   /** The label of the variant creation form's picker for the version the new variant starts from */
@@ -540,7 +539,7 @@ export default removeUndefinedLocaleResources({
   /** Describes the variant creation form's picker for the variant definition to create */
   'document-group.create-variant.variant-description': 'ใครเห็นเวอร์ชันนี้',
   /** The label of the variant creation form's picker for the variant definition to create */
-  'document-group.create-variant.variant-label': 'วาเรียนต์',
+  'document-group.create-variant.variant-label': 'Variant',
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action */
   'document-group.delete.cancel-button.text': 'ยกเลิก',
   /** Used in `document-group.delete.cdr-summary.title` */
@@ -590,7 +589,7 @@ export default removeUndefinedLocaleResources({
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
   'document-group.subject.variant_other': 'variants',
   /** Translated noun used as the `{{subject}}` value in document group strings such as `document-group.delete.title` (plural) */
-  'document-group.subject.version_other': 'versions',
+  'document-group.subject.version_other': 'เวอร์ชัน',
   /** The label text that indicates a version in the document group is served for the selected perspective and variant */
   'document-group.version.served': 'แสดงผลอยู่',
   /** The label text that indicates a base version in the document group is served because the selected variant has no version */
@@ -743,7 +742,7 @@ export default removeUndefinedLocaleResources({
   /** Title for help and resources menus */
   'help-resources.title': 'ความช่วยเหลือและทรัพยากร',
   /** Label for studio's which are up to date */
-  'help-resources.up-to-date': 'ปัจจุบัน',
+  'help-resources.up-to-date': 'เป็นเวอร์ชันล่าสุด',
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
@@ -949,7 +948,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'จุดศูนย์กลาง & ตัดภาพ',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "Asset Pipeline ไม่รองรับ hotspot และ crop สำหรับรูปแบบ vector หากต้องการใช้งาน hotspot & crop ให้แสดงผลรูปภาพในรูปแบบ raster ที่รองรับ เช่น: <code>fm=jpg</code> ไปยัง <ImageUrlDocumentationLink>URL ของรูปภาพ</ImageUrlDocumentationLink> หรือเรียก <code>.format('png')</code> ด้วย <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+    "Asset Pipeline ไม่รองรับ hotspot และ crop สำหรับรูปแบบ vector หากต้องการใช้งาน hotspot & crop ให้ส่งออกรูปภาพนี้เป็นรูปแบบ raster ที่รองรับ เช่น เพิ่ม <code>fm=jpg</code> ลงใน <ImageUrlDocumentationLink>URL ของรูปภาพ</ImageUrlDocumentationLink> หรือเรียก <code>.format('png')</code> ด้วย <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': 'ดูข้อมูลนักพัฒนา',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
@@ -1404,7 +1403,7 @@ export default removeUndefinedLocaleResources({
   'insufficient-permissions-message.title': 'สิทธิ์ไม่เพียงพอ',
 
   /** Body of the logged-out banner shown above the login form for an unknown reason */
-  'login.logged-out.generic': 'เซสชันของคุณหมดอายุแล้ว กรุณาลงชื่อเข้าใช้อีกครั้ง',
+  'login.logged-out.generic': 'เซสชันของคุณใช้งานไม่ได้อีกต่อไป กรุณาลงชื่อเข้าใช้อีกครั้ง',
   /** Body of the logged-out banner shown above the login form when the session expired */
   'login.logged-out.session-expired': 'เซสชันของคุณหมดอายุแล้ว กรุณาลงชื่อเข้าใช้อีกครั้ง',
   /** Title of the banner shown above the login form after the studio logs the user out */
@@ -1470,7 +1469,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'รีโหลด',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio ได้รับการอัปเดต',
+  'package-version.new-package-available.title': 'Sanity Studio พร้อมอัปเดตแล้ว!',
 
   /** Accessible name and tooltip for the button that clears the selected global perspective */
   'perspective.action.clear': 'ล้างการเลือก',
@@ -1488,7 +1487,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': 'ใครอยู่ที่นี่',
   /** Tooltip text for document previews when one user is editing the document in a release */
-  'presence.tooltip.one': '{{displayName}} กำลังแก้ไขเอกสารนี้ในรีลีส "{{releaseTitle}}" อยู่ในขณะนี้',
+  'presence.tooltip.one': '{{displayName}} กำลังแก้ไขเอกสารนี้ใน release "{{releaseTitle}}" อยู่ในขณะนี้',
   /** Tooltip text for document previews when one user is editing a published or draft document */
   'presence.tooltip.one-without-release': '{{displayName}} กำลังแก้ไขเอกสารนี้อยู่ในขณะนี้',
   /** Release title used in the document preview presence tooltip when the release has no title */
@@ -1506,17 +1505,17 @@ export default removeUndefinedLocaleResources({
   'relative-time.just-now': 'เมื่อกี้นี้',
 
   /** Action message to add document to new release */
-  'release.action.add-to-new-release': 'เพิ่มเข้าไปในการปล่อย',
+  'release.action.add-to-new-release': 'เพิ่มไปยัง release',
   /** Action message to add document to release */
   'release.action.add-to-release': 'เพิ่มเข้าไปใน {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': 'เอกสารนี้มีอยู่แล้วในการปล่อย',
+  'release.action.already-exists-in-release': 'เอกสารนี้อยู่ใน release แล้ว',
   /** Action message for when document is already in release  */
-  'release.action.already-in-release': 'อยู่ในการปล่อย {{title}} แล้ว',
+  'release.action.already-in-release': 'อยู่ใน release {{title}} แล้ว',
   /** Action message for when you click to view all versions you can copy the current document to */
   'release.action.copy-to': 'คัดลอกเวอร์ชันไปยัง',
   /** Action message for creating new releases */
-  'release.action.create-new': 'การปล่อยใหม่',
+  'release.action.create-new': 'release ใหม่',
   /** Description for toast when version creation failed */
   'release.action.create-version.failure': 'ไม่สามารถสร้างเวอร์ชันได้',
   /** Action message for deleting a scheduled publish */
@@ -1530,8 +1529,8 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'แก้ไขตารางเวลา',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'การปล่อยใหม่',
-  'release.action.new-release.limit-reached_other': 'พื้นที่ทำงานนี้จำกัดไว้ที่ {{count}} รีลีส',
+  'release.action.new-release': 'release ใหม่',
+  'release.action.new-release.limit-reached_other': 'พื้นที่ทำงานนี้จำกัดไว้ที่ {{count}} release',
   /** Action message for pausing a scheduled draft so it can be edited */
   'release.action.pause-to-edit': 'หยุดชั่วคราวเพื่อแก้ไข',
   /** Tooltip message for not having permissions for creating new releases */
@@ -1540,30 +1539,30 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'เผยแพร่ทันที',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'โปรดลองอีกครั้งหรือตรวจสอบการเชื่อมต่อของคุณ ข้อมูลจะยังคงไม่ได้รับการเผยแพร่เมื่อเผยแพร่',
+    'โปรดลองอีกครั้งหรือตรวจสอบการเชื่อมต่อของคุณ เอกสารจะยังคงถูกยกเลิกการเผยแพร่เมื่อ release',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'ไม่สามารถย้อนกลับจากการตั้งค่าเพื่อไม่เผยแพร่เมื่อเผยแพร่',
+    'ไม่สามารถเปลี่ยนกลับการตั้งค่ายกเลิกการเผยแพร่เมื่อ release ได้',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description': 'คุณสามารถแก้ไขเวอร์ชันนี้ได้แล้ว',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'ย้อนกลับจากการตั้งค่าเพื่อไม่เผยแพร่เมื่อเผยแพร่เรียบร้อยแล้ว',
+    'เปลี่ยนกลับการตั้งค่ายกเลิกการเผยแพร่เมื่อ release เรียบร้อยแล้ว',
   /** Action message for scheduling a paused draft */
-  'release.action.schedule-publish': 'กำหนดการเผยแพร่',
+  'release.action.schedule-publish': 'กำหนดเวลาเผยแพร่',
   /** Error message for when a version is set to be unpublished */
-  'release.action.unpublish-version.failure': 'ไม่สามารถตั้งค่าเวอร์ชันให้ไม่เผยแพร่ในการปล่อยได้',
+  'release.action.unpublish-version.failure': 'ไม่สามารถตั้งค่าเวอร์ชันให้ยกเลิกการเผยแพร่เมื่อ release ได้',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'ตั้งค่า <strong>{{title}}</strong> เพื่อไม่เผยแพร่ในการปล่อยเรียบร้อยแล้ว',
+    'ตั้งค่า <strong>{{title}}</strong> ให้ยกเลิกการเผยแพร่เมื่อ release เรียบร้อยแล้ว',
   /** Action message for when the view release is pressed */
-  'release.action.view-release': 'ดูการปล่อย',
+  'release.action.view-release': 'ดู release',
   /** Action message for when the view scheduled drafts is pressed */
   'release.action.view-scheduled-drafts': 'ดูร่างที่มีตารางเวลา',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'กำหนดการเผยแพร่เมื่อ {{date}}',
   /** Label for button to show other variants in the document perspective list */
-  'release.chip.button.other-variants_other': '+{{count}} ตัวแปร',
+  'release.chip.button.other-variants_other': '+{{count}} variant',
   /** Label for button to show other versions in the document perspective list */
   'release.chip.button.other-versions_other': '+{{count}} เวอร์ชัน',
   /** Label for Draft chip in document header */
@@ -1573,7 +1572,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'เผยแพร่แล้ว',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': 'รีลีสนี้ถูกเก็บถาวรและไม่สามารถแก้ไขได้',
+  'release.chip.tooltip.archived': 'release นี้ถูกเก็บถาวรและไม่สามารถแก้ไขได้',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'สร้างเมื่อ {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1586,8 +1585,8 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.no-edits': 'ไม่มีการแก้ไข',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'ยังไม่ได้เผยแพร่',
-  'release.chip.tooltip.other-variants_other': '{{count}} ตัวแปร',
-  'release.chip.tooltip.other-versions_other': '{{count}} เวอร์ชันเพิ่มเติมนอกเหนือจากการเผยแพร่',
+  'release.chip.tooltip.other-variants_other': '{{count}} variant',
+  'release.chip.tooltip.other-versions_other': '{{count}} เวอร์ชันเพิ่มเติมนอก release',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'เผยแพร่เมื่อ {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1595,13 +1594,13 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'ไม่ทราบวันที่',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': 'การปล่อยนี้ได้ถูกลบแล้ว',
+  'release.deleted-tooltip': 'release นี้ถูกลบแล้ว',
   /** Title for copying version to a new release dialog */
-  'release.dialog.copy-to-release.title': 'คัดลอกเวอร์ชันไปยังการปล่อยใหม่',
+  'release.dialog.copy-to-release.title': 'คัดลอกเวอร์ชันไปยัง release ใหม่',
   /** Title for action create a release */
-  'release.dialog.create.confirm': 'สร้างรีลีส',
+  'release.dialog.create.confirm': 'สร้าง release',
   /** Title for creating releases dialog */
-  'release.dialog.create.title': 'สร้างการปล่อย',
+  'release.dialog.create.title': 'release ใหม่',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
     'ลบร่างที่กำหนดเวลานี้หรือไม่? ร่างของคุณอัปเดตแล้ว',
@@ -1643,52 +1642,52 @@ export default removeUndefinedLocaleResources({
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body': 'คุณแน่ใจหรือไม่ว่าต้องการเผยแพร่ร่างที่กำหนดการไว้ทันที?',
   /** Confirm button text for running a scheduled draft immediately */
-  'release.dialog.publish-scheduled-draft.confirm': 'ใช่, ทำตอนนี้',
+  'release.dialog.publish-scheduled-draft.confirm': 'ใช่ เรียกใช้ทันที',
   /** Header for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.header': 'เผยแพร่ร่างทันที',
   /** Label for description in tooltip to explain release types */
-  'release.dialog.tooltip.description': 'สิ่งนี้ทำให้สามารถแสดงว่าเอกสารมีความขัดแย้งกันเมื่อทำงานกับหลายเวอร์ชัน',
+  'release.dialog.tooltip.description':
+    'ใช้สำหรับการวางแผน การแสดงตัวอย่าง และคำแนะนำเกี่ยวกับความขัดแย้งของเอกสารเท่านั้น การตั้งเวลาที่นี่จะไม่ทำให้ release ถูกกำหนดเวลา คุณยังต้องเรียกใช้หรือกำหนดเวลา release เมื่อเอกสารทั้งหมดพร้อมแล้ว',
   /** Label for noting that a release time is not final */
-  'release.dialog.tooltip.note':
-    'หมายเหตุ: คุณสามารถเปลี่ยนเวลาการปล่อยและตั้งเวลาที่แน่นอนสำหรับการเผยแพร่ตามกำหนดเวลาในภายหลัง',
+  'release.dialog.tooltip.note': 'คุณสามารถเปลี่ยนได้ในภายหลังเสมอ',
   /** Title for tooltip to explain release time */
-  'release.dialog.tooltip.title': 'เวลาประมาณของการปล่อย',
+  'release.dialog.tooltip.title': 'เวลา release โดยประมาณ',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholder-describe-release': 'อธิบายเกี่ยวกับการเผยแพร่…',
+  'release.form.placeholder-describe-release': 'อธิบาย release…',
   /** Tooltip for button to hide release visibility */
-  'release.layer.hide': 'ซ่อนการปล่อย',
+  'release.layer.hide': 'ซ่อน release',
   /** Label for the release menu */
-  'release.menu.label': 'เมนูการเผยแพร่',
+  'release.menu.label': 'เมนู release',
   /** Menu item label for scheduled drafts */
   'release.menu.scheduled-drafts': 'ดูร่างที่กำหนดการไว้',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'การกระทำ',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'ดูการเผยแพร่เนื้อหา',
+  'release.menu.view-releases': 'ดู release เนื้อหา',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'ฉบับร่าง',
   /** Placeholder for the releases perspective filter. */
-  'release.navbar.filter-placeholder': 'ค้นหาเวอร์ชันหรือรีลีส',
+  'release.navbar.filter-placeholder': 'ค้นหาเวอร์ชันหรือ release',
   /** Accessible name for the chevron that opens the releases menu */
-  'release.navbar.open-releases': 'เปิดรีลีส',
+  'release.navbar.open-releases': 'เปิด release',
   /** Label for published releases in navbar */
   'release.navbar.published': 'เผยแพร่แล้ว',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'การปล่อย',
+  'release.navbar.tooltip': 'ดูการกำหนดเวลา',
   /** Accessible label for the link that opens a release's page from the global perspective menu */
-  'release.navbar.view-release-aria-label': 'ดูรีลีส {{title}}',
+  'release.navbar.view-release-aria-label': 'ดู release {{title}}',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'การปล่อยที่ไม่มีชื่อ',
+  'release.placeholder-untitled-release': 'release ที่ไม่มีชื่อ',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'กำหนดการเผยแพร่นี้สำหรับเวลาและวันในอนาคต',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': 'กำหนดการเผยแพร่ใน',
+  'release.schedule-dialog.select-publish-date-label': 'เผยแพร่เมื่อ',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
+  'release.toast.archived-release.description': 'release นี้ถูกถอดหมุดแล้ว',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
-  'release.toast.archived-release.title': "การปล่อย '{{title}}' ได้ถูกเก็บถาวร",
+  'release.toast.archived-release.title': "release '{{title}}' ถูกเก็บถาวรแล้ว",
   /** The toast title that will be shown the creating a release fails */
-  'release.toast.create-release-error.title': 'ไม่สามารถสร้างการปล่อยได้',
+  'release.toast.create-release-error.title': 'ไม่สามารถสร้าง release ได้',
   /** Error toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.error':
     'ไม่สามารถลบเอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong>: {{error}}',
@@ -1700,7 +1699,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
-  'release.toast.not-found-release.title': "ไม่พบการปล่อย '{{title}}'",
+  'release.toast.not-found-release.title': "ไม่พบ release '{{title}}'",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
     'ไม่สามารถหยุดร่างที่กำหนดการไว้ของเอกสาร <strong>{{title}}</strong>: {{error}}',
@@ -1711,9 +1710,9 @@ export default removeUndefinedLocaleResources({
   'release.toast.publish-scheduled-draft.success':
     'เอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong> ได้ถูกเผยแพร่แล้ว',
   /** The toast description that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.description': 'รีลีสนี้ได้ถูกถอดหมุดแล้ว',
+  'release.toast.published-release.description': 'release นี้ถูกถอดหมุดแล้ว',
   /** The toast title that will be shown when the user has a release perspective which is now published */
-  'release.toast.published-release.title': "รีลีส '{{title}}' ได้ถูกเผยแพร่",
+  'release.toast.published-release.title': "release '{{title}}' ถูกเผยแพร่แล้ว",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
     'ไม่สามารถเปลี่ยนกำหนดการเอกสารร่างที่กำหนดการไว้ <strong>{{title}}</strong>: {{error}}',
@@ -1725,11 +1724,11 @@ export default removeUndefinedLocaleResources({
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'กำหนดการร่างที่หยุดชั่วคราวเรียบร้อยแล้ว',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
-  'release.toast.scheduled-draft-published.title': 'การร่างตามกำหนดเวลาได้รับการเผยแพร่แล้ว',
+  'release.toast.scheduled-draft-published.title': 'ร่างที่กำหนดเวลาไว้ถูกเผยแพร่แล้ว',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'เวอร์ชันของเอกสารนี้ได้ถูกเพิ่มแล้ว',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
-  'release.tooltip.locked': 'การปล่อยนี้ได้ถูกกำหนดเวลาไว้แล้ว ยกเลิกการกำหนดเวลาเพื่อเพิ่มเอกสารเพิ่มเติม',
+  'release.tooltip.locked': 'release นี้ถูกกำหนดเวลาไว้แล้ว ยกเลิกการกำหนดเวลาเพื่อเพิ่มเอกสารเพิ่มเติม',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'ทันที',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
@@ -1742,17 +1741,17 @@ export default removeUndefinedLocaleResources({
   /** Button text for contacting support in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.contact-support': 'ติดต่อฝ่ายสนับสนุน',
   /** Header for the releases misconfiguration dialog */
-  'releases.upsell.misconfiguration.header': 'ปัญหาการกำหนดค่าการเผยแพร่เนื้อหา',
+  'releases.upsell.misconfiguration.header': 'ปัญหาการกำหนดค่า release เนื้อหา',
   /** Message shown in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.message':
-    'การเผยแพร่เนื้อหาถูกเปิดใช้งานสำหรับโปรเจคของคุณ แต่ดูเหมือนว่าจะมีปัญหาการกำหนดค่ากับขีดจำกัดการเผยแพร่ของคุณ กรุณาติดต่อฝ่ายสนับสนุนเพื่อให้การเผยแพร่เนื้อหาของคุณได้รับการกำหนดค่าอย่างถูกต้อง',
+    'release เนื้อหาถูกเปิดใช้งานสำหรับโปรเจกต์ของคุณ แต่ดูเหมือนว่าจะมีปัญหาการกำหนดค่ากับขีดจำกัด release ของคุณ กรุณาติดต่อฝ่ายสนับสนุนเพื่อให้ release เนื้อหาของคุณได้รับการกำหนดค่าอย่างถูกต้อง',
 
   /** Confirm button text for the schedule publish dialog */
-  'schedule-publish-dialog.confirm': 'กำหนดการ',
+  'schedule-publish-dialog.confirm': 'กำหนดเวลา',
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': 'เลือกเวลาที่เอกสารนี้ควรถูกเผยแพร่',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': 'กำหนดการเผยแพร่ร่าง',
+  'schedule-publish-dialog.header': 'กำหนดเวลาเผยแพร่ร่าง',
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'การเผยแพร่ตามกำหนดการ',
@@ -2116,12 +2115,13 @@ export default removeUndefinedLocaleResources({
 
   'time-zone.action.search-for-timezone-placeholder': 'ค้นหาเมืองหรือเขตเวลา',
   'time-zone.action.select-local-time-zone': 'เลือกเขตเวลาท้องถิ่น',
-  'time-zone.dialog-info.content-releases': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในการปล่อยเนื้อหา',
+  'time-zone.dialog-info.content-releases': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ใน release เนื้อหา',
   'time-zone.dialog-info.input': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่เฉพาะสำหรับการป้อนข้อมูลนี้ในเอกสารนี้',
   'time-zone.dialog-info.scheduled-publishing': 'เขตเวลาที่เลือกจะเปลี่ยนวิธีการแสดงวันที่ในกำหนดการ',
   'time-zone.local-time': 'เวลาท้องถิ่น',
   'time-zone.time-zone': 'เขตเวลา',
-  'time-zone.time-zone-tooltip-content-releases': 'แสดงการปล่อยใน {{alternativeName}} GMT{{offset}}',
+  'time-zone.time-zone-tooltip-content-releases':
+    'แสดง release ใน {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-input':
     'แสดง <em>{{title}}</em> ใน {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':

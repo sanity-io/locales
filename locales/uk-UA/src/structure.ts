@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Скопіювати ID документа',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Скопіювати URL документа',
+  'action.copy-document-url.label': 'Копіювати',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Скопіювати URL документа',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -106,7 +106,7 @@ export default removeUndefinedLocaleResources({
   'action.restore.tooltip': 'Відновити до цієї версії',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
   'action.unpublish.disabled.already-unpublished':
-    'Цей документ вже налаштовано на скасування публікації',
+    'Цей документ уже налаштовано на зняття з публікації',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Цей документ не опубліковано',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -136,7 +136,7 @@ export default removeUndefinedLocaleResources({
     'Виберіть призначення для цього документа:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    'Випуск <VersionBadge>{{title}}</VersionBadge> не активний.',
+    'Реліз <VersionBadge>{{title}}</VersionBadge> неактивний.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Відновити найновішу версію',
   /** The text content for the deleted document banner */
@@ -144,24 +144,26 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Цей тип документа застарів.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Відхилити чернетку',
+  'banners.live-edit-draft-banner.discard.tooltip':
+    'Відхиліть чернетку, щоб продовжити редагування.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Опублікувати, щоб продовжити редагування',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Опублікуйте чернетку, щоб продовжити редагування.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    'Тип <strong>{{schemaType}}</strong> має <code>liveEdit</code> увімкнено, але існує чернетка цього документа. Опублікуйте або відхиліть чернетку, щоб продовжити редагування.',
+    'Тип <strong>{{schemaType}}</strong> має увімкнений <code>liveEdit</code>, але існує чернетка цього документа. Опублікуйте або відхиліть чернетку, щоб продовжити редагування в реальному часі.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Порівняти чернетку',
   /** Tooltip when compare draft is disabled because the published document does not exist */
   'banners.obsolete-draft.actions.compare-draft.tooltip':
-    'Опублікований документ не існує, тому цей чернетковий варіант неможливо порівняти.',
+    'Опублікований документ не існує, тому цю чернетку неможливо порівняти.',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Відхилити чернетку',
   /** The label for the "publish draft" action */
   'banners.obsolete-draft.actions.publish-draft.text': 'Опублікувати чернетку',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
-    'Робочий простір не має включених чернеток, але існує чернеткова версія цього документа.',
+    'У робочому просторі не ввімкнено чернетки, але існує чернетка цього документа.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
     'Розклад зупинено під час редагування. Натисніть Розклад, щоб активувати знову або вибрати нову дату.',

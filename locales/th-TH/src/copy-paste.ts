@@ -13,13 +13,13 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     'ต้องการการเข้าถึงคลิปบอร์ดเพื่อคัดลอกเนื้อหานี้ อนุญาตสิทธิ์คลิปบอร์ดในการตั้งค่าเบราว์เซอร์ของคุณ แล้วลองคัดลอกอีกครั้ง',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'เบราว์เซอร์ของคุณไม่รองรับการกระทำนี้',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'การเข้าถึงคลิปบอร์ดถูกบล็อก',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ค่าว่างเปล่า, ไม่มีอะไรให้คัดลอก',
   /** --- On copy --- */
   /** The error message that is shown when schema types are incompatible */
   'copy-paste.on-copy.validation.schema-type-incompatible.title':
-    'ไม่สามารถแก้ไขประเภทสคีมาสำหรับเส้นทาง: {{path}}',
+    'ไม่สามารถระบุประเภทสคีมาสำหรับเส้นทาง: {{path}}',
   /** The validation message that is shown when array types are incompatible */
   'copy-paste.on-paste.validation.array-type-incompatible.description':
     'ค่าประเภท "{{type}}" ไม่ได้รับอนุญาตในฟิลด์อาร์เรย์นี้',
@@ -64,7 +64,7 @@ export default removeUndefinedLocaleResources({
     'ประเภทสคีมาต้นทางและเป้าหมายไม่เข้ากัน',
   /** The validation message that is shown when schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.title':
-    'ไม่สามารถแก้ไขประเภทสคีมาสำหรับเส้นทาง: {{path}}',
+    'ไม่สามารถระบุประเภทสคีมาสำหรับเส้นทาง: {{path}}',
   /** The validation message that is shown when string values are incompatible */
   'copy-paste.on-paste.validation.string-value-incompatible.description':
     'ค่า "{{value}}" ไม่ได้รับอนุญาตใน "{{allowedStrings}}"',

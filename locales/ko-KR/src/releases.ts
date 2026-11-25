@@ -483,7 +483,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': '유형',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': 'Variant',
+  'table-header.variant': '변형',
   /** Header for the document table in the release tool - when */
   'table-header.when': '시기',
 

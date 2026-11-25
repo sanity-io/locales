@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
     'Apri questo documento in Dashboard per collegarlo a Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
   'action.link-document-disabled.version-document':
-    'I documenti di versione non sono ancora supportati in Canvas',
+    'Le versioni dei documenti non sono ancora supportate in Canvas',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': 'Scollega da Canvas',
 

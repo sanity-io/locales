@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Kopier dokument-ID',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Kopier dokument-URL',
+  'action.copy-document-url.label': 'Kopier',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Kopier dokument-URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -90,7 +90,7 @@ export default removeUndefinedLocaleResources({
   'action.publish.validation-in-progress.label': 'Validerer dokument…',
   /** Toast description when trying to publish with validation errors */
   'action.publish.validation-issues-toast.description':
-    'Vennligst rett valideringsfeila før publisering',
+    'Ver venleg og rett valideringsfeila før publisering',
   /** Toast title when trying to publish with validation errors */
   'action.publish.validation-issues-toast.title': 'Valideringsfeil',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
@@ -125,9 +125,9 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Du ser eit skrivebeskytta dokument som vart arkivert som ein del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikkje redigerast',
+    'Denne dokumentversjonen høyrer til den arkiverte utgjevinga <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': 'Denne planlagde utkastet er arkivert',
+  'banners.archived-scheduled-draft.description': 'Dette planlagde utkastet er arkivert',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Kan ikkje opprette eit utkastdokument.',
@@ -147,9 +147,11 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Denne dokumenttypen er utgått.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Forkast utkast',
+  'banners.live-edit-draft-banner.discard.tooltip':
+    'Forkast utkastet for å halde fram med redigering.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Publiser for å halde fram med redigering',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Publiser utkastet for å halde fram med redigering.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktivert, men det finst eit utkast av dette dokumentet. Publiser eller forkast utkastet for å kunne halde fram med live redigering.',
@@ -218,7 +220,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-end_other': 'utgjevingane',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Dette dokumentet er ein del av <VersionBadge/> utgjevinga og {{count}} meir utgjeving.',
+    'Dette dokumentet er ein del av <VersionBadge/> utgjevinga og {{count}} utgjeving til.',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Dette dokumentet er ein del av <VersionBadge/> utgjevinga og {{count}} fleire utgjevingar',
@@ -234,12 +236,12 @@ export default removeUndefinedLocaleResources({
   'banners.release.not-in-release': 'Ikkje i <VersionBadge>{{title}}</VersionBadge> utgjevinga.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
-    'Vennligst vent medan dokumentet blir lagt til i utgjevinga. Det burde ikkje ta lengre enn nokre sekund.',
+    'Ver tolmodig medan dokumentet blir lagt til i utgjevinga. Det bør ikkje ta meir enn nokre sekund.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.title': 'Legger dokument til utgjeving…',
+  'banners.release.waiting.title': 'Dokumentet blir lagt til i utgjevinga…',
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
-    'Vi kunne ikkje finne dokumentrevisjonen som er vald, vennligst velg eit anna innlegg frå historielista.',
+    'Vi kunne ikkje finne den valde dokumentrevisjonen, vel ei anna oppføring frå historikklista.',
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
     'Eit planlagt utkast for dette dokumentet eksisterer. Om du publiserer endringar no, vil dei bli overskrivne når planen utførast.',
@@ -278,13 +280,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumenthandlinger',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Skjul alle panel',
+  'buttons.focus-pane-button.aria-label.collapse': 'Avslutt fokusmodus (vis navigasjon)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Fokuser panel',
+  'buttons.focus-pane-button.aria-label.focus': 'Gå til fokusmodus (skjul navigasjon)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Skjul alle panel',
+  'buttons.focus-pane-button.tooltip.collapse': 'Avslutt fokusmodus',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Fokuser panel',
+  'buttons.focus-pane-button.tooltip.focus': 'Gå til fokusmodus',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Splitt panel til høgre',
   /** The tool tip for the split pane button on the document panel header */
@@ -302,7 +304,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.editable.popover-description':
     'Canvas lar deg skrive fritt, og deretter oppdatere innhald i Studio utan manuell kopiering felt for felt.',
   /** The heading for the canvas linked banner popover in editable mode*/
-  'canvas.banner.editable.popover-heading': 'Fri-form skriving',
+  'canvas.banner.editable.popover-heading': 'Fri skriving',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Dette utkastdokumentet er knytt til Canvas',
   /** The text for the canvas linked banner when the document is a live document */
@@ -315,7 +317,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-description':
     'Canvas lar deg forfatte i ein fri-form redigerer som automatisk kartlegg tilbake til Studio som strukturert innhald - medan du skriv.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Idé først forfattarskap',
+  'canvas.banner.popover-heading': 'Skriving med idé først',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -538,11 +540,11 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Vi klarer ikkje å laste endringane for dette dokumentet, sannsynligvis på grunn av historikkbevaringspolitikken til planen din, dette viser deg korleis <strong>{{version}}</strong>-versjonen samanliknar med <strong>publisert</strong>-versjonen.',
+    'Vi klarer ikkje å laste endringane for dette dokumentet, truleg på grunn av oppbevaringspolicyen for historikk i planen din. Dette viser korleis <strong>{{version}}</strong>-versjonen samanliknast med den <strong>publiserte</strong> versjonen.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'Samanliknar med publisert',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
-  'events.inspect.release': 'Inspekter <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
+  'events.inspect.release': 'Inspiser <VersionBadge>{{releaseTitle}}</VersionBadge>-dokumentet',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
   'events.open.draft': 'Opne <VersionBadge>utkast</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
@@ -762,11 +764,11 @@ export default removeUndefinedLocaleResources({
   'request-permission-dialog.confirm-button.text': 'Send forespørsel',
   /** The description text for the request permission dialog used in the permissions banner */
   'request-permission-dialog.description.text':
-    'Forespørselen din vil bli sendt til prosjektadministratoren(e). Om du vil, kan du også inkludere ein notat',
+    'Forespørselen din vil bli sendt til prosjektadministratoren(e). Om du vil, kan du også inkludere eit notat',
   /** The header/title for the request permission dialog used in the permissions banner */
   'request-permission-dialog.header.text': 'Spør om redigeringsrett',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': 'Om du vil, kan du legge til ein notat',
+  'request-permission-dialog.note-input.description.text': 'Om du vil, kan du legge til eit notat',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
   'request-permission-dialog.note-input.placeholder.text': 'Legg til notat...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
@@ -774,7 +776,7 @@ export default removeUndefinedLocaleResources({
     'Forespørselen din om tilgang til dette prosjektet har blitt avslått.',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
   'request-permission-dialog.warning.limit-reached.text':
-    'Du har nådd grensa for rolleforespørsler på tvers av alle prosjekt. Vennligst vent før du sender inn flere forespørsler eller kontakt ein administrator for hjelp.',
+    'Du har nådd grensa for rolleforespørslar på tvers av alle prosjekt. Ver venleg og vent før du sender fleire forespørslar, eller kontakt ein administrator for hjelp.',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': 'Lagra',
@@ -821,7 +823,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Utvid',
   /** The text for the published event menu tooltip when the release is not found */
-  'timeline-item.not-found-release.tooltip': 'Utgjeving med id "{{releaseId}}" ikkje funnet',
+  'timeline-item.not-found-release.tooltip': 'Utgjeving med id "{{releaseId}}" ikkje funnen',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
   'toggle-inline-changes.menu-item.title': 'Endringar i teksten',

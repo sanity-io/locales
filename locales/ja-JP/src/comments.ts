@@ -100,7 +100,7 @@ export default removeUndefinedLocaleResources({
    * Consists of a document title wrapped in a link, and a word or phrase to indicate that the link refers to a location:
    * eg "on Home", "on Coffee Machine | Products", "on Pricing – Sanity"
    */
-  'list-item.layout-context': '<IntentLink>{{title}}</IntentLink>の上に',
+  'list-item.layout-context': '<IntentLink>{{title}}</IntentLink>で',
   /** The marker to indicate that a comment has been edited in brackets */
   'list-item.layout-edited': '編集済み',
   /** The error text when sending a comment has failed */

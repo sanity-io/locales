@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.nothing-to-delete': 'Dit document bestaat nog niet of is al verwijderd',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'Dit document kan niet worden verwijderd omdat het bestaat binnen geplande publicaties',
+    'Dit document kan niet worden verwijderd omdat het bestaat binnen geplande releases',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'De geselecteerde release of variant bevat dit document niet',
@@ -338,7 +338,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'De vorige documentparameter is ongeldig.',
   /** The error message shown when releases failed to load */
-  'compare-version.error.loadReleases.title': 'Laden van publicaties mislukt',
+  'compare-version.error.loadReleases.title': 'Laden van releases mislukt',
   /** The error message shown when document versions or variants failed to load */
   'compare-version.error.loadVersions.title': 'Laden van versies mislukt',
 

@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.nothing-to-delete': 'Este documento ainda não existe ou já foi excluído',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'Este documento não pode ser excluído pois está dentro de lançamentos programados',
+    'Este documento não pode ser excluído pois está dentro de lançamentos agendados',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'O release ou variante selecionado não contém este documento',
@@ -144,7 +144,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Este tipo de documento foi descontinuado.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Descartar rascunho',
+  'banners.live-edit-draft-banner.discard.tooltip': 'Descarte o rascunho para continuar editando.',
   /** The text for publish action for the draft banner */
   'banners.live-edit-draft-banner.publish.tooltip': 'Publicar para continuar editando',
   /** The text content for the live edit document when it's a draft */
@@ -164,13 +164,13 @@ export default removeUndefinedLocaleResources({
     'O espaço de trabalho não tem rascunhos habilitados, mas uma versão rascunho deste documento existe.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'Programação pausada durante a edição. Pressione Programar para reativar ou escolha uma nova data.',
+    'Agendamento pausado durante a edição. Pressione Agendar para reativar ou escolha uma nova data.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'Seu papel <Roles/> não tem permissão para criar este documento.',
+    'Seu papel <Roles/> não tem permissão para publicar este documento.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'Seus papéis <Roles/> não têm permissão para criar este documento.',
+    'Seus papéis <Roles/> não têm permissão para publicar este documento.',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     'Seu papel <Roles/> não tem permissão para atualizar este documento.',
@@ -274,13 +274,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Ações do documento',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Recolher todos os painéis',
+  'buttons.focus-pane-button.aria-label.collapse': 'Sair do modo de foco (mostrar navegação)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Focar no painel',
+  'buttons.focus-pane-button.aria-label.focus': 'Entrar no modo de foco (ocultar navegação)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Recolher todos os painéis',
+  'buttons.focus-pane-button.tooltip.collapse': 'Sair do modo de foco',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Focar no painel',
+  'buttons.focus-pane-button.tooltip.focus': 'Entrar no modo de foco',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dividir painel à direita',
   /** The tool tip for the split pane button on the document panel header */
@@ -561,7 +561,7 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-loading': 'Carregando documentos...',
   /** The text for the loading state in the incoming references input */
   'incoming-references-input.types-loading-cross-dataset':
-    'Carregando documentos entre conjuntos de dados...',
+    'Carregando documentos entre datasets...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
     'Nenhuma referência recebida definida para este tipo, consulte a documentação para mais informações.',

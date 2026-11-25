@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.configuration-issue.header': 'Problème de configuration détecté',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
   'about-dialog.configuration-issue.missing-appid':
-    'Les mises à jour automatiques sont activées, mais aucun <code>deployment.appId</code> configuré dans <code>sanity.cli.ts</code>. Ce Studio se met à jour contre le canal <strong>latest</strong>.',
+    "Les mises à jour automatiques sont activées, mais aucun <code>deployment.appId</code> n'est configuré dans <code>sanity.cli.ts</code>. Ce Studio se met à jour selon le canal <strong>latest</strong>.",
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'Voir la documentation',
   /** "Disabled" status for auto-updates in About-dialog */
@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Mises à jour automatiques',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Comment activer',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Activer',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Gérer la version',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Version actuelle',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Comment mettre à niveau',
+  'about-dialog.version-info.how-to-upgrade': 'Mettre à jour maintenant',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Dernière version',
   /** Info text when auto updates is enabled and a new version is available */
@@ -61,7 +61,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the tooltip shown in the dialog close button */
   'announcement.dialog.close': 'Fermer',
   /** Aria label to be used in the dialog close button */
-  'announcement.dialog.close-label': 'Fermer le dialogue',
+  'announcement.dialog.close-label': 'Fermer la boîte de dialogue',
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': 'Fermer',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
@@ -371,7 +371,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Chargement des changements…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    "Nous n'avons pas pu trouver la révision du document avec l'identifiant : <code>{{revisionId}}</code> que vous essayez de comparer. <Break/> Cela est probablement dû à la politique de conservation de l'historique de votre plan. <Break/> Veuillez sélectionner une entrée <strong>Depuis</strong> différente.",
+    "Nous n'avons pas pu trouver la révision du document avec l'identifiant : <code>{{revisionId}}</code> que vous essayez de comparer. <Break/> Cela est probablement dû à la politique de conservation de l'historique de votre plan. <Break/> Veuillez sélectionner une entrée <strong>De</strong> différente.",
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Modifiez le document ou sélectionnez une version antérieure dans la chronologie pour voir une liste de changements apparaître dans ce panneau.',
@@ -1058,7 +1058,7 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.activate-on-focus-message_click-focused':
     'Cliquez ou appuyez sur espace pour activer',
   /** Label for activate on focus with context of tap and not focused */
-  'inputs.portable-text.activate-on-focus-message_tap': 'Tapez pour activer',
+  'inputs.portable-text.activate-on-focus-message_tap': 'Touchez pour activer',
   /** Aria label for the annotation object */
   'inputs.portable-text.annotation-aria-label': "Objet d'annotation",
   /** Title for dialog that allows editing an annotation */
@@ -1453,13 +1453,13 @@ export default removeUndefinedLocaleResources({
 
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
-    'Votre navigateur utilise un protocole HTTP obsolète pour communiquer avec Sanity. Cela peut entraîner une performance considérablement dégradée.',
+    'Votre navigateur utilise un protocole HTTP obsolète pour communiquer avec Sanity. Cela peut considérablement dégrader les performances.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'En savoir plus',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'Ne plus afficher pour cette session',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
-  'network-check.slow-protocol-warning.title': 'Vous avez mis vos freins',
+  'network-check.slow-protocol-warning.title': 'Vous roulez avec le frein à main',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'Créer',
@@ -1531,7 +1531,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version creation failed */
   'release.action.create-version.failure': 'Échec de la création de la version',
   /** Action message for deleting a scheduled publish */
-  'release.action.delete-schedule': 'Supprimer le programme',
+  'release.action.delete-schedule': 'Supprimer la planification',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Supprimer la version',
   /** Description for toast when version discarding failed */
@@ -1539,7 +1539,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
   'release.action.edit-details': 'Modifier les détails',
   /** Action message for editing the schedule of a scheduled publish */
-  'release.action.edit-schedule': 'Modifier le programme',
+  'release.action.edit-schedule': 'Modifier la planification',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nouvelle Publication',
   'release.action.new-release.limit-reached_other':
@@ -1571,7 +1571,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Voir la publication',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': 'Voir les brouillons programmés',
+  'release.action.view-scheduled-drafts': 'Voir les brouillons planifiés',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Programmé pour la publication le {{date}}',
   /** Label for button to show other variants in the document perspective list */
@@ -1625,29 +1625,29 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.title': 'Nouvelle version',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
-    'Supprimer ce brouillon programmé ? Votre brouillon est déjà à jour.',
+    'Supprimer ce brouillon planifié ? Votre brouillon est déjà à jour.',
   /** Body text when deleting scheduled draft and changes will be saved to draft */
   'release.dialog.delete-schedule-draft.body-will-save-to-draft':
-    'Supprimer ce brouillon programmé ? Vos modifications seront enregistrées dans le brouillon.',
+    'Supprimer ce brouillon planifié ? Vos modifications seront enregistrées dans le brouillon.',
   /** Body text when deleting scheduled draft with checkbox shown for user choice */
-  'release.dialog.delete-schedule-draft.body-with-choice': 'Supprimer ce brouillon programmé ?',
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Supprimer ce brouillon planifié ?',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': 'Oui, supprimer le programme',
+  'release.dialog.delete-schedule-draft.confirm': 'Oui, supprimer la planification',
   /** Checkbox label for copying scheduled draft to draft before deletion */
   'release.dialog.delete-schedule-draft.copy-checkbox':
-    'Conserver mes modifications programmées en les copiant dans le brouillon (recommandé)',
+    'Conserver mes modifications planifiées en les copiant dans le brouillon (recommandé)',
   /** Explanation text shown when scheduled draft has different changes than current draft */
   'release.dialog.delete-schedule-draft.different-changes-explanation':
-    'Votre brouillon programmé comporte des modifications différentes de votre brouillon actuel.',
+    'Votre brouillon planifié comporte des modifications différentes de votre brouillon actuel.',
   /** Header for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.header': 'Supprimer le brouillon programmé',
+  'release.dialog.delete-schedule-draft.header': 'Supprimer le brouillon planifié',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body':
-    'Sélectionnez une nouvelle date et heure pour la publication programmée.',
+    'Sélectionnez une nouvelle date et heure pour la publication planifiée.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': 'Mettre à jour le programme',
+  'release.dialog.edit-schedule.confirm': 'Mettre à jour la planification',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': 'Modifier le programme',
+  'release.dialog.edit-schedule.header': 'Modifier la planification',
   /** Label for the save action in the edit release dialog */
   'release.dialog.edit.confirm': 'Enregistrer',
   /** Field label for the release description in the edit release dialog */
@@ -1658,7 +1658,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit.title-label': 'Titre',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
-    'Êtes-vous sûr de vouloir publier ce brouillon programmé immédiatement ?',
+    'Êtes-vous sûr de vouloir publier immédiatement ce brouillon planifié ?',
   /** Confirm button text for running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.confirm': 'Oui, exécuter maintenant',
   /** Header for the dialog confirming running a scheduled draft immediately */
@@ -2268,9 +2268,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was published, with a timestamp */
   'timeline.operation.published_timestamp': 'Publié : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document was unpublished */
-  'timeline.operation.unpublished': 'Non publié',
+  'timeline.operation.unpublished': 'Dépublié',
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
-  'timeline.operation.unpublished_timestamp': 'Non publié : {{timestamp, datetime}}',
+  'timeline.operation.unpublished_timestamp': 'Dépublié : {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been created */
   'timeline.operation.version-created': 'Version créée',
   /** Label shown in review changes timeline when a document version has been created, with a timestamp */

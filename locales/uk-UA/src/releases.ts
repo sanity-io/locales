@@ -164,7 +164,7 @@ export default removeUndefinedLocaleResources({
   /** Status badge value when one or more documents have validation errors. */
   'dashboard.details.metadata.status-errors': 'Помилки',
   /** Status badge value when every document in the release is valid. */
-  'dashboard.details.metadata.status-valid': 'Дійсно',
+  'dashboard.details.metadata.status-valid': 'Валідно',
   /** Status badge value while document validation is still running. */
   'dashboard.details.metadata.status-validating': 'Перевірка',
   /** Text for the releases detail screen in the pin release button. */

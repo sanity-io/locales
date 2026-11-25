@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     '复制此内容需要访问剪贴板。请在浏览器设置中允许剪贴板权限，然后再次尝试复制。',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title': '您的浏览器不支持此操作',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': '剪贴板访问被阻止',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': '空值，无内容可复制',
   /** --- On copy --- */
@@ -32,7 +32,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.clipboard-invalid.title': '剪贴板项无效',
   /** The validation message that is shown when image files are incompatible */
   'copy-paste.on-paste.validation.image-file-incompatible.description':
-    '一个 "{{sourceSchemaType}}" 不允许在一个 "{{targetSchemaType}}"',
+    '“{{sourceSchemaType}}”不允许放在“{{targetSchemaType}}”中',
   /** The error message that is shown when the MIME type is not accepted */
   'copy-paste.on-paste.validation.mime-type-incompatible.description':
     'MIME 类型 "{{mimeType}}" 不被此字段接受',

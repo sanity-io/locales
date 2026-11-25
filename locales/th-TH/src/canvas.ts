@@ -7,7 +7,7 @@ export default removeUndefinedLocaleResources({
   'action.link-document': 'เชื่อมโยงไปยัง Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
   'action.link-document-disabled.initial-value-not-resolved':
-    'โปรดรอจนกว่าค่าเริ่มต้นของเอกสารจะได้รับการแก้ไข',
+    'โปรดรอจนกว่าจะประมวลผลค่าเริ่มต้นของเอกสารเสร็จ',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
   'action.link-document-disabled.missing-permissions': 'คุณไม่มีสิทธิ์ในการเชื่อมโยงเอกสารนี้ไปยัง Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */

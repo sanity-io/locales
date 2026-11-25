@@ -6,20 +6,20 @@ export default removeUndefinedLocaleResources({
   /** The text for the "Link to Canvas" action. */
   'action.link-document': '連結到 Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
-  'action.link-document-disabled.initial-value-not-resolved': '請等待文檔初始值解析完成',
+  'action.link-document-disabled.initial-value-not-resolved': '請等待文件初始值解析完成',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
-  'action.link-document-disabled.missing-permissions': '您沒有權限將此文檔連結到 Canvas',
+  'action.link-document-disabled.missing-permissions': '您沒有權限將此文件連結到 Canvas',
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
-  'action.link-document-disabled.not-in-dashboard': '在儀表板中打開此文檔以連結到 Canvas',
+  'action.link-document-disabled.not-in-dashboard': '在儀表板中打開此文件以連結到 Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': '版本文檔尚不支持在 Canvas 中',
+  'action.link-document-disabled.version-document': 'Canvas 尚不支援版本文件',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': '取消連結 Canvas',
 
   /** The text for the action button in the banner when the document is linked to Canvas. */
   'banner.edit-document-in-canvas': '在 Canvas 中編輯',
   /** The text for the banner when the document is linked to Canvas. */
-  'banner.linked-to-canvas': '此文檔已連結到 Canvas',
+  'banner.linked-to-canvas': '此文件已連結到 Canvas',
 
   /** The text for the "Confirm document changes" dialog cancel button. */
   'dialog.confirm-document-changes.cancel': '取消',
@@ -27,11 +27,11 @@ export default removeUndefinedLocaleResources({
   'dialog.confirm-document-changes.confirm': '接受並繼續',
   /** The description for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.description':
-    '此文檔需要更新以與 Canvas 兼容。\n 現有內容可能會在此過程中被編輯或刪除。',
+    '此文件需要更新以與 Canvas 相容。\n 現有內容可能會在此過程中被編輯或刪除。',
   /** The description for the "Confirm document changes" dialog footer. */
   'dialog.confirm-document-changes.footer-description': '您可以隨時取消連結 Canvas',
   /** The title for the "Confirm document changes" dialog. */
-  'dialog.confirm-document-changes.title': '確認文檔更改',
+  'dialog.confirm-document-changes.title': '確認文件更改',
   /** The text for the Link to Canvas dialog when there is a error. */
   'dialog.link-to-canvas.error': '連結到 Canvas 失敗',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
@@ -44,7 +44,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.cancel': '取消',
   /** The text for the "Unlink from Canvas" dialog description. */
   'dialog.unlink-from-canvas.description':
-    '一旦取消連結，它將可以在這裡編輯，並且未來在 Canvas 中的編輯將不再自動映射到此文檔。',
+    '一旦取消連結，它將可以在這裡編輯，並且未來在 Canvas 中的編輯將不再自動映射到此文件。',
   /** The text for the "Unlink from Canvas" dialog error message. */
   'dialog.unlink-from-canvas.error': '取消連結 Canvas 失敗',
   /** The text for the "Unlink from Canvas" dialog success message. */
@@ -55,7 +55,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlink-action': '現在就取消連結',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
   'dialog.unlink-from-canvas.unlinking':
-    '您正在取消連結 <strong>“{{documentTitle}}”</strong> 與 Canvas。',
+    '您正在取消 <strong>“{{documentTitle}}”</strong> 與 Canvas 的連結。',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions': '缺少導航至Canvas的權限',

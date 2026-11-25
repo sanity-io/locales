@@ -19,16 +19,16 @@ export default removeUndefinedLocaleResources({
   /** The label for the button that will navigate to the next task */
   'buttons.next.tooltip': 'Fara á næsta verkefni',
   /** The label for the button that will previous to the next task */
-  'buttons.previous.tooltip': 'Fara á fyrri verkefni',
+  'buttons.previous.tooltip': 'Fara í fyrra verkefni',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'Ertu viss um að þú viljir eyða þessu verkefni?',
+  'dialog.remove-task.body': 'Þegar verkefni hefur verið eytt er ekki hægt að endurheimta það.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Hætta við',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': 'Fjarlægja',
+  'dialog.remove-task.buttons.confirm.text': 'Eyða',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': 'Fjarlægja verkefni',
+  'dialog.remove-task.title': 'Eyða þessu verkefni?',
 
   /** The text used as a placeholder for the footer action in a document with a single task */
   'document.footer.open-tasks.placeholder_one': 'Opna verkefni',
@@ -57,7 +57,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.subscribed.heading': 'Þú hefur ekki skráð þig á nein verkefni',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
-    'Þegar þú býrð til, breytir eða skrifar athugasemd við verkefni munt þú vera sjálfkrafa skráð(ur)',
+    'Þegar þú býrð til verkefni, breytir því eða skrifar athugasemd við það gerist þú sjálfkrafa áskrifandi að því',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': 'Engin kláruð verkefni',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.status.list.open.assigned.heading': 'Þú ert alveg búinn',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text':
-    'Ný verkefni sem eru úthlutað til þín munu birtast hér',
+    'Ný verkefni sem er úthlutað til þín munu birtast hér',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'Engin verkefni á þessu skjali',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
@@ -90,7 +90,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Engir notendur fundust',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'Veldu notendanafn',
+  'form.input.assignee.search.placeholder': 'Veldu úthlutunaraðila',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Óheimilt',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': 'Skema fannst ekki',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': 'Veldu skjal',
+  'form.input.target.search.placeholder': 'Veldu markskjal',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Titill verkefnis',
   /** The status error message presented when the user does not supply a title */
@@ -137,7 +137,7 @@ export default removeUndefinedLocaleResources({
   'menuitem.duplicate.upsell-tooltip': 'Uppfærðu til að tvöfalda verkefni',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': 'búið til þetta verkefni',
+  'panel.activity.created-fragment': 'bjó til þetta verkefni',
   /** The title of the activity section of the task */
   'panel.activity.title': 'Virkni',
   /** The text used in the activity log when unable to find the user */
@@ -160,7 +160,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Úthlutað',
   /** Label for the Active Document Tab */
-  'tab.document.label': 'Virk skjal',
+  'tab.document.label': 'Virkt skjal',
   /** Label for the Subscribed Tab */
   'tab.subscribed.label': 'Áskrifandi',
 

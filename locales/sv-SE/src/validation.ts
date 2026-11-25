@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Bild krävs',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': 'Tillgången kunde inte hittas i Mediebiblioteket',
+  'object.media-not-found': 'Tillgången kunde inte hittas i Media Library',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': 'Måste vara en referens till en tillgång i Mediebiblioteket',
+  'object.not-media-library-asset': 'Måste vara en referens till en tillgång i Media Library',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Måste vara en referens till ett dokument',
   /** Object references a document which is not published */

@@ -34,7 +34,7 @@ export default removeUndefinedLocaleResources({
     'Ce document doit être mis à jour pour être compatible avec Canvas.\n Le contenu existant peut être modifié ou supprimé dans le cadre de ce processus.',
   /** The description for the "Confirm document changes" dialog footer. */
   'dialog.confirm-document-changes.footer-description':
-    'Vous pouvez vous dissocier de Canvas à tout moment',
+    'Vous pouvez dissocier ce document de Canvas à tout moment',
   /** The title for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.title': 'Confirmer les modifications du document',
   /** The text for the Link to Canvas dialog when there is a error. */

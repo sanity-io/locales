@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Diese API-Version unterstützt keine komplexen Perspektiven. Verwenden Sie {{apiVersion}} oder höher.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Diese API-Version unterstützt keine Inhaltsvarianten. Verwenden Sie die experimentelle API-Version ({{apiVersion}}).',
+    'Diese API-Version unterstützt keine Inhaltsvarianten. Verwenden Sie {{apiVersion}} oder höher.',
   /** Label for "Query" editor/input */
   'query.label': 'Abfrage',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */

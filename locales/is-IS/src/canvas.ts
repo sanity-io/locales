@@ -7,7 +7,7 @@ export default removeUndefinedLocaleResources({
   'action.link-document': 'Tengja við Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
   'action.link-document-disabled.initial-value-not-resolved':
-    'Vinsamlegast bíðið þar til upphafsgildi skjalsins eru leyst',
+    'Vinsamlegast bíddu þar til upphafsgildi skjalsins hafa verið ákvörðuð',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
   'action.link-document-disabled.missing-permissions':
     'Þú hefur ekki heimildir til að tengja þetta skjal við Canvas',
@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   'action.link-document-disabled.not-in-dashboard':
     'Opnaðu þetta skjal í mælaborði til að tengja við Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': 'Útgáfu skjöl eru ekki enn studd í Canvas',
+  'action.link-document-disabled.version-document': 'Útgáfuskjöl eru ekki enn studd í Canvas',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': 'Aftengja frá Canvas',
 

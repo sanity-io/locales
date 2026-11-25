@@ -76,7 +76,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'การตรวจสอบ',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': 'เอกสารกำลังจะไม่เผยแพร่, ไม่มีข้อผิดพลาดในการตรวจสอบที่แสดง',
+  'panel.unpublish-message': 'เอกสารกำลังจะถูกยกเลิกการเผยแพร่ ไม่มีข้อผิดพลาดในการตรวจสอบที่แสดง',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug ต้องมีค่า',

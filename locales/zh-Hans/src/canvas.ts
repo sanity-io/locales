@@ -12,7 +12,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the "Link to Canvas" action when the document is not in the dashboard. */
   'action.link-document-disabled.not-in-dashboard': '在仪表板中打开此文档以链接到 Canvas',
   /** The text for the "Link to Canvas" action when the document is a version document. */
-  'action.link-document-disabled.version-document': '版本文档尚不支持在 Canvas 中',
+  'action.link-document-disabled.version-document': 'Canvas 尚不支持版本文档',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': '从 Canvas 中取消链接',
 

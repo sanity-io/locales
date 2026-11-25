@@ -22,18 +22,18 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': '前のタスクに戻る',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'このタスクを削除してもよろしいですか？',
+  'dialog.remove-task.body': '削除したタスクは元に戻せません。',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'キャンセル',
   /** The label for the confirmation button on the remove task dialog */
   'dialog.remove-task.buttons.confirm.text': '削除',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': 'タスクを削除',
+  'dialog.remove-task.title': 'このタスクを削除しますか？',
 
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
   'document.footer.open-tasks.placeholder_other': 'タスクを開く',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': '{{count}}個の開いているタスク',
+  'document.footer.open-tasks.text_other': '{{count}}件の未完了タスク',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.heading': 'あなたに割り当てられたタスクはありません',
@@ -51,7 +51,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.no-active-document.text':
     'アクティブなドキュメントのタスクがここに表示されます。',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.heading': 'あなたはどのタスクにも購読していません',
+  'empty-state.list.subscribed.heading': 'どのタスクも購読していません',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
     'タスクを作成、変更、またはコメントすると自動的に購読されます',
@@ -85,7 +85,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'ユーザーが見つかりません',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'ユーザー名を選択',
+  'form.input.assignee.search.placeholder': '担当者を選択',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': '許可されていません',
   /** Text used in the assignee input tooltip when there is no user assigned */

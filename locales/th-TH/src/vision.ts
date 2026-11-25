@@ -12,9 +12,9 @@ export default removeUndefinedLocaleResources({
   /** Label for setting up a listener */
   'action.listen-execute': 'ฟัง',
   /** Label for query loading table */
-  'action.load-queries': 'โหลดคำถาม',
+  'action.load-queries': 'โหลดคิวรี',
   /** Label for loading a query */
-  'action.load-query': 'โหลดคำถาม',
+  'action.load-query': 'โหลดคิวรี',
   /** Label for cancelling an ongoing query */
   'action.query-cancel': 'ยกเลิก',
   /** Label for executing the query, eg doing a fetch */
@@ -24,7 +24,7 @@ export default removeUndefinedLocaleResources({
   /** Label for saving a personal query */
   'action.save-personal-query': 'บันทึกเป็นส่วนตัว',
   /** Label for saving a query */
-  'action.save-query': 'บันทึกคำถาม',
+  'action.save-query': 'บันทึกคิวรี',
   /** Label for saving a shared query */
   'action.save-shared-query': 'บันทึกเป็นแบบแชร์',
   /** Label for unsharing a query */
@@ -48,9 +48,9 @@ export default removeUndefinedLocaleResources({
   /** Label for savedAt date */
   'label.saved-at': 'บันทึกเมื่อ',
   /** Saved queries */
-  'label.saved-queries': 'คำถามที่บันทึกไว้',
+  'label.saved-queries': 'คิวรีที่บันทึกไว้',
   /** Search queries */
-  'label.search-queries': 'ค้นหาคำถาม',
+  'label.search-queries': 'ค้นหาคิวรี',
   /** Share query */
   'label.share': 'แชร์',
   /** Label for query type "shared" */
@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'API เวอร์ชันนี้ไม่รองรับ perspective ที่ซับซ้อน โปรดใช้ {{apiVersion}} หรือใหม่กว่า',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'API เวอร์ชันนี้ไม่รองรับ content variant โปรดใช้ API เวอร์ชันทดลอง ({{apiVersion}})',
+    'API เวอร์ชันนี้ไม่รองรับ content variant โปรดใช้ {{apiVersion}} หรือใหม่กว่า',
   /** Label for "Query" editor/input */
   'query.label': 'คิวรี',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -97,9 +97,9 @@ export default removeUndefinedLocaleResources({
   'result.timing-not-applicable': 'ไม่มีข้อมูล',
 
   /** Query already saved error label */
-  'save-query.already-saved': 'คำถามถูกบันทึกไว้แล้ว',
+  'save-query.already-saved': 'คิวรีถูกบันทึกไว้แล้ว',
   /** Save error label */
-  'save-query.error': 'เกิดข้อผิดพลาดในการบันทึกคำถาม',
+  'save-query.error': 'เกิดข้อผิดพลาดในการบันทึกคิวรี',
   /** Save personal copy success label */
   'save-query.personal-copy-success': 'บันทึกสำเนาส่วนตัวแล้ว',
   /** Warning displayed before sharing a query */
@@ -108,14 +108,15 @@ export default removeUndefinedLocaleResources({
   /** Save shared query success label */
   'save-query.shared-success': 'บันทึกคิวรีที่แชร์แล้ว',
   /** Save success label */
-  'save-query.success': 'คำถามถูกบันทึกแล้ว',
+  'save-query.success': 'คิวรีถูกบันทึกแล้ว',
   /** Save unshared query success label */
   'save-query.unshared-success': 'ย้ายคิวรีไปยังส่วนตัวแล้ว',
 
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'เวอร์ชัน API',
   /** Tooltip shown when the API version selector is locked because a variant is selected */
-  'settings.api-version-locked-for-variant': 'เมื่อเลือกตัวแปรแล้ว เวอร์ชัน API จะต้องเป็น vX',
+  'settings.api-version-locked-for-variant':
+    'เมื่อเลือก variant แล้ว เวอร์ชัน API จะต้องเป็น {{apiVersion}}',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'เวอร์ชัน API ที่กำหนดเอง',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -131,17 +132,17 @@ export default removeUndefinedLocaleResources({
   'settings.perspective-label': 'Perspective',
   /** Notification about previewDrafts to drafts rename */
   'settings.perspective.preview-drafts-renamed-to-drafts.description':
-    'แง่มุม "<code>previewDrafts</code>" ได้เปลี่ยนชื่อเป็น "<code>drafts</code>" และไม่ได้ใช้งานแล้ว การเปลี่ยนแปลงนี้มีผลกับทุกเวอร์ชันที่รองรับแง่มุม (>= v2021-03-25).',
+    'perspective "<code>previewDrafts</code>" ได้เปลี่ยนชื่อเป็น "<code>drafts</code>" และเลิกใช้งานแล้ว การเปลี่ยนแปลงนี้มีผลกับทุกเวอร์ชันที่รองรับ perspective (>= v2021-03-25)',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'อ่านเอกสาร',
   /** Option for selecting default perspective */
-  'settings.perspectives.default': 'ไม่มีแง่มุม (ค่าเริ่มต้น API)',
+  'settings.perspectives.default': 'ไม่มี perspective (ค่าเริ่มต้นของ API)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives ช่วยให้คุณสามารถทำคิวรีกับ "มุมมอง" ที่แตกต่างกันของเนื้อหาใน dataset ของคุณ',
   /** Description for upcoming default perspective change */
   'settings.perspectives.new-default.description':
-    'แง่มุมเริ่มต้นจะเปลี่ยนจาก "<code>raw</code>" เป็น "<code>published</code>" ในเวอร์ชัน API ที่จะมาถึง กรุณาดูเอกสารเพิ่มเติมสำหรับรายละเอียด.',
+    'perspective เริ่มต้นจะเปลี่ยนจาก "<code>raw</code>" เป็น "<code>published</code>" ในเวอร์ชัน API ที่จะมาถึง โปรดดูรายละเอียดเพิ่มเติมในเอกสาร',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ปักหมุดรีลีส',
   /** Label for the scheduled drafts perspective */
@@ -179,35 +180,34 @@ export default removeUndefinedLocaleResources({
   /** The API version button while the "Other" API version input holds an unfinished version */
   'vision.api-version.button-invalid': 'เวอร์ชัน API ยังไม่สมบูรณ์',
   /** Tooltip of the API version button */
-  'vision.api-version.tooltip': 'คำสั่งค้นหาทำงานกับ API เวอร์ชัน {{version}} เลือกเพื่อเปลี่ยนในตัวเลือก',
+  'vision.api-version.tooltip': 'คิวรีรันกับ API เวอร์ชัน {{version}} เลือกเพื่อเปลี่ยนในตัวเลือก',
   /** Tooltip of the API version button while queries go through the API CDN */
   'vision.api-version.tooltip-cdn':
-    'คำสั่งค้นหาทำงานผ่าน API CDN ด้วย API เวอร์ชัน {{version}} เลือกเพื่อเปลี่ยนในตัวเลือก',
+    'คิวรีรันผ่าน API CDN ด้วย API เวอร์ชัน {{version}} เลือกเพื่อเปลี่ยนในตัวเลือก',
   /**
    * Tooltip of the API version button while the API CDN is asked for but the perspective, as the
    * perspective select names it, keeps queries on the API
    */
   'vision.api-version.tooltip-cdn-blocked':
-    'คำสั่งค้นหาทำงานกับ API เวอร์ชัน {{version}} ไม่ใช่ API CDN เนื่องจากไม่รองรับมุมมอง {{perspective}} เลือกเพื่อเปลี่ยนในตัวเลือก',
+    'คิวรีรันกับ API เวอร์ชัน {{version}} ไม่ใช่ API CDN เนื่องจากไม่รองรับ perspective {{perspective}} เลือกเพื่อเปลี่ยนในตัวเลือก',
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
   'vision.api-version.tooltip-invalid':
     'เวอร์ชัน API ในตัวเลือกยังไม่สมบูรณ์ จึงไม่สามารถดึงข้อมูลได้จนกว่าจะกรอกให้ครบถ้วน',
   /** Tooltip of the API version button while a selected variant forces the variants API version */
-  'vision.api-version.tooltip-locked':
-    'คำสั่งค้นหาทำงานกับ API เวอร์ชัน {{version}} ซึ่งเป็นสิ่งที่ตัวแปรที่เลือกต้องการ',
+  'vision.api-version.tooltip-locked': 'คิวรีรันกับ API เวอร์ชัน {{version}} ซึ่ง variant ที่เลือกต้องการ',
   /** Label of the document after the change in the Delta panel */
   'vision.delta.after': 'หลัง',
   /** Label of the document before the change in the Delta panel */
   'vision.delta.before': 'ก่อน',
   /** What the Delta panel does */
   'vision.delta.description':
-    'เรียกใช้คำสั่งค้นหาในโหมดเดลต้า เช่นเดียวกับที่ webhook, listener และ Sanity Functions ที่ขับเคลื่อนด้วย GROQ ทำงาน: before() และ after() คือเอกสารก่อนและหลังการเปลี่ยนแปลง @ คือเอกสารหลังการเปลี่ยนแปลง และ delta::changedAny() ใช้เปรียบเทียบทั้งสอง การทำงานนี้เกิดขึ้นในเบราว์เซอร์ด้วย groq-js หากฝั่งใดว่างเปล่าหมายถึงไม่มีเอกสาร: การเปลี่ยนแปลงนั้นสร้างหรือลบเอกสารนั้น',
+    'เรียกใช้คิวรีในโหมดเดลต้า เช่นเดียวกับที่ webhook, listener และ Sanity Functions ที่ขับเคลื่อนด้วย GROQ ทำงาน: before() และ after() คือเอกสารก่อนและหลังการเปลี่ยนแปลง @ คือเอกสารหลังการเปลี่ยนแปลง และ delta::changedAny() ใช้เปรียบเทียบทั้งสอง การทำงานนี้เกิดขึ้นในเบราว์เซอร์ด้วย groq-js หากฝั่งใดว่างเปล่าหมายถึงไม่มีเอกสาร: การเปลี่ยนแปลงนั้นสร้างหรือลบเอกสารนั้น',
   /** Label of the document ID field in the Delta panel */
   'vision.delta.document-id': 'รหัสเอกสาร',
   /** Shown when there is a query but no documents to compare */
   'vision.delta.empty': 'โหลดประวัติของเอกสาร หรือเขียนเอกสารลงในช่องก่อนและหลัง',
   /** Shown when the query fails in delta mode */
-  'vision.delta.failed': 'ไม่สามารถเรียกใช้คำสั่งค้นหาในโหมดเดลต้าได้: {{message}}',
+  'vision.delta.failed': 'ไม่สามารถเรียกใช้คิวรีในโหมดเดลต้าได้: {{message}}',
   /** Shown when the After document is not valid JSON */
   'vision.delta.invalid-after': 'After ไม่ใช่ JSON ที่ถูกต้อง: {{message}}',
   /** Shown when the Before document is not valid JSON */
@@ -221,7 +221,7 @@ export default removeUndefinedLocaleResources({
   /** A delta filter that is false for the change */
   'vision.delta.no-match': 'ไม่ตรงกัน: webhook หรือ function ที่มีตัวกรองนี้จะไม่ทำงานสำหรับการเปลี่ยนแปลงนี้',
   /** Shown while the query or its params cannot be sent */
-  'vision.delta.no-request': 'แก้ไข query และพารามิเตอร์ของมันเพื่อรันในโหมด delta',
+  'vision.delta.no-request': 'แก้ไขคิวรีและพารามิเตอร์เพื่อรันในโหมดเดลต้า',
   /** Heading of the delta result */
   'vision.delta.result': 'ผลลัพธ์',
   /** The After choice for a change that deletes the document */
@@ -236,11 +236,11 @@ export default removeUndefinedLocaleResources({
   'vision.explain.description':
     'แผนการ query คือวิธีที่ Content Lake รัน query นั้น ได้แก่ สิ่งที่อ่าน กรอง และจัดเรียงระหว่างการอ่าน และสิ่งที่เหลือไว้สำหรับขั้นตอนถัดไป ปุ่ม Explain this to me จะให้ Sanity Agent Actions อธิบาย query และแผนการของมันด้วยถ้อยคำง่ายๆ ซึ่งจะใช้เครดิต AI หนึ่งหน่วย',
   /** Shown in the Explain panel while there is no valid query to explain */
-  'vision.explain.empty': 'เขียน query เพื่ออธิบายมัน',
+  'vision.explain.empty': 'เขียนคิวรีเพื่ออธิบาย',
   /** Button in the Explain panel asking Agent Actions to explain the query and its plan */
   'vision.explain.explain': 'อธิบายให้ฉันฟัง',
   /** Shown when the explanation could not be written */
-  'vision.explain.failed': 'ไม่สามารถอธิบาย query ได้: {{message}}',
+  'vision.explain.failed': 'ไม่สามารถอธิบายคิวรีได้: {{message}}',
   /** A count the index computes without reading the documents */
   'vision.explain.insight.aggregate': 'นับจากดัชนีโดยไม่ต้องอ่านเอกสาร',
   /** A subquery the plan runs once for all documents */
@@ -262,9 +262,9 @@ export default removeUndefinedLocaleResources({
   /** Heading of the plan insights in the Explain panel */
   'vision.explain.insights.title': 'สิ่งที่น่าสนใจ',
   /** Button in the Explain panel fetching the query plan */
-  'vision.explain.plan': 'แสดงแผนการ query',
+  'vision.explain.plan': 'แสดงแผนการคิวรี',
   /** Shown when the query plan could not be fetched */
-  'vision.explain.plan-failed': 'ไม่สามารถดึงแผนการ query ได้: {{message}}',
+  'vision.explain.plan-failed': 'ไม่สามารถดึงแผนการคิวรีได้: {{message}}',
   /** Heading of the query plan in the Explain panel */
   'vision.explain.plan-title': 'แผนการคิวรี',
   /** Toast shown after a code snippet was copied */
@@ -291,9 +291,9 @@ export default removeUndefinedLocaleResources({
   'vision.export-types.schema-error': 'การประเมินสคีมาล้มเหลว: {{message}}',
   /** Note shown when the types were derived from the fetched result instead of the schema */
   'vision.export-types.source.result':
-    'อนุมานจากผลลัพธ์ที่ดึงมา เนื่องจากไม่สามารถประเมินคิวรีกับสคีมาของ workspace ได้',
+    'อนุมานจากผลลัพธ์ที่ดึงมา เนื่องจากไม่สามารถประเมินคิวรีกับสคีมาของพื้นที่ทำงานได้',
   /** Note shown when the types were derived from the workspace schema */
-  'vision.export-types.source.schema': 'อนุมานจากสคีมาของ workspace ด้วยวิธีเดียวกับที่ sanity typegen ใช้',
+  'vision.export-types.source.schema': 'อนุมานจากสคีมาของพื้นที่ทำงาน ด้วยวิธีเดียวกับที่ sanity typegen ใช้',
   /** Shown when the schema cannot be evaluated and the shown result belongs to an older query */
   'vision.export-types.stale-result':
     'ผลลัพธ์ที่แสดงนี้ถูกดึงมาสำหรับคิวรีหรือพารามิเตอร์ชุดอื่น โปรดเรียกใช้คิวรีปัจจุบันก่อนเพื่อให้มีผลลัพธ์สำหรับใช้สร้างชนิดข้อมูล',
@@ -389,7 +389,7 @@ export default removeUndefinedLocaleResources({
   /** Label of the diff of the GROQ params in a history entry's changes */
   'vision.history.diff.params': 'พารามิเตอร์',
   /** Label of the diff of the GROQ query in a history entry's changes */
-  'vision.history.diff.query': 'คำสั่งสืบค้น',
+  'vision.history.diff.query': 'คิวรี',
   /** Instead of the query diff, when the two queries only differ in whitespace and line breaks */
   'vision.history.diff.query-formatting-only': 'มีการเปลี่ยนแปลงเฉพาะการจัดรูปแบบเท่านั้น',
   /** Label of the diff of the query result in a history entry's changes */
@@ -410,7 +410,7 @@ export default removeUndefinedLocaleResources({
   /** A history entry whose result only differs from the previous one in hidden fields */
   'vision.history.only-hidden-changed': 'มีการเปลี่ยนแปลงเฉพาะฟิลด์ที่ซ่อนอยู่เท่านั้น',
   /** History reason: a tab opened with a generated query fetched it */
-  'vision.history.reason.generated': 'คำสั่งสืบค้นที่สร้างขึ้น',
+  'vision.history.reason.generated': 'คิวรีที่สร้างขึ้น',
   /** History reason: a link to the tool named a query URL, which opened in a tab and ran */
   'vision.history.reason.link': 'ลิงก์ที่เปิด',
   /** History reason: a live event matched the query's sync tags */
@@ -423,7 +423,7 @@ export default removeUndefinedLocaleResources({
    */
   'vision.history.reason.live-start': 'เริ่มการดึงข้อมูลแบบเรียลไทม์',
   /** History reason: a saved query was loaded into a tab that refetches automatically */
-  'vision.history.reason.load': 'โหลดคำสั่งสืบค้นแล้ว',
+  'vision.history.reason.load': 'โหลดคิวรีแล้ว',
   /** History reason: the fetch button was pressed */
   'vision.history.reason.manual': 'ปุ่มดึงข้อมูล',
   /** History reason: mutations were applied from the Mutate panel */
@@ -475,7 +475,7 @@ export default removeUndefinedLocaleResources({
   /** The Live fetch button while the tab refetches automatically, stopping it */
   'vision.live.stop': 'หยุดการดึงข้อมูลสด',
   /** Button in the Mutate panel adding a mutation to the list */
-  'vision.mutate.add': 'เพิ่มการเปลี่ยนแปลง',
+  'vision.mutate.add': 'เพิ่ม mutation',
   /** Adds a mutation creating a document, with the type of the result's first document */
   'vision.mutate.add.create': 'สร้างเอกสาร',
   /** Adds a mutation deleting a document, its ID to fill in */
@@ -561,14 +561,13 @@ export default removeUndefinedLocaleResources({
   /** The API CDN answered from its cache */
   'vision.network.cache.hit': 'พบในแคช',
   /** Under the details of a CDN cache hit */
-  'vision.network.cache.hit-explained':
-    'CDN ตอบกลับด้วยคำตอบที่ถูกแคชไว้จากตำแหน่งใกล้คุณ คำสั่งค้นหาไม่ได้ไปถึง API',
+  'vision.network.cache.hit-explained': 'CDN ตอบกลับด้วยคำตอบที่ถูกแคชไว้จากตำแหน่งใกล้คุณ คิวรีไม่ได้ไปถึง API',
   /** The API CDN answered with a response this session had not seen */
   'vision.network.cache.miss': 'ไม่พบในแคช เท่าที่เซสชันนี้ตรวจพบได้',
   /** The API answered, which caches nothing */
   'vision.network.cache.none': 'ไม่มีการแคช เนื่องจาก API ตอบกลับทุกคำขอด้วยเนื้อหาใหม่เสมอ',
   /** Shown in the Network panel while there is no response */
-  'vision.network.empty': 'เรียกใช้คำสั่งค้นหาเพื่อดูว่าปลายทางใดตอบกลับ ตอบจากแคชหรือไม่ และรันที่ไหน',
+  'vision.network.empty': 'ดึงข้อมูลคิวรีเพื่อดูว่าปลายทางใดตอบกลับ ตอบจากแคชหรือไม่ และรันที่ไหน',
   /** In the Network panel: the endpoint that answered */
   'vision.network.endpoint': 'ตอบกลับโดย',
   /** The live API answered */
@@ -578,14 +577,14 @@ export default removeUndefinedLocaleResources({
   /** In the Network panel: the HTTP method the query was sent with */
   'vision.network.method': 'วิธีการ',
   /** The query and its params went in the URL */
-  'vision.network.method.get': 'GET โดยมีคำสั่งค้นหาและพารามิเตอร์อยู่ใน URL',
+  'vision.network.method.get': 'GET โดยมีคิวรีและพารามิเตอร์อยู่ใน URL',
   /** The query and its params went in the request body */
-  'vision.network.method.post': 'POST โดยมีคำสั่งค้นหาและพารามิเตอร์เป็น JSON body',
+  'vision.network.method.post': 'POST โดยมีคิวรีและพารามิเตอร์เป็น JSON body',
   /** Under the method of a POST request: why the query was not sent in the URL */
   'vision.network.method.post-explained':
-    'คำสั่งค้นหาและพารามิเตอร์มีความยาว {{size}} อักขระในรูปแบบ search params; ตั้งแต่ {{limit}} เป็นต้นไป @sanity/client จะส่งเป็น JSON body แทน เนื่องจาก API จำกัดความยาวของ URL ส่วนตัวเลือกยังคงอยู่ใน URL',
+    'คิวรีและพารามิเตอร์มีความยาว {{size}} อักขระในรูปแบบ search params; ตั้งแต่ {{limit}} เป็นต้นไป @sanity/client จะส่งเป็น JSON body แทน เนื่องจาก API จำกัดความยาวของ URL ส่วนตัวเลือกยังคงอยู่ใน URL',
   /** In the Network panel: the region the query ran in */
-  'vision.network.region': 'คำสั่งค้นหารันที่',
+  'vision.network.region': 'คิวรีรันที่',
   /** The response did not say where the query ran */
   'vision.network.region.unknown': 'ไม่มีการรายงาน',
   /** In the Network panel: the round trip and the time on the server */
@@ -623,16 +622,16 @@ export default removeUndefinedLocaleResources({
    * select shows, such as "Global (drafts)"
    */
   'vision.options.use-cdn.blocked':
-    'API CDN ไม่รองรับ drafts หรือ releases ดังนั้นคำสั่งสืบค้นที่ใช้ perspective {{perspective}} จะถูกส่งไปยัง API แทน ส่วนคำสั่งที่ใช้ published หรือ raw จะใช้ CDN',
+    'API CDN ไม่ให้บริการ drafts หรือ releases ดังนั้นคิวรีที่ใช้ perspective {{perspective}} จะถูกส่งไปยัง API ส่วนคิวรีที่ใช้ published หรือ raw จะใช้ CDN',
   /** Heading of the notice shown while the perspective keeps queries off the API CDN */
-  'vision.options.use-cdn.blocked.title': 'คำสั่งสืบค้นถูกส่งไปยัง API ไม่ใช่ CDN',
+  'vision.options.use-cdn.blocked.title': 'คิวรีถูกส่งไปยัง API ไม่ใช่ CDN',
   /** Description of the API CDN switch */
   'vision.options.use-cdn.description':
-    'ส่งคำสั่งสืบค้นไปยัง API CDN เช่นเดียวกับ useCdn: true ใน @sanity/client โดยใช้ perspective แบบ published และ raw: ส่วน drafts และ releases จะถูกส่งไปยัง API เสมอ คำตอบจะถูกแคชไว้นานสูงสุดหนึ่งนาที; แผงเครือข่าย (Network panel) จะแสดงเมื่อคำตอบมาจากแคช',
+    'ส่งคิวรีไปยัง API CDN เช่นเดียวกับ useCdn: true ใน @sanity/client โดยใช้ perspective แบบ published และ raw: ส่วน drafts และ releases จะถูกส่งไปยัง API เสมอ คำตอบจะถูกแคชไว้นานสูงสุดหนึ่งนาที; แผงเครือข่าย (Network panel) จะแสดงเมื่อคำตอบมาจากแคช',
   /** Button in the API CDN notice switching the tab to the published perspective */
   'vision.options.use-cdn.use-published': 'ใช้ perspective แบบ published',
   /** Label of the variant field */
-  'vision.options.variant-label': 'ตัวแปร (Variant)',
+  'vision.options.variant-label': 'Variant',
   /** Variant option sending the navbar's variant, named */
   'vision.options.variant.global': 'Global ({{name}})',
   /** Variant option sending the navbar's variant while none is selected there */
@@ -674,7 +673,7 @@ export default removeUndefinedLocaleResources({
   /** A boolean param's value is not true or false; it is sent anyway */
   'vision.params-form.invalid.boolean': 'ไม่ใช่ true หรือ false; ถูกส่งเป็น {{value}}',
   /** A document type param's value is not a document type of the workspace; it is sent anyway */
-  'vision.params-form.invalid.document-type': 'ไม่ใช่ประเภทเอกสารในเวิร์กスペース; ส่งไปอยู่ดี',
+  'vision.params-form.invalid.document-type': 'ไม่ใช่ประเภทเอกสารในพื้นที่ทำงานนี้; ส่งไปอยู่ดี',
   /** A whole number param (a slice bound) holds a fraction */
   'vision.params-form.invalid.integer': 'ไม่ใช่จำนวนเต็ม ซึ่ง slice ต้องการ',
   /** A list param's value is not a list; it is sent anyway */
@@ -692,8 +691,7 @@ export default removeUndefinedLocaleResources({
   /** Under a params form field whose param has no value */
   'vision.params-form.missing': 'ยังไม่ได้ตั้งค่า: คิวรีจะล้มเหลวจนกว่าจะมีค่า',
   /** Shown in the params form when the workspace schema could not be read */
-  'vision.params-form.no-schema':
-    'ประเภทข้อมูลมาจากคิวรีเพียงอย่างเดียว: ไม่สามารถอ่านสกีมาของเวิร์กスペースได้',
+  'vision.params-form.no-schema': 'ประเภทข้อมูลมาจากคิวรีเพียงอย่างเดียว: ไม่สามารถอ่านสคีมาของพื้นที่ทำงานได้',
   /** Placeholder of a params form field without a value, and the unset choice of a boolean */
   'vision.params-form.not-set': 'ยังไม่ได้ตั้งค่า',
   /** Button setting a date and time param to the current time */
@@ -751,7 +749,7 @@ export default removeUndefinedLocaleResources({
   'vision.paste.unsupported-perspective': 'มุมมองใน URL ที่วางไม่รองรับที่นี่ จึงยังคงใช้มุมมองปัจจุบัน',
   /** Toast shown when a pasted URL used a content variant, but this workspace has variants switched off */
   'vision.paste.variants-disabled':
-    'URL ที่วางใช้ตัวแปรเนื้อหา "{{variant}}" แต่เวิร์กスペซนี้ปิดการใช้งานตัวแปรไว้ คิวรีจึงรันโดยไม่มีตัวแปรนี้',
+    'URL ที่วางใช้ตัวแปรเนื้อหา "{{variant}}" แต่พื้นที่ทำงานนี้ปิดการใช้งานตัวแปรไว้ คิวรีจึงรันโดยไม่มีตัวแปรนี้',
   /** Accessible label for the query actions menu */
   'vision.query.actions': 'การดำเนินการคิวรี',
   /** Tooltip when automatic refetching is not available for the API version */
@@ -816,7 +814,7 @@ export default removeUndefinedLocaleResources({
   /** Button next to each property in the result tree, copying its value */
   'vision.result.copy-value': 'คัดลอกค่า',
   /** Empty state of the result view */
-  'vision.result.empty': 'เรียกใช้คำสั่งค้นหาเพื่อดูผลลัพธ์ที่นี่',
+  'vision.result.empty': 'เรียกใช้คิวรีเพื่อดูผลลัพธ์ที่นี่',
   /** Button exporting the result as CSV */
   'vision.result.export-csv': 'ส่งออก CSV',
   /** Button exporting the result as JSON */
@@ -858,9 +856,9 @@ export default removeUndefinedLocaleResources({
   /** Tab showing the result as a tree to browse */
   'vision.result.view.tree': 'ต้นไม้',
   /** Empty state of the saved queries panel */
-  'vision.saved.empty': 'ยังไม่มีคำสั่งค้นหาที่บันทึกไว้ บันทึกคำสั่งค้นหาปัจจุบันด้วยปุ่ม +',
+  'vision.saved.empty': 'ยังไม่มีคิวรีที่บันทึกไว้ บันทึกคิวรีปัจจุบันด้วยปุ่ม +',
   /** Empty state of a query list when the search matches nothing */
-  'vision.saved.empty-search': 'ไม่พบคำสั่งค้นหาที่ตรงกับการค้นหาของคุณ',
+  'vision.saved.empty-search': 'ไม่พบคิวรีที่ตรงกับการค้นหาของคุณ',
   /** Menu item loading a saved query into the active tab */
   'vision.saved.load-in-current-tab': 'โหลดเข้าแท็บปัจจุบัน',
   /** Menu item opening a saved query in a new tab */
@@ -877,7 +875,7 @@ export default removeUndefinedLocaleResources({
     'ชุดข้อมูล "{{dataset}}" ของคิวรีที่บันทึกไว้นี้ไม่พร้อมใช้งานที่นี่ จึงยังคงใช้ชุดข้อมูลปัจจุบัน',
   /** Toast shown when an opened saved query used a content variant, but this workspace has variants switched off */
   'vision.saved.variants-disabled':
-    'คิวรีที่บันทึกไว้นี้ใช้ variant "{{variant}}" แต่เวิร์กสเปซนี้ปิดใช้งาน variant ไว้ คิวรีจึงรันโดยไม่มี variant นี้',
+    'คิวรีที่บันทึกไว้นี้ใช้ variant "{{variant}}" แต่พื้นที่ทำงานนี้ปิดใช้งาน variant ไว้ คิวรีจึงรันโดยไม่มี variant นี้',
   /** Button in the settings dialog that clears the stored state */
   'vision.settings.clear-storage': 'ล้างพื้นที่จัดเก็บข้อมูล',
   /** Confirmation button for clearing the storage */
@@ -925,11 +923,11 @@ export default removeUndefinedLocaleResources({
   /** Accessible label for the sidebar navigation */
   'vision.sidebar.label': 'แถบด้านข้างของ Vision',
   /** Sidebar item and drawer title for personal saved queries */
-  'vision.sidebar.saved-queries': 'คำค้นหาที่บันทึกไว้',
+  'vision.sidebar.saved-queries': 'คิวรีที่บันทึกไว้',
   /** Sidebar item opening the settings dialog */
   'vision.sidebar.settings': 'การตั้งค่า',
   /** Sidebar item and drawer title for shared queries */
-  'vision.sidebar.shared-queries': 'คำค้นหาที่แชร์',
+  'vision.sidebar.shared-queries': 'คิวรีที่แชร์',
   /** Sidebar item opening the keyboard shortcuts dialog */
   'vision.sidebar.shortcuts': 'แป้นพิมพ์ลัด',
   /** Empty state of the content source map panel */
@@ -944,25 +942,25 @@ export default removeUndefinedLocaleResources({
   /** Accessible label for the button closing a query tab */
   'vision.tabs.close-tab': 'ปิดแท็บ',
   /** Accessible label for the list of query tabs */
-  'vision.tabs.label': 'แท็บคำค้นหา',
+  'vision.tabs.label': 'แท็บคิวรี',
   /** Accessible label for the button opening a new query tab */
   'vision.tabs.new-tab': 'แท็บใหม่',
   /** Placeholder of the input renaming a tab */
   'vision.tabs.title-placeholder': 'ชื่อแท็บ',
   /** Title of a tab whose query is still empty */
-  'vision.tabs.untitled': 'คำค้นหาที่ไม่มีชื่อ',
+  'vision.tabs.untitled': 'คิวรีที่ไม่มีชื่อ',
   /** Title the browser shows for the WebMCP tool that lints a query */
-  'vision.webmcp.check-query': 'ตรวจสอบคำค้นหา GROQ ใน Vision',
+  'vision.webmcp.check-query': 'ตรวจสอบคิวรี GROQ ใน Vision',
   /** Title the browser shows for the WebMCP tool that describes the workspace schema */
   'vision.webmcp.describe-schema': 'อธิบายสคีมาใน Vision',
   /** Title the browser shows for the WebMCP tool that returns a query plan */
-  'vision.webmcp.explain-query': 'อธิบายแผนการทำงานของคำค้นหา GROQ ใน Vision',
+  'vision.webmcp.explain-query': 'อธิบายแผนการทำงานของคิวรี GROQ ใน Vision',
   /** Title the browser shows for the WebMCP tool that reads the active Vision tab */
   'vision.webmcp.get-state': 'อ่านแท็บ Vision ที่เปิดอยู่',
   /** Title the browser shows for the WebMCP tool that opens a query in a new tab */
-  'vision.webmcp.open-query': 'เปิดคำค้นหา GROQ ใน Vision',
+  'vision.webmcp.open-query': 'เปิดคิวรี GROQ ใน Vision',
   /** Title the browser shows for the WebMCP tool that runs mutations as a dry run */
   'vision.webmcp.preview-mutations': 'ดูตัวอย่างการเปลี่ยนแปลงข้อมูลใน Vision',
   /** Title the browser shows for the WebMCP tool that runs a query */
-  'vision.webmcp.run-query': 'เรียกใช้คำค้นหา GROQ ใน Vision',
+  'vision.webmcp.run-query': 'เรียกใช้คิวรี GROQ ใน Vision',
 })

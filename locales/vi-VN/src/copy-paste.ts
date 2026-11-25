@@ -11,10 +11,9 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': 'Dán trường',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
-    'Yêu cầu quyền truy cập bảng ghi để sao chép nội dung này. Cho phép quyền truy cập bảng ghi trong cài đặt trình duyệt của bạn, sau đó thử sao chép lại.',
+    'Cần quyền truy cập clipboard để sao chép nội dung này. Hãy cho phép quyền truy cập clipboard trong cài đặt trình duyệt của bạn, sau đó thử sao chép lại.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Trình duyệt của bạn không hỗ trợ hành động này',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Quyền truy cập clipboard bị chặn',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Giá trị trống, không có gì để sao chép',
   /** --- On copy --- */
@@ -59,7 +58,7 @@ export default removeUndefinedLocaleResources({
     'Tham chiếu loại "{{sourceReferenceType}}" không được phép trong trường tham chiếu chấp nhận các loại "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Tài liệu tham khảo "{{ref}}" không tồn tại',
+    'Tài liệu được tham chiếu "{{ref}}" không tồn tại',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Các loại schema nguồn và đích không tương thích',

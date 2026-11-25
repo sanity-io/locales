@@ -88,15 +88,15 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Nicht zugewiesen',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': 'Zuweisenden festlegen',
+  'form.input.assignee.no-user-assigned.tooltip': 'Zugewiesene Person festlegen',
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Keine Benutzer gefunden',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'Zuweisenden auswählen',
+  'form.input.assignee.search.placeholder': 'Zugewiesene Person auswählen',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Unautorisiert',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': 'Zuweisenden ändern',
+  'form.input.assignee.user-assigned.tooltip': 'Zugewiesene Person ändern',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'Benutzer nicht gefunden',
   /** The label used in the create more toggle */

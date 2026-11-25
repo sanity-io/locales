@@ -52,9 +52,9 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': "Зображення обов'язкове",
   /** Media can't be found in the Media Library */
-  'object.media-not-found': 'Актив не можна знайти в Медіатеці',
+  'object.media-not-found': 'Актив не знайдено в Media Library',
   /** Media object is missing a reference to a document in its `_ref` field */
-  'object.not-media-library-asset': 'Має бути посилання на актив Медіатеки',
+  'object.not-media-library-asset': 'Має бути посилання на актив Media Library',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Має бути посиланням на документ',
   /** Object references a document which is not published */

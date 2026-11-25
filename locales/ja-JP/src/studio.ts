@@ -37,7 +37,7 @@ export default removeUndefinedLocaleResources({
   /** "Reload"-button when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload': 'リロード',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': '更新するためにStudioをリロードする',
+  'about-dialog.version-info.reload-to-update': 'Studioをリロードして更新',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': '開発',
   /** "New version available" tooltip in About-dialog */
@@ -711,7 +711,7 @@ export default removeUndefinedLocaleResources({
   /** Menu item for registered studios (i.e. copies app id) */
   'help-resources.studio-app-id': 'アプリID',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': 'v{{newVersion}}に更新するためにリロードする',
+  'help-resources.studio-auto-update-now': 'リロードしてv{{newVersion}}に更新',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studioバージョン {{studioVersion}}',
   /** Title for help and resources menus */
@@ -1514,7 +1514,7 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': '今すぐ公開',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'もう一度試すか、接続を確認してください。リリース時にドキュメントはまだ非公開になります。',
+    'もう一度お試しいただくか、接続を確認してください。ドキュメントは引き続き、リリース時に非公開になります。',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
     'リリース時の非公開設定を元に戻すことに失敗しました。',
@@ -1535,7 +1535,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'リリースを表示',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': '予定された下書きを見る',
+  'release.action.view-scheduled-drafts': 'スケジュール済み下書きを見る',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': '{{date}}に公開予定',
   /** Label for button to show other variants in the document perspective list */
@@ -1597,7 +1597,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.delete-schedule-draft.different-changes-explanation':
     'あなたのスケジュールされたドラフトは現在のドラフトと異なる変更があります。',
   /** Header for the dialog confirming deletion of a scheduled draft */
-  'release.dialog.delete-schedule-draft.header': '予定された下書きを削除',
+  'release.dialog.delete-schedule-draft.header': 'スケジュールされたドラフトを削除',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': '予定された公開のための新しい日付と時間を選択してください。',
   /** Confirm button text for change schedule dialog */
@@ -1664,10 +1664,10 @@ export default removeUndefinedLocaleResources({
   'release.toast.create-release-error.title': 'リリースの作成に失敗しました',
   /** Error toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.error':
-    '予定された下書きドキュメント <strong>{{title}}</strong> の削除に失敗しました：{{error}}',
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>の削除に失敗しました：{{error}}',
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
-    '予定された下書きドキュメント <strong>{{title}}</strong> が削除されました。',
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>が削除されました。',
   /** The toast title shown when saving edits to a release's details fails */
   'release.toast.edit-release-error.title': 'リリースの詳細を保存できませんでした',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
@@ -1679,10 +1679,10 @@ export default removeUndefinedLocaleResources({
     'スケジュールされた下書きドキュメント<strong>{{title}}</strong>の一時停止に失敗しました：{{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
-    '予定された下書きドキュメント <strong>{{title}}</strong> の即時公開に失敗しました：{{error}}',
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>の公開に失敗しました：{{error}}',
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
-    '予定された下書きドキュメント <strong>{{title}}</strong> が公開されました。',
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>が公開されました。',
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
@@ -1693,10 +1693,10 @@ export default removeUndefinedLocaleResources({
   'release.toast.published-release.title': "'{{title}}' リリースが公開されました",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
-    '予定された下書きドキュメント <strong>{{title}}</strong> の再スケジュールに失敗しました：{{error}}',
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>の再スケジュールに失敗しました：{{error}}',
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
-    '予定された下書きドキュメント <strong>{{title}}</strong> のスケジュールが変更されました。',
+    'スケジュールされた下書きドキュメント<strong>{{title}}</strong>のスケジュールが変更されました。',
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': '下書きのスケジュールに失敗しました：{{error}}',
   /** Success toast for scheduling a paused draft */
@@ -1704,7 +1704,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': '予定されていたドラフトが公開されました',
+  'release.toast.scheduled-draft-published.title': 'スケジュールされた下書きが公開されました',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
@@ -1732,7 +1732,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': 'このドキュメントをいつ公開するか選択してください。',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': '公開のためのドラフトをスケジュールする',
+  'schedule-publish-dialog.header': 'ドラフトの公開をスケジュールする',
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': '予定された公開',
@@ -2261,7 +2261,7 @@ export default removeUndefinedLocaleResources({
   'tree-editing-dialog.sidebar.action.open': 'サイドバーを開く',
 
   /** Label for action to claim a project created through unauthenticated provisioning */
-  'user-menu.action.claim-project': 'このプロジェクトを請求する',
+  'user-menu.action.claim-project': 'このプロジェクトを引き継ぐ',
   'user-menu.action.free-trial_other': 'トライアル期間があと{{count}}日',
   /** Label for the button showed after trial ended */
   'user-menu.action.free-trial-finished': '無料からアップグレード',

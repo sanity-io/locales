@@ -155,7 +155,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "created" metadata in the release detail header zone. */
   'dashboard.details.metadata.created': 'Đã tạo',
   /** Label for the document-count metadata in the release detail header zone. */
-  'dashboard.details.metadata.documents': 'Documents',
+  'dashboard.details.metadata.documents': 'Tài liệu',
   /** Label for the schedule/type metadata in the release detail header zone. */
   'dashboard.details.metadata.schedule': 'Lịch trình',
   /** Label for the validation status metadata in the release detail header zone. */
@@ -488,7 +488,7 @@ export default removeUndefinedLocaleResources({
   /** Header for the document table in the release tool - type */
   'table-header.type': 'Loại',
   /** Header for the document table in the release tool - variant (which variant a document targets) */
-  'table-header.variant': 'Variant',
+  'table-header.variant': 'Biến thể',
   /** Header for the document table in the release tool - when */
   'table-header.when': 'Khi nào',
 

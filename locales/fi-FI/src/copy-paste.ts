@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     'Leikepöydän käyttö vaaditaan tämän sisällön kopioimiseen. Salli leikepöydän käyttöoikeudet selaimen asetuksista ja yritä kopioimista uudelleen.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Selaimesi ei tue tätä toimintoa',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Leikepöydän käyttö estetty',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Tyhjä arvo, ei mitään kopioitavaa',
   /** --- On copy --- */
@@ -58,7 +58,7 @@ export default removeUndefinedLocaleResources({
     'Viitetyyppiä "{{sourceReferenceType}}" ei sallita viitekentässä, joka hyväksyy tyypit "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Viitatun asiakirjan "{{ref}}" ei ole olemassa',
+    'Viitattua asiakirjaa "{{ref}}" ei ole olemassa',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Lähde- ja kohdeskeematyypit eivät ole yhteensopivia',

@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'このAPIバージョンは複合パースペクティブをサポートしていません。{{apiVersion}}以降を使用してください。',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'このAPIバージョンはコンテンツバリアントをサポートしていません。実験的なAPIバージョン({{apiVersion}})を使用してください。',
+    'このAPIバージョンはコンテンツバリアントをサポートしていません。{{apiVersion}}以降を使用してください。',
   /** Label for "Query" editor/input */
   'query.label': 'クエリ',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'APIバージョン',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'バリアントが選択されている場合、APIバージョンはvXである必要があります。',
+    'バリアントが選択されている場合、APIバージョンは{{apiVersion}}である必要があります。',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'カスタムAPIバージョン',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -146,7 +146,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'ピン留めされたリリース',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': '予定された下書き',
+  'settings.perspectives.scheduled-drafts': 'スケジュール済み下書き',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': 'パースペクティブ',
 })

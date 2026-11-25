@@ -71,10 +71,10 @@ export default removeUndefinedLocaleResources({
   'query.error.line': 'ხაზი',
   /** Extra explanation when a 400 is returned for a release perspective on an old API version */
   'query.error.unsupported-release-perspective':
-    'ეს API-ის ვერსია არ უჭერს მხარს კომპლექსურ პერსპექტივებს. გამოიყენეთ {{apiVersion}} ან უფრო ახალი ვერსია.',
+    'ეს API ვერსია არ უჭერს მხარს კომპლექსურ perspective-ებს. გამოიყენეთ {{apiVersion}} ან უფრო ახალი.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'ეს API-ის ვერსია არ უჭერს მხარს კონტენტის ვარიანტებს. გამოიყენეთ ექსპერიმენტული API-ის ვერსია ({{apiVersion}}).',
+    'ეს API ვერსია არ უჭერს მხარს კონტენტის ვარიანტებს. გამოიყენეთ {{apiVersion}} ან უფრო ახალი.',
   /** Label for "Query" editor/input */
   'query.label': 'მოძებნა',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'API ვერსია',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'როდესაც არჩეულია ვარიანტი, API-ის ვერსია უნდა იყოს vX.',
+    'როდესაც ვარიანტია არჩეული, API ვერსია უნდა იყოს {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'საკუთარი API ვერსია',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -132,17 +132,17 @@ export default removeUndefinedLocaleResources({
   'settings.perspective-label': 'Perspective',
   /** Notification about previewDrafts to drafts rename */
   'settings.perspective.preview-drafts-renamed-to-drafts.description':
-    'პერსპექტივა "<code>previewDrafts</code>" გადარქმევა "<code>drafts</code>"-ად და ახლა გაუქმებულია. ეს ცვლილება ძალაშია ყველა ვერსიაში, სადაც არის პერსპექტივის მხარდაჭერა (>= v2021-03-25).',
+    '"<code>previewDrafts</code>" perspective გადაერქვა "<code>drafts</code>"-ად და ახლა მოძველებულია. ეს ცვლილება ძალაშია perspective-ის მხარდაჭერის მქონე ყველა ვერსიაში (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'დოკუმენტაციის წაკითხვა',
   /** Option for selecting default perspective */
-  'settings.perspectives.default': 'პერსპექტივა არ არის (API სტანდარტი)',
+  'settings.perspectives.default': 'perspective-ის გარეშე (API-ის ნაგულისხმევი)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspectives გაძლევთ შესაძლებლობას გაუშვათ თქვენი მოძებნა სხვადასხვა "ხედვებიდან" თქვენი dataset-ის კონტენტზე',
   /** Description for upcoming default perspective change */
   'settings.perspectives.new-default.description':
-    'სტანდარტული პერსპექტივა შეიცვლება "<code>raw</code>"-დან "<code>published</code>"-ზე მომავალ API ვერსიაში. გთხოვთ, დახედეთ დოკუმენტაციას უფრო დეტალურად.',
+    'ნაგულისხმევი perspective შეიცვლება "<code>raw</code>"-დან "<code>published</code>"-ზე API-ის მომავალ ვერსიაში. დეტალებისთვის იხილეთ დოკუმენტაცია.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': 'მიმაგრებული გამოშვება',
   /** Label for the scheduled drafts perspective */

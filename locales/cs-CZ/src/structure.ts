@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Zkopírovat ID dokumentu',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Zkopírovat URL dokumentu',
+  'action.copy-document-url.label': 'Kopírovat',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Zkopírovat URL dokumentu',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -121,7 +121,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Prohlížíte dokument pouze pro čtení, který byl archivován jako součást <VersionBadge>{{title}}</VersionBadge>. Nelze ho upravit',
+    'Tato verze dokumentu patří do archivovaného vydání <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Tento naplánovaný koncept je archivován',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -134,20 +134,22 @@ export default removeUndefinedLocaleResources({
   'banners.choose-new-document-destination.choose-destination': 'Vyberte cíl pro tento dokument:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge> verze není aktivní.',
+    'Vydání <VersionBadge>{{title}}</VersionBadge> není aktivní.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Obnovit nejnovější verzi',
   /** The text content for the deleted document banner */
   'banners.deleted-document-banner.text': 'Tento dokument byl smazán.',
   /** The text content for the deprecated document type banner */
-  'banners.deprecated-document-type-banner.text': 'Tento typ dokumentu byl zastaralý.',
+  'banners.deprecated-document-type-banner.text': 'Tento typ dokumentu je zastaralý.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Zahodit koncept',
+  'banners.live-edit-draft-banner.discard.tooltip':
+    'Zahoďte koncept, abyste mohli pokračovat v úpravách.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Publikovat a pokračovat v úpravách',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Publikujte koncept, abyste mohli pokračovat v úpravách.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    'Typ <strong>{{schemaType}}</strong> má povoleno <code>liveEdit</code>, ale existuje koncept tohoto dokumentu. Pro pokračování v živém úpravách jej publikujte nebo zahoďte.',
+    'Typ <strong>{{schemaType}}</strong> má povoleno <code>liveEdit</code>, ale existuje koncept tohoto dokumentu. Pro pokračování v živých úpravách jej publikujte nebo zahoďte.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Porovnat koncept',
   /** Tooltip when compare draft is disabled because the published document does not exist */
@@ -238,7 +240,7 @@ export default removeUndefinedLocaleResources({
     'Pro tento dokument existuje naplánovaný koncept. Pokud nyní publikujete změny, budou přepsány, když se naplánování spustí.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Tento dokument bude nepublikován jako součást vydání <VersionBadge>{{title}}</VersionBadge>',
+    'Publikace tohoto dokumentu bude zrušena v rámci vydání <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Zobrazuje se aktuální <strong>publikovaná</strong> verze:',
@@ -271,13 +273,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Akce dokumentu',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Sbalit všechny panely',
+  'buttons.focus-pane-button.aria-label.collapse': 'Ukončit režim zaměření (zobrazit navigaci)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Zaměřit panel',
+  'buttons.focus-pane-button.aria-label.focus': 'Vstoupit do režimu zaměření (skrýt navigaci)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Sbalit všechny panely',
+  'buttons.focus-pane-button.tooltip.collapse': 'Ukončit režim zaměření',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Zaměřit panel',
+  'buttons.focus-pane-button.tooltip.focus': 'Vstoupit do režimu zaměření',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Rozdělit panel vpravo',
   /** The tool tip for the split pane button on the document panel header */
@@ -301,7 +303,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the canvas linked banner when the document is a live document */
   'canvas.banner.linked-text.published': 'Tento živý dokument je propojen s Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': 'Tento verze dokumentu je propojen s Canvas',
+  'canvas.banner.linked-text.version': 'Tato verze dokumentu je propojena s Canvas',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': 'Zjistit více',
   /** The description for the canvas linked banner popover */
@@ -527,13 +529,13 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Nemůžeme načíst změny pro tento dokument, pravděpodobně kvůli politice uchovávání historie vašeho plánu, toto vám ukazuje, jak se verze <strong>{{version}}</strong> porovnává s verzí <strong>published</strong>.',
+    'Nemůžeme načíst změny pro tento dokument, pravděpodobně kvůli zásadám uchovávání historie vašeho plánu. Zde vidíte, jak se verze <strong>{{version}}</strong> porovnává s <strong>publikovanou</strong> verzí.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'Porovnání s publikovanou verzí',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Prozkoumat dokument <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': 'Otevřít dokument <VersionBadge>draft</VersionBadge>',
+  'events.open.draft': 'Otevřít dokument <VersionBadge>koncept</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Otevřít vydání <VersionBadge>{{releaseTitle}}</VersionBadge>',
 

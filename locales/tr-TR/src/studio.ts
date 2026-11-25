@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Otomatik Güncellemeler',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Nasıl etkinleştirilir',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Etkinleştir',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Sürümü yönet',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Mevcut sürüm',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Nasıl yükseltileceği',
+  'about-dialog.version-info.how-to-upgrade': 'Şimdi güncelle',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'En son sürüm',
   /** Info text when auto updates is enabled and a new version is available */
@@ -52,7 +52,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.update-button.text': 'Güncelle',
   /** "Upgrade"-button tooltip text */
   'about-dialog.version-info.update-button.tooltip':
-    'Sanity Stüdyosunu nasıl güncelleyeceğinizi öğrenin',
+    "Sanity Studio'yu nasıl güncelleyeceğinizi öğrenin",
   /** "User agent" header in About-dialog */
   'about-dialog.version-info.user-agent.header': 'Kullanıcı aracısı',
   /** "View on GitHub" link from version info dialog */
@@ -416,7 +416,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Kaldırıldı',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Aynı <strong>from</strong> ve <strong>to</strong> revizyonunu seçtiniz, lütfen aralarındaki değişiklikleri karşılaştırmak için farklı revizyonlar seçin.',
+    'Aynı <strong>başlangıç</strong> ve <strong>bitiş</strong> revizyonunu seçtiniz, lütfen aralarındaki değişiklikleri karşılaştırmak için farklı revizyonlar seçin.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'Aynı revizyon seçildi',
   /** Title for the Review Changes pane */
@@ -625,7 +625,7 @@ export default removeUndefinedLocaleResources({
   'document.type.not-found': 'Belge türü "{{type}}" bulunamadı',
 
   /** Error message shown when an action cannot be performed */
-  'errors.unable-to-perform-action': 'Bu işlemi gerçekleştiremiyor',
+  'errors.unable-to-perform-action': 'Bu işlem gerçekleştirilemiyor',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -1502,13 +1502,13 @@ export default removeUndefinedLocaleResources({
   /** Action message to add document to new release */
   'release.action.add-to-new-release': 'Yayına ekle',
   /** Action message to add document to release */
-  'release.action.add-to-release': "{{title}}'a ekle",
+  'release.action.add-to-release': 'Şuraya ekle: {{title}}',
   /** Tooltip message for document that is already added to release */
-  'release.action.already-exists-in-release': 'Belge zaten yayında mevcut',
+  'release.action.already-exists-in-release': 'Belge zaten sürümde mevcut',
   /** Action message for when document is already in release  */
-  'release.action.already-in-release': 'Zaten {{title}} içinde yayında',
+  'release.action.already-in-release': 'Zaten şu sürümde: {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
-  'release.action.copy-to': 'Sürümü kopyala',
+  'release.action.copy-to': 'Sürümü şuraya kopyala',
   /** Action message for creating new releases */
   'release.action.create-new': 'Yeni yayın',
   /** Description for toast when version creation failed */
@@ -1533,37 +1533,38 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Şimdi Yayınla',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Lütfen tekrar deneyin veya bağlantınızı kontrol edin. Belge, yayınlanmamış olarak kalmaya devam edecek.',
+    'Lütfen tekrar deneyin veya bağlantınızı kontrol edin. Belge, sürüm yayınlandığında yine de yayından kaldırılacak.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Yayınlanmamak üzere ayarlanan sürümün geri alınması başarısız oldu.',
+    'Sürümde yayından kaldırma ayarı geri alınamadı.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Şimdi bu sürümü düzenleyebilirsiniz.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Yayınlanmamak üzere ayarlanan sürüm başarıyla geri alındı.',
+    'Sürümde yayından kaldırma ayarı başarıyla geri alındı.',
   /** Action message for scheduling a paused draft */
-  'release.action.schedule-publish': 'Yayınlamayı planla',
+  'release.action.schedule-publish': 'Yayını zamanla',
   /** Error message for when a version is set to be unpublished */
-  'release.action.unpublish-version.failure': 'Sürümün yayından kaldırılması başarısız oldu',
+  'release.action.unpublish-version.failure':
+    'Sürüm, yayınlandığında yayından kaldırılacak şekilde ayarlanamadı',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    '<strong>{{title}}</strong> başarıyla yayından kaldırılmak üzere ayarlandı',
+    '<strong>{{title}}</strong>, sürüm yayınlandığında yayından kaldırılmak üzere başarıyla ayarlandı',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Yayını görüntüle',
   /** Action message for when the view scheduled drafts is pressed */
   'release.action.view-scheduled-drafts': 'Zamanlanmış Taslakları Görüntüle',
   /** Label for banner when release is scheduled */
-  'release.banner.scheduled-for-publishing-on': '{{date}} tarihinde yayımlanmak üzere planlandı',
+  'release.banner.scheduled-for-publishing-on': '{{date}} tarihinde yayımlanmak üzere zamanlandı',
   /** Label for button to show other variants in the document perspective list */
   'release.chip.button.other-variants_one': '+{{count}} varyant',
   /** Label for button to show other variants in the document perspective list */
   'release.chip.button.other-variants_other': '+{{count}} varyant',
   /** Label for button to show other versions in the document perspective list*/
-  'release.chip.button.other-versions_one': '+{{count}} versiyon',
+  'release.chip.button.other-versions_one': '+{{count}} sürüm',
   /** Label for button to show other versions in the document perspective list */
-  'release.chip.button.other-versions_other': '+{{count}} versiyonlar',
+  'release.chip.button.other-versions_other': '+{{count}} sürüm',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Taslak',
   /** Label for Draft chip in global header */
@@ -1587,12 +1588,12 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.not-published': 'Yayınlanmadı',
   'release.chip.tooltip.other-variants_one': 'Bir varyant',
   'release.chip.tooltip.other-variants_other': '{{count}} varyant',
-  'release.chip.tooltip.other-versions_one': 'Yayınlardan bağımsız bir ek versiyon',
-  'release.chip.tooltip.other-versions_other': 'Yayınlardan bağımsız {{count}} ek versiyon',
+  'release.chip.tooltip.other-versions_one': 'Yayınlardan bağımsız bir ek sürüm',
+  'release.chip.tooltip.other-versions_other': 'Yayınlardan bağımsız {{count}} ek sürüm',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': '{{date}} tarihinde yayınlandı',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
-  'release.chip.tooltip.scheduled-for-date': '{{date}} için planlandı',
+  'release.chip.tooltip.scheduled-for-date': '{{date}} için zamanlandı',
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'Bilinmeyen tarih',
   /** Label for tooltip on deleted release */
@@ -1645,7 +1646,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Taslağı Şimdi Yayınla',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Planlanan sürüm zamanı, belgelerin çakışıp çakışmadığı hakkında daha iyi önizlemeler ve ipuçları oluşturmak için kullanılır.',
+    'Bu yalnızca planlama, önizleme ve belgelerin çakışıp çakışmadığına dair ipuçları içindir. Burada bir zaman belirlemek sürümünüzü zamanlamaz. Tüm belgeler hazır olduğunda sürümü yine de çalıştırmanız veya zamanlamanız gerekir.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Daha sonra her zaman değiştirebilirsiniz.',
   /** Title for tooltip to explain release time */
@@ -1657,9 +1658,9 @@ export default removeUndefinedLocaleResources({
   /** Label for the release menu */
   'release.menu.label': 'Yayın Menüsü',
   /** Menu item label for scheduled drafts */
-  'release.menu.scheduled-drafts': 'Planlanmış Taslakları Görüntüle',
+  'release.menu.scheduled-drafts': 'Zamanlanmış Taslakları Görüntüle',
   /** Tooltip for the release menu */
-  'release.menu.tooltip': 'Aksiyonlar',
+  'release.menu.tooltip': 'Eylemler',
   /** Menu item label for viewing content releases */
   'release.menu.view-releases': 'İçerik Yayınlarını Görüntüle',
   /** Label for draft perspective in navbar */
@@ -1667,7 +1668,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Yayınlandı',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Sürümler',
+  'release.navbar.tooltip': 'Zamanlamayı görüntüle',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Başlıksız sürüm',
   /** Description for warning that the published schedule time is in the past */
@@ -1699,7 +1700,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "'{{title}}' yayını bulunamadı",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Planlanmış taslak belgeyi duraklatma başarısız oldu <strong>{{title}}</strong>: {{error}}',
+    'Zamanlanmış taslak belge <strong>{{title}}</strong> duraklatılamadı: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> yayınlanamadı: {{error}}',
@@ -1721,26 +1722,26 @@ export default removeUndefinedLocaleResources({
   'release.toast.reschedule-scheduled-draft.success':
     'Zamanlanmış taslak belgesi <strong>{{title}}</strong> için yeni bir zamanlama yapıldı.',
   /** Error toast for scheduling a paused draft */
-  'release.toast.schedule-publish.error': 'Taslak planlaması başarısız oldu: {{error}}',
+  'release.toast.schedule-publish.error': 'Taslak zamanlanamadı: {{error}}',
   /** Success toast for scheduling a paused draft */
-  'release.toast.schedule-publish.success': 'Taslak başarıyla planlandı',
+  'release.toast.schedule-publish.success': 'Taslak başarıyla zamanlandı',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'Planlanan taslak yayınlandı',
+  'release.toast.scheduled-draft-published.title': 'Zamanlanmış taslak yayınlandı',
   /** Label for when a version of a document has already been added to the release */
-  'release.tooltip.already-added': 'Bu belgenin bir versiyonu zaten eklenmiş',
+  'release.tooltip.already-added': 'Bu belgenin bir sürümü zaten eklenmiş',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
   'release.tooltip.locked':
-    'Bu yayın planlanmış. Daha fazla belge eklemek için planlamayı iptal edin.',
+    'Bu yayın zamanlanmış. Daha fazla belge eklemek için zamanlamayı iptal edin.',
   /** Label for the release type 'as soon as possible' */
-  'release.type.asap': 'ASAP',
+  'release.type.asap': 'En kısa sürede',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
   'release.type.scheduled': 'Belirli bir zamanda',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'Kararsız',
+  'release.type.undecided': 'Belirsiz',
   /** Tooltip for the dropdown to show all versions of document */
-  'release.version-list.tooltip': 'Tüm belge versiyonlarını gör',
+  'release.version-list.tooltip': 'Tüm belge sürümlerini gör',
 
   /** Button text for contacting support in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.contact-support': 'Destek ile İletişime Geç',
@@ -2152,7 +2153,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.dialog-info.input':
     'Seçilen zaman dilimi sadece bu belgedeki bu giriş için tarihlerin nasıl gösterileceğini değiştirecektir.',
   'time-zone.dialog-info.scheduled-publishing':
-    'Seçilen zaman dilimi programlarda tarihlerin nasıl gösterileceğini değiştirecektir.',
+    'Seçilen zaman dilimi, zamanlamalarda tarihlerin nasıl gösterileceğini değiştirecektir.',
   'time-zone.local-time': 'yerel zaman',
   'time-zone.time-zone': 'Zaman dilimi',
   'time-zone.time-zone-tooltip-content-releases':
@@ -2160,10 +2161,10 @@ export default removeUndefinedLocaleResources({
   'time-zone.time-zone-tooltip-input':
     '<em>{{title}}</em> {{alternativeName}} GMT{{offset}} göre gösteriliyor',
   'time-zone.time-zone-tooltip-scheduled-publishing':
-    '{{alternativeName}} GMT{{offset}} göre programları gösteriyor',
+    'Zamanlamalar {{alternativeName}} GMT{{offset}} göre gösteriliyor',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': 'Değişiklikler tarafından',
+  'timeline.changes.title': 'Değişiklik yapan',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description': 'Belge geçmişi işlemleri etkilenmedi.',
   /** Title for error when the timeline for the given document can't be loaded */
@@ -2173,7 +2174,7 @@ export default removeUndefinedLocaleResources({
     "Belge geçmişini görmek için Studio yapılandırmasından events API'sini etkinleştirin.",
   /** Title for error when the timeline for the given version document can't be loaded */
   'timeline.error.load-document-changes-version-title':
-    'Versiyon belgeleri geçmişi yalnızca Events API üzerinden erişilebilir.',
+    'Sürüm belgelerinin geçmişi yalnızca Events API üzerinden kullanılabilir.',
   /** Error description for when the document doesn't have history */
   'timeline.error.no-document-history-description':
     'Belgenin içeriğini değiştirirken, belge sürümleri bu menüde görünecektir.',
@@ -2234,13 +2235,13 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document was unpublished, with a timestamp */
   'timeline.operation.unpublished_timestamp': 'Yayından kaldırıldı: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been created */
-  'timeline.operation.version-created': 'Versiyon oluşturuldu',
+  'timeline.operation.version-created': 'Sürüm oluşturuldu',
   /** Label shown in review changes timeline when a document version has been created, with a timestamp */
-  'timeline.operation.version-created_timestamp': 'Versiyon oluşturuldu: {{timestamp, datetime}}',
+  'timeline.operation.version-created_timestamp': 'Sürüm oluşturuldu: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been discarded */
-  'timeline.operation.version-discarded': 'Versiyon atıldı',
+  'timeline.operation.version-discarded': 'Sürüm atıldı',
   /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
-  'timeline.operation.version-discarded_timestamp': 'Versiyon atıldı: {{timestamp, datetime}}',
+  'timeline.operation.version-discarded_timestamp': 'Sürüm atıldı: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
