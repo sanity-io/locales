@@ -71,10 +71,10 @@ export default removeUndefinedLocaleResources({
   'query.error.line': '行',
   /** Extra explanation when a 400 is returned for a release perspective on an old API version */
   'query.error.unsupported-release-perspective':
-    '此 API 版本不支持复杂的视角（perspectives）。请使用 {{apiVersion}} 或更高版本。',
+    '此 API 版本不支持复杂视角。请使用 {{apiVersion}} 或更高版本。',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    '此 API 版本不支持内容变体（variants）。请使用实验性 API 版本（{{apiVersion}}）。',
+    '此 API 版本不支持内容变体。请使用 {{apiVersion}} 或更高版本。',
   /** Label for "Query" editor/input */
   'query.label': '查询',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API 版本',
   /** Tooltip shown when the API version selector is locked because a variant is selected */
-  'settings.api-version-locked-for-variant': '选择变体后,API 版本需要为 vX。',
+  'settings.api-version-locked-for-variant': '选择变体后，API 版本必须为 {{apiVersion}}。',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': '自定义 API 版本',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -139,11 +139,11 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.description': '视角允许您的查询针对数据集中不同的“视图”运行',
   /** Description for upcoming default perspective change */
   'settings.perspectives.new-default.description':
-    '默认视角将在即将到来的API版本中从“<code>raw</code>”更改为“<code>published</code>”。请咨询文档以获取更多详情。',
+    '默认视角将在即将发布的 API 版本中从“<code>raw</code>”更改为“<code>published</code>”。请查阅文档了解更多详情。',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '固定发布',
   /** Label for the scheduled drafts perspective */
-  'settings.perspectives.scheduled-drafts': '预定草稿',
+  'settings.perspectives.scheduled-drafts': '计划草稿',
   /** Title for popover that explains what "Perspectives" are */
   'settings.perspectives.title': '视角',
 
@@ -186,7 +186,7 @@ export default removeUndefinedLocaleResources({
    * perspective select names it, keeps queries on the API
    */
   'vision.api-version.tooltip-cdn-blocked':
-    '查询将针对 API 版本 {{version}} 运行,而非 API CDN:它不提供 {{perspective}} perspective 的服务。选择此处以在选项中更改它。',
+    '查询将通过 API（而非 API CDN）以 API 版本 {{version}} 运行：API CDN 不提供 {{perspective}} 视角。选择此处以在选项中更改它。',
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
   'vision.api-version.tooltip-invalid':
     '选项中的 API 版本尚未填写完整,因此在填写完成前无法获取任何内容。',
@@ -209,7 +209,7 @@ export default removeUndefinedLocaleResources({
   /** Shown when the After document is not valid JSON */
   'vision.delta.invalid-after': '“之后”不是有效的 JSON:{{message}}',
   /** Shown when the Before document is not valid JSON */
-  'vision.delta.invalid-before': 'Before 不是有效的 JSON：{{message}}',
+  'vision.delta.invalid-before': '“之前”不是有效的 JSON：{{message}}',
   /** Button loading the document's revisions from the History API */
   'vision.delta.load': '加载历史记录',
   /** Shown when the history could not be loaded */
@@ -502,14 +502,14 @@ export default removeUndefinedLocaleResources({
   'vision.mutate.changes-retry': '重试',
   /** What the Mutate panel does */
   'vision.mutate.description':
-    '按 Mutations API 所接受的格式，以列表形式编写变更操作：create、createOrReplace、createIfNotExists、delete 和 patch，可按 ID 或 GROQ 查询指定。试运行会显示它们对每个文档会做什么，而不会实际更改任何内容；然后“应用”会使用你的账户，将它们在一个事务中写入数据集。',
+    '按 Mutations API 所接受的格式，以列表形式编写变更操作：create、createOrReplace、createIfNotExists、delete 和 patch，可按 ID 或 GROQ 查询指定。试运行会显示它们对每个文档会做什么，而不会实际更改任何内容；然后“应用”会使用您的账户，将它们在一个事务中写入数据集。',
   /** What the API says went wrong with one of the mutations */
   'vision.mutate.failure-item': '变更操作 {{index}}：{{message}}',
   /** Tooltip and accessible label of the button opening the generate mutations field */
   'vision.mutate.generate.button': '生成变更操作',
   /** Explanation under the generate mutations field */
   'vision.mutate.generate.description':
-    'Sanity Agent Actions 会根据你的描述、结果中的文档及其类型来编写变更操作，并通过试运行检查每次尝试；每次尝试都会消耗一个 AI 额度。它们会替换此处的变更操作，撤销操作可将其恢复；在你应用之前不会写入任何内容。',
+    'Sanity Agent Actions 会根据您的描述、结果中的文档及其类型来编写变更操作，并通过试运行检查每次尝试；每次尝试都会消耗一个 AI 额度。它们会替换此处的变更操作，撤销操作可将其恢复；在您应用之前不会写入任何内容。',
   /** Shown when no mutations could be generated, above the reason */
   'vision.mutate.generate.failed': '未能生成变更操作',
   /** Accessible label of the description field in the generate mutations bar */
@@ -544,13 +544,14 @@ export default removeUndefinedLocaleResources({
   /** A document the mutations change */
   'vision.mutate.operation.update': '更新',
   /** Button running the mutations as a dry run */
-  'vision.mutate.preview': '演练',
+  'vision.mutate.preview': '试运行',
   /** Heading of the error shown when the dry run failed */
-  'vision.mutate.preview-failed': '演练失败',
+  'vision.mutate.preview-failed': '试运行失败',
   /** Heading of the dry run's outcome */
-  'vision.mutate.preview-heading': '演练',
+  'vision.mutate.preview-heading': '试运行',
   /** Shown over a dry run made for other mutations, another dataset or other options */
-  'vision.mutate.stale': '在此次演练之后,变更、数据集或选项已发生更改。请重新运行以应用它们。',
+  'vision.mutate.stale':
+    '在此次试运行之后，变更操作、数据集或选项已发生更改。请重新试运行以应用它们。',
   /** How many documents the dry run changes and leaves as they are */
   'vision.mutate.summary': '已更改:{{changed}} · 未更改:{{unchanged}}',
   /** In the Network panel: whether a cache answered the query */
@@ -834,7 +835,7 @@ export default removeUndefinedLocaleResources({
    * Note on a graph whose objects or arrays have more entries than it lists; the nodes are the
    * ones in this result, each with its number of entries
    */
-  'vision.result.graph.partial': '{{nodes}} 仅列出前 {{rows}} 个条目。',
+  'vision.result.graph.partial': '仅列出 {{nodes}} 的前 {{rows}} 个条目。',
   /** An object or array in the note, with how many entries it has (always more than listed) */
   'vision.result.graph.partial.node': '{{name}}（{{entries}} 个条目）',
   /** Title of the graph node of the result itself */

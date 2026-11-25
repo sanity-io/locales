@@ -198,7 +198,7 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': "Imatges de l'espai de treball",
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Alguna cosa ha anat malament intentant resoldre la Biblioteca de Mitjans per a aquest projecte.',
+    'Alguna cosa ha anat malament en intentar resoldre la Biblioteca de mitjans per a aquest projecte.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
     "No s'ha provisionat cap biblioteca de mitjans per a aquesta organització.",
@@ -215,7 +215,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': "Edita l'actiu",
   /** Title for the upload dialog (component mode) */
-  'asset-sources.media-library.upload-dialog.title': 'Puja a la Media Library',
+  'asset-sources.media-library.upload-dialog.title': 'Puja a la Biblioteca de mitjans',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Utilitzant el fitxer existent trobat a la biblioteca.',
@@ -1517,7 +1517,7 @@ export default removeUndefinedLocaleResources({
   /** Description for toast when version creation failed */
   'release.action.create-version.failure': 'Ha fallat la creació de la versió',
   /** Action message for deleting a scheduled publish */
-  'release.action.delete-schedule': 'Elimina el calendari',
+  'release.action.delete-schedule': 'Elimina la programació',
   /** Action message for when document is already in release  */
   'release.action.discard-version': 'Descartar versió',
   /** Description for toast when version discarding failed */
@@ -1525,7 +1525,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip/label for the action that opens the release edit dialog on the detail page */
   'release.action.edit-details': 'Edita els detalls',
   /** Action message for editing the schedule of a scheduled publish */
-  'release.action.edit-schedule': 'Edita el calendari',
+  'release.action.edit-schedule': 'Edita la programació',
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': 'Nova Versió',
   'release.action.new-release.limit-reached_other':
@@ -1536,7 +1536,7 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Publica ara',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Torneu-ho a intentar o comproveu la vostra connexió. El document encara es mantindrà sense publicar en el moment del llançament.',
+    'Torneu-ho a intentar o comproveu la vostra connexió. El document encara es despublicarà en el llançament.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
     "No s'ha pogut revertir l'opció de despublicar en el llançament.",
@@ -1617,7 +1617,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.delete-schedule-draft.body-with-choice':
     'Voleu eliminar aquest esborrany programat?',
   /** Confirm button text for deleting a scheduled draft */
-  'release.dialog.delete-schedule-draft.confirm': 'Sí, elimina el calendari',
+  'release.dialog.delete-schedule-draft.confirm': 'Sí, elimina la programació',
   /** Checkbox label for copying scheduled draft to draft before deletion */
   'release.dialog.delete-schedule-draft.copy-checkbox':
     "Mantingueu els meus canvis programats copiant-los a l'esborrany (recomanat)",
@@ -1630,9 +1630,9 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit-schedule.body':
     'Selecciona una nova data i hora per a la publicació programada.',
   /** Confirm button text for change schedule dialog */
-  'release.dialog.edit-schedule.confirm': 'Actualitza el calendari',
+  'release.dialog.edit-schedule.confirm': 'Actualitza la programació',
   /** Header for change schedule dialog */
-  'release.dialog.edit-schedule.header': 'Canvia el calendari',
+  'release.dialog.edit-schedule.header': 'Canvia la programació',
   /** Label for the save action in the edit release dialog */
   'release.dialog.edit.confirm': 'Desa',
   /** Field label for the release description in the edit release dialog */
@@ -1676,7 +1676,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Versió sense títol',
   /** Description for warning that the published schedule time is in the past */
-  'release.schedule-dialog.publish-date-in-past-warning': 'Programa per a un temps i data futurs.',
+  'release.schedule-dialog.publish-date-in-past-warning': 'Programa per a una data i hora futures.',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': 'Publica el',
   /** The toast description that will be shown when the user has a release perspective which is now archived
@@ -1703,7 +1703,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "No s'ha trobat la release '{{title}}'",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    "No s'ha pogut pausar el document programat <strong>{{title}}</strong>: {{error}}",
+    "No s'ha pogut pausar el document d'esborrany programat <strong>{{title}}</strong>: {{error}}",
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     "No s'ha pogut publicar el document d'esborrany programat <strong>{{title}}</strong>: {{error}}",
@@ -1747,7 +1747,7 @@ export default removeUndefinedLocaleResources({
   'release.version-list.tooltip': 'Veure totes les versions del document',
 
   /** Button text for contacting support in the releases misconfiguration dialog */
-  'releases.upsell.misconfiguration.contact-support': 'Contacteu amb el Suport',
+  'releases.upsell.misconfiguration.contact-support': 'Contacteu amb el suport',
   /** Header for the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.header':
     'Problema de configuració de les publicacions de contingut',
@@ -1758,7 +1758,7 @@ export default removeUndefinedLocaleResources({
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Programa',
   /** Description for the schedule publish dialog */
-  'schedule-publish-dialog.description': 'Selecciona quan aquest document hauria de ser publicat.',
+  'schedule-publish-dialog.description': "Selecciona quan s'ha de publicar aquest document.",
   /** Header for the schedule publish dialog */
   'schedule-publish-dialog.header': "Programa l'esborrany per a la publicació",
 

@@ -22,13 +22,13 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': '前往上一个任务',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': '您确定要删除这个任务吗？',
+  'dialog.remove-task.body': '任务一旦删除，将无法恢复。',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': '取消',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': '移除',
+  'dialog.remove-task.buttons.confirm.text': '删除',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': '移除任务',
+  'dialog.remove-task.title': '删除此任务？',
 
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
   'document.footer.open-tasks.placeholder_other': '打开任务',
@@ -81,7 +81,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': '未找到用户',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': '选择用户名',
+  'form.input.assignee.search.placeholder': '选择指派人',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': '未授权',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -105,11 +105,11 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': '未找到架构',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': '选择文档',
+  'form.input.target.search.placeholder': '选择目标文档',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': '任务标题',
   /** The status error message presented when creating a task did not complete in time */
-  'form.status.error.creation-failed': '创建任务失败,请重试',
+  'form.status.error.creation-failed': '创建任务失败，请重试',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': '标题是必需的',
   /** The status message upon successful creation of a task */

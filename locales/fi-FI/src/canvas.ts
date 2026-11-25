@@ -30,7 +30,7 @@ export default removeUndefinedLocaleResources({
   'dialog.confirm-document-changes.confirm': 'Hyväksy ja jatka',
   /** The description for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.description':
-    'Tämän asiakirjan on päivitettävä yhteensopivaksi Canvasin kanssa.\nOlemassa olevaa sisältöä voidaan muokata tai poistaa tämän prosessin osana.',
+    'Tämä asiakirja on päivitettävä, jotta se on yhteensopiva Canvasin kanssa.\nOlemassa olevaa sisältöä voidaan muokata tai poistaa tämän prosessin aikana.',
   /** The description for the "Confirm document changes" dialog footer. */
   'dialog.confirm-document-changes.footer-description':
     'Voit poistaa linkityksen Canvasista milloin tahansa',
@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlink-action': 'Poista linkitys nyt',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
   'dialog.unlink-from-canvas.unlinking':
-    'Olet poistamassa linkityksen <strong>“{{documentTitle}}”</strong> Canvasista.',
+    'Poistat asiakirjan <strong>“{{documentTitle}}”</strong> linkityksen Canvasista.',
 
   /** The text for the "Navigate to Canvas" error message when the host fails to open Canvas. */
   'navigate-to-canvas-doc.error.failed': 'Canvasin avaaminen epäonnistui',

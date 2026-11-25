@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     "Questa versione dell'API non supporta prospettive complesse. Usa {{apiVersion}} o versioni successive.",
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    "Questa versione dell'API non supporta le varianti di contenuto. Usa la versione sperimentale dell'API ({{apiVersion}}).",
+    "Questa versione dell'API non supporta le varianti di contenuto. Usa {{apiVersion}} o versioni successive.",
   /** Label for "Query" editor/input */
   'query.label': 'Query',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -144,7 +144,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.new-default.description':
     'La prospettiva predefinita cambierà da "<code>raw</code>" a "<code>published</code>" in una futura versione dell\'API. Si prega di consultare la documentazione per maggiori dettagli.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': 'Rilascio fissato',
+  'settings.perspectives.pinned-release-label': 'Release fissata',
   /** Label for the scheduled drafts perspective */
   'settings.perspectives.scheduled-drafts': 'Bozze pianificate',
   /** Title for popover that explains what "Perspectives" are */

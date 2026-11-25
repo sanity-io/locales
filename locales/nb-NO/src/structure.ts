@@ -122,7 +122,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Du ser et skrivebeskyttet dokument som ble arkivert som en del av <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
+    'Denne dokumentversjonen tilhører den arkiverte utgivelsen <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Dette planlagte utkastet er arkivert',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -214,7 +214,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-end_other': 'utgivelsene',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Dette dokumentet er en del av <VersionBadge/> utgivelsen og {{count}} mer utgivelse.',
+    'Dette dokumentet er en del av <VersionBadge/> utgivelsen og {{count}} utgivelse til.',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
     'Dette dokumentet er en del av <VersionBadge/> utgivelsen og {{count}} flere utgivelser',
@@ -241,7 +241,7 @@ export default removeUndefinedLocaleResources({
     'Et planlagt utkast for dette dokumentet finnes. Hvis du publiserer endringer nå, vil de bli overskrevet når det planlagte utkastet blir publisert.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Dette dokumentet vil bli avpublisert som en del av <VersionBadge>{{title}}</VersionBadge> utgivelsen',
+    'Dette dokumentet vil bli avpublisert som en del av <VersionBadge>{{title}}</VersionBadge> utgivelsen.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Viser den nåværende <strong>publiserte</strong> versjonen:',
@@ -328,13 +328,14 @@ export default removeUndefinedLocaleResources({
 
   /** The error message shown when the specified document comparison mode is not supported */
   'compare-version.error.invalidModeParam':
-    '"{{input}}" er ikke en støttet dokument sammenligningsmodus.',
+    '"{{input}}" er ikke en støttet modus for dokumentsammenligning.',
   /** The error message shown when the next document for comparison could not be extracted from the URL */
-  'compare-version.error.invalidNextDocumentParam': 'Neste dokument parameter er ugyldig.',
+  'compare-version.error.invalidNextDocumentParam': 'Parameteren for neste dokument er ugyldig.',
   /** The error message shown when the document comparison URL could not be parsed */
   'compare-version.error.invalidParams.title': 'Kan ikke sammenligne dokumenter',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
-  'compare-version.error.invalidPreviousDocumentParam': 'Forrige dokument parameter er ugyldig.',
+  'compare-version.error.invalidPreviousDocumentParam':
+    'Parameteren for forrige dokument er ugyldig.',
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'Kunne ikke laste utgivelser',
   /** The error message shown when document versions or variants failed to load */

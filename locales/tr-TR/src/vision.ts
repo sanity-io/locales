@@ -114,7 +114,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'API sürümü',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'Bir varyant seçildiğinde, API sürümünün vX olması gerekir.',
+    'Bir varyant seçildiğinde API sürümü {{apiVersion}} olmalıdır.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Özel API sürümü',
   /** Label for the "Dataset" dropdown in vision settings */

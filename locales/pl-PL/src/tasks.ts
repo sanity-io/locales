@@ -123,7 +123,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': 'Brak zadań',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': 'Pomóż nam się poprawić, <Link>udostępnij opinię o Zadaniach</Link>',
+  'list.feedback.text': 'Pomóż nam się ulepszać, <Link>podziel się opinią o Zadaniach</Link> ',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'Kopiuj link do zadania',

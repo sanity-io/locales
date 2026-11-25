@@ -13,8 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     "È richiesto l'accesso agli appunti per copiare questo contenuto. Consenti le autorizzazioni degli appunti nelle impostazioni del tuo browser, poi prova a copiare di nuovo.",
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Il tuo browser non supporta questa azione',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Accesso agli appunti bloccato',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Valore vuoto, niente da copiare',
   /** --- On copy --- */
@@ -23,10 +22,10 @@ export default removeUndefinedLocaleResources({
     'Impossibile risolvere il tipo di schema per il percorso: {{path}}',
   /** The validation message that is shown when array types are incompatible */
   'copy-paste.on-paste.validation.array-type-incompatible.description':
-    'Valore di tipo "{{type}}" non è ammesso in questo campo array',
+    'Il valore di tipo "{{type}}" non è ammesso in questo campo array',
   /** The validation message that is shown when array values are incompatible */
   'copy-paste.on-paste.validation.array-value-incompatible.description':
-    'Valore di tipo "{{type}}" non è ammesso in questo campo array',
+    'Il valore di tipo "{{type}}" non è ammesso in questo campo array',
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Niente da incollare',
   /** The validation message that is shown when the clipboard item is invalid */
@@ -44,7 +43,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-paste.validation.partial-warning.title': 'Impossibile incollare tutti i valori',
   /** The validation message that is shown when primitive types are incompatible */
   'copy-paste.on-paste.validation.primitive-type-incompatible.description':
-    'Valore di tipo "{{type}}" non è ammesso in questo campo',
+    'Il valore di tipo "{{type}}" non è ammesso in questo campo',
   /** The validation message that is shown when read-only fields are skipped during document paste */
   'copy-paste.on-paste.validation.read-only-fields-skipped.description':
     'Campi di sola lettura ignorati: {{fieldNames}}',
@@ -57,7 +56,7 @@ export default removeUndefinedLocaleResources({
     'Il riferimento non è ammesso nel campo di riferimento secondo il filtro',
   /** The validation message that is shown when reference types are incompatible */
   'copy-paste.on-paste.validation.reference-type-incompatible.description':
-    'I riferimenti di tipo "{{sourceReferenceType}}" non sono ammessi in campo di riferimento che accetta tipi "{{targetReferenceTypes}}"',
+    'I riferimenti di tipo "{{sourceReferenceType}}" non sono ammessi in un campo di riferimento che accetta i tipi "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
     'Il documento di riferimento "{{ref}}" non esiste',

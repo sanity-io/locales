@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Sao chép ID tài liệu',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Sao chép URL Tài liệu',
+  'action.copy-document-url.label': 'Sao chép',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Sao chép URL tài liệu',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.nothing-to-delete': 'Tài liệu này chưa tồn tại hoặc đã bị xóa',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'Không thể xóa tài liệu này vì nó tồn tại trong các lịch trình phát hành',
+    'Không thể xóa tài liệu này vì nó nằm trong các bản phát hành đã lên lịch',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'Bản phát hành hoặc biến thể đã chọn không chứa tài liệu này',
@@ -122,7 +122,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Bạn đang xem một tài liệu chỉ đọc đã được lưu trữ như một phần của <VersionBadge> một bản phát hành</VersionBadge>. Nó không thể được chỉnh sửa',
+    'Phiên bản tài liệu này thuộc bản phát hành <VersionBadge>{{title}}</VersionBadge> đã được lưu trữ',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Bản nháp đã lên lịch này đã được lưu trữ',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -144,9 +144,9 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Loại tài liệu này đã không còn được sử dụng.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Hủy bản nháp',
+  'banners.live-edit-draft-banner.discard.tooltip': 'Hủy bản nháp để tiếp tục chỉnh sửa.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Xuất bản để tiếp tục chỉnh sửa',
+  'banners.live-edit-draft-banner.publish.tooltip': 'Xuất bản bản nháp để tiếp tục chỉnh sửa.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'Loại <strong>{{schemaType}}</strong> đã bật <code>liveEdit</code>, nhưng một bản nháp của tài liệu này vẫn tồn tại. Xuất bản hoặc hủy bản nháp để tiếp tục chỉnh sửa trực tiếp.',
@@ -156,7 +156,7 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.actions.compare-draft.tooltip':
     'Tài liệu đã xuất bản không tồn tại, vì vậy bản nháp này không thể được so sánh.',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': 'Bỏ qua bản nháp',
+  'banners.obsolete-draft.actions.discard-draft.text': 'Hủy bản nháp',
   /** The label for the "publish draft" action */
   'banners.obsolete-draft.actions.publish-draft.text': 'Xuất bản bản nháp',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
@@ -164,7 +164,7 @@ export default removeUndefinedLocaleResources({
     'Không gian làm việc không kích hoạt chế độ nháp, nhưng một phiên bản nháp của tài liệu này tồn tại.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'Lịch trình đã tạm dừng trong khi chỉnh sửa. Nhấn Lịch trình để kích hoạt lại hoặc chọn ngày mới.',
+    'Lịch trình đã tạm dừng khi đang chỉnh sửa. Nhấn Lên lịch để kích hoạt lại hoặc chọn ngày mới.',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'Các vai trò <Roles/> của bạn không có quyền tạo tài liệu này.',
@@ -177,7 +177,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.text': 'Yêu cầu chỉnh sửa',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
-    'Bạn đang xem một tài liệu chỉ đọc đã được xuất bản như một phần của <VersionBadge> một bản phát hành</VersionBadge>. Nó không thể được chỉnh sửa',
+    'Bạn đang xem một tài liệu chỉ đọc đã được xuất bản như một phần của <VersionBadge>{{title}}</VersionBadge>. Không thể chỉnh sửa tài liệu này',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Tải lại tham chiếu',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -205,7 +205,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-end_other': 'các release',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    'Tài liệu này là một phần của release <VersionBadge/> và {{count}} các release khác',
+    'Tài liệu này là một phần của release <VersionBadge/> và {{count}} release khác',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
@@ -215,7 +215,8 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-single':
     'Tài liệu này là một phần của release <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': 'Không nằm trong bản phát hành <Label>{{title}}</Label>.',
+  'banners.release.not-in-release':
+    'Không nằm trong bản phát hành <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
     'Vui lòng chờ trong khi tài liệu được thêm vào bản phát hành. Quá trình này không nên mất nhiều hơn vài giây.',
@@ -261,13 +262,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Hành động tài liệu',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Thu gọn tất cả các pane',
+  'buttons.focus-pane-button.aria-label.collapse': 'Thoát chế độ tập trung (hiện thanh điều hướng)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Tập trung pane',
+  'buttons.focus-pane-button.aria-label.focus': 'Vào chế độ tập trung (ẩn thanh điều hướng)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Thu gọn tất cả các pane',
+  'buttons.focus-pane-button.tooltip.collapse': 'Thoát chế độ tập trung',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Tập trung pane',
+  'buttons.focus-pane-button.tooltip.focus': 'Vào chế độ tập trung',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Chia cửa sổ bên phải',
   /** The tool tip for the split pane button on the document panel header */
@@ -298,7 +299,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-description':
     'Canvas cho phép bạn tạo nội dung trong một trình soạn thảo tự do mà tự động ánh xạ trở lại Studio dưới dạng nội dung có cấu trúc - ngay khi bạn đánh máy.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Sáng tạo ý tưởng đầu tiên',
+  'canvas.banner.popover-heading': 'Soạn thảo ưu tiên ý tưởng',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -323,7 +324,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'Tham số tài liệu trước đó không hợp lệ.',
   /** The error message shown when releases failed to load */
-  'compare-version.error.loadReleases.title': 'Không tải được các phiên bản',
+  'compare-version.error.loadReleases.title': 'Không tải được các bản phát hành',
   /** The error message shown when document versions or variants failed to load */
   'compare-version.error.loadVersions.title': 'Không thể tải các phiên bản',
 
@@ -657,7 +658,7 @@ export default removeUndefinedLocaleResources({
     'ID tài liệu đã được sao chép vào bảng tạm',
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url':
-    'URL Tài liệu đã được sao chép vào bảng tạm',
+    'URL tài liệu đã được sao chép vào bảng tạm',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
     '<Strong>{{title}}</Strong> đã được thêm vào bản phát hành',
@@ -783,7 +784,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'Mở rộng',
   /** The text for the published event menu tooltip when the release is not found */
-  'timeline-item.not-found-release.tooltip': 'Không tìm thấy phiên bản với id "{{releaseId}}"',
+  'timeline-item.not-found-release.tooltip': 'Không tìm thấy bản phát hành với id "{{releaseId}}"',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
   'toggle-inline-changes.menu-item.title': 'Thay đổi nội tuyến',

@@ -9,7 +9,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.create.text': 'สร้างงาน',
   /** The label for the button to discard changes */
-  'buttons.discard.text': 'ยกเลิก',
+  'buttons.discard.text': 'ทิ้ง',
   /** The label for the button to open the draft */
   'buttons.draft.text': 'ร่าง',
   /** The label for the button to create a new task */
@@ -22,7 +22,7 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': 'ไปยังงานก่อนหน้า',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'คุณแน่ใจหรือไม่ว่าต้องการลบงานนี้?',
+  'dialog.remove-task.body': 'เมื่อลบแล้ว จะไม่สามารถกู้คืนงานได้',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'ยกเลิก',
   /** The label for the confirmation button on the remove task dialog */
@@ -38,13 +38,13 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
   'empty-state.list.assigned.heading': 'คุณยังไม่ได้รับมอบหมายงานใดๆ',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': 'เมื่อคุณได้รับมอบหมายงาน พวกเขาจะปรากฏที่นี่',
+  'empty-state.list.assigned.text': 'เมื่อคุณได้รับมอบหมายงาน งานเหล่านั้นจะปรากฏที่นี่',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'สร้างงานใหม่',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.heading': 'เอกสารนี้ยังไม่มีงานใดๆ',
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.text': 'เมื่อเอกสารมีงานที่เชื่อมต่อกัน พวกเขาจะถูกแสดงที่นี่',
+  'empty-state.list.document.text': 'เมื่อเอกสารมีงานที่เชื่อมโยงอยู่ งานเหล่านั้นจะแสดงที่นี่',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
   'empty-state.list.no-active-document.heading': 'เปิดเอกสารเพื่อดูงานของมัน',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
@@ -82,7 +82,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'ไม่พบผู้ใช้',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'เลือกชื่อผู้ใช้',
+  'form.input.assignee.search.placeholder': 'เลือกผู้รับผิดชอบ',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'ไม่ได้รับอนุญาต',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -112,7 +112,7 @@ export default removeUndefinedLocaleResources({
   /** The status error message presented when creating a task did not complete in time */
   'form.status.error.creation-failed': 'ไม่สามารถสร้างงานได้ กรุณาลองใหม่อีกครั้ง',
   /** The status error message presented when the user does not supply a title */
-  'form.status.error.title-required': 'ต้องการชื่อ',
+  'form.status.error.title-required': 'จำเป็นต้องระบุชื่อ',
   /** The status message upon successful creation of a task */
   'form.status.success': 'สร้างงานเสร็จสิ้น',
 
@@ -151,7 +151,7 @@ export default removeUndefinedLocaleResources({
   /** Title of the Tasks panel   */
   'panel.title': 'งาน',
   /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
-  'panel.unavailable.text': 'ขณะนี้ไม่สามารถใช้งานได้ โปรดลองใหม่อีกครั้งในภายหลัง',
+  'panel.unavailable.text': 'งานไม่พร้อมใช้งานในขณะนี้ โปรดลองอีกครั้งในภายหลัง',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'ที่ได้รับมอบหมาย',

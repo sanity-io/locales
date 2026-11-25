@@ -13,9 +13,9 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.nothing-to-delete': 'เอกสารนี้ยังไม่มีหรือถูกลบไปแล้ว',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'ไม่สามารถลบเอกสารนี้ได้เนื่องจากมีอยู่ในการเผยแพร่ตามกำหนดเวลา',
+    'ไม่สามารถลบเอกสารนี้ได้เนื่องจากมีอยู่ใน release ที่กำหนดเวลาไว้',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
-  'action.delete.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
+  'action.delete.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Delete" document action button */
   'action.delete.label': 'ลบ',
   /** Label for the "Delete" document action while the document is being deleted */
@@ -37,7 +37,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.discard-changes.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.discard-changes.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
+  'action.discard-changes.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Discard changes" document action */
   'action.discard-changes.label': 'ทิ้งการเปลี่ยนแปลง',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -45,7 +45,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the document doesn't exist */
   'action.duplicate.disabled.nothing-to-duplicate': 'เอกสารนี้ยังไม่มีดังนั้นไม่มีอะไรให้ทำซ้ำ',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.duplicate.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
+  'action.duplicate.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Duplicate" document action */
   'action.duplicate.label': 'ทำซ้ำ',
   /** Label for the "Duplicate" document action while the document is being duplicated */
@@ -55,11 +55,11 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': 'เผยแพร่ไปแล้ว {{timeSincePublished}} ที่ผ่านมา',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': 'เวอร์ชันนี้ถูกเผยแพร่เป็นส่วนหนึ่งของรีลีส',
+  'action.publish.disabled.not-publishable': 'เวอร์ชันนี้ถูกเผยแพร่เป็นส่วนหนึ่งของ release',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.publish.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
+  'action.publish.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for action when there are pending changes.*/
   'action.publish.draft.label': 'เผยแพร่',
   /** Label for the "Publish" document action */
@@ -105,7 +105,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action is disabled because the operation is not ready   */
   'action.unpublish.disabled.not-ready': 'การดำเนินการยังไม่พร้อม',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
-  'action.unpublish.disabled.target-not-found': 'รีลีสหรือ variant ที่เลือกไม่มีเอกสารนี้',
+  'action.unpublish.disabled.target-not-found': 'release หรือ variant ที่เลือกไม่มีเอกสารนี้',
   /** Label for the "Unpublish" document action */
   'action.unpublish.label': 'ยกเลิกการเผยแพร่',
   /** Fallback tooltip for the Unpublish document action when publish is invoked for a document with live edit enabled.*/
@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่ถูกเก็บถาวรเป็นส่วนหนึ่งของ <VersionBadge>การปล่อย</VersionBadge> ไม่สามารถแก้ไขได้',
+    'เอกสารเวอร์ชันนี้อยู่ใน release <VersionBadge>{{title}}</VersionBadge> ที่เก็บถาวรแล้ว',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'แบบร่างที่กำหนดไว้นี้ถูกเก็บถาวร',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -125,7 +125,7 @@ export default removeUndefinedLocaleResources({
   'banners.choose-new-document-destination.choose-destination': 'เลือกจุดหมายสำหรับเอกสารนี้:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge> รีลีสนี้ไม่ได้ใช้งานอยู่',
+    'release <VersionBadge>{{title}}</VersionBadge> ไม่ได้ใช้งานอยู่',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'กู้คืนเวอร์ชันล่าสุด',
   /** The text content for the deleted document banner */
@@ -133,9 +133,9 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'ประเภทเอกสารนี้ไม่ได้ใช้งานแล้ว',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'ทิ้งร่าง',
+  'banners.live-edit-draft-banner.discard.tooltip': 'ทิ้งร่างเพื่อแก้ไขต่อ',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'เผยแพร่เพื่อดำเนินการแก้ไขต่อ',
+  'banners.live-edit-draft-banner.publish.tooltip': 'เผยแพร่ร่างเพื่อแก้ไขต่อ',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'ประเภท <strong>{{schemaType}}</strong> มี <code>liveEdit</code> เปิดใช้งานอยู่ แต่มีร่างของเอกสารนี้อยู่ โปรดเผยแพร่หรือทิ้งร่างเพื่อดำเนินการแก้ไขสดต่อไป',
@@ -152,7 +152,7 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.draft-model-inactive.text': 'พื้นที่ทำงานไม่ได้เปิดใช้งานร่าง แต่มีร่างของเอกสารนี้อยู่',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'การกำหนดเวลาถูกหยุดชั่วคราวขณะที่กำลังแก้ไข เลือกตารางเวลาเพื่อเปิดใช้งานอีกครั้งหรือเลือกวันที่ใหม่',
+    'หยุดกำหนดเวลาชั่วคราวระหว่างแก้ไข กด "กำหนดเวลา" เพื่อเปิดใช้งานอีกครั้ง หรือเลือกวันที่ใหม่',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     'บทบาท <Roles/> ของคุณไม่มีสิทธิ์ในการสร้างเอกสารนี้',
@@ -165,7 +165,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.text': 'ขอแก้ไข',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
-    'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่ถูกเผยแพร่เป็นส่วนหนึ่งของ <VersionBadge>การปล่อย</VersionBadge> ไม่สามารถแก้ไขได้',
+    'คุณกำลังดูเอกสารแบบอ่านอย่างเดียวที่เผยแพร่เป็นส่วนหนึ่งของ <VersionBadge>{{title}}</VersionBadge> ไม่สามารถแก้ไขได้',
   /** Action that switches from the published perspective to drafts */
   'banners.published.see-draft.action': 'ดูฉบับร่าง',
   /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
@@ -181,34 +181,34 @@ export default removeUndefinedLocaleResources({
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
   'banners.release.action.add-to-bundle': 'เพิ่มใน bundle',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.add-to-release': 'เพิ่มเข้าไปในการปล่อย',
+  'banners.release.action.add-to-release': 'เพิ่มไปยัง release',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.open-to-edit': 'เปิดการปล่อยเพื่อแก้ไข',
+  'banners.release.action.open-to-edit': 'เปิด release เพื่อแก้ไข',
   /** Toast description in case an error occurs when adding a document to a release  */
-  'banners.release.error.description': 'เกิดข้อผิดพลาดขณะเพิ่มเอกสารไปยังการปล่อย: {{message}}',
+  'banners.release.error.description': 'เกิดข้อผิดพลาดขณะเพิ่มเอกสารไปยัง release: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
-  'banners.release.error.title': 'ข้อผิดพลาดในการเพิ่มเอกสารไปยังการปล่อย',
+  'banners.release.error.title': 'เกิดข้อผิดพลาดในการเพิ่มเอกสารไปยัง release',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description': 'เอกสารนี้มีอยู่เฉพาะใน',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-end_other': 'การปล่อย',
+  'banners.release.navigate-to-edit-description-end_other': 'release',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    'เอกสารนี้เป็นส่วนหนึ่งของการปล่อย <VersionBadge/> และอีก {{count}} การปล่อย',
+    'เอกสารนี้เป็นส่วนหนึ่งของ release <VersionBadge/> และ release อื่นอีก {{count}} รายการ',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
-  'banners.release.navigate-to-edit-description-none': 'เอกสารนี้ไม่ได้เป็นส่วนหนึ่งของการปล่อยใดๆ',
+  'banners.release.navigate-to-edit-description-none': 'เอกสารนี้ไม่ได้เป็นส่วนหนึ่งของ release ใด ๆ',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
-    'เอกสารนี้เป็นส่วนหนึ่งของการปล่อย <VersionBadge/>',
+    'เอกสารนี้เป็นส่วนหนึ่งของ release <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': 'ไม่อยู่ในการปล่อย <Label>{{title}}</Label>',
+  'banners.release.not-in-release': 'ไม่อยู่ใน release <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
-    'โปรดรอสักครู่ขณะที่เอกสารกำลังถูกเพิ่มไปยังการปล่อย ไม่ควรใช้เวลานานกว่าไม่กี่วินาที',
+    'โปรดรอสักครู่ขณะที่เอกสารกำลังถูกเพิ่มไปยัง release ไม่ควรใช้เวลานานกว่าไม่กี่วินาที',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.title': 'กำลังเพิ่มเอกสารไปยังการปล่อย…',
+  'banners.release.waiting.title': 'กำลังเพิ่มเอกสารไปยัง release…',
   /** The text for the revision not found banner */
   'banners.revision-not-found.description': 'เราไม่พบการแก้ไขเอกสารที่เลือก กรุณาเลือกอีกครั้งจากรายการประวัติ',
   /** The text content for the scheduled draft override banner */
@@ -216,7 +216,7 @@ export default removeUndefinedLocaleResources({
     'มีแบบร่างที่กำหนดไว้สำหรับเอกสารนี้ หากคุณเผยแพร่การเปลี่ยนแปลงตอนนี้ การเปลี่ยนแปลงเหล่านั้นจะถูกเขียนทับเมื่อตารางเวลาทำงาน',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'เอกสารนี้จะไม่ได้รับการเผยแพร่เป็นส่วนหนึ่งของการปล่อย <VersionBadge>{{title}}</VersionBadge>',
+    'เอกสารนี้จะถูกยกเลิกการเผยแพร่เป็นส่วนหนึ่งของ release <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'กำลังแสดงเวอร์ชันที่<strong>เผยแพร่</strong>ปัจจุบัน:',
@@ -247,13 +247,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'การกระทำของเอกสาร',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'ยุบทุกพาเนล',
+  'buttons.focus-pane-button.aria-label.collapse': 'ออกจากโหมดโฟกัส (แสดงการนำทาง)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'โฟกัสพาเนล',
+  'buttons.focus-pane-button.aria-label.focus': 'เข้าสู่โหมดโฟกัส (ซ่อนการนำทาง)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'ยุบทุกพาเนล',
+  'buttons.focus-pane-button.tooltip.collapse': 'ออกจากโหมดโฟกัส',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'โฟกัสพาเนล',
+  'buttons.focus-pane-button.tooltip.focus': 'เข้าสู่โหมดโฟกัส',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'แยกหน้าต่างไปทางขวา',
   /** The tool tip for the split pane button on the document panel header */
@@ -308,7 +308,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'พารามิเตอร์เอกสารก่อนหน้าไม่ถูกต้อง',
   /** The error message shown when releases failed to load */
-  'compare-version.error.loadReleases.title': 'ไม่สามารถโหลดการเผยแพร่ได้',
+  'compare-version.error.loadReleases.title': 'ไม่สามารถโหลด release ได้',
   /** The error message shown when document versions or variants failed to load */
   'compare-version.error.loadVersions.title': 'โหลดเวอร์ชันไม่สำเร็จ',
 
@@ -441,29 +441,29 @@ export default removeUndefinedLocaleResources({
   /** Placeholder of the filter input in the variants and releases menus of the document header */
   'document-panel-navigation.filter-placeholder': 'ค้นหา',
   /** Label of the releases menu trigger in the document header when no release is selected */
-  'document-panel-navigation.releases.button.text': 'รีลีส',
+  'document-panel-navigation.releases.button.text': 'Releases',
   /** A scheduled release in the releases menu of the document header: its title and publish date */
   'document-panel-navigation.releases.item.title-with-date': '{{title}} · {{date}}',
   /** Section header listing the releases the document has a version in */
-  'document-panel-navigation.releases.section.in-releases_other': 'อยู่ใน {{count}} รีลีส',
+  'document-panel-navigation.releases.section.in-releases_other': 'อยู่ใน {{count}} release',
   /** Tooltip on the "In 0 releases" section header of the releases menu in the document header */
   'document-panel-navigation.releases.section.no-releases-tooltip':
-    'เอกสารนี้ยังไม่อยู่ในรีลีสใดเลย เลือกรีลีสด้านล่างเพื่อเพิ่มเข้าไป',
+    'เอกสารนี้ยังไม่อยู่ใน release ใดเลย เลือก release ด้านล่างเพื่อเพิ่มเข้าไป',
   /** Section header listing the releases the document has no version in */
-  'document-panel-navigation.releases.section.other': 'รีลีสอื่น ๆ',
+  'document-panel-navigation.releases.section.other': 'release อื่น ๆ',
   /** Label of the scheduled drafts menu trigger in the document header when none is open */
   'document-panel-navigation.scheduled-drafts.button.text': 'ฉบับร่างที่กำหนดเวลาไว้',
   /** Section header listing the dates the scheduled drafts of the document go out */
   'document-panel-navigation.scheduled-drafts.section.scheduled-for': 'กำหนดเวลาไว้สำหรับ:',
   /** Label of the variants menu trigger in the document header when no variant is selected */
-  'document-panel-navigation.variants.button.text': 'ตัวแปร',
+  'document-panel-navigation.variants.button.text': 'Variants',
   /** Section header listing the variants the document has versions in */
-  'document-panel-navigation.variants.section.has-variants_other': 'มี {{count}} ตัวแปร',
+  'document-panel-navigation.variants.section.has-variants_other': 'มี {{count}} variant',
   /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
   'document-panel-navigation.variants.section.no-variants-tooltip':
-    'เอกสารนี้ยังไม่อยู่ในตัวแปรใดเลย เลือกตัวแปรด้านล่างเพื่อสร้าง',
+    'เอกสารนี้ยังไม่อยู่ใน variant ใดเลย เลือก variant ด้านล่างเพื่อสร้าง',
   /** Section header listing the variants the document has no version in */
-  'document-panel-navigation.variants.section.other': 'ตัวแปรอื่น ๆ',
+  'document-panel-navigation.variants.section.other': 'variant อื่น ๆ',
   /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
   'document-panel-navigation.variants.versions-tooltip_other': '{{count}} เวอร์ชัน: {{bundles}}',
 
@@ -505,7 +505,7 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'เราไม่สามารถโหลดการเปลี่ยนแปลงสำหรับเอกสารนี้ได้ อาจเป็นเพราะนโยบายการเก็บรักษาประวัติของแผนของคุณ นี่แสดงให้คุณเห็นว่าเวอร์ชัน <strong>{{version}}</strong> เปรียบเทียบกับเวอร์ชัน <strong>published</strong> อย่างไร',
+    'เราไม่สามารถโหลดการเปลี่ยนแปลงสำหรับเอกสารนี้ได้ อาจเป็นเพราะนโยบายการเก็บรักษาประวัติของแผนของคุณ นี่แสดงให้เห็นว่าเวอร์ชัน <strong>{{version}}</strong> เปรียบเทียบกับเวอร์ชัน<strong>ที่เผยแพร่</strong>อย่างไร',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'การเปรียบเทียบกับเวอร์ชันที่เผยแพร่',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
@@ -513,12 +513,12 @@ export default removeUndefinedLocaleResources({
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
   'events.open.draft': 'เปิดเอกสาร <VersionBadge>ร่าง</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
-  'events.open.release': 'เปิดการปล่อย <VersionBadge>{{releaseTitle}}</VersionBadge>',
+  'events.open.release': 'เปิด release <VersionBadge>{{releaseTitle}}</VersionBadge>',
 
   /** The text for the add reference item in the incoming references input */
   'incoming-references-input.add-reference-item': 'เพิ่มรายการ',
   /** The aria-label for the incoming references list */
-  'incoming-references-input.list-label': 'การอ้างอิงที่เข้ามาของประเภท {{type}}',
+  'incoming-references-input.list-label': 'การอ้างอิงขาเข้าของประเภท {{type}}',
   /** The text for the no items in the incoming references input */
   'incoming-references-input.no-items': 'ไม่มีรายการ',
   /** The text for the reference from in the incoming references input */
@@ -533,7 +533,7 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-loading-cross-dataset': 'กำลังโหลดเอกสารข้ามชุดข้อมูล...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
-    'ไม่ได้กำหนดการอ้างอิงที่เข้ามาสำหรับประเภทนี้ ดูเอกสารเพิ่มเติมเพื่อข้อมูลเพิ่มเติม',
+    'ไม่ได้กำหนดการอ้างอิงขาเข้าสำหรับประเภทนี้ ดูข้อมูลเพิ่มเติมในเอกสารประกอบ',
 
   /** The text shown if there are no incoming references in the inspector */
   'incoming-references-pane.no-references': 'ไม่พบการอ้างอิงขาเข้า',
@@ -661,7 +661,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_copy-url': 'คัดลอก URL เอกสารไปยังคลิปบอร์ดแล้ว',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
-    '<Strong>{{title}}</Strong> ได้ถูกเพิ่มเข้าไปในการปล่อย',
+    '<Strong>{{title}}</Strong> ถูกเพิ่มไปยัง release แล้ว',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': 'เอกสารถูกลบเรียบร้อยแล้ว',
   /** The text when a discard changes operation succeeded  */
@@ -681,7 +681,7 @@ export default removeUndefinedLocaleResources({
     'เอกสารได้รับการยกเลิกการเผยแพร่ ร่างใหม่ได้ถูกสร้างขึ้นจากเวอร์ชันที่เผยแพร่ล่าสุด',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'เวอร์ชันนี้จะถูกยกเลิกการเผยแพร่เมื่อมีการเผยแพร่รีลีส',
+    'เวอร์ชันนี้จะถูกยกเลิกการเผยแพร่เมื่อ release ถูกเผยแพร่',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'ไม่มีชื่อ',
   /** The loading message for the document not found pane */
@@ -780,7 +780,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the expand action in the timeline item menu */
   'timeline-item.menu.action-expand': 'ขยาย',
   /** The text for the published event menu tooltip when the release is not found */
-  'timeline-item.not-found-release.tooltip': 'ไม่พบการเผยแพร่ที่มีรหัส "{{releaseId}}"',
+  'timeline-item.not-found-release.tooltip': 'ไม่พบ release ที่มีรหัส "{{releaseId}}"',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
   'toggle-inline-changes.menu-item.title': 'การเปลี่ยนแปลงแบบอินไลน์',

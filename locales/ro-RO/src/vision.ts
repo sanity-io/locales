@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Această versiune de API nu acceptă perspective complexe. Utilizați {{apiVersion}} sau o versiune ulterioară.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Această versiune de API nu acceptă variante de conținut. Utilizați versiunea experimentală de API ({{apiVersion}}).',
+    'Această versiune de API nu acceptă variante de conținut. Utilizați {{apiVersion}} sau o versiune ulterioară.',
   /** Label for "Query" editor/input */
   'query.label': 'Interogare',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'Versiunea API',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'Când este selectată o variantă, versiunea API trebuie să fie vX.',
+    'Când este selectată o variantă, versiunea API trebuie să fie {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Versiunea API personalizată',
   /** Label for the "Dataset" dropdown in vision settings */

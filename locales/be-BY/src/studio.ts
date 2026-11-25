@@ -207,7 +207,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Рэдагаваць актыў',
   /** Title for the upload dialog (component mode) */
-  'asset-sources.media-library.upload-dialog.title': 'Загрузіць у Media Library',
+  'asset-sources.media-library.upload-dialog.title': 'Загрузіць у Медыябібліятэку',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Выкарыстанне існуючага файла, знойдзенага ў бібліятэцы.',
@@ -588,7 +588,7 @@ export default removeUndefinedLocaleResources({
   'document.type.not-found': 'Тып дакумента "{{type}}" не знойдзены',
 
   /** Error message shown when an action cannot be performed */
-  'errors.unable-to-perform-action': 'Немагчыма выканаць гэтую дзеянне',
+  'errors.unable-to-perform-action': 'Немагчыма выканаць гэта дзеянне',
 
   /** The value of the <code>_key</code> property must be a unique string. */
   'form.error.duplicate-keys-alert.details.additional-description':
@@ -890,7 +890,7 @@ export default removeUndefinedLocaleResources({
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Папярэдні прагляд загружанага малюнка',
   /** Select image */
-  'inputs.image.select-dialog.title': 'Выбраць выяву для «{{targetTitle}}»',
+  'inputs.image.select-dialog.title': 'Выбраць малюнак для «{{targetTitle}}»',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Загрузка не можа быць завершана ў цяперашні час.',
   /** Upload failed */
@@ -1571,7 +1571,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.edit.title-label': 'Загаловак',
   /** Body text for the dialog confirming running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.body':
-    'Вы ўпэўненыя, што хочаце апублікаваць гэты запланаваны чарнавік негайна?',
+    'Вы ўпэўнены, што хочаце апублікаваць гэты запланаваны чарнавік негайна?',
   /** Confirm button text for running a scheduled draft immediately */
   'release.dialog.publish-scheduled-draft.confirm': 'Так, запусціць зараз',
   /** Header for the dialog confirming running a scheduled draft immediately */
@@ -1594,7 +1594,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Дзеянні',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'Прагляд кантэнт-рэлізаў',
+  'release.menu.view-releases': 'Прагляд выпускаў кантэнту',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Чарнавікі',
   /** Label for published releases in navbar */

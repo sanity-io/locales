@@ -716,7 +716,7 @@ export default removeUndefinedLocaleResources({
     'Dokumentu je poništena objava. Nacrt je stvoren iz posljednje objavljene verzije.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'Verzija će biti poništena objavom kada se izdanje objavi',
+    'Objava ove verzije bit će poništena kada se izdanje objavi',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Bez naslova',
   /** The loading message for the document not found pane */

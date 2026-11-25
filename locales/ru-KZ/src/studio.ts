@@ -442,7 +442,7 @@ export default removeUndefinedLocaleResources({
   /** Default text in shared loader text / spinner lockup */
   'common.loading': 'Загрузка',
   /** The title of the reconnecting toast */
-  'common.reconnecting.toast.title': 'Пытаюсь подключиться…',
+  'common.reconnecting.toast.title': 'Попытка подключения…',
 
   /** --- Configuration issues --- */
   /** Default label text on configuration issues button */
@@ -1685,13 +1685,13 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Опубликовано',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Релизы',
+  'release.navbar.tooltip': 'Просмотр расписания',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Релиз без названия',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Запланируйте на будущее время и дату.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': 'Опубликовать в',
+  'release.schedule-dialog.select-publish-date-label': 'Дата и время публикации',
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */

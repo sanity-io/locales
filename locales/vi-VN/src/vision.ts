@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Phiên bản API này không hỗ trợ các perspective phức tạp. Hãy sử dụng {{apiVersion}} hoặc phiên bản mới hơn.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Phiên bản API này không hỗ trợ các biến thể nội dung. Hãy sử dụng phiên bản API thử nghiệm ({{apiVersion}}).',
+    'Phiên bản API này không hỗ trợ các biến thể nội dung. Hãy sử dụng {{apiVersion}} hoặc phiên bản mới hơn.',
   /** Label for "Query" editor/input */
   'query.label': 'Truy vấn',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -144,7 +144,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.new-default.description':
     'Góc nhìn mặc định sẽ thay đổi từ "<code>raw</code>" sang "<code>published</code>" trong phiên bản API sắp tới. Vui lòng tham khảo tài liệu để biết thêm chi tiết.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': 'phiên bản được ghim',
+  'settings.perspectives.pinned-release-label': 'Release được ghim',
   /** Label for the scheduled drafts perspective */
   'settings.perspectives.scheduled-drafts': 'Bản nháp đã lên lịch',
   /** Title for popover that explains what "Perspectives" are */

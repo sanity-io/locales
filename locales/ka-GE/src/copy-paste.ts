@@ -11,10 +11,9 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': 'ველის ჩასმა',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
-    'კონტენტის კოპირებისთვის საჭიროა ბუფერის წვდომა. დართეთ ბუფერის უფლებები თქვენს ბრაუზერის პარამეტრებში, შემდეგ სცადეთ კოპირება თავიდან.',
+    'კონტენტის დასაკოპირებლად საჭიროა ბუფერზე წვდომა. დაუშვით ბუფერის ნებართვები ბრაუზერის პარამეტრებში და სცადეთ კოპირება ხელახლა.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'თქვენი ბრაუზერი ამ ქმედებას არ მხარდაჭერს',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'ბუფერზე წვდომა დაბლოკილია',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ცარიელი მნიშვნელობა, კოპირებადი არაფერია',
   /** --- On copy --- */
@@ -50,7 +49,7 @@ export default removeUndefinedLocaleResources({
     'გამოტოვებული მხოლოდ წასაკითხი ველები: {{fieldNames}}',
   /** --- On paste --- */
   /** The validation message that is shown when pasting a value into a read-only target */
-  'copy-paste.on-paste.validation.read-only-target.description': 'მიმღები არის მხოლოდ კითხვისთვის',
+  'copy-paste.on-paste.validation.read-only-target.description': 'სამიზნე მხოლოდ წასაკითხია',
   /** The validation message that is shown when reference is incompatible with filter */
   'copy-paste.on-paste.validation.reference-filter-incompatible.description':
     'რეფერენსი არ არის ნებადართული რეფერენსის ველში ფილტრის მიხედვით',
@@ -59,10 +58,10 @@ export default removeUndefinedLocaleResources({
     '"{{sourceReferenceType}}" ტიპის რეფერენსები არ არის ნებადართული რეფერენსის ველში, რომელიც მიიღებს ტიპებს "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'მოთხოვნილი დოკუმენტი "{{ref}}" არ არსებობს',
+    'მითითებული დოკუმენტი "{{ref}}" არ არსებობს',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
-    'წყაროს და მიმღების სქემის ტიპები არ არის თანამედროვე',
+    'წყაროს და სამიზნის სქემის ტიპები არ არის თავსებადი',
   /** The validation message that is shown when schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.title':
     'ვერ მოხდა სქემის ტიპის გარჩევა გზისთვის: {{path}}',

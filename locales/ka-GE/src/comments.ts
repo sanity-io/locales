@@ -72,7 +72,7 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'კომენტარის დამატება',
 
-  'inline-add-comment-button.disabled-overlap-title': 'კომენტარები ვერ გადაფარვას უნდა',
+  'inline-add-comment-button.disabled-overlap-title': 'კომენტარები ერთმანეთს ვერ გადაფარავს',
   /** The text shown in the inline comment button */
   'inline-add-comment-button.title': 'დაამატეთ კომენტარი',
 
@@ -112,7 +112,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': 'ხელახლა ცდა',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': 'კომენტარის ტექსტი წაშლილი გაქვს',
+  'list-item.missing-referenced-value-tooltip-content': 'კომენტარით მონიშნული ტექსტი წაშლილია',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': 'კომენტარის მენიუს გახსნა',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */

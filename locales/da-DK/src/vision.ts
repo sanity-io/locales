@@ -56,7 +56,7 @@ export default removeUndefinedLocaleResources({
   /** Label for query type "shared" */
   'label.shared': 'Delt',
   /** Label for saved query type "team" */
-  'label.team': 'Hold',
+  'label.team': 'Team',
   /** Label for untitled query fallback */
   'label.untitled-query': 'Uden titel',
 
@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Denne API-version understøtter ikke komplekse perspektiver. Brug {{apiVersion}} eller nyere.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Denne API-version understøtter ikke indholdsvarianter. Brug den eksperimentelle API-version ({{apiVersion}}).',
+    'Denne API-version understøtter ikke indholdsvarianter. Brug {{apiVersion}} eller nyere.',
   /** Label for "Query" editor/input */
   'query.label': 'Forespørgsel',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -115,7 +115,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API version',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
-  'settings.api-version-locked-for-variant': 'Når en variant er valgt, skal API-versionen være vX.',
+  'settings.api-version-locked-for-variant':
+    'Når en variant er valgt, skal API-versionen være {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Brugerdefineret API version',
   /** Label for the "Dataset" dropdown in vision settings */

@@ -40,9 +40,9 @@ export default removeUndefinedLocaleResources({
   'document.footer.open-tasks.text_other': '{{count}} ತೆರೆದ ಕಾರ್ಯಗಳು',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': 'ನಿಮಗೆ ಯಾವುದೇ ಕಾರ್ಯಗಳು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ',
+  'empty-state.list.assigned.heading': 'ನಿಮಗೆ ಯಾವುದೇ ಕಾರ್ಯಗಳನ್ನು ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': 'ನಿಮಗೆ ಕಾರ್ಯಗಳು ನಿಯೋಜಿಸಲಾದಾಗ ಅವು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
+  'empty-state.list.assigned.text': 'ನಿಮಗೆ ಕಾರ್ಯಗಳನ್ನು ನಿಯೋಜಿಸಿದಾಗ ಅವು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'ಹೊಸ ಕಾರ್ಯ ರಚಿಸಿ',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
@@ -57,42 +57,41 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.subscribed.heading': 'ನೀವು ಯಾವುದೇ ಕಾರ್ಯಗಳಿಗೆ ಚಂದಾದಾರರಾಗಿಲ್ಲ',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
-    'ನೀವು ಕೆಲಸವನ್ನು ರಚಿಸಿದಾಗ, ಬದಲಾಯಿಸಿದಾಗ ಅಥವಾ ಕಾಮೆಂಟ್ ಮಾಡಿದಾಗ ನೀವು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಚಂದಾದಾರರಾಗುತ್ತೀರಿ',
+    'ನೀವು ಕಾರ್ಯವನ್ನು ರಚಿಸಿದಾಗ, ಬದಲಾಯಿಸಿದಾಗ ಅಥವಾ ಕಾಮೆಂಟ್ ಮಾಡಿದಾಗ ನೀವು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಚಂದಾದಾರರಾಗುತ್ತೀರಿ',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.heading': 'ಮುಗಿದ ಕೆಲಸಗಳು ಯಾವುದೂ ಇಲ್ಲ',
+  'empty-state.status.list.closed.assigned.heading': 'ಮುಗಿದ ಕಾರ್ಯಗಳು ಯಾವುದೂ ಇಲ್ಲ',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.assigned.text':
-    'ನೀವು ಮುಗಿಸಿದ ಎಂದು ಗುರುತಿಸಿದ ನಿಮ್ಮ ಕೆಲಸಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
+  'empty-state.status.list.closed.assigned.text': 'ಮುಗಿದಿದೆ ಎಂದು ಗುರುತಿಸಿದ ನಿಮ್ಮ ಕಾರ್ಯಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ',
   /** The heading in the tasks sidebar, in the document tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.document.heading': 'ಮುಗಿದ ಕೆಲಸಗಳು ಯಾವುದೂ ಇಲ್ಲ',
+  'empty-state.status.list.closed.document.heading': 'ಮುಗಿದ ಕಾರ್ಯಗಳು ಯಾವುದೂ ಇಲ್ಲ',
   /** The heading in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
-  'empty-state.status.list.closed.subscribed.heading': 'ಮುಗಿದ ಕೆಲಸಗಳು ಯಾವುದೂ ಇಲ್ಲ',
+  'empty-state.status.list.closed.subscribed.heading': 'ಮುಗಿದ ಕಾರ್ಯಗಳು ಯಾವುದೂ ಇಲ್ಲ',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
-    'ನೀವು ಚಂದಾದಾರರಾಗಿರುವ ಮತ್ತು ಮುಗಿಸಿದ ಎಂದು ಗುರುತಿಸಿದ ಕೆಲಸಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
+    'ನೀವು ಚಂದಾದಾರರಾಗಿರುವ ಮತ್ತು ಮುಗಿದಿದೆ ಎಂದು ಗುರುತಿಸಿದ ಕಾರ್ಯಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.heading': 'ನೀವು ಎಲ್ಲಾ ಕೆಲಸಗಳನ್ನು ಮುಗಿಸಿದ್ದೀರಿ',
+  'empty-state.status.list.open.assigned.heading': 'ನೀವು ಎಲ್ಲಾ ಕಾರ್ಯಗಳನ್ನು ಮುಗಿಸಿದ್ದೀರಿ',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.text': 'ನಿಮಗೆ ಹೊಸದಾಗಿ ನಿಯೋಜಿಸಲಾದ ಕೆಲಸಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
+  'empty-state.status.list.open.assigned.text': 'ನಿಮಗೆ ಹೊಸದಾಗಿ ನಿಯೋಜಿಸಲಾದ ಕಾರ್ಯಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.document.heading': 'ಈ ದಾಖಲೆಯ ಮೇಲೆ ಯಾವುದೇ ಕೆಲಸಗಳು ಇಲ್ಲ',
+  'empty-state.status.list.open.document.heading': 'ಈ ದಾಖಲೆಯಲ್ಲಿ ಯಾವುದೇ ಕಾರ್ಯಗಳು ಇಲ್ಲ',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.heading': 'ಚಂದಾದಾರರಾಗಿರುವ ಕೆಲಸಗಳು ಯಾವುದೂ ಇಲ್ಲ',
+  'empty-state.status.list.open.subscribed.heading': 'ಚಂದಾದಾರರಾಗಿರುವ ಕಾರ್ಯಗಳು ಯಾವುದೂ ಇಲ್ಲ',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': 'ನೀವು ಚಂದಾದಾರರಾಗಿರುವ ಕೆಲಸಗಳು ಇಲ್ಲಿ ತೋರಿಸಲಾಗುವುದು',
+  'empty-state.status.list.open.subscribed.text': 'ನೀವು ಚಂದಾದಾರರಾಗಿರುವ ಕಾರ್ಯಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'ನಿಯೋಜಿಸಲಾಗಿಲ್ಲ',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.no-user-assigned.tooltip': 'ನಿಯೋಜಿಸುವವರನ್ನು ಹೊಂದಿಸಿ',
+  'form.input.assignee.no-user-assigned.tooltip': 'ನಿಯೋಜಿತರನ್ನು ಹೊಂದಿಸಿ',
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'ಯಾವುದೇ ಬಳಕೆದಾರರು ಕಂಡುಬಂದಿಲ್ಲ',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'ನಿಯೋಜಿಸುವವರನ್ನು ಆರಿಸಿ',
+  'form.input.assignee.search.placeholder': 'ನಿಯೋಜಿತರನ್ನು ಆಯ್ಕೆಮಾಡಿ',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'ಅನಧಿಕೃತ',
   /** Text used in the assignee input tooltip when there is no user assigned */
-  'form.input.assignee.user-assigned.tooltip': 'ನಿಯೋಜಿಸುವವರನ್ನು ಬದಲಿಸಿ',
+  'form.input.assignee.user-assigned.tooltip': 'ನಿಯೋಜಿತರನ್ನು ಬದಲಿಸಿ',
   /** Text used in the assignee input when user is not found */
   'form.input.assignee.user-not-found.text': 'ಬಳಕೆದಾರರು ಕಂಡುಬಂದಿಲ್ಲ',
   /** The label used in the create more toggle */
@@ -135,7 +134,7 @@ export default removeUndefinedLocaleResources({
   'menuitem.duplicate.upsell-tooltip': 'ಕಾರ್ಯಗಳನ್ನು ನಕಲಿಸಲು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ',
 
   /** Fragment used to construct the first entry in the activity log */
-  'panel.activity.created-fragment': 'ಈ ಕಾರ್ಯವನ್ನು ರಚಿಸಿದೆ',
+  'panel.activity.created-fragment': 'ಈ ಕಾರ್ಯವನ್ನು ರಚಿಸಿದ್ದಾರೆ',
   /** The title of the activity section of the task */
   'panel.activity.title': 'ಚಟುವಟಿಕೆ',
   /** The text used in the activity log when unable to find the user */
@@ -143,9 +142,9 @@ export default removeUndefinedLocaleResources({
   /** The tooltip for the close button for the task panel */
   'panel.close.tooltip': 'ಪಾರ್ಶ್ವಪಟ್ಟಿ ಮುಚ್ಚಿ',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': 'ಪ್ರತಿಕ್ರಿಯೆ ಸೇರಿಸಿ...',
+  'panel.comment.placeholder': 'ಕಾಮೆಂಟ್ ಸೇರಿಸಿ...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': 'ಕಾರ್ಯಗಳ ಮೇಲೆ ಪ್ರತಿಕ್ರಿಯೆ ನೀಡಲು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ',
+  'panel.comment.placeholder.upsell': 'ಕಾರ್ಯಗಳ ಮೇಲೆ ಕಾಮೆಂಟ್ ಮಾಡಲು ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'ರಚಿಸಿ',
   /** The title used in the drafts pulldown */

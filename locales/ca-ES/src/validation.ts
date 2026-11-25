@@ -52,10 +52,10 @@ export default removeUndefinedLocaleResources({
   /** Object is missing a reference to an image asset document in its `asset` field */
   'object.asset-required_image': 'Es requereix una imatge',
   /** Media can't be found in the Media Library */
-  'object.media-not-found': "L'actiu no s'ha pogut trobar a la Biblioteca de Mitjans",
+  'object.media-not-found': "L'actiu no s'ha pogut trobar a la Biblioteca de mitjans",
   /** Media object is missing a reference to a document in its `_ref` field */
   'object.not-media-library-asset':
-    'Ha de ser una referència a un actiu de la Biblioteca de Mitjans',
+    'Ha de ser una referència a un actiu de la Biblioteca de mitjans',
   /** Object is not a reference to a document (eg `{_ref: 'documentId'}`) */
   'object.not-reference': 'Ha de ser una referència a un document',
   /** Object references a document which is not published */

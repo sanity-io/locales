@@ -41,7 +41,7 @@ export default removeUndefinedLocaleResources({
   /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
   'about-dialog.version-info.deprecated.reason': '사유: {{reason}}',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': '업그레이드 방법',
+  'about-dialog.version-info.how-to-upgrade': '지금 업데이트',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': '최신 버전',
   /** Info text when auto updates is enabled and a new version is available */
@@ -50,9 +50,9 @@ export default removeUndefinedLocaleResources({
    *  It's a new version configured for auto updates which in some cases could even be a version below current  */
   'about-dialog.version-info.new-version.text': '새 버전',
   /** "Reload"-button when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload': '재로드',
+  'about-dialog.version-info.reload': '다시 로드',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
-  'about-dialog.version-info.reload-to-update': '업데이트하려면 스튜디오를 재로드하세요',
+  'about-dialog.version-info.reload-to-update': '업데이트하려면 스튜디오를 다시 로드하세요',
   /** "Deprecated" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.deprecated': '지원 중단됨',
   /** "Development" tooltip in About-dialog */
@@ -398,7 +398,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': '변경 사항 불러오는 중…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    '문서 리비전을 찾을 수 없습니다. id: <code>{{revisionId}}</code> 비교하려는. <Break/> 이것은 아마도 귀하의 계획의 역사 보존 정책 때문일 것입니다. <Break/> 다른 <strong>From</strong> 항목을 선택해 주세요.',
+    '비교하려는 문서 리비전(id: <code>{{revisionId}}</code>)을 찾을 수 없습니다. <Break/> 이는 요금제의 기록 보존 정책 때문일 가능성이 높습니다. <Break/> 다른 <strong>에서</strong> 항목을 선택해 주세요.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     '이 패널에 변경 사항 목록이 표시되려면 문서를 편집하거나 타임라인에서 이전 버전을 선택하세요.',
@@ -448,7 +448,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': '제거됨',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    '동일한 <strong>from</strong> 및 <strong>to</strong> 리비전을 선택했습니다. 변경 사항을 비교하려면 다른 리비전을 선택하세요.',
+    '<strong>에서</strong>와 <strong>까지</strong>에 동일한 리비전을 선택했습니다. 변경 사항을 비교하려면 서로 다른 리비전을 선택하세요.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': '동일한 리비전이 선택되었습니다',
   /** Title for the Review Changes pane */
@@ -542,13 +542,13 @@ export default removeUndefinedLocaleResources({
   /** The document inventory title (plural) */
   'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': '보는 중',
+  'document-group-inventory.viewing-item-label': '편집 중',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': '모든 사용자 (기본값)',
+  'document-group.base-variant': '기본값',
   /** The text of the actions that open the variant creation form and confirm the creation */
-  'document-group.create-variant': '변형 만들기',
+  'document-group.create-variant': '버전 만들기',
   /** Describes the variant creation form's picker for the version the new variant starts from */
   'document-group.create-variant.base-description': '시작 기준',
   /** The label of the variant creation form's picker for the version the new variant starts from */
@@ -576,15 +576,16 @@ export default removeUndefinedLocaleResources({
   /** Used in `document-group.delete.cdr-summary.title` */
   'document-group.delete.cdr-summary.document-count_other': '{{count}}개 문서',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_other': 'Dataset: {{datasets}}',
+  'document-group.delete.cdr-summary.subtitle_other': '데이터셋: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': '사용할 수 없는 dataset',
+  'document-group.delete.cdr-summary.subtitle_unavailable_other': '사용할 수 없는 데이터셋',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
-  'document-group.delete.cdr-summary.title_other': '{{count}}개 dataset의 {{documentCount}}',
+  'document-group.delete.cdr-summary.title_other':
+    '{{count}}개의 데이터셋에 있는 {{documentCount}}',
   /** Appears when hovering over the copy button to copy */
   'document-group.delete.cdr-table.copy-id-button.tooltip': '클립보드에 ID 복사',
   /** The header for the dataset column in the list of cross-dataset references found */
-  'document-group.delete.cdr-table.dataset.label': 'Dataset',
+  'document-group.delete.cdr-table.dataset.label': '데이터셋',
   /** The header for the document ID column in the list of cross-dataset references found */
   'document-group.delete.cdr-table.document-id.label': '문서 ID',
   /** The toast title when the copy button has been clicked but copying failed */
@@ -601,7 +602,7 @@ export default removeUndefinedLocaleResources({
     '{{count}}개의 다른 참조가 표시되지 않음',
   /** Text in the tooltip of this component if hovering over the info icon */
   'document-group.delete.other-reference-count.tooltip':
-    '관련 dataset에 대한 액세스 토큰이 없어 이 참조들의 메타데이터를 표시할 수 없습니다.',
+    '관련 데이터셋에 대한 액세스 토큰이 없어 이 참조들의 메타데이터를 표시할 수 없습니다.',
   /** Appears when unable to render a document preview in the referring document list */
   'document-group.delete.preview-item.preview-unavailable.subtitle': 'ID: {{documentId}}',
   /** Appears when unable to render a document preview in the referring document list */
@@ -645,7 +646,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in document versions status for a published (non-live-edit) document */
   'document-status.published-at': '{{date}}에 게시됨',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': '개정 <em>{{date}}</em>',
+  'document-status.revision-from': '<em>{{date}}</em>의 리비전',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': '리비전을 찾을 수 없습니다',
 
@@ -773,7 +774,7 @@ export default removeUndefinedLocaleResources({
   /** Menu item for registered studios (i.e. copies app id) */
   'help-resources.studio-app-id': '앱 ID',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': 'v{{newVersion}}로 업데이트하기 위해 재로드',
+  'help-resources.studio-auto-update-now': '다시 로드하여 v{{newVersion}}(으)로 업데이트',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity 스튜디오 버전 {{studioVersion}}',
   /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
@@ -1007,7 +1008,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': '핫스팟 & 크롭',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "에셋 파이프라인은 벡터 형식에 대한 핫스팟과 크롭을 지원하지 않습니다. 핫스팟 & 크롭을 활성화하려면, 이 이미지를 지원되는 래스터 형식 중 하나로 출력하세요. 예를 들어: <code>fm=jpg</code>를 <ImageUrlDocumentationLink>이미지 URL</ImageUrlDocumentationLink>에 추가하거나 <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>을 사용하여 <code>.format('png')</code>를 호출하세요.",
+    "자산 파이프라인은 벡터 형식에 대한 핫스팟과 크롭을 지원하지 않습니다. 핫스팟 & 크롭을 활성화하려면, 이 이미지를 지원되는 래스터 형식 중 하나로 출력하세요. 예를 들어: <code>fm=jpg</code>를 <ImageUrlDocumentationLink>이미지 URL</ImageUrlDocumentationLink>에 추가하거나 <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>을 사용하여 <code>.format('png')</code>를 호출하세요.",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': '개발자 정보 보기',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
@@ -1546,7 +1547,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': '새로 고침',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio가 업데이트되었습니다',
+  'package-version.new-package-available.title': 'Sanity Studio를 업데이트할 준비가 되었습니다!',
 
   /** Accessible name and tooltip for the button that clears the selected global perspective */
   'perspective.action.clear': '선택 지우기',
@@ -1592,7 +1593,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when document is already in release  */
   'release.action.already-in-release': '이미 릴리스 {{title}}에 포함됨',
   /** Action message for when you click to view all versions you can copy the current document to */
-  'release.action.copy-to': '버전을 복사하기',
+  'release.action.copy-to': '버전 복사 위치',
   /** Action message for creating new releases */
   'release.action.create-new': '새 릴리스',
   /** Description for toast when version creation failed */
@@ -1610,7 +1611,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when a new release is created off an existing version, draft or published document */
   'release.action.new-release': '새 릴리스',
   'release.action.new-release.limit-reached_other':
-    '이 작업 공간은 {{count}}개의 릴리스로 제한됩니다',
+    '이 워크스페이스는 릴리스 {{count}}개로 제한됩니다',
   /** Action message for pausing a scheduled draft so it can be edited */
   'release.action.pause-to-edit': '일시 중지 후 편집',
   /** Tooltip message for not having permissions for creating new releases */
@@ -1619,29 +1620,30 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': '지금 게시',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    '다시 시도하거나 연결을 확인해 주세요. 문서는 여전히 출시 시 비공개로 설정됩니다.',
+    '다시 시도하거나 연결을 확인해 주세요. 문서는 릴리스 시 여전히 게시 취소됩니다.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    '출시 시 비공개 설정을 되돌리지 못했습니다.',
+    '릴리스 시 게시 취소 설정을 되돌리지 못했습니다.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     '이제 이 버전을 편집할 수 있습니다.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    '출시 시 비공개 설정을 성공적으로 되돌렸습니다.',
+    '릴리스 시 게시 취소 설정을 성공적으로 되돌렸습니다.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': '게시 예약',
   /** Error message for when a version is set to be unpublished */
-  'release.action.unpublish-version.failure': '릴리스에서 버전을 비공개로 설정하는 데 실패했습니다',
+  'release.action.unpublish-version.failure':
+    '릴리스에서 버전을 게시 취소하도록 설정하지 못했습니다',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    '<strong>{{title}}</strong>을(를) 릴리스에서 비공개로 성공적으로 설정했습니다',
+    '<strong>{{title}}</strong>을(를) 릴리스 시 게시 취소되도록 설정했습니다',
   /** Action message for when the view release is pressed */
   'release.action.view-release': '릴리스 보기',
   /** Action message for when the view scheduled drafts is pressed */
   'release.action.view-scheduled-drafts': '예약된 초안 보기',
   /** Label for banner when release is scheduled */
-  'release.banner.scheduled-for-publishing-on': '{{date}}에 출판 예정',
+  'release.banner.scheduled-for-publishing-on': '{{date}}에 게시 예정',
   /** Label for button to show other variants in the document perspective list */
   'release.chip.button.other-variants_other': '+{{count}}개의 변형',
   /** Label for button to show other versions in the document perspective list */
@@ -1649,7 +1651,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Draft chip in document header */
   'release.chip.draft': '초안',
   /** Label for Draft chip in global header */
-  'release.chip.global.drafts': '초안들',
+  'release.chip.global.drafts': '초안',
   /** Label for Published chip in document header */
   'release.chip.published': '게시됨',
   /** Label for tooltip in chip when document is in an archived release */
@@ -1662,7 +1664,7 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': '편집된 날짜 {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
-  'release.chip.tooltip.intended-for-date': '{{date}}에 대한 예정',
+  'release.chip.tooltip.intended-for-date': '{{date}} 예정',
   /** Label for tooltip in chip when there is no recent draft edits */
   'release.chip.tooltip.no-edits': '편집 없음',
   /** Label for tooltip in chip when document isn't published */
@@ -1729,10 +1731,9 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': '초안 지금 게시',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    '이를 통해 여러 버전에서 작업할 때 문서가 충돌하는지 여부를 표시할 수 있습니다.',
+    '이 설정은 계획, 미리보기, 문서 충돌 여부 안내용입니다. 여기에서 시간을 설정해도 릴리스가 예약되지는 않습니다. 모든 문서가 준비되면 릴리스를 직접 실행하거나 예약해야 합니다.',
   /** Label for noting that a release time is not final */
-  'release.dialog.tooltip.note':
-    '참고: 릴리스 시간을 변경하고 나중에 예약된 게시를 위한 정확한 시간을 설정할 수 있습니다.',
+  'release.dialog.tooltip.note': '나중에 언제든지 변경할 수 있습니다.',
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': '릴리스의 대략적인 시간',
   /** The placeholder text when the release doesn't have a description */
@@ -1756,7 +1757,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': '게시됨',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': '릴리스',
+  'release.navbar.tooltip': '예약 보기',
   /** Accessible label for the link that opens a release's page from the global perspective menu */
   'release.navbar.view-release-aria-label': '릴리스 {{title}} 보기',
   /** The placeholder text when the release doesn't have a title */
@@ -1765,7 +1766,7 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning':
     '이 릴리스를 미래의 시간과 날짜로 예약하세요.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': '예약 날짜',
+  'release.schedule-dialog.select-publish-date-label': '게시 날짜',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': '이 릴리스는 고정 해제되었습니다',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
@@ -1777,7 +1778,7 @@ export default removeUndefinedLocaleResources({
     '예약된 초안 문서 <strong>{{title}}</strong> 삭제에 실패했습니다: {{error}}',
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
-    '예약된 초안 문서 <strong>{{title}}</strong>가 삭제되었습니다.',
+    '예약된 초안 문서 <strong>{{title}}</strong>이(가) 삭제되었습니다.',
   /** The toast title shown when saving edits to a release's details fails */
   'release.toast.edit-release-error.title': '릴리스 세부 정보 저장에 실패했습니다',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
@@ -1792,7 +1793,7 @@ export default removeUndefinedLocaleResources({
     '예약된 초안 문서 <strong>{{title}}</strong> 게시에 실패했습니다: {{error}}',
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
-    '예약된 초안 문서 <strong>{{title}}</strong>가 게시되었습니다.',
+    '예약된 초안 문서 <strong>{{title}}</strong>이(가) 게시되었습니다.',
   /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': '이 릴리스는 고정 해제되었습니다',
   /** The toast title that will be shown when the user has a release perspective which is now published */
@@ -1806,7 +1807,7 @@ export default removeUndefinedLocaleResources({
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': '초안 예약에 실패했습니다: {{error}}',
   /** Success toast for scheduling a paused draft */
-  'release.toast.schedule-publish.success': '일정에 따른 초안이 성공적으로 예약되었습니다',
+  'release.toast.schedule-publish.success': '초안이 예약되었습니다',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': '예약된 초안이 발행되었습니다',
   /** Label for when a version of a document has already been added to the release */
@@ -1835,7 +1836,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': '이 문서를 언제 게시할지 선택하세요.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': '게시를 위한 초안 일정 예약',
+  'schedule-publish-dialog.header': '게시를 위해 초안 예약',
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': '예약된 게시',
@@ -2268,7 +2269,7 @@ export default removeUndefinedLocaleResources({
     '{{alternativeName}} GMT{{offset}}에 일정 표시',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': '변경 사항',
+  'timeline.changes.title': '변경한 사람',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     '문서 기록 트랜잭션은 영향을 받지 않았습니다.',
@@ -2327,9 +2328,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
   'timeline.operation.edited-draft_timestamp': '편집됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': '실시간 편집됨',
+  'timeline.operation.edited-live': '라이브 편집됨',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
-  'timeline.operation.edited-live_timestamp': '실시간 편집됨: {{timestamp, datetime}}',
+  'timeline.operation.edited-live_timestamp': '라이브 편집됨: {{timestamp, datetime}}',
   /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': '보존 정책에 의해 삭제됨',
   /** Label shown in review changes timeline when a document was published */
@@ -2440,7 +2441,7 @@ export default removeUndefinedLocaleResources({
    */
   'workspaces.action.choose-another-workspace': '다른 워크스페이스 선택',
   /** Label for title to switch workspace before workspaces are listed */
-  'workspaces.action.switch-workspace': '작업 공간 전환',
+  'workspaces.action.switch-workspace': '워크스페이스 전환',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': '워크스페이스를 선택하세요',
   /** Label for the workspace menu */
@@ -2448,7 +2449,7 @@ export default removeUndefinedLocaleResources({
   /** Button label for opening the workspace switcher */
   'workspaces.select-workspace-label': '워크스페이스 선택',
   /** Tooltip for the workspace menu */
-  'workspaces.select-workspace-tooltip': '작업 공간 선택',
+  'workspaces.select-workspace-tooltip': '워크스페이스 선택',
   /** Title for Workplaces dropdown menu */
   'workspaces.title': '워크스페이스',
 })

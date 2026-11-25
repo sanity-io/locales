@@ -198,10 +198,10 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Imágenes del espacio de trabajo',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Algo salió mal al intentar resolver la Biblioteca de Medios para este proyecto.',
+    'Algo salió mal al intentar resolver la Biblioteca de medios para este proyecto.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'No se ha provisto una biblioteca de medios para esta organización.',
+    'No se ha aprovisionado ninguna biblioteca de medios para esta organización.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Biblioteca de medios',
   'asset-sources.media-library.image.title': 'Biblioteca de medios',
@@ -215,7 +215,7 @@ export default removeUndefinedLocaleResources({
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'Editar activo',
   /** Title for the upload dialog (component mode) */
-  'asset-sources.media-library.upload-dialog.title': 'Subir a Media Library',
+  'asset-sources.media-library.upload-dialog.title': 'Subir a la Biblioteca de medios',
   /** Warning message shown when uploading already existing files to the Media Library Asset Source */
   'asset-sources.media-library.warning.file-already-exist.description':
     'Usando el archivo existente encontrado en la biblioteca.',
@@ -1530,7 +1530,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Editar programación',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Nuevo Lanzamiento',
+  'release.action.new-release': 'Nuevo lanzamiento',
   'release.action.new-release.limit-reached_other':
     'Este espacio de trabajo está limitado a {{count}} lanzamientos',
   /** Tooltip message for not having permissions for creating new releases */
@@ -1539,23 +1539,23 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Publicar ahora',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Por favor, inténtelo de nuevo o verifique su conexión. El documento seguirá estando sin publicar al lanzarse.',
+    'Inténtelo de nuevo o compruebe su conexión. El documento se despublicará igualmente cuando se ejecute el lanzamiento.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Error al revertir la configuración para no publicar al lanzar.',
+    'No se pudo revertir la configuración de despublicar al lanzar.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description': 'Ahora puede editar esta versión.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Se ha revertido con éxito la configuración para no publicar al lanzar.',
+    'Se revirtió correctamente la configuración de despublicar al lanzar.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Programar publicación',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
-    'No se pudo establecer la versión para que no se publique en el lanzamiento',
+    'No se pudo configurar la versión para que se despublique en el lanzamiento',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Se estableció con éxito <strong>{{title}}</strong> para que no se publique en el lanzamiento',
+    'Se configuró correctamente <strong>{{title}}</strong> para que se despublique en el lanzamiento',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Ver lanzamiento',
   /** Action message for when the view scheduled drafts is pressed */
@@ -1586,16 +1586,16 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': 'Editado {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
-  'release.chip.tooltip.intended-for-date': 'Destinado para {{date}}',
+  'release.chip.tooltip.intended-for-date': 'Previsto para {{date}}',
   /** Label for tooltip in chip when there is no recent draft edits */
   'release.chip.tooltip.no-edits': 'Sin ediciones',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'No publicado',
   'release.chip.tooltip.other-variants_one': 'Una variante',
   'release.chip.tooltip.other-variants_other': '{{count}} variantes',
-  'release.chip.tooltip.other-versions_one': 'Una versión adicional fuera de las publicaciones',
+  'release.chip.tooltip.other-versions_one': 'Una versión adicional fuera de los lanzamientos',
   'release.chip.tooltip.other-versions_other':
-    '{{count}} versiones adicionales fuera de las publicaciones',
+    '{{count}} versiones adicionales fuera de los lanzamientos',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Publicado {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1603,13 +1603,13 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'Fecha desconocida',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': 'Esta publicación ha sido eliminada',
+  'release.deleted-tooltip': 'Este lanzamiento ha sido eliminado',
   /** Title for copying version to a new release dialog */
-  'release.dialog.copy-to-release.title': 'Copiar versión a nueva publicación',
+  'release.dialog.copy-to-release.title': 'Copiar versión a nuevo lanzamiento',
   /** Title for action create a release */
   'release.dialog.create.confirm': 'Crear versión',
   /** Title for creating releases dialog */
-  'release.dialog.create.title': 'Nueva publicación',
+  'release.dialog.create.title': 'Nuevo lanzamiento',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
     '¿Eliminar este borrador programado? Tu borrador ya está actualizado.',
@@ -1640,7 +1640,7 @@ export default removeUndefinedLocaleResources({
   /** Field label for the release description in the edit release dialog */
   'release.dialog.edit.description-label': 'Descripción',
   /** Title for the edit release dialog */
-  'release.dialog.edit.title': 'Editar release',
+  'release.dialog.edit.title': 'Editar lanzamiento',
   /** Field label for the release title in the edit release dialog */
   'release.dialog.edit.title-label': 'Título',
   /** Body text for the dialog confirming running a scheduled draft immediately */
@@ -1652,15 +1652,15 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Publicar borrador ahora',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'El tiempo de lanzamiento previsto se utiliza para crear mejores vistas previas e indicaciones sobre si los documentos entran en conflicto.',
+    'Esto es solo para planificar, previsualizar e indicar si hay conflictos entre documentos. Establecer una hora aquí no programará tu lanzamiento. Todavía tendrás que ejecutar o programar el lanzamiento cuando todos los documentos estén listos.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Siempre puedes cambiarlo más tarde.',
   /** Title for tooltip to explain release time */
-  'release.dialog.tooltip.title': 'Tiempo aproximado de lanzamiento',
+  'release.dialog.tooltip.title': 'Hora aproximada del lanzamiento',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholder-describe-release': 'Describa la publicación…',
+  'release.form.placeholder-describe-release': 'Describa el lanzamiento…',
   /** Tooltip for button to hide release visibility */
-  'release.layer.hide': 'Ocultar publicación',
+  'release.layer.hide': 'Ocultar lanzamiento',
   /** Label for the release menu */
   'release.menu.label': 'Menú de lanzamiento',
   /** Menu item label for scheduled drafts */
@@ -1668,19 +1668,19 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Acciones',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'Ver publicaciones de contenido',
+  'release.menu.view-releases': 'Ver lanzamientos de contenido',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Borradores',
   /** Label for published releases in navbar */
   'release.navbar.published': 'Publicado',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Publicaciones',
+  'release.navbar.tooltip': 'Ver programación',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'Publicación sin título',
+  'release.placeholder-untitled-release': 'Lanzamiento sin título',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Programa para una fecha y hora futuras.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': 'Publicar en',
+  'release.schedule-dialog.select-publish-date-label': 'Publicar el',
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
@@ -1688,9 +1688,9 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.title': "La publicación '{{title}}' fue archivada",
+  'release.toast.archived-release.title': "El lanzamiento '{{title}}' fue archivado",
   /** The toast title that will be shown the creating a release fails */
-  'release.toast.create-release-error.title': 'Error al crear la publicación',
+  'release.toast.create-release-error.title': 'Error al crear el lanzamiento',
   /** Error toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.error':
     'No se pudo eliminar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
@@ -1698,14 +1698,14 @@ export default removeUndefinedLocaleResources({
   'release.toast.delete-schedule-draft.success':
     'El documento de borrador programado <strong>{{title}}</strong> ha sido eliminado.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': 'No se pudieron guardar los detalles del release',
+  'release.toast.edit-release-error.title': 'No se pudieron guardar los detalles del lanzamiento',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "No se pudo encontrar el lanzamiento '{{title}}'",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Error al pausar el documento programado <strong>{{title}}</strong>: {{error}}',
+    'No se pudo pausar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'No se pudo publicar el documento de borrador programado <strong>{{title}}</strong>: {{error}}',
@@ -1742,9 +1742,9 @@ export default removeUndefinedLocaleResources({
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'Lo antes posible',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
-  'release.type.scheduled': 'En tiempo',
+  'release.type.scheduled': 'A una hora concreta',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'Indeciso',
+  'release.type.undecided': 'Sin decidir',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Ver todas las versiones del documento',
 
@@ -2168,7 +2168,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.action.search-for-timezone-placeholder': 'Buscar una ciudad o zona horaria',
   'time-zone.action.select-local-time-zone': 'Seleccionar zona horaria local',
   'time-zone.dialog-info.content-releases':
-    'La zona horaria seleccionada cambiará cómo se representan las fechas en las publicaciones de contenido.',
+    'La zona horaria seleccionada cambiará cómo se representan las fechas en los lanzamientos de contenido.',
   'time-zone.dialog-info.input':
     'La zona horaria seleccionada cambiará cómo se representan las fechas solo para esta entrada en este documento.',
   'time-zone.dialog-info.scheduled-publishing':

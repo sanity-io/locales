@@ -2,11 +2,11 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
-  'action.copy-document-id.label': "Doküman ID'sini kopyala",
+  'action.copy-document-id.label': "Belge ID'sini kopyala",
   /** Tooltip for the copy actions dropdown button in the document panel header */
   'action.copy-document-url.label': "Belge URL'sini Kopyala",
   /** Label for the "Copy document URL" menu item */
-  'action.copy-link-to-document.label': "Doküman URL'sini kopyala",
+  'action.copy-link-to-document.label': "Belge URL'sini kopyala",
   /** Tooltip when action button is disabled because the operation is not ready   */
   'action.delete.disabled.not-ready': 'İşlem hazır değil',
   /** Tooltip when action button is disabled because the document does not exist */
@@ -119,9 +119,9 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Arşivlenmiş bir sürümün parçası olarak arşivlenen salt okunur bir belgeyi görüntülüyorsunuz <VersionBadge>{{title}}</VersionBadge>. Düzenlenemez',
+    'Bu belge sürümü, arşivlenmiş <VersionBadge>{{title}}</VersionBadge> yayınına aittir',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': 'Bu planlanmış taslak arşivlendi',
+  'banners.archived-scheduled-draft.description': 'Bu zamanlanmış taslak arşivlendi',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Taslak belge oluşturulamıyor.',
@@ -156,10 +156,10 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.actions.publish-draft.text': 'Taslağı yayınla',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
-    'Çalışma alanında taslaklar etkinleştirilmemiş, ancak bu belgenin bir taslak versiyonu mevcut.',
+    'Çalışma alanında taslaklar etkinleştirilmemiş, ancak bu belgenin bir taslak sürümü mevcut.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    "Düzenleme sırasında program duraklatıldı. Yeniden etkinleştirmek için Program'a basın veya yeni bir tarih seçin.",
+    "Düzenleme sırasında zamanlama duraklatıldı. Yeniden etkinleştirmek için Zamanla'ya basın veya yeni bir tarih seçin.",
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Rolünüz <Roles/> bu belgeyi oluşturma iznine sahip değil.',
@@ -178,7 +178,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.text': 'Düzenleme iste',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
-    'Yayınlanmış bir sürümün parçası olarak yayınlanan salt okunur bir belgeyi görüntülüyorsunuz <VersionBadge>{{title}}</VersionBadge>. Düzenlenemez',
+    '<VersionBadge>{{title}}</VersionBadge> kapsamında yayınlanmış, salt okunur bir belgeyi görüntülüyorsunuz. Düzenlenemez',
   /** The text for the reload button */
   'banners.reference-changed-banner.reason-changed.reload-button.text': 'Referansı Yeniden Yükle',
   /** The text for the reference change banner if the reason is that the reference has been changed */
@@ -206,10 +206,10 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-end_other': 'yayınlarda',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Bu belge <VersionBadge/> yayınının bir parçası ve {{count}} fazladan yayın.',
+    'Bu belge, <VersionBadge/> yayınının ve {{count}} diğer yayının parçasıdır.',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    'Bu belge <VersionBadge/> yayınının bir parçası ve {{count}} fazladan yayınlar.',
+    'Bu belge, <VersionBadge/> yayınının ve {{count}} diğer yayının parçasıdır',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
@@ -230,13 +230,13 @@ export default removeUndefinedLocaleResources({
     'Seçilen belge revizyonunu bulamadık, lütfen geçmiş listesinden başka bir giriş seçin.',
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
-    'Bu belge için planlanmış bir taslak bulunmaktadır. Şimdi değişiklikleri yayınlarsanız, planlama çalıştığında üzerine yazılacaklar.',
+    'Bu belge için zamanlanmış bir taslak var. Değişiklikleri şimdi yayınlarsanız, zamanlama çalıştığında üzerine yazılacaktır.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Bu belge <VersionBadge>{{title}}</VersionBadge> sürümünün bir parçası olarak yayından kaldırılacak',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
-    'Mevcut <strong>yayınlanmış</strong> versiyon gösteriliyor:',
+    'Mevcut <strong>yayınlanmış</strong> sürüm gösteriliyor:',
   /** The text that appears for the action button to add the current document to the selected variant */
   'banners.variant.action.add-to-variant': 'Varyant oluştur',
   /** The text for the banner that appears when the selected variant matches no variant definition */
@@ -265,13 +265,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Belge işlemleri',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Tüm panelleri daralt',
+  'buttons.focus-pane-button.aria-label.collapse': 'Odak modundan çık (gezinmeyi göster)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Paneli odakla',
+  'buttons.focus-pane-button.aria-label.focus': 'Odak moduna gir (gezinmeyi gizle)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Tüm panelleri daralt',
+  'buttons.focus-pane-button.tooltip.collapse': 'Odak modundan çık',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Paneli odakla',
+  'buttons.focus-pane-button.tooltip.focus': 'Odak moduna gir',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Sağa bölünmüş paneli aç',
   /** The tool tip for the split pane button on the document panel header */
@@ -300,9 +300,9 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': 'Daha fazla bilgi',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    "Canvas, yazdıkça otomatik olarak Studio'ya yapılandırılmış içerik olarak geri haritalanan serbest form editöründe yazarlık yapmanızı sağlar.",
+    "Canvas, yazdıkça otomatik olarak Studio'da yapılandırılmış içeriğe dönüşen serbest biçimli bir editörde içerik oluşturmanızı sağlar.",
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Önce fikir yazarlığı',
+  'canvas.banner.popover-heading': 'Fikir odaklı içerik oluşturma',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -335,13 +335,13 @@ export default removeUndefinedLocaleResources({
   'compare-versions.menu-item.disabled-reason':
     'Bu belgenin karşılaştırılacak başka sürümleri yok.',
   /** The text for the "Compare versions" action for a document */
-  'compare-versions.menu-item.title': 'Versiyonları karşılaştır',
+  'compare-versions.menu-item.title': 'Sürümleri karşılaştır',
   /** The string used to label draft documents */
   'compare-versions.status.draft': 'Taslak',
   /** The string used to label published documents */
   'compare-versions.status.published': 'Yayınlandı',
   /** The title used when comparing versions of a document */
-  'compare-versions.title': 'Versiyonları karşılaştır',
+  'compare-versions.title': 'Sürümleri karşılaştır',
 
   /** The text in the "Cancel" button in the confirm delete dialog that cancels the action and closes the dialog */
   'confirm-delete-dialog.cancel-button.text': 'İptal',
@@ -522,9 +522,9 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Planınızın geçmiş saklama politikası nedeniyle bu belgenin değişikliklerini yükleyemiyoruz, bu size <strong>{{version}}</strong> sürümünün <strong>yayınlanmış</strong> sürümle nasıl karşılaştığını gösterir.',
+    'Büyük olasılıkla planınızın geçmiş saklama politikası nedeniyle bu belgenin değişiklikleri yüklenemiyor; bu görünüm, <strong>{{version}}</strong> sürümünün <strong>yayınlanmış</strong> sürümle nasıl karşılaştırıldığını gösterir.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
-  'events.compare-with-published.title': 'Yayınlanmış ile karşılaştırılıyor',
+  'events.compare-with-published.title': 'Yayınlanmış sürümle karşılaştırılıyor',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': '<VersionBadge>{{releaseTitle}}</VersionBadge> belgesini incele',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -678,7 +678,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success':
     'Belge üzerinde {{context}} başarıyla gerçekleştirildi',
   /** The text when copy document ID operation succeeded */
-  'panes.document-operation-results.operation-success_copy-id': "Doküman ID'si panoya kopyalandı",
+  'panes.document-operation-results.operation-success_copy-id': "Belge ID'si panoya kopyalandı",
   /** The text when copy URL operation succeeded  */
   'panes.document-operation-results.operation-success_copy-url': "Belge URL'si panoya kopyalandı",
   /**  */

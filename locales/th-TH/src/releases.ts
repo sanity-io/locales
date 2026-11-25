@@ -282,7 +282,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'เอกสารประกอบ',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': 'รีลีสทั้งหมด',
+  'overview.back-to-all-releases': 'release ทั้งหมด',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'ดูปฏิทิน',
   /** Description for the release tool */
@@ -331,7 +331,7 @@ export default removeUndefinedLocaleResources({
   'publish-dialog.confirm-publish.update-drafts-checkbox': 'อัปเดตแบบร่างที่มีอยู่',
   /** Description for the update existing drafts checkbox when multiple documents have existing drafts */
   'publish-dialog.confirm-publish.update-drafts-description_other':
-    'แบบร่างที่มีอยู่ของเอกสาร {{draftDocumentsLength}} รายการจะถูกลบทิ้ง เพื่อให้แบบร่างตรงกับรีลีสที่เผยแพร่แล้ว การเปลี่ยนแปลงแบบร่างที่ยังไม่ได้เผยแพร่จะสูญหาย',
+    'แบบร่างที่มีอยู่ของเอกสาร {{draftDocumentsLength}} รายการจะถูกลบทิ้ง เพื่อให้แบบร่างตรงกับ release ที่เผยแพร่แล้ว การเปลี่ยนแปลงแบบร่างที่ยังไม่ได้เผยแพร่จะสูญหาย',
   /** Label for when documents in release have validation errors */
   'publish-dialog.validation.error': 'เอกสารบางรายการมีข้อผิดพลาดในการตรวจสอบ',
   /** Label for when documents are being validated */
@@ -350,22 +350,22 @@ export default removeUndefinedLocaleResources({
     'การดำเนินการนี้จะย้อนกลับเอกสาร {{releaseDocumentsLength}} เวอร์ชัน',
   /** Error card in the revert dialog when the history needed to revert some documents is no longer available */
   'revert-dialog.confirm-revert.history-unavailable-card_other':
-    'ไม่มีสถานะก่อนหน้าของเอกสาร {{count}} ฉบับในประวัติเอกสารอีกต่อไป จึงไม่สามารถย้อนกลับรีลีสนี้ได้',
+    'ไม่มีสถานะก่อนหน้าของเอกสาร {{count}} ฉบับในประวัติเอกสารอีกต่อไป จึงไม่สามารถย้อนกลับ release นี้ได้',
   /** Shown in the revert dialog while the previous state of each document is being looked up */
   'revert-dialog.confirm-revert.resolving': 'กำลังตรวจสอบประวัติเอกสาร…',
   /** Checkbox label to confirm whether to create a staged release for revert or immediately revert */
   'revert-dialog.confirm-revert.stage-revert-checkbox-label': 'ย้อนกลับ release ทันที',
   /** Revert dialog summary line for documents that will be restored to a previous revision */
   'revert-dialog.confirm-revert.summary-restore_other':
-    'เอกสาร {{count}} ฉบับจะถูกคืนค่ากลับไปเป็นฉบับเผยแพร่ล่าสุดก่อนรีลีสนี้',
+    'เอกสาร {{count}} ฉบับจะถูกคืนค่ากลับไปเป็นฉบับเผยแพร่ล่าสุดก่อน release นี้',
   /** Revert dialog summary line for documents that will be unpublished because they were not published right before the release */
   'revert-dialog.confirm-revert.summary-unpublish_other':
-    'เอกสาร {{count}} ฉบับจะถูกยกเลิกการเผยแพร่ เนื่องจากไม่ได้มีการเผยแพร่ก่อนรีลีสนี้',
+    'เอกสาร {{count}} ฉบับจะถูกยกเลิกการเผยแพร่ เนื่องจากไม่ได้มีการเผยแพร่ก่อน release นี้',
   /** Title for the dialog confirming the revert of a release */
   'revert-dialog.confirm-revert.title': "คุณแน่ใจหรือไม่ว่าต้องการย้อนกลับ release '{{title}}'?",
   /** Error card in the revert dialog when the previous state of some documents could not be determined */
   'revert-dialog.confirm-revert.unresolved-card_other':
-    'ไม่สามารถระบุสถานะก่อนหน้าของเอกสาร {{count}} ฉบับได้ จึงไม่สามารถย้อนกลับรีลีสนี้ได้',
+    'ไม่สามารถระบุสถานะก่อนหน้าของเอกสาร {{count}} ฉบับได้ จึงไม่สามารถย้อนกลับ release นี้ได้',
   /** Warning card text for when immediately revert a release with history */
   'revert-dialog.confirm-revert.warning-card':
     'มีการเปลี่ยนแปลงเอกสารใน release นี้หลังจากที่ถูกเผยแพร่ การย้อนกลับจะเขียนทับการเปลี่ยนแปลงเหล่านี้',
@@ -520,7 +520,8 @@ export default removeUndefinedLocaleResources({
   /** Text for toast when release failed to publish */
   'toast.publish.error': "ไม่สามารถเผยแพร่ '<strong>{{title}}</strong>': {{error}}",
   /** Text for toast when the release was published but the existing drafts could not be updated */
-  'toast.publish.update-drafts-error': 'รีลีสได้รับการเผยแพร่แล้ว แต่ไม่สามารถอัปเดตแบบร่างที่มีอยู่ได้: {{error}}',
+  'toast.publish.update-drafts-error':
+    'release ได้รับการเผยแพร่แล้ว แต่ไม่สามารถอัปเดตแบบร่างที่มีอยู่ได้: {{error}}',
   /** Text for toast when release has reverted release successfully staged */
   'toast.revert-stage.success': "สร้าง revert release สำหรับ '{{title}}' สำเร็จแล้ว <Link/>",
   /** Link text for toast link to the generated revert release */

@@ -137,7 +137,7 @@ export default removeUndefinedLocaleResources({
     'Alegeți o destinație pentru acest document:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    'Versiunea <VersionBadge>{{title}}</VersionBadge> nu este activă.',
+    'Lansarea <VersionBadge>{{title}}</VersionBadge> nu este activă.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Restaurați cea mai recentă revizie',
   /** The text content for the deleted document banner */
@@ -264,13 +264,14 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Acțiuni document',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Restrânge toate panourile',
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Ieși din modul de concentrare (afișează navigarea)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Focalizează panoul',
+  'buttons.focus-pane-button.aria-label.focus': 'Intră în modul de concentrare (ascunde navigarea)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Restrânge toate panourile',
+  'buttons.focus-pane-button.tooltip.collapse': 'Ieși din modul de concentrare',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Focalizează panoul',
+  'buttons.focus-pane-button.tooltip.focus': 'Intră în modul de concentrare',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Împarte panoul dreapta',
   /** The tool tip for the split pane button on the document panel header */
@@ -514,7 +515,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the add reference item in the incoming references input */
   'incoming-references-input.add-reference-item': 'Adaugă element',
   /** The aria-label for the incoming references list */
-  'incoming-references-input.list-label': 'Referințe de intrare de tipul {{type}}',
+  'incoming-references-input.list-label': 'Referințe primite de tipul {{type}}',
   /** The text for the no items in the incoming references input */
   'incoming-references-input.no-items': 'Niciun element',
   /** The text for the reference from in the incoming references input */
@@ -530,7 +531,7 @@ export default removeUndefinedLocaleResources({
     'Se încarcă documentele între seturi de date...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
-    'Nu sunt definite referințe de intrare pentru acest tip, consultați documentația pentru mai multe informații.',
+    'Nu sunt definite referințe primite pentru acest tip, consultați documentația pentru mai multe informații.',
 
   /** The text shown if there are no incoming references in the inspector */
   'incoming-references-pane.no-references': 'Nu au fost găsite referințe primite.',
@@ -687,7 +688,7 @@ export default removeUndefinedLocaleResources({
     '<Strong>{{title}}</Strong> a fost retras de la publicare. O schiță a fost creată din ultima revizie publicată.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'Versiunea va fi anulată din publicare când versiunea (release) va fi publicată',
+    'Versiunea va fi anulată din publicare când lansarea va fi publicată',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Fără titlu',
   /** The loading message for the document not found pane */

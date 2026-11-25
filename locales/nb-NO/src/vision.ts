@@ -131,11 +131,11 @@ export default removeUndefinedLocaleResources({
   'settings.perspective-label': 'Perspektiv',
   /** Notification about previewDrafts to drafts rename */
   'settings.perspective.preview-drafts-renamed-to-drafts.description':
-    'Perspektivet "<code>previewDrafts</code>" har blitt omdøpt til "<code>drafts</code>" og er nå foreldet. Denne endringen er effektiv for alle versjoner med støtte for perspektiv (>= v2021-03-25).',
+    'Perspektivet "<code>previewDrafts</code>" har blitt omdøpt til "<code>drafts</code>" og er nå foreldet. Denne endringen gjelder for alle versjoner som støtter perspektiver (>= v2021-03-25).',
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Les dokumentasjon',
   /** Option for selecting default perspective */
-  'settings.perspectives.default': 'Ingen perspektiv (API-standard)',
+  'settings.perspectives.default': 'Inget perspektiv (API-standard)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspektiver lar deg kjøre spørringen din mot forskjellige "visninger" av innholdet i datasettet ditt',

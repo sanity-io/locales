@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Esta versión de la API no admite perspectivas complejas. Usa {{apiVersion}} o una versión posterior.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Esta versión de la API no admite variantes de contenido. Usa la versión experimental de la API ({{apiVersion}}).',
+    'Esta versión de la API no admite variantes de contenido. Usa {{apiVersion}} o una versión posterior.',
   /** Label for "Query" editor/input */
   'query.label': 'Consulta',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'Versión de la API',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'Cuando se selecciona una variante, la versión de la API debe ser vX.',
+    'Cuando se selecciona una variante, la versión de la API debe ser {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Versión personalizada de la API',
   /** Label for the "Dataset" dropdown in vision settings */

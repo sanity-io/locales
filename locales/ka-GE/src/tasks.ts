@@ -40,18 +40,18 @@ export default removeUndefinedLocaleResources({
   'document.footer.open-tasks.text_other': '{{count}} ღია დავალება',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': 'თქვენ ჯერ არ გეკუთვნიათ დავალებები',
+  'empty-state.list.assigned.heading': 'თქვენთვის ჯერ არცერთი დავალება არ არის მინიჭებული',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': 'როდესაც დაგეკუთვნებათ დავალებები, ისინი აქ გამოჩნდებიან',
+  'empty-state.list.assigned.text': 'როდესაც დავალებები მოგენიჭებათ, ისინი აქ გამოჩნდება',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'ახალი დავალების შექმნა',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
-  'empty-state.list.document.heading': 'ეს დოკუმენტი ჯერ არ აქვს დავალებები',
+  'empty-state.list.document.heading': 'ამ დოკუმენტს ჯერ არ აქვს დავალებები',
   /** The text in the tasks sidebar, in the document tab, when the document doesn't have any task*/
   'empty-state.list.document.text':
-    'როდესაც დოკუმენტს ჰქონდეს დაკავშირებული დავალებები, ისინი აქ გამოჩნდებიან.',
+    'როდესაც დოკუმენტს დაკავშირებული დავალებები ექნება, ისინი აქ გამოჩნდება.',
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.heading': 'გახსენით დოკუმენტი მისი დავალების ნახვად',
+  'empty-state.list.no-active-document.heading': 'გახსენით დოკუმენტი მისი დავალების სანახავად',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
   'empty-state.list.no-active-document.text':
     'თქვენი აქტიური დოკუმენტის დავალებები აქ გამოჩნდებიან.',
@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.list.subscribed.heading': 'თქვენ ჯერ არ გამოგეწერიათ დავალებები',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.text':
-    'როდესაც შექმნით, შეცვლით ან დააკომენტარებთ დავალებას, ავტომატურად გაწერიან მასზე',
+    'დავალების შექმნისას, შეცვლისას ან კომენტარის დაწერისას ავტომატურად გამოიწერთ მას',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': 'დასრულებული დავალებები არ არის',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
@@ -70,7 +70,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.status.list.closed.subscribed.heading': 'დასრულებული დავალებები არ არის',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
-    'აქ გამოჩნდება დასრულებული დავალებები, რომლებზეც გაწერიან',
+    'აქ გამოჩნდება დასრულებული დავალებები, რომლებზეც ხართ გამოწერილი',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'ყველა დავალება შესრულებულია',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
@@ -79,12 +79,13 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': 'ამ დოკუმენტზე დავალებები არ არის',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.heading': 'გაწერილი დავალებები არ არის',
+  'empty-state.status.list.open.subscribed.heading': 'გამოწერილი დავალებები არ არის',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': 'აქ გამოჩნდება დავალებები, რომლებზეც გაწერიან',
+  'empty-state.status.list.open.subscribed.text':
+    'აქ გამოჩნდება დავალებები, რომლებზეც ხართ გამოწერილი',
 
   /** Text used in the assignee input when there is no user assigned */
-  'form.input.assignee.no-user-assigned.text': 'დაუმიჯნავი',
+  'form.input.assignee.no-user-assigned.text': 'მიუნიჭებელი',
   /** Text used in the assignee input tooltip when there is no user assigned */
   'form.input.assignee.no-user-assigned.tooltip': 'მიანიჭეთ პირი',
   /** Text used in the assignee input when searching and no users are found */
@@ -126,7 +127,7 @@ export default removeUndefinedLocaleResources({
   'list.empty.text': 'დავალებები არ არის',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
   'list.feedback.text':
-    'დაგვეხმარეთ გაუმჯობესებაში, <Link>გააზიარეთ კარგი შეფასება დავალებებზე</Link>',
+    'დაგვეხმარეთ გაუმჯობესებაში, <Link>გაგვიზიარეთ უკუკავშირი დავალებებზე</Link> ',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': 'დავალების ბმულის კოპირება',
@@ -135,7 +136,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the duplicate task menu item */
   'menuitem.duplicate.text': 'დავალების დუბლირება',
   /** The text for the duplicate task menu item tooltip when mode is upsell */
-  'menuitem.duplicate.upsell-tooltip': 'გადაიხადეთ დავალების დუბლირების ფუნქციაზე',
+  'menuitem.duplicate.upsell-tooltip': 'განახლება დავალებების დუბლირებისთვის',
 
   /** Fragment used to construct the first entry in the activity log */
   'panel.activity.created-fragment': 'შექმნა ეს დავალება',
@@ -148,7 +149,7 @@ export default removeUndefinedLocaleResources({
   /** The placeholder text for the comment text box */
   'panel.comment.placeholder': 'დაამატეთ კომენტარი...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': 'გადაიხადეთ დავალებებზე კომენტარის დამატების ფუნქციაზე',
+  'panel.comment.placeholder.upsell': 'განახლება დავალებებზე კომენტარის დასამატებლად',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': 'შექმნა',
   /** The title used in the drafts pulldown */

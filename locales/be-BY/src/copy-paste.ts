@@ -59,7 +59,7 @@ export default removeUndefinedLocaleResources({
     'Спасылкі тыпу "{{sourceReferenceType}}" не дазволены ў полі спасылак, якое прымае тыпы "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Дакумент на які спасылаецца "{{ref}}" не існуе',
+    'Дакумент "{{ref}}", на які вядзе спасылка, не існуе',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Тыпы схемы крыніцы і мэты не сумяшчальныя',

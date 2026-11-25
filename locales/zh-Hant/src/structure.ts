@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': '複製文件 ID',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': '複製文件 URL',
+  'action.copy-document-url.label': '複製',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': '複製文件 URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -12,7 +12,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': '此文件尚未存在或已被刪除',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
-  'action.delete.disabled.scheduled-release': '由於該文件存在於預定發布中，因此無法刪除',
+  'action.delete.disabled.scheduled-release': '由於該文件存在於已排程的發布中，因此無法刪除',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found': '所選的 release 或 variant 不包含此文件',
   /** Label for the "Delete" document action button */
@@ -20,7 +20,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Delete" document action while the document is being deleted */
   'action.delete.running.label': '正在刪除…',
   /** Tooltip when action is disabled because the document is linked to Canvas */
-  'action.disabled-by-canvas.tooltip': '由於文檔與 Canvas 鏈接，某些文檔操作被禁用',
+  'action.disabled-by-canvas.tooltip': '與 Canvas 連結的文件已停用部分文件操作',
   /** Message prompting the user to confirm discarding changes */
   'action.discard-changes.confirm-dialog.confirm-discard-changes':
     '您確定要放棄自上次發布以來的所有更改嗎？',
@@ -108,19 +108,19 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    '您正在查看作為<VersionBadge>{{title}}</VersionBadge>一部分而存檔的唯讀文件。它無法被編輯',
+    '此文件版本屬於已封存的 <VersionBadge>{{title}}</VersionBadge> 發布',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': '此預定草稿已存檔',
+  'banners.archived-scheduled-draft.description': '此排程草稿已封存',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
-  'banners.choose-new-document-destination.cannot-create-draft-document': '無法創建草稿文檔。',
+  'banners.choose-new-document-destination.cannot-create-draft-document': '無法建立草稿文件。',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
   'banners.choose-new-document-destination.cannot-create-published-document':
-    '無法創建已發布的文檔。',
+    '無法建立已發布的文件。',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
-  'banners.choose-new-document-destination.choose-destination': '選擇該文檔的目的地：',
+  'banners.choose-new-document-destination.choose-destination': '為此文件選擇目的地：',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge>版本未激活。',
+    '<VersionBadge>{{title}}</VersionBadge> 版本並非使用中。',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': '還原最新版本',
   /** The text content for the deleted document banner */
@@ -128,7 +128,7 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': '此文件類型已棄用。',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': '放棄草稿',
+  'banners.live-edit-draft-banner.discard.tooltip': '捨棄草稿以繼續編輯。',
   /** The text for publish action for the draft banner */
   'banners.live-edit-draft-banner.publish.tooltip': '發布以繼續編輯',
   /** The text content for the live edit document when it's a draft */
@@ -140,11 +140,11 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.actions.compare-draft.tooltip':
     '已發布的文件不存在，因此無法比較此草稿。',
   /** The label for the "discard draft" action */
-  'banners.obsolete-draft.actions.discard-draft.text': '丟棄草稿',
+  'banners.obsolete-draft.actions.discard-draft.text': '捨棄草稿',
   /** The label for the "publish draft" action */
   'banners.obsolete-draft.actions.publish-draft.text': '發布草稿',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
-  'banners.obsolete-draft.draft-model-inactive.text': '工作區未啟用草稿，但此文檔的草稿版本存在。',
+  'banners.obsolete-draft.draft-model-inactive.text': '工作區未啟用草稿，但此文件存在草稿版本。',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text': '編輯時暫停排程。按下「排程」以重新啟動或選擇新的日期。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
@@ -171,20 +171,20 @@ export default removeUndefinedLocaleResources({
   /** The text that appears for the action button to add the current document to the global bundle, this happens when user is viewing an anonymous bundle */
   'banners.release.action.add-to-bundle': '新增至 bundle',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.add-to-release': '添加到發布',
+  'banners.release.action.add-to-release': '新增至發布',
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.open-to-edit': '開啟發布以編輯',
   /** Toast description in case an error occurs when adding a document to a release  */
-  'banners.release.error.description': '將文件添加到發布時發生錯誤：{{message}}',
+  'banners.release.error.description': '將文件新增至發布時發生錯誤：{{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
-  'banners.release.error.title': '將文件添加到發布時出錯',
+  'banners.release.error.title': '將文件新增至發布時出錯',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description': '該文件僅存在於',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-end_other': '發布',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    '此文件是<VersionBadge/>發布的一部分，以及其他{{count}}個發布',
+    '此文件屬於 <VersionBadge/> 發布及另外 {{count}} 個發布',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
@@ -194,15 +194,15 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': '不在<VersionBadge>{{title}}</VersionBadge>發布中。',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.description': '請耐心等待，文件正在添加到發布中。這應該不會超過幾秒鐘。',
+  'banners.release.waiting.description': '請耐心等待，文件正在新增至發布。這應該不會超過幾秒鐘。',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.title': '正在將文件添加到發布中…',
+  'banners.release.waiting.title': '正在將文件新增至發布…',
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
-    '我們找不到所選的文檔修訂版本，請從歷史列表中選擇另一個條目。',
+    '我們找不到所選的文件修訂版本，請從歷史列表中選擇另一個項目。',
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
-    '此文件存在預定草稿。如果您現在發布更改，當計劃運行時將被覆蓋。',
+    '此文件有排程草稿。若現在發布更改，這些更改將在排程執行時被覆寫。',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     '此文件將作為<VersionBadge>{{title}}</VersionBadge>發布的一部分而取消發布',
@@ -259,27 +259,27 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.editable.linked-text': '此文件可在Canvas中編輯。',
   /** The description for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-description':
-    'Canvas允許您自由寫作，然後在Studio中更新內容，無需手動逐字段複製。',
+    'Canvas 讓您自由撰寫，然後在 Studio 中更新內容，無需手動逐欄位複製。',
   /** The heading for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-heading': '自由形式寫作',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': '此草稿文檔與 Canvas 鏈接',
+  'canvas.banner.linked-text.draft': '此草稿文件已連結至 Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': '此現行文檔與 Canvas 鏈接',
+  'canvas.banner.linked-text.published': '此即時文件已連結至 Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': '此版本文檔與 Canvas 鏈接',
+  'canvas.banner.linked-text.version': '此版本文件已連結至 Canvas',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': '了解更多',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas 讓您在自由形式的編輯器中創作，自動映射回 Studio 作為結構化內容 - 隨著您的輸入。',
+    'Canvas 讓您在自由形式的編輯器中創作，並在您輸入的同時自動對應回 Studio 中的結構化內容。',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': '首先構思創作',
+  'canvas.banner.popover-heading': '構想優先的創作',
 
   /** The description for the changes banner */
-  'changes.banner.description': '顯示此文檔的<strong>{{perspective}}</strong>版本的歷史。',
+  'changes.banner.description': '顯示此文件<strong>{{perspective}}</strong>版本的歷史記錄。',
   /** The tooltip for the changes banner */
-  'changes.banner.tooltip': '此視圖顯示特定版本文檔中發生的更改。選擇不同的版本以查看其更改',
+  'changes.banner.tooltip': '此視圖顯示此文件特定版本中發生的更改。選擇不同的版本以查看其更改',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '從',
   'changes.tab.history': '歷史',
@@ -296,12 +296,12 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': '上一個文件參數無效。',
   /** The error message shown when releases failed to load */
-  'compare-version.error.loadReleases.title': '加載發布失敗',
+  'compare-version.error.loadReleases.title': '載入發布失敗',
   /** The error message shown when document versions or variants failed to load */
   'compare-version.error.loadVersions.title': '載入版本失敗',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': '沒有其他版本的此文檔可供比較。',
+  'compare-versions.menu-item.disabled-reason': '此文件沒有其他版本可供比較。',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': '比較版本',
   /** The string used to label draft documents */
@@ -458,13 +458,13 @@ export default removeUndefinedLocaleResources({
   'document-view.form-view.sync-stalled.title': '您的變更仍未儲存',
 
   /** The description for the document favorite action */
-  'document.favorites.add-to-favorites': '添加到收藏夾',
+  'document.favorites.add-to-favorites': '加入收藏',
   /** The description for the document unfavorite action */
-  'document.favorites.remove-from-favorites': '從收藏夾中移除',
+  'document.favorites.remove-from-favorites': '從收藏中移除',
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    '我們無法加載此文檔的更改，可能是由於您計劃的歷史保留政策，這顯示了<strong>{{version}}</strong>版本與<strong>已發布</strong>版本的比較。',
+    '我們無法載入此文件的更改，可能是由於您方案的歷史保留政策。以下顯示<strong>{{version}}</strong>版本與<strong>已發布</strong>版本的比較。',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': '與已發布版本比較',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
@@ -475,30 +475,31 @@ export default removeUndefinedLocaleResources({
   'events.open.release': '打開<VersionBadge>{{releaseTitle}}</VersionBadge>發布',
 
   /** The text for the add reference item in the incoming references input */
-  'incoming-references-input.add-reference-item': '添加項目',
+  'incoming-references-input.add-reference-item': '新增項目',
   /** The aria-label for the incoming references list */
-  'incoming-references-input.list-label': '類型為 {{type}} 的引用列表',
+  'incoming-references-input.list-label': '類型為 {{type}} 的傳入參照',
   /** The text for the no items in the incoming references input */
   'incoming-references-input.no-items': '無項目',
   /** The text for the reference from in the incoming references input */
   'incoming-references-input.reference-from': '來自 {{type}} 的引用',
   /** The text for the schema type not found in the incoming references input */
-  'incoming-references-input.schema-type-not-found': '未找到模式類型 {{type}}',
+  'incoming-references-input.schema-type-not-found': '未找到架構類型 {{type}}',
   /** The text for the type to search in the incoming references input */
   'incoming-references-input.type-to-search': '輸入以搜索',
   /** The text for the loading state in the incoming references input */
-  'incoming-references-input.types-loading': '正在加載文件...',
+  'incoming-references-input.types-loading': '正在載入文件...',
   /** The text for the loading state in the incoming references input */
-  'incoming-references-input.types-loading-cross-dataset': '正在加載跨數據集文件...',
+  'incoming-references-input.types-loading-cross-dataset': '正在載入跨數據集文件...',
   /** The text for the no references defined in the incoming references input */
-  'incoming-references-input.types-not-defined': '此類型未定義任何引用，請查看文檔獲取更多信息。',
+  'incoming-references-input.types-not-defined':
+    '此類型未定義任何傳入參照，請參閱說明文件以取得更多資訊。',
 
   /** The text shown if there are no incoming references in the inspector */
   'incoming-references-pane.no-references': '找不到傳入的參照。',
   /** The text shown if there are no incoming references for a type */
   'incoming-references-pane.no-references-found': '未找到此類型的引用。',
   /** The text shown if there is no schema type found for a document in the incoming references pane */
-  'incoming-references-pane.schema-type-not-found': '未找到模式類型 {{type}}',
+  'incoming-references-pane.schema-type-not-found': '未找到架構類型 {{type}}',
 
   /** The loading messaging for when the tooltip is still loading permission info */
   'insufficient-permissions-message-tooltip.loading-text': '讀取中…',
@@ -572,7 +573,7 @@ export default removeUndefinedLocaleResources({
   /** The error text on the document list pane */
   'panes.document-list-pane.error.text.dev': '錯誤：<Code>{{error}}</Code>',
   /** The error text on the document list pane if the browser appears to be offlline */
-  'panes.document-list-pane.error.text.offline': '互聯網連接似乎處於離線狀態。',
+  'panes.document-list-pane.error.text.offline': '網路連線似乎處於離線狀態。',
   /** The error title on the document list pane */
   'panes.document-list-pane.error.title': '無法獲取列表項目',
   'panes.document-list-pane.error.will-retry-automatically_other': '正在重試…（#{{count}}）。',
@@ -585,7 +586,7 @@ export default removeUndefinedLocaleResources({
   /** The text of the document list pane if no documents are found matching specified criteria */
   'panes.document-list-pane.no-matching-documents.text': '沒有相符的文件',
   /** The search input for the search input on the document list pane */
-  'panes.document-list-pane.reconnecting': '嘗試連接…',
+  'panes.document-list-pane.reconnecting': '正在嘗試連線…',
   /** The aria-label for the search input on the document list pane */
   'panes.document-list-pane.search-input.aria-label': '搜索列表',
   /** The search input for the search input on the document list pane */
@@ -618,7 +619,7 @@ export default removeUndefinedLocaleResources({
   'panes.document-operation-results.operation-success_copy-url': '文件 URL 已複製到剪貼簿',
   /**  */
   'panes.document-operation-results.operation-success_createVersion':
-    '<Strong>{{title}}</Strong>已添加到發布',
+    '<Strong>{{title}}</Strong> 已新增至發布',
   /** The text when a delete operation succeeded  */
   'panes.document-operation-results.operation-success_delete': '文件已成功刪除',
   /** The text when a discard changes operation succeeded  */
@@ -677,18 +678,18 @@ export default removeUndefinedLocaleResources({
   'request-permission-dialog.confirm-button.text': '發送請求',
   /** The description text for the request permission dialog used in the permissions banner */
   'request-permission-dialog.description.text':
-    '您的請求將發送給項目管理員。如果您願意，您也可以包括一條註釋',
+    '您的請求將發送給項目管理員。如果您願意，也可以附上備註',
   /** The header/title for the request permission dialog used in the permissions banner */
   'request-permission-dialog.header.text': '請求編輯訪問權限',
   /** The text describing the note input for the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.description.text': '如果您願意，您可以添加一條註釋',
+  'request-permission-dialog.note-input.description.text': '如果您願意，您可以新增備註',
   /** The placeholder for the note input in the request permission dialog used in the permissions banner */
-  'request-permission-dialog.note-input.placeholder.text': '添加註釋...',
+  'request-permission-dialog.note-input.placeholder.text': '新增備註...',
   /** The error/warning text in the request permission dialog when the user's request has been declined */
   'request-permission-dialog.warning.denied.text': '您訪問此項目的請求已被拒絕。',
   /** The error/warning text in the request permission dialog when the user's request has been denied due to too many outstanding requests */
   'request-permission-dialog.warning.limit-reached.text':
-    '您已達到所有項目角色請求的限制。請等待再提交更多請求，或聯繫管理員尋求幫助。',
+    '您已達到所有項目角色請求的上限。請稍後再提交更多請求，或聯繫管理員尋求協助。',
 
   /** Label for button when status is saved */
   'status-bar.document-status-pulse.status.saved.text': '已儲存',
@@ -725,7 +726,7 @@ export default removeUndefinedLocaleResources({
   'structure-error.structure-path.label': '結構路徑',
 
   /** The aria label for the menu button in the timeline item */
-  'timeline-item.menu-button.aria-label': '開啟操作菜單',
+  'timeline-item.menu-button.aria-label': '開啟操作選單',
   /** The text for the tooltip in menu button the timeline item */
   'timeline-item.menu-button.tooltip': '操作',
   /** The text for the collapse action in the timeline item menu */

@@ -282,7 +282,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Documentație',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': 'Toate versiunile',
+  'overview.back-to-all-releases': 'Toate lansările',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Vizualizați calendarul',
   /** Description for the release tool */

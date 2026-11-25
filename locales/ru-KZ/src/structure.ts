@@ -88,9 +88,9 @@ export default removeUndefinedLocaleResources({
   'action.publish.validation-in-progress.label': 'Проверка документа…',
   /** Toast description when trying to publish with validation errors */
   'action.publish.validation-issues-toast.description':
-    'Пожалуйста, исправьте ошибки проверки перед публикацией',
+    'Пожалуйста, исправьте ошибки валидации перед публикацией',
   /** Toast title when trying to publish with validation errors */
-  'action.publish.validation-issues-toast.title': 'Ошибки проверки',
+  'action.publish.validation-issues-toast.title': 'Ошибки валидации',
   /** Tooltip when the "Publish" document action is disabled due to validation issues */
   'action.publish.validation-issues.tooltip':
     'Есть ошибки валидации, которые необходимо исправить перед публикацией этого документа',
@@ -163,7 +163,7 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.actions.publish-draft.text': 'Опубликовать черновик',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
-    'В рабочей области не включены черновики, но существует черновая версия этого документа.',
+    'В рабочем пространстве не включены черновики, но существует черновая версия этого документа.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
     'Расписание приостановлено на время редактирования. Нажмите «Запланировать», чтобы возобновить его, или выберите новую дату.',

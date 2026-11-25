@@ -5,17 +5,17 @@ export default removeUndefinedLocaleResources({
   'about-dialog.configuration-issue.header': 'კონფიგურაციის პრობლემა აღმოჩენილია',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
   'about-dialog.configuration-issue.missing-appid':
-    'ავტოგანახლება ჩართულია, მაგრამ <code>deployment.appId</code> არ არის კონფიგურირებული <code>sanity.cli.ts</code>-ში. ეს Studio განახლდება <strong>უახლესი</strong>-კანალის მიხედვით.',
+    'ავტომატური განახლება ჩართულია, მაგრამ <code>sanity.cli.ts</code>-ში <code>deployment.appId</code> არ არის მითითებული. ეს Studio განახლდება <strong>latest</strong> არხზე.',
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'იხილეთ დოკუმენტაცია',
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': 'გამორთულია',
+  'about-dialog.version-info.auto-updates.disabled': 'ავტომატური განახლებები ჩართული არ არის',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': 'ჩართულია',
+  'about-dialog.version-info.auto-updates.enabled': 'ავტომატური განახლებები ჩართულია',
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'ავტოგანახლებები',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'როგორ ჩართოთ',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'ჩართვა',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'ვერსიის მართვა',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'მიმდინარე ვერსია',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'როგორ განახლოთ',
+  'about-dialog.version-info.how-to-upgrade': 'განახლება ახლავე',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'უახლესი ვერსია',
   /** Info text when auto updates is enabled and a new version is available */
@@ -64,7 +64,7 @@ export default removeUndefinedLocaleResources({
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': 'დახურვა',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
-  'announcement.floating-button.dismiss-label': 'განცხადებების უარყოფა',
+  'announcement.floating-button.dismiss-label': 'განცხადებების დახურვა',
   /**Aria label to be used in the floating button in the studio announcement card */
   'announcement.floating-button.open-label': 'განცხადებების გახსნა',
 
@@ -190,17 +190,17 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description': 'დეტალებისთვის იხილეთ კონსოლი.',
   'asset-sources.common.uploader.upload-failed.title': 'ატვირთვა ჩაიშალა',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': 'სამუშაო ფაილები',
-  'asset-sources.dataset.image.title': 'სამუშაო სურათები',
+  'asset-sources.dataset.file.title': 'სამუშაო სივრცის ფაილები',
+  'asset-sources.dataset.image.title': 'სამუშაო სივრცის სურათები',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'პროექტის მედია ბიბლიოთეკის განსაზღვრაში რაღაც შეცდომა მოხდა.',
+    'ამ პროექტის Media Library-ის განსაზღვრისას დაფიქსირდა შეცდომა.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'ამ ორგანიზაციისთვის მედია ბიბლიოთეკა არ არის მზადებული.',
+    'ამ ორგანიზაციისთვის Media Library არ არის გააქტიურებული.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': 'მედია ბიბლიოთეკა',
-  'asset-sources.media-library.image.title': 'მედია ბიბლიოთეკა',
+  'asset-sources.media-library.file.title': 'Media Library',
+  'asset-sources.media-library.image.title': 'Media Library',
   /** Done button text */
   'asset-sources.media-library.open-in-source-dialog.button.done': 'დასრულებულია',
   /** Select new asset button text with target title */
@@ -219,7 +219,7 @@ export default removeUndefinedLocaleResources({
     "ფაილი: '{{filename}}' უკვე არსებობს",
 
   /** Label when a release has been deleted by a different user */
-  'banners.deleted-bundle-banner.text': "რელიზი '<strong>{{title}}</strong>' წაშლილია.",
+  'banners.deleted-bundle-banner.text': "გამოშვება '<strong>{{title}}</strong>' წაშლილია.",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'გადასვლა შემდეგ თვეში',
@@ -415,7 +415,7 @@ export default removeUndefinedLocaleResources({
   'changes.same-revision-selected-description':
     'თქვენ აირჩიეთ იგივე <strong>დან</strong> და <strong>მდე</strong> რევიზია, გთხოვთ, აირჩიეთ სხვა რევიზიები რათა შეადაროთ ცვლილებები მათ შორის.',
   /** Same Revision Selected title in the Review Changes pane */
-  'changes.same-revision-selected-title': 'აირჩიეთ იგივე რევიზია',
+  'changes.same-revision-selected-title': 'არჩეულია იგივე რევიზია',
   /** Title for the Review Changes pane */
   'changes.title': 'ცვლილებების გადახედვა',
   /** Shown above raw JSON diff for document fields that are not defined in the schema */
@@ -603,7 +603,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in document versions status for a published (non-live-edit) document */
   'document-status.published-at': 'გამოქვეყნდა {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': 'რედაქციიდან <em>{{date}}</em>',
+  'document-status.revision-from': 'რევიზია <em>{{date}}</em>-დან',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'რევიზია ვერ მოიძებნა',
 
@@ -684,7 +684,7 @@ export default removeUndefinedLocaleResources({
   /** The error message for the unhandled error that crashed the Input component during render */
   'form.error.unhandled-runtime-error.error-message': 'შეცდომა: {{message}}',
   /** The title for the error card rendered inside a field in place of a crashing input */
-  'form.error.unhandled-runtime-error.title': 'დაუმართავი შესრულების შეცდომა',
+  'form.error.unhandled-runtime-error.title': 'დაუმუშავებელი შესრულების დროის შეცდომა',
   /** Tooltip / accessible label for the field actions overflow menu button */
   'form.field.actions-menu.title': 'ველის მოქმედებები',
   /** Form field deprecated label */
@@ -734,7 +734,7 @@ export default removeUndefinedLocaleResources({
   /** Menu item for registered studios (i.e. copies app id) */
   'help-resources.studio-app-id': 'აპლიკაციის ID',
   /** Menu item for reloading Studio to update */
-  'help-resources.studio-auto-update-now': 'გადატვირთეთ განახლება v{{newVersion}}-ზე',
+  'help-resources.studio-auto-update-now': 'გადატვირთეთ v{{newVersion}}-ზე განახლებისთვის',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studio ვერსია {{studioVersion}}',
   /** Title for help and resources menus */
@@ -829,7 +829,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip content when boolean input is disabled */
   'inputs.boolean.disabled': 'გამორთულია',
   /** Warning label when selected datetime is in the past */
-  'inputs.dateTime.past-date-warning': 'აირჩიეთ მომავალში მყოფი თარიღი.',
+  'inputs.dateTime.past-date-warning': 'აირჩიეთ მომავალი თარიღი.',
   /** Placeholder value for datetime input */
   'inputs.datetime.placeholder': 'მაგ. {{example}}',
   /** Acessibility label for button to open file options menu */
@@ -954,7 +954,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'ჰოტსპოტი & მოჭრა',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "აქტივების პიპელაინი ვექტორულ ფორმატებში არ მხარდაჭერს ჰოტსპოტსა და კროპს. ჰოტსპოტისა და კროპის გამოსავალად, გამოიყენეთ ეს სურათი რასტერულ ფორმატებში. მაგალითად: <code>fm=jpg</code> სურათის URL-ში <ImageUrlDocumentationLink>ან დარეკეთ <code>.format('png')</code> გამოყენებით <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+    "Asset Pipeline არ უჭერს მხარს ჰოტსპოტსა და მოჭრას ვექტორული ფორმატებისთვის. ჰოტსპოტისა და მოჭრის ჩასართავად გამოიტანეთ ეს სურათი რომელიმე მხარდაჭერილ რასტრულ ფორმატში. მაგალითად, დაამატეთ <code>fm=jpg</code> <ImageUrlDocumentationLink>სურათის URL-ს</ImageUrlDocumentationLink> ან გამოიძახეთ <code>.format('png')</code> <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>-ით.",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': 'იხილეთ დეველოპერის ინფორმაცია',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
@@ -1276,7 +1276,7 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'რეფერენსის ძებნა ჩავარდა',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': 'მონიშნული დოკუმენტი არის არასწორი ტიპის ({{typeName}})',
+  'inputs.reference.global.invalid-type': 'მითითებული დოკუმენტი არასწორი ტიპისაა ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'რეფერენსირებული დოკუმენტის სურათის წინასწარი ხილვა',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1434,13 +1434,13 @@ export default removeUndefinedLocaleResources({
 
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
-    'თქვენი ბრაუზერი იყენებს ძველებურ ჰტტპ პროტოკოლს Sanity-სთან კომუნიკაციისთვის. ეს შეიძლება შედეგი იყოს შემცირებული პერფორმანსით.',
+    'თქვენი ბრაუზერი Sanity-სთან კომუნიკაციისთვის მოძველებულ HTTP პროტოკოლს იყენებს. ამან შესაძლოა მნიშვნელოვნად შეამციროს წარმადობა.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'გაიგეთ მეტი',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'ამ სესიისთვის აღარ აჩვენოთ',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
-  'network-check.slow-protocol-warning.title': 'თქვენ გაქვთ შეჩერებული',
+  'network-check.slow-protocol-warning.title': 'თქვენ მუხრუჭები გაქვთ ჩართული',
 
   /** Button label for "Create new document" button */
   'new-document.button': 'შექმნა',
@@ -1472,7 +1472,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'გადატვირთვა',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio განახლდა',
+  'package-version.new-package-available.title': 'Sanity Studio მზადაა განახლებისთვის!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'წევრების მართვა',
@@ -1497,19 +1497,19 @@ export default removeUndefinedLocaleResources({
   'relative-time.just-now': 'წუთის წინ',
 
   /** Action message to add document to new release */
-  'release.action.add-to-new-release': 'დაამატეთ რელიზში',
+  'release.action.add-to-new-release': 'გამოშვებაში დამატება',
   /** Action message to add document to release */
-  'release.action.add-to-release': 'დაამატეთ {{title}}-ში',
+  'release.action.add-to-release': '{{title}}-ში დამატება',
   /** Tooltip message for document that is already added to release */
   'release.action.already-exists-in-release': 'დოკუმენტი უკვე არის გამოშვებაში',
   /** Action message for when document is already in release  */
-  'release.action.already-in-release': 'უკვე რელიზშია {{title}}',
+  'release.action.already-in-release': 'უკვე გამოშვებაშია {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
   'release.action.copy-to': 'კოპირება ვერსიაზე',
   /** Action message for creating new releases */
-  'release.action.create-new': 'ახალი რელიზი',
+  'release.action.create-new': 'ახალი გამოშვება',
   /** Description for toast when version creation failed */
-  'release.action.create-version.failure': 'ვერსიის შექმნის ვერადება',
+  'release.action.create-version.failure': 'ვერსიის შექმნა ვერ მოხერხდა',
   /** Action message for deleting a scheduled publish */
   'release.action.delete-schedule': 'განრიგის წაშლა',
   /** Action message for when document is already in release  */
@@ -1521,38 +1521,39 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'განრიგის რედაქტირება',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'ახალი რელიზი',
+  'release.action.new-release': 'ახალი გამოშვება',
   'release.action.new-release.limit-reached_other':
-    'ეს სამუშაო სივრცე შეზღუდულია {{count}} რელიზით',
+    'ეს სამუშაო სივრცე შეზღუდულია {{count}} გამოშვებით',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'თქვენ არ გაქვთ ნებართვა ამ ქმედების შესრულებაზე',
   /** Action message for running a scheduled draft immediately */
   'release.action.publish-now': 'გამოქვეყნება ახლავე',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'გთხოვთ, სცადეთ თავიდან ან შეამოწმეთ თქვენი კავშირი. დოკუმენტი კვლავ დაუქვეყნებელი დარჩება გამოშვებისას.',
+    'გთხოვთ, სცადეთ თავიდან ან შეამოწმეთ თქვენი კავშირი. დოკუმენტის გამოქვეყნება მაინც გაუქმდება გამოშვებისას.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'ვერ მოხერხდა დაუქვეყნების გაუქმება გამოშვებისას.',
+    'გამოშვებისას გამოქვეყნების გაუქმების დაბრუნება ვერ მოხერხდა.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
-    'ახლა შეგიძლიათ ამ ვერსიას რედაქტირება.',
+    'ახლა შეგიძლიათ ამ ვერსიის რედაქტირება.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'წარმატებით გაუქმდა დაუქვეყნების განყენება გამოშვებისას.',
+    'გამოშვებისას გამოქვეყნების გაუქმების დაბრუნება წარმატებით შესრულდა.',
   /** Action message for scheduling a paused draft */
-  'release.action.schedule-publish': 'განრიგის დაგეგმა',
+  'release.action.schedule-publish': 'გამოქვეყნების დაგეგმვა',
   /** Error message for when a version is set to be unpublished */
-  'release.action.unpublish-version.failure': 'ვერსიის გამოქვეყნების უარყოფის დაყენება ჩავარდა',
+  'release.action.unpublish-version.failure':
+    'ვერსიისთვის გამოშვებისას გამოქვეყნების გაუქმების დაყენება ვერ მოხერხდა',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'წარმატებით დაყენებულია <strong>{{title}}</strong> გამოქვეყნების უარყოფა რელიზზე',
+    '<strong>{{title}}</strong> წარმატებით დაყენდა გამოშვებისას გამოქვეყნების გაუქმებაზე',
   /** Action message for when the view release is pressed */
-  'release.action.view-release': 'რელიზის ნახვა',
+  'release.action.view-release': 'გამოშვების ნახვა',
   /** Action message for when the view scheduled drafts is pressed */
   'release.action.view-scheduled-drafts': 'დაგეგმილი ჩანაწერების ნახვა',
   /** Label for banner when release is scheduled */
-  'release.banner.scheduled-for-publishing-on': 'გამოქვეყნებაზე დაგეგმილია {{date}}',
+  'release.banner.scheduled-for-publishing-on': 'გამოქვეყნება დაგეგმილია {{date}}-ზე',
   /** Label for button to show other variants in the document perspective list */
   'release.chip.button.other-variants_one': '+{{count}} ვარიანტი',
   /** Label for button to show other variants in the document perspective list */
@@ -1560,7 +1561,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} ვერსია',
   /** Label for button to show other versions in the document perspective list */
-  'release.chip.button.other-versions_other': '+{{count}} ვერსიები',
+  'release.chip.button.other-versions_other': '+{{count}} ვერსია',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'დრაფტი',
   /** Label for Draft chip in global header */
@@ -1577,15 +1578,15 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in chip with the lasted edited date */
   'release.chip.tooltip.edited-date': 'რედაქტირებულია {{date}}',
   /** Label for tooltip in chip when document is intended for a future release that hasn't been scheduled */
-  'release.chip.tooltip.intended-for-date': 'გეგმილია {{date}}',
+  'release.chip.tooltip.intended-for-date': 'განკუთვნილია {{date}}-ისთვის',
   /** Label for tooltip in chip when there is no recent draft edits */
   'release.chip.tooltip.no-edits': 'რედაქტირებები არ არის',
   /** Label for tooltip in chip when document isn't published */
   'release.chip.tooltip.not-published': 'არ არის გამოქვეყნებული',
   'release.chip.tooltip.other-variants_one': 'ერთი ვარიანტი',
   'release.chip.tooltip.other-variants_other': '{{count}} ვარიანტი',
-  'release.chip.tooltip.other-versions_one': 'ერთი დამატებითი ვერსია რელიზების გარეთ',
-  'release.chip.tooltip.other-versions_other': '{{count}} დამატებითი ვერსია რელიზების გარეთ',
+  'release.chip.tooltip.other-versions_one': 'ერთი დამატებითი ვერსია გამოშვებების გარეთ',
+  'release.chip.tooltip.other-versions_other': '{{count}} დამატებითი ვერსია გამოშვებების გარეთ',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'გამოქვეყნებულია {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1593,13 +1594,13 @@ export default removeUndefinedLocaleResources({
   /** Label for tooltip in scheduled chip without a known date */
   'release.chip.tooltip.unknown-date': 'უცნობი თარიღი',
   /** Label for tooltip on deleted release */
-  'release.deleted-tooltip': 'ეს რელიზი წაშლილია',
+  'release.deleted-tooltip': 'ეს გამოშვება წაშლილია',
   /** Title for copying version to a new release dialog */
-  'release.dialog.copy-to-release.title': 'ვერსიის ასლის ახალ რელიზში კოპირება',
+  'release.dialog.copy-to-release.title': 'ვერსიის კოპირება ახალ გამოშვებაში',
   /** Title for action create a release */
   'release.dialog.create.confirm': 'გამოშვების შექმნა',
   /** Title for creating releases dialog */
-  'release.dialog.create.title': 'ახალი რელიზი',
+  'release.dialog.create.title': 'ახალი გამოშვება',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
     'წაშალოთ დაგეგმილი დრაფტი? თქვენი დრაფტი უკვე განახლებულია.',
@@ -1641,15 +1642,15 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'ჩანაწერის გამოქვეყნება ახლავე',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'გეგმილი რელიზის დრო იყენება უკეთესი წინასწარი ხედვებისთვის და მინიშნებებისთვის, თუ დოკუმენტები შეერიალებიან.',
+    'ეს მხოლოდ დაგეგმვის, წინასწარი ნახვისა და იმის მინიშნებებისთვისაა, ეწინააღმდეგება თუ არა დოკუმენტები ერთმანეთს. აქ დროის დაყენება თქვენს გამოშვებას არ დაგეგმავს. გამოშვების გაშვება ან დაგეგმვა მაინც მოგიწევთ, როცა ყველა დოკუმენტი მზად იქნება.',
   /** Label for noting that a release time is not final */
-  'release.dialog.tooltip.note': 'შეგიძლიათ მას შეცვალოთ შემდეგ.',
+  'release.dialog.tooltip.note': 'მოგვიანებით ყოველთვის შეგიძლიათ შეცვალოთ.',
   /** Title for tooltip to explain release time */
-  'release.dialog.tooltip.title': 'რელიზის დაახლოებითი დრო',
+  'release.dialog.tooltip.title': 'გამოშვების დაახლოებითი დრო',
   /** The placeholder text when the release doesn't have a description */
-  'release.form.placeholder-describe-release': 'აღწერეთ რელიზი…',
+  'release.form.placeholder-describe-release': 'აღწერეთ გამოშვება…',
   /** Tooltip for button to hide release visibility */
-  'release.layer.hide': 'რელიზის დამალვა',
+  'release.layer.hide': 'გამოშვების დამალვა',
   /** Label for the release menu */
   'release.menu.label': 'გამოშვების მენიუ',
   /** Menu item label for scheduled drafts */
@@ -1657,15 +1658,15 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'ქმედებები',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'კონტენტის რელიზების ნახვა',
+  'release.menu.view-releases': 'კონტენტის გამოშვებების ნახვა',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'დრაფტები',
   /** Label for published releases in navbar */
   'release.navbar.published': 'გამოქვეყნებული',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'რელიზები',
+  'release.navbar.tooltip': 'დაგეგმვის ნახვა',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'უსათაურო რელიზი',
+  'release.placeholder-untitled-release': 'უსათაურო გამოშვება',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'დაგეგმეთ მომავალ დროსა და თარიღზე.',
   /** Label for date picker when scheduling a release */
@@ -1673,13 +1674,13 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.description': 'ეს გამოშვება გამოიშვა',
+  'release.toast.archived-release.description': 'ამ გამოშვების მიმაგრება მოხსნილია',
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.title': "რელიზი '{{title}}' დაარქივდა",
+  'release.toast.archived-release.title': "გამოშვება '{{title}}' დაარქივდა",
   /** The toast title that will be shown the creating a release fails */
-  'release.toast.create-release-error.title': 'რელიზის შექმნა ჩაიშალა',
+  'release.toast.create-release-error.title': 'გამოშვების შექმნა ჩაიშალა',
   /** Error toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.error':
     'ვერ მოხერხდა დაგეგმილი ჩანაწერის დოკუმენტის <strong>{{title}}</strong> წაშლა: {{error}}',
@@ -1691,7 +1692,7 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
-  'release.toast.not-found-release.title': "ვერ მოიძებნა '{{title}}' რელიზი",
+  'release.toast.not-found-release.title': "ვერ მოიძებნა '{{title}}' გამოშვება",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
     'ვერ გაჩერდა დრაფტის დოკუმენტის დაგეგმვა <strong>{{title}}</strong>: {{error}}',
@@ -1704,7 +1705,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.description': 'ეს გამოშვება გამოიშვა',
+  'release.toast.published-release.description': 'ამ გამოშვების მიმაგრება მოხსნილია',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    **/
@@ -1727,13 +1728,13 @@ export default removeUndefinedLocaleResources({
   'release.tooltip.already-added': 'ამ დოკუმენტის ვერსია უკვე დაემატა',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
   'release.tooltip.locked':
-    'ეს რელიზი დაგეგმილია. გაუქმება დაგეგმვას, რათა დაამატოთ მეტი დოკუმენტები.',
+    'ეს გამოშვება დაგეგმილია. მეტი დოკუმენტის დასამატებლად გააუქმეთ მისი დაგეგმვა.',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'რაც შეიძლება მალე',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
-  'release.type.scheduled': 'დროზე',
+  'release.type.scheduled': 'მითითებულ დროს',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'უმართავი',
+  'release.type.undecided': 'გადაუწყვეტელი',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'იხილეთ ყველა დოკუმენტის ვერსია',
 
@@ -1750,7 +1751,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': 'აირჩიეთ, როდის უნდა გამოქვეყნდეს ეს დოკუმენტი.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': 'დრაფტის განრიგი გამოქვეყნებისთვის',
+  'schedule-publish-dialog.header': 'დრაფტის გამოქვეყნების დაგეგმვა',
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'დაგეგმილი გამოქვეყნება',
@@ -2160,7 +2161,7 @@ export default removeUndefinedLocaleResources({
     'გრაფიკების ჩვენება {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
-  'timeline.changes.title': 'ცვლილებები მიერ',
+  'timeline.changes.title': 'ცვლილებების ავტორი',
   /** Description for error when the timeline for the given document can't be loaded */
   'timeline.error.load-document-changes-description':
     'დოკუმენტის ისტორიის ტრანზაქციები არ შეიცვალა.',
@@ -2207,9 +2208,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been deleted, with a timestamp */
   'timeline.operation.deleted_timestamp': 'წაშლილია: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft document has been created*/
-  'timeline.operation.draft-created': 'შექმნილია ჩანაწერი',
+  'timeline.operation.draft-created': 'მონახაზი შექმნილია',
   /** Label shown in review changes timeline when a draft document has been created, with a timestamp */
-  'timeline.operation.draft-created_timestamp': 'შექმნილია ჩანაწერი: {{timestamp, datetime}}',
+  'timeline.operation.draft-created_timestamp': 'მონახაზი შექმნილია: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a draft has been discarded */
   'timeline.operation.draft-discarded': 'დრაფტი უარყოფილია',
   /** Label shown in review changes timeline when a draft has been discarded, with a timestamp */

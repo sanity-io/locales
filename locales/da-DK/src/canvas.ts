@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.cancel': 'Annuller',
   /** The text for the "Unlink from Canvas" dialog description. */
   'dialog.unlink-from-canvas.description':
-    'Når det er fjernet, vil det kunne redigeres her, og fremtidige redigeringer i Canvas vil ikke længere automatisk blive overført til dette dokument.',
+    'Når linket er fjernet, kan dokumentet redigeres her, og fremtidige redigeringer i Canvas bliver ikke længere automatisk overført til dette dokument.',
   /** The text for the "Unlink from Canvas" dialog error message. */
   'dialog.unlink-from-canvas.error': 'Kunne ikke fjerne linket fra Canvas',
   /** The text for the "Unlink from Canvas" dialog success message. */
@@ -60,7 +60,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.unlink-action': 'Fjern link nu',
   /** The text for the "Unlink from Canvas" dialog when the document is being unlinked. */
   'dialog.unlink-from-canvas.unlinking':
-    'Du fjerner linket <strong>“{{documentTitle}}”</strong> fra Canvas.',
+    'Du fjerner linket mellem <strong>“{{documentTitle}}”</strong> og Canvas.',
 
   /** The text for the "Navigate to Canvas" dialog error message. */
   'navigate-to-canvas-doc.error.missing-permissions':

@@ -9,9 +9,9 @@ export default removeUndefinedLocaleResources({
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'Se dokumentation',
   /** "Disabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.disabled': 'Deaktiveret',
+  'about-dialog.version-info.auto-updates.disabled': 'Automatiske opdateringer er ikke aktiveret',
   /** "Enabled" status for auto-updates in About-dialog */
-  'about-dialog.version-info.auto-updates.enabled': 'Aktiveret',
+  'about-dialog.version-info.auto-updates.enabled': 'Automatiske opdateringer er aktiveret',
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Autoopdateringer',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
@@ -20,13 +20,13 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.auto-updates.manage-version': 'Administrer version',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
   'about-dialog.version-info.copy-to-clipboard-button.copied-text':
-    'Kopieret til udklipsholder. God kopiering!',
+    'Kopieret til udklipsholder. God fornøjelse med at indsætte!',
   /** "Copy to Clipboard" button text for copying version details from About-dialog */
   'about-dialog.version-info.copy-to-clipboard-button.text': 'Kopier til udklipsholder',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Nuværende version',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Sådan opgraderes',
+  'about-dialog.version-info.how-to-upgrade': 'Opdater nu',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Seneste version',
   /** Info text when auto updates is enabled and a new version is available */
@@ -64,9 +64,9 @@ export default removeUndefinedLocaleResources({
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': 'Luk',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
-  'announcement.floating-button.dismiss-label': 'Afvis annonceringer',
+  'announcement.floating-button.dismiss-label': 'Afvis meddelelser',
   /**Aria label to be used in the floating button in the studio announcement card */
-  'announcement.floating-button.open-label': 'Åbn annonceringer',
+  'announcement.floating-button.open-label': 'Åbn meddelelser',
 
   /** Menu item for deleting the asset */
   'asset-source.asset-list.menu.delete': 'Slet',
@@ -190,8 +190,8 @@ export default removeUndefinedLocaleResources({
   'asset-sources.common.uploader.upload-failed.description': 'Se konsollen for mere information.',
   'asset-sources.common.uploader.upload-failed.title': 'Upload mislykkedes',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
-  'asset-sources.dataset.file.title': 'Workspace filer',
-  'asset-sources.dataset.image.title': 'Workspace billeder',
+  'asset-sources.dataset.file.title': 'Arbejdsområdefiler',
+  'asset-sources.dataset.image.title': 'Arbejdsområdebilleder',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'Noget gik galt i forsøget på at finde Mediebiblioteket for dette projekt.',
@@ -362,7 +362,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Indlæser ændringer…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    'Vi kunne ikke finde dokumentrevisionen med id: <code>{{revisionId}}</code> som du prøver at sammenligne. <Break/> Dette skyldes sandsynligvis din plans historikbevaringspolitik. <Break/> Vælg venligst en anden <strong>Fra</strong> indgang.',
+    'Vi kunne ikke finde dokumentrevisionen med id: <code>{{revisionId}}</code>, som du forsøger at sammenligne. <Break/> Dette skyldes sandsynligvis din plans politik for historikbevaring. <Break/> Vælg en anden <strong>Fra</strong>-post.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Rediger dokumentet eller vælg en ældre version i tidslinjen for at se en liste over ændringer vises i dette panel.',
@@ -1431,7 +1431,7 @@ export default removeUndefinedLocaleResources({
 
   /** Text shown in warning when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.description':
-    'Din browser bruger et forældet HTTP-protokol til at kommunikere med Sanity. Dette kan resultere i betydeligt nedsat ydeevne.',
+    'Din browser bruger en forældet HTTP-protokol til at kommunikere med Sanity. Dette kan resultere i betydeligt nedsat ydeevne.',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Lær mere',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
@@ -1518,33 +1518,33 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Rediger tidsplan',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Ny Udgivelse',
+  'release.action.new-release': 'Ny udgivelse',
   'release.action.new-release.limit-reached_other':
-    'Denne arbejdsplads er begrænset til {{count}} udgivelser',
+    'Dette arbejdsområde er begrænset til {{count}} udgivelser',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'Du har ikke tilladelse til at udføre denne handling',
   /** Action message for running a scheduled draft immediately */
   'release.action.publish-now': 'Udgiv nu',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Prøv venligst igen eller tjek din forbindelse. Dokumentet vil stadig være upubliceret ved udgivelse.',
+    'Prøv igen, eller tjek din forbindelse. Dokumentet vil stadig blive afpubliceret ved udgivelsen.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Kunne ikke fortryde indstillingen til ikke at offentliggøre ved udgivelse.',
+    'Kunne ikke fortryde indstillingen af afpublicering ved udgivelse.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Du kan nu redigere denne version.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Succesfuldt fortrudt indstillingen til ikke at offentliggøre ved udgivelse.',
+    'Indstillingen af afpublicering ved udgivelse er fortrudt.',
   /** Action message for scheduling a paused draft */
-  'release.action.schedule-publish': 'Planlæg udgivelse',
+  'release.action.schedule-publish': 'Planlæg publicering',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
-    'Det lykkedes ikke at indstille versionen til at blive upubliceret ved udgivelse',
+    'Kunne ikke indstille versionen til at blive afpubliceret ved udgivelse',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Det lykkedes at indstille <strong>{{title}}</strong> til at blive upubliceret ved udgivelse',
+    '<strong>{{title}}</strong> er nu indstillet til at blive afpubliceret ved udgivelse',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Se udgivelse',
   /** Action message for when the view scheduled drafts is pressed */
@@ -1639,7 +1639,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Udgiv kladde nu',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Den tilsigtede udgivelsestid bruges til at skabe bedre forhåndsvisninger og hints om hvorvidt dokumenter er i konflikt.',
+    'Dette er kun til planlægning, forhåndsvisninger og hints om, hvorvidt dokumenter er i konflikt. Hvis du angiver et tidspunkt her, planlægges din udgivelse ikke. Du skal stadig køre eller planlægge udgivelsen, når alle dokumenter er klar.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Du kan altid ændre det senere.',
   /** Title for tooltip to explain release time */
@@ -1655,15 +1655,15 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Handlinger',
   /** Menu item label for viewing content releases */
-  'release.menu.view-releases': 'Se indholdudgivelser',
+  'release.menu.view-releases': 'Se indholdsudgivelser',
   /** Label for draft perspective in navbar */
   'release.navbar.drafts': 'Kladder',
   /** Label for published releases in navbar */
   'release.navbar.published': 'Udgivet',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Udgivelser',
+  'release.navbar.tooltip': 'Se planlægning',
   /** The placeholder text when the release doesn't have a title */
-  'release.placeholder-untitled-release': 'Uden titel udgivelse',
+  'release.placeholder-untitled-release': 'Udgivelse uden titel',
   /** Description for warning that the published schedule time is in the past */
   'release.schedule-dialog.publish-date-in-past-warning': 'Planlæg til en fremtidig tid og dato.',
   /** Label for date picker when scheduling a release */
@@ -1675,30 +1675,30 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.title': "'{{title}}' udgivelsen blev arkiveret",
+  'release.toast.archived-release.title': "Udgivelsen '{{title}}' blev arkiveret",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'Kunne ikke oprette udgivelse',
   /** Error toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.error':
-    'Kunne ikke slette det planlagte kladde dokument <strong>{{title}}</strong>: {{error}}',
+    'Kunne ikke slette det planlagte kladdedokument <strong>{{title}}</strong>: {{error}}',
   /** Success toast for deleting a scheduled draft */
   'release.toast.delete-schedule-draft.success':
-    'Det planlagte kladde dokument <strong>{{title}}</strong> er blevet slettet.',
+    'Det planlagte kladdedokument <strong>{{title}}</strong> er blevet slettet.',
   /** The toast title shown when saving edits to a release's details fails */
-  'release.toast.edit-release-error.title': 'Kunne ikke gemme release-detaljer',
+  'release.toast.edit-release-error.title': 'Kunne ikke gemme udgivelsesdetaljer',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
   'release.toast.not-found-release.title': "Udgivelsen '{{title}}' kunne ikke findes",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Kunne ikke sætte det planlagte udkast på pause <strong>{{title}}</strong>: {{error}}',
+    'Kunne ikke sætte det planlagte kladdedokument <strong>{{title}}</strong> på pause: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
-    'Kunne ikke udgive det planlagte kladde dokument <strong>{{title}}</strong>: {{error}}',
+    'Kunne ikke udgive det planlagte kladdedokument <strong>{{title}}</strong>: {{error}}',
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
-    'Det planlagte kladde dokument <strong>{{title}}</strong> er blevet udgivet.',
+    'Det planlagte kladdedokument <strong>{{title}}</strong> er blevet udgivet.',
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
@@ -1709,10 +1709,10 @@ export default removeUndefinedLocaleResources({
   'release.toast.published-release.title': "Udgivelsen '{{title}}' blev offentliggjort",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
-    'Kunne ikke omplanlægge det planlagte kladde dokument <strong>{{title}}</strong>: {{error}}',
+    'Kunne ikke omplanlægge det planlagte kladdedokument <strong>{{title}}</strong>: {{error}}',
   /** Success toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.success':
-    'Det planlagte kladde dokument <strong>{{title}}</strong> er blevet omplanlagt.',
+    'Det planlagte kladdedokument <strong>{{title}}</strong> er blevet omplanlagt.',
   /** Error toast for scheduling a paused draft */
   'release.toast.schedule-publish.error': 'Kunne ikke planlægge udkast: {{error}}',
   /** Success toast for scheduling a paused draft */
@@ -1731,7 +1731,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
   'release.type.scheduled': 'På tidspunkt',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'Uafgjort',
+  'release.type.undecided': 'Ubestemt',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Se alle dokumentversioner',
 
@@ -2141,7 +2141,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.dialog-info.content-releases':
     'Den valgte tidszone vil ændre hvordan datoer repræsenteres i indholdsudgivelser.',
   'time-zone.dialog-info.input':
-    'Den valgte tidszone vil ændre hvordan datoer repræsenteres kun for denne indtastning i dette dokument.',
+    'Den valgte tidszone ændrer kun, hvordan datoer vises for dette felt i dette dokument.',
   'time-zone.dialog-info.scheduled-publishing':
     'Den valgte tidszone vil ændre hvordan datoer repræsenteres i tidsplaner.',
   'time-zone.local-time': 'lokal tid',

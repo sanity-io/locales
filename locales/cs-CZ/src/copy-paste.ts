@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
     'Pro kopírování tohoto obsahu je vyžadován přístup ke schránce. Povolte ve vašem prohlížeči oprávnění ke schránce a zkuste kopírování znovu.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Váš prohlížeč nepodporuje tuto akci',
+    'Přístup ke schránce je zablokován',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Prázdná hodnota, nic ke kopírování',
   /** --- On copy --- */
@@ -23,10 +23,10 @@ export default removeUndefinedLocaleResources({
     'Nelze rozpoznat typ schématu pro cestu: {{path}}',
   /** The validation message that is shown when array types are incompatible */
   'copy-paste.on-paste.validation.array-type-incompatible.description':
-    'Hodnota typu "{{type}}" není povolena v tomto poli pole',
+    'Hodnota typu "{{type}}" není povolena v tomto poli typu pole',
   /** The validation message that is shown when array values are incompatible */
   'copy-paste.on-paste.validation.array-value-incompatible.description':
-    'Hodnota typu "{{type}}" není povolena v tomto poli pole',
+    'Hodnota typu "{{type}}" není povolena v tomto poli typu pole',
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'Není co vložit',
   /** The validation message that is shown when the clipboard item is invalid */

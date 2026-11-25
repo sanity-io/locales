@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'action.delete.disabled.nothing-to-delete': 'Þetta skjal er ekki til eða nú þegar eytt',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'Ekki er hægt að eyða þessu skjali þar sem það er innan áætlunar um útgáfur',
+    'Ekki er hægt að eyða þessu skjali þar sem það er í áætluðum útgáfum',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'Valin útgáfa eða afbrigði inniheldur ekki þetta skjal',
@@ -123,7 +123,7 @@ export default removeUndefinedLocaleResources({
   'banners.archived-release.description':
     'Þú ert að skoða skjal sem er aðeins til lesturs og var vistað sem hluti af <VersionBadge>{{title}}</VersionBadge>. Það er ekki hægt að breyta því',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': 'Þessi áætlaði drög eru skjalasafnað',
+  'banners.archived-scheduled-draft.description': 'Þessi áætluðu drög eru safnvistuð',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Ekki er hægt að búa til drög að skjali.',
@@ -163,7 +163,7 @@ export default removeUndefinedLocaleResources({
     'Vinnusvæðið er ekki með virk drög, en drög að þessu skjali eru til.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'Áætlun stöðvuð á meðan ritun stendur yfir. Ýttu á Áætla til að virkja aftur eða veldu nýtt dagsetningu.',
+    'Áætlun stöðvuð á meðan ritun stendur yfir. Ýttu á Áætla til að virkja aftur eða veldu nýja dagsetningu.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Hlutverk þitt <Roles/> hefur ekki heimildir til að búa til þetta skjal.',
@@ -231,7 +231,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.waiting.title': 'Bæti skjali við útgáfu…',
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
-    'Við gátum ekki fundið valda endurskoðun skjalsins, vinsamlegast veldu annan færslu úr sögulistanum.',
+    'Við gátum ekki fundið valda endurskoðun skjalsins, vinsamlegast veldu aðra færslu úr sögulistanum.',
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
     'Áætluð drög fyrir þetta skjal eru til. Ef þú birtir breytingar núna verða þær yfirskrifaðar þegar áætlunin keyrir.',
@@ -296,18 +296,18 @@ export default removeUndefinedLocaleResources({
   /** The heading for the canvas linked banner popover in editable mode*/
   'canvas.banner.editable.popover-heading': 'Frjálsleg ritun',
   /** The text for the canvas linked banner when the document is a draft */
-  'canvas.banner.linked-text.draft': 'Þetta drög skjalsins er tengt við Canvas',
+  'canvas.banner.linked-text.draft': 'Þessi drög skjalsins eru tengd við Canvas',
   /** The text for the canvas linked banner when the document is a live document */
   'canvas.banner.linked-text.published': 'Þetta lifandi skjal er tengt við Canvas',
   /** The text for the canvas linked banner when the document is a version document */
-  'canvas.banner.linked-text.version': 'Þetta útgáfa skjalsins er tengt við Canvas',
+  'canvas.banner.linked-text.version': 'Þessi útgáfa skjalsins er tengd við Canvas',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': 'Lærðu meira',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
     'Canvas leyfir þér að skrifa í frjálsform ritli sem sjálfkrafa kortleggur aftur til Studio sem skipulagt efni - á meðan þú skrifar.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Hugmynd fyrst ritun',
+  'canvas.banner.popover-heading': 'Hugmyndamiðuð ritun',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -527,7 +527,7 @@ export default removeUndefinedLocaleResources({
   'events.compare-with-published.description':
     'Við getum ekki hlaðið breytingarnar fyrir þetta skjal, líklega vegna sögubevarunarstefnu áætlunar þinnar, þetta sýnir þér hvernig <strong>{{version}}</strong> útgáfan ber saman við <strong>birtingu</strong> útgáfuna.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
-  'events.compare-with-published.title': 'Ber saman við birtingu',
+  'events.compare-with-published.title': 'Ber saman við birta útgáfu',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Skoða <VersionBadge>{{releaseTitle}}</VersionBadge> skjal',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
@@ -538,7 +538,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the add reference item in the incoming references input */
   'incoming-references-input.add-reference-item': 'Bæta við atriði',
   /** The aria-label for the incoming references list */
-  'incoming-references-input.list-label': 'Innkoma vísanir af gerð {{type}}',
+  'incoming-references-input.list-label': 'Innkomandi vísanir af gerð {{type}}',
   /** The text for the no items in the incoming references input */
   'incoming-references-input.no-items': 'Engin atriði',
   /** The text for the reference from in the incoming references input */

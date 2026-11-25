@@ -27,7 +27,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Versione corrente',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Come aggiornare',
+  'about-dialog.version-info.how-to-upgrade': 'Aggiorna ora',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Ultima versione',
   /** Info text when auto updates is enabled and a new version is available */
@@ -225,7 +225,7 @@ export default removeUndefinedLocaleResources({
 
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text':
-    "Il rilascio '<strong>{{title}}</strong>' è stato eliminato.",
+    "La release '<strong>{{title}}</strong>' è stata eliminata.",
 
   /** Action message for navigating to next month */
   'calendar.action.go-to-next-month': 'Vai al mese successivo',
@@ -968,7 +968,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "Il pipeline di risorse non supporta hotspot e crop per i formati vettoriali. Per abilitare hotspot & crop, esporta questa immagine in uno dei formati raster supportati. Ad esempio: <code>fm=jpg</code> all'URL dell'immagine <ImageUrlDocumentationLink> o chiama <code>.format('png')</code> con <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+    "L'Asset Pipeline non supporta hotspot e crop per i formati vettoriali. Per abilitare hotspot e crop, esporta questa immagine in uno dei formati raster supportati. Ad esempio: aggiungi <code>fm=jpg</code> all'<ImageUrlDocumentationLink>URL dell'immagine</ImageUrlDocumentationLink> oppure chiama <code>.format('png')</code> con <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': 'Vedi informazioni per sviluppatori',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
@@ -1485,7 +1485,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Ricarica',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio è stato aggiornato',
+  'package-version.new-package-available.title': "Sanity Studio è pronto per l'aggiornamento!",
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Gestisci membri',
@@ -1510,17 +1510,17 @@ export default removeUndefinedLocaleResources({
   'relative-time.just-now': 'proprio ora',
 
   /** Action message to add document to new release */
-  'release.action.add-to-new-release': 'Aggiungi al rilascio',
+  'release.action.add-to-new-release': 'Aggiungi alla release',
   /** Action message to add document to release */
   'release.action.add-to-release': 'Aggiungi a {{title}}',
   /** Tooltip message for document that is already added to release */
   'release.action.already-exists-in-release': 'Il documento esiste già nella release',
   /** Action message for when document is already in release  */
-  'release.action.already-in-release': 'Già nel rilascio {{title}}',
+  'release.action.already-in-release': 'Già nella release {{title}}',
   /** Action message for when you click to view all versions you can copy the current document to */
   'release.action.copy-to': 'Copia la versione in',
   /** Action message for creating new releases */
-  'release.action.create-new': 'Nuovo rilascio',
+  'release.action.create-new': 'Nuova release',
   /** Description for toast when version creation failed */
   'release.action.create-version.failure': 'Creazione della versione fallita',
   /** Action message for deleting a scheduled publish */
@@ -1534,7 +1534,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Modifica pianificazione',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Nuovo Rilascio',
+  'release.action.new-release': 'Nuova release',
   'release.action.new-release.limit-reached_other':
     'Questo spazio di lavoro è limitato a {{count}} release',
   /** Tooltip message for not having permissions for creating new releases */
@@ -1562,11 +1562,11 @@ export default removeUndefinedLocaleResources({
   'release.action.unpublish-version.success':
     'Impostato con successo <strong>{{title}}</strong> da non pubblicare sul rilascio',
   /** Action message for when the view release is pressed */
-  'release.action.view-release': 'Visualizza rilascio',
+  'release.action.view-release': 'Visualizza release',
   /** Action message for when the view scheduled drafts is pressed */
   'release.action.view-scheduled-drafts': 'Visualizza bozze pianificate',
   /** Label for banner when release is scheduled */
-  'release.banner.scheduled-for-publishing-on': 'Programmato per la pubblicazione il {{date}}',
+  'release.banner.scheduled-for-publishing-on': 'Pianificata per la pubblicazione il {{date}}',
   /** Label for button to show other variants in the document perspective list */
   'release.chip.button.other-variants_one': '+{{count}} variante',
   /** Label for button to show other variants in the document perspective list */
@@ -1617,20 +1617,20 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.title': 'Nuova release',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
-    'Eliminare questa bozza programmata? La tua bozza è già aggiornata.',
+    'Eliminare questa bozza pianificata? La tua bozza è già aggiornata.',
   /** Body text when deleting scheduled draft and changes will be saved to draft */
   'release.dialog.delete-schedule-draft.body-will-save-to-draft':
-    'Eliminare questa bozza programmata? Le tue modifiche verranno salvate nella bozza.',
+    'Eliminare questa bozza pianificata? Le tue modifiche verranno salvate nella bozza.',
   /** Body text when deleting scheduled draft with checkbox shown for user choice */
-  'release.dialog.delete-schedule-draft.body-with-choice': 'Eliminare questa bozza programmata?',
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Eliminare questa bozza pianificata?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Sì, elimina pianificazione',
   /** Checkbox label for copying scheduled draft to draft before deletion */
   'release.dialog.delete-schedule-draft.copy-checkbox':
-    'Conserva le mie modifiche programmate copiandole nella bozza (consigliato)',
+    'Conserva le mie modifiche pianificate copiandole nella bozza (consigliato)',
   /** Explanation text shown when scheduled draft has different changes than current draft */
   'release.dialog.delete-schedule-draft.different-changes-explanation':
-    'La tua bozza programmata presenta modifiche diverse rispetto alla tua bozza attuale.',
+    'La tua bozza pianificata presenta modifiche diverse rispetto alla tua bozza attuale.',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': 'Elimina bozza pianificata',
   /** Body text for change schedule dialog */
@@ -1657,7 +1657,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Pubblica bozza ora',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Il tempo di rilascio previsto è utilizzato per creare anteprime migliori e suggerimenti su eventuali conflitti tra documenti.',
+    'Serve solo per la pianificazione, le anteprime e i suggerimenti su eventuali conflitti tra documenti. Impostare un orario qui non pianifica la release. Dovrai comunque eseguire o pianificare la release quando tutti i documenti saranno pronti.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Puoi sempre cambiarlo in seguito.',
   /** Title for tooltip to explain release time */
@@ -1667,9 +1667,9 @@ export default removeUndefinedLocaleResources({
   /** Tooltip for button to hide release visibility */
   'release.layer.hide': 'Nascondi release',
   /** Label for the release menu */
-  'release.menu.label': 'Menu di rilascio',
+  'release.menu.label': 'Menu della release',
   /** Menu item label for scheduled drafts */
-  'release.menu.scheduled-drafts': 'Visualizza Bozze Programmate',
+  'release.menu.scheduled-drafts': 'Visualizza bozze pianificate',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Azioni',
   /** Menu item label for viewing content releases */
@@ -1679,7 +1679,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Pubblicato',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Release',
+  'release.navbar.tooltip': 'Visualizza pianificazione',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Release senza titolo',
   /** Description for warning that the published schedule time is in the past */
@@ -1690,7 +1690,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.description': 'Questa release è stata staccata',
+  'release.toast.archived-release.description': 'Questa release non è più fissata',
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
@@ -1708,10 +1708,10 @@ export default removeUndefinedLocaleResources({
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    * */
-  'release.toast.not-found-release.title': "Il rilascio '{{title}}' non è stato trovato",
+  'release.toast.not-found-release.title': "La release '{{title}}' non è stata trovata",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Impossibile mettere in pausa il documento programmato <strong>{{title}}</strong>: {{error}}',
+    'Impossibile mettere in pausa il documento di bozza pianificato <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Impossibile pubblicare il documento di bozza pianificato <strong>{{title}}</strong>: {{error}}',
@@ -1721,7 +1721,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.description': 'Questa release è stata staccata',
+  'release.toast.published-release.description': 'Questa release non è più fissata',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    **/
@@ -1733,24 +1733,24 @@ export default removeUndefinedLocaleResources({
   'release.toast.reschedule-scheduled-draft.success':
     'Il documento di bozza pianificato <strong>{{title}}</strong> è stato ripianificato.',
   /** Error toast for scheduling a paused draft */
-  'release.toast.schedule-publish.error': 'Impossibile programmare la bozza: {{error}}',
+  'release.toast.schedule-publish.error': 'Impossibile pianificare la bozza: {{error}}',
   /** Success toast for scheduling a paused draft */
-  'release.toast.schedule-publish.success': 'Bozza programmata con successo',
+  'release.toast.schedule-publish.success': 'Bozza pianificata con successo',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
    * @deprecated – no longer needed
    * */
-  'release.toast.scheduled-draft-published.title': 'La bozza programmata è stata pubblicata',
+  'release.toast.scheduled-draft-published.title': 'La bozza pianificata è stata pubblicata',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'Una versione di questo documento è già stata aggiunta',
   /** Label for when a release is scheduled / scheduling and a user can't add a document version to it */
   'release.tooltip.locked':
-    'Questo rilascio è stato pianificato. Annulla la pianificazione per aggiungere altri documenti.',
+    'Questa release è stata pianificata. Annulla la pianificazione per aggiungere altri documenti.',
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'Il prima possibile',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
-  'release.type.scheduled': 'In orario',
+  'release.type.scheduled': 'A un orario specifico',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'Indeciso',
+  'release.type.undecided': 'Non deciso',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Vedi tutte le versioni del documento',
 
@@ -1758,10 +1758,10 @@ export default removeUndefinedLocaleResources({
   'releases.upsell.misconfiguration.contact-support': 'Contatta il Supporto',
   /** Header for the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.header':
-    'Problema di configurazione delle pubblicazioni di contenuti',
+    'Problema di configurazione delle release di contenuti',
   /** Message shown in the releases misconfiguration dialog */
   'releases.upsell.misconfiguration.message':
-    'Le pubblicazioni di contenuti sono abilitate per il tuo progetto, ma sembra che ci sia un problema di configurazione con i limiti delle tue pubblicazioni. Si prega di contattare il supporto per configurare correttamente le tue pubblicazioni di contenuti.',
+    'Le release di contenuti sono abilitate per il tuo progetto, ma sembra che ci sia un problema di configurazione con i limiti delle release. Contatta il supporto per far configurare correttamente le release di contenuti.',
 
   /** Confirm button text for the schedule publish dialog */
   'schedule-publish-dialog.confirm': 'Pianifica',
@@ -2178,7 +2178,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.dialog-info.input':
     'Il fuso orario selezionato cambierà il modo in cui le date sono rappresentate solo per questo input in questo documento.',
   'time-zone.dialog-info.scheduled-publishing':
-    'Il fuso orario selezionato cambierà il modo in cui le date sono rappresentate nelle programmazioni.',
+    'Il fuso orario selezionato cambierà il modo in cui le date sono rappresentate nelle pianificazioni.',
   'time-zone.local-time': 'ora locale',
   'time-zone.time-zone': 'Fuso orario',
   'time-zone.time-zone-tooltip-content-releases':
@@ -2186,7 +2186,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.time-zone-tooltip-input':
     'Visualizzazione di <em>{{title}}</em> in {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':
-    'Visualizzazione delle programmazioni in {{alternativeName}} GMT{{offset}}',
+    'Visualizzazione delle pianificazioni in {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Modifiche di',
@@ -2248,9 +2248,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a draft has been edited, with a timestamp */
   'timeline.operation.edited-draft_timestamp': 'Modificato: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document has been edited live */
-  'timeline.operation.edited-live': 'Modificato dal vivo',
+  'timeline.operation.edited-live': 'Modificato in tempo reale',
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
-  'timeline.operation.edited-live_timestamp': 'Modificato dal vivo: {{timestamp, datetime}}',
+  'timeline.operation.edited-live_timestamp': 'Modificato in tempo reale: {{timestamp, datetime}}',
   /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
   'timeline.operation.history-cleared': 'Cancellato dalla politica di conservazione',
   /** Label shown in review changes timeline when a document was published */

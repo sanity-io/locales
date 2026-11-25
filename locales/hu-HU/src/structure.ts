@@ -108,7 +108,7 @@ export default removeUndefinedLocaleResources({
   'action.restore.tooltip': 'Visszaállítás erre a verzióra',
   /** Tooltip when action is disabled because the version is already marked for unpublishing */
   'action.unpublish.disabled.already-unpublished':
-    'Ez a dokumentum már be van állítva a publikálás visszavonására',
+    'Ez a dokumentum már közzététel-visszavonásra van beállítva',
   /** Tooltip when action is disabled because the document is not already published */
   'action.unpublish.disabled.not-published': 'Ez a dokumentum nincs közzétéve',
   /** Tooltip when action is disabled because the operation is not ready   */
@@ -124,9 +124,9 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Ön egy csak olvasható dokumentumot tekint meg, amely archiválásra került a <VersionBadge>{{title}}</VersionBadge> részeként. Nem szerkeszthető',
+    'Ez a dokumentumverzió az archivált <VersionBadge>{{title}}</VersionBadge> kiadáshoz tartozik',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': 'Ez a tervezett vázlat archiválva van',
+  'banners.archived-scheduled-draft.description': 'Ez az ütemezett vázlat archiválva van',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
     'Nem lehet vázlatdokumentumot létrehozni.',
@@ -242,7 +242,7 @@ export default removeUndefinedLocaleResources({
     'Egy ütemezett vázlat létezik ehhez a dokumentumhoz. Ha most közzéteszi a változásokat, azok felülírásra kerülnek, amikor az ütemezés lefut.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Ez a dokumentum a <VersionBadge>{{title}}</VersionBadge> kiadás részeként lesz közzé nem téve',
+    'Ennek a dokumentumnak a közzététele vissza lesz vonva a <VersionBadge>{{title}}</VersionBadge> kiadás részeként.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'A jelenlegi <strong>közzétett</strong> verzió megjelenítése:',
@@ -275,13 +275,14 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumentum műveletek',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Összes panel összecsukása',
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Kilépés a fókuszmódból (navigáció megjelenítése)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Panel fókuszálása',
+  'buttons.focus-pane-button.aria-label.focus': 'Belépés a fókuszmódba (navigáció elrejtése)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Összes panel összecsukása',
+  'buttons.focus-pane-button.tooltip.collapse': 'Kilépés a fókuszmódból',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Panel fókuszálása',
+  'buttons.focus-pane-button.tooltip.focus': 'Belépés a fókuszmódba',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Jobbra osztott panel',
   /** The tool tip for the split pane button on the document panel header */
@@ -312,7 +313,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-description':
     'A Canvas lehetővé teszi a szabad formátumú szerkesztőben történő szerzői munkát, amely automatikusan visszatérképezi a szerkezetbe foglalt tartalmat a Stúdióba, miközben gépel.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Az ötlet első szerzője',
+  'canvas.banner.popover-heading': 'Ötletközpontú tartalomkészítés',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -536,9 +537,9 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Nem tudjuk betölteni a dokumentum változásait, valószínűleg a tervek történetmegőrzési szabályzata miatt, ez megmutatja, hogyan hasonlít az <strong>{{version}}</strong> verzió a <strong>publikált</strong> verzióhoz.',
+    'Nem tudjuk betölteni a dokumentum változásait, valószínűleg a csomagod előzmény-megőrzési szabályzata miatt. Ez azt mutatja, hogyan viszonyul a(z) <strong>{{version}}</strong> verzió a <strong>közzétett</strong> verzióhoz.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
-  'events.compare-with-published.title': 'Összehasonlítás a publikált verzióval',
+  'events.compare-with-published.title': 'Összehasonlítás a közzétett verzióval',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release':
     'A <VersionBadge>{{releaseTitle}}</VersionBadge> dokumentum megtekintése',
@@ -725,7 +726,7 @@ export default removeUndefinedLocaleResources({
     'A dokumentum közzétételét megszüntették. A legutóbbi közzétett verzióból vázlat készült.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'A verzió publikálása visszavonásra kerül, amikor a kiadás publikálásra kerül',
+    'A verzió közzététele vissza lesz vonva a kiadás közzétételekor',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Cím nélkül',
   /** The loading message for the document not found pane */
@@ -831,5 +832,5 @@ export default removeUndefinedLocaleResources({
   'timeline-item.not-found-release.tooltip': 'A "{{releaseId}}" azonosítójú kiadás nem található',
 
   /** The text for the "Inline changes" action, which is used to toggle the visibility of content diffs inside inputs */
-  'toggle-inline-changes.menu-item.title': 'Változások beágyazása',
+  'toggle-inline-changes.menu-item.title': 'Soron belüli változások',
 })

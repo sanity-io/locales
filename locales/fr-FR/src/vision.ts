@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     "Cette version de l'API ne prend pas en charge les perspectives complexes. Utilisez {{apiVersion}} ou une version ultérieure.",
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    "Cette version de l'API ne prend pas en charge les variantes de contenu. Utilisez la version expérimentale de l'API ({{apiVersion}}).",
+    "Cette version de l'API ne prend pas en charge les variantes de contenu. Utilisez {{apiVersion}} ou une version ultérieure.",
   /** Label for "Query" editor/input */
   'query.label': 'Requête',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -89,7 +89,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip text shown when the query result is not encodable as CSV */
   'result.save-result-as-csv.not-csv-encodable': 'Le résultat ne peut pas être encodé en CSV',
   /** Label for "Save result as" result action */
-  'result.save-result-as-format': 'Enregistrer le résultat comme <SaveResultButtons/>',
+  'result.save-result-as-format': 'Enregistrer le résultat sous <SaveResultButtons/>',
   /**
    * "Not applicable" message for when there is no Execution time or End to End time information
    * available for the query (eg when the query has not been executed, or errored)

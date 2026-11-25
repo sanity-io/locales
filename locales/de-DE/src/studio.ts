@@ -925,7 +925,7 @@ export default removeUndefinedLocaleResources({
   /** Incomplete upload */
   'inputs.files.common.stale-upload-warning.title': 'Unvollständiger Upload',
   /** Select file */
-  'inputs.files.select-dialog.title': 'Datei für „{{targetTitle}}" auswählen',
+  'inputs.files.select-dialog.title': 'Datei für „{{targetTitle}}“ auswählen',
   /** Tooltip text for action to crop image */
   'inputs.image.actions-menu.crop-image-tooltip': 'Bild zuschneiden',
   /** Accessibility label for button to open image edit dialog */
@@ -955,7 +955,7 @@ export default removeUndefinedLocaleResources({
   /** Preview of uploaded image */
   'inputs.image.preview-uploaded-image': 'Vorschau des hochgeladenen Bildes',
   /** Select image */
-  'inputs.image.select-dialog.title': 'Bild für „{{targetTitle}}" auswählen',
+  'inputs.image.select-dialog.title': 'Bild für „{{targetTitle}}“ auswählen',
   /** The upload could not be completed at this time. */
   'inputs.image.upload-error.description': 'Der Upload konnte derzeit nicht abgeschlossen werden.',
   /** Upload failed */
@@ -1013,7 +1013,7 @@ export default removeUndefinedLocaleResources({
     'Dieses Feld ist laut Schema des Dokuments <strong>nur lesbar</strong> und kann nicht entfernt werden. Wenn Sie dies im Studio entfernen können möchten, stellen Sie sicher, dass Sie das <code>readOnly</code> Feld aus dem umschließenden Typ im Schema entfernen.',
   /** Fallback description shown when the unknown reference preview cannot be loaded */
   'inputs.object.unknown-fields.reference.preview.unavailable':
-    'Vorschau für Referenz „{{documentId}}" kann nicht geladen werden.',
+    'Vorschau für Referenz „{{documentId}}“ kann nicht geladen werden.',
   /** Remove field */
   'inputs.object.unknown-fields.remove-field-button.text': 'Feld entfernen',
   /** Encountered `{{count}}` fields that are not defined in the schema. */
@@ -1390,7 +1390,7 @@ export default removeUndefinedLocaleResources({
   /** Unset value */
   'inputs.untyped-value.unset-item-button.text': 'Wert entfernen',
   /** Select video */
-  'inputs.video.select-dialog.title': 'Video für „{{targetTitle}}" auswählen',
+  'inputs.video.select-dialog.title': 'Video für „{{targetTitle}}“ auswählen',
 
   /** The fallback explanation if no context is provided */
   'insufficient-permissions-message.not-authorized-explanation':
@@ -1488,7 +1488,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Neu laden',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio wurde aktualisiert',
+  'package-version.new-package-available.title': 'Sanity Studio kann aktualisiert werden!',
 
   /** Label for action to invite members to the current studio project */
   'presence.action.manage-members': 'Mitglieder verwalten',

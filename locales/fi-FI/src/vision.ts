@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Tämä API-versio ei tue monimutkaisia perspektiivejä. Käytä versiota {{apiVersion}} tai uudempaa.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Tämä API-versio ei tue sisältövariantteja. Käytä kokeellista API-versiota ({{apiVersion}}).',
+    'Tämä API-versio ei tue sisältövariantteja. Käytä versiota {{apiVersion}} tai uudempaa.',
   /** Label for "Query" editor/input */
   'query.label': 'Kysely',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -115,7 +115,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versio',
   /** Tooltip shown when the API version selector is locked because a variant is selected */
-  'settings.api-version-locked-for-variant': 'Kun variantti on valittu, API-version on oltava vX.',
+  'settings.api-version-locked-for-variant':
+    'Kun variantti on valittu, API-version on oltava {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Mukautettu API-versio',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -143,7 +144,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.new-default.description':
     'Oletusperspektiivi muuttuu muodosta "<code>raw</code>" muotoon "<code>published</code>" tulevassa API-versiossa. Katso lisätietoja dokumentaatiosta.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': 'kiinnitetty julkaisu',
+  'settings.perspectives.pinned-release-label': 'Kiinnitetty julkaisu',
   /** Label for the scheduled drafts perspective */
   'settings.perspectives.scheduled-drafts': 'Ajastetut luonnokset',
   /** Title for popover that explains what "Perspectives" are */
@@ -189,7 +190,7 @@ export default removeUndefinedLocaleResources({
    * perspective select names it, keeps queries on the API
    */
   'vision.api-version.tooltip-cdn-blocked':
-    'Kyselyt suoritetaan API:a vasten API-versiolla {{version}}, ei API CDN:ää vasten: se ei palvele {{perspective}}-näkökulmaa. Valitse muuttaaksesi sitä Asetuksissa.',
+    'Kyselyt suoritetaan API:a vasten API-versiolla {{version}}, ei API CDN:ää vasten: se ei palvele {{perspective}}-perspektiiviä. Valitse muuttaaksesi sitä Asetuksissa.',
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
   'vision.api-version.tooltip-invalid':
     'Asetuksissa oleva API-versio on keskeneräinen, joten mitään ei voida hakea ennen kuin se on valmis.',
@@ -252,7 +253,7 @@ export default removeUndefinedLocaleResources({
     'Alikysely suoritetaan kerran kaikille dokumenteille yhtenä eräkyselynä, ei kerran per dokumentti.',
   /** Part of the filter runs in memory; the expression follows */
   'vision.explain.insight.filter-in-memory':
-    'Osa suodattimesta suoritetaan muistissa lukemisen jälkeen: jokainen indeksin läpäisevä dokumentti luetaan ensin, mikä hidastaa suuria tietojoukkoja. Liitokset (->) ja funktiot suodattimessa eivät voi käyttää indeksiä.',
+    'Osa suodattimesta suoritetaan muistissa lukemisen jälkeen: jokainen indeksin läpäisevä dokumentti luetaan ensin, mikä muuttuu hitaaksi suurilla dataseteillä. Liitokset (->) ja funktiot suodattimessa eivät voi käyttää indeksiä.',
   /** The index sorts and limits while reading */
   'vision.explain.insight.index-sort-limit':
     'Indeksi järjestää ja rajoittaa dokumentteja niitä lukiessaan.',
@@ -286,7 +287,7 @@ export default removeUndefinedLocaleResources({
   'vision.export-query.title': 'Vie kysely',
   /** Note about authentication in the export query dialog */
   'vision.export-query.token-note':
-    'Yksityiset tietojoukot tarvitsevat API-tokenin. Julkisissa tietojoukoissa Authorization-otsikon voi jättää pois.',
+    'Yksityiset datasetit tarvitsevat API-tokenin. Julkisissa dataseteissa Authorization-otsikon voi jättää pois.',
   /** Toast shown after the generated code was copied */
   'vision.export-types.copied': 'Koodi kopioitu leikepöydälle',
   /** Label for the button that copies the generated code */
@@ -313,7 +314,7 @@ export default removeUndefinedLocaleResources({
   /** Shown on a library function the query declares the same way */
   'vision.functions.declared': 'Tässä kyselyssä',
   /** Lint action on a call of a library function the query does not declare */
-  'vision.functions.editor.add-from-library': 'Ilmoita se',
+  'vision.functions.editor.add-from-library': 'Määrittele se',
   /** Note in a function's hover documentation: the API version it needs */
   'vision.functions.editor.api-version': 'Vaatii API-version {{version}} tai uudemman',
   /** Detail of a completion for a custom function the query declares */
@@ -324,7 +325,7 @@ export default removeUndefinedLocaleResources({
   'vision.functions.editor.declared-on': 'Mukautettu funktio, määritelty rivillä {{line}}',
   /** Note in the hover documentation of the functions that only work in delta mode */
   'vision.functions.editor.delta-only':
-    'Toimii vain delta-tilassa, jossa webhookit ja Sanity-funktiot suorittavat suodattimensa',
+    'Toimii vain delta-tilassa, jossa webhookit ja Sanity Functions -toiminnot suorittavat suodattimensa',
   /** Button over a selected projection in the query editor, turning it into a custom function */
   'vision.functions.editor.extract': 'Erota funktioksi',
   /** Note in the hover documentation of a library function the query does not declare */
@@ -492,7 +493,7 @@ export default removeUndefinedLocaleResources({
   /** Adds a mutation deleting the documents of the shown result */
   'vision.mutate.add.delete-result': 'Poista tuloksen dokumentit',
   /** Adds a mutation patching a document, its ID to fill in */
-  'vision.mutate.add.patch': 'Päivitä dokumenttia (patch)',
+  'vision.mutate.add.patch': 'Päivitä dokumentti (patch)',
   /** Adds a mutation patching the documents of the shown result */
   'vision.mutate.add.patch-result': 'Lisää tulosten dokumentteja päivittävä patch',
   /** Button applying the mutations a dry run showed */
@@ -556,14 +557,14 @@ export default removeUndefinedLocaleResources({
   /** A document the mutations change */
   'vision.mutate.operation.update': 'Päivitä',
   /** Button running the mutations as a dry run */
-  'vision.mutate.preview': 'Kuivaharjoitus',
+  'vision.mutate.preview': 'Testiajo',
   /** Heading of the error shown when the dry run failed */
-  'vision.mutate.preview-failed': 'Kuivaharjoitus epäonnistui',
+  'vision.mutate.preview-failed': 'Testiajo epäonnistui',
   /** Heading of the dry run's outcome */
-  'vision.mutate.preview-heading': 'Kuivaharjoitus',
+  'vision.mutate.preview-heading': 'Testiajo',
   /** Shown over a dry run made for other mutations, another dataset or other options */
   'vision.mutate.stale':
-    'Mutaatiot, data-aineisto tai asetukset muuttuivat tämän kuivaharjoituksen jälkeen. Suorita se uudelleen ottaaksesi muutokset käyttöön.',
+    'Mutaatiot, dataset tai asetukset muuttuivat tämän testiajon jälkeen. Suorita se uudelleen ottaaksesi muutokset käyttöön.',
   /** How many documents the dry run changes and leaves as they are */
   'vision.mutate.summary': 'Muutettu: {{changed}} · Muuttumaton: {{unchanged}}',
   /** In the Network panel: whether a cache answered the query */
@@ -613,11 +614,11 @@ export default removeUndefinedLocaleResources({
   /** Hint under the dataset field while the tab follows the workspace's dataset */
   'vision.options.dataset.follows-workspace': 'Seuraa työtilaa',
   /** Button that pins the current dataset so the tab stops following the workspace */
-  'vision.options.dataset.pin': 'Kiinnitä tietojoukko',
+  'vision.options.dataset.pin': 'Kiinnitä dataset',
   /** Hint under the dataset field while a dataset is pinned */
-  'vision.options.dataset.pinned': 'Kiinnitetty; työtila saattaa käyttää toista tietojoukkoa',
+  'vision.options.dataset.pinned': 'Kiinnitetty; työtila saattaa käyttää toista datasettiä',
   /** Button that makes the tab follow the workspace's dataset again */
-  'vision.options.dataset.use-workspace': 'Käytä työtilan tietojoukkoa',
+  'vision.options.dataset.use-workspace': 'Käytä työtilan datasettiä',
   /** Label for the "Include content source map" switch */
   'vision.options.include-source-map': 'Sisällytä sisällön lähdekartta',
   /** Description for the "Include content source map" switch */
@@ -629,7 +630,7 @@ export default removeUndefinedLocaleResources({
   'vision.options.use-cdn': 'Käytä API CDN:ää',
   /** Note under the API CDN switch while the studio signs in with a cookie */
   'vision.options.use-cdn.anonymous':
-    'Tämä studio kirjaa sinut sisään evästeen avulla, jota API CDN ei koskaan vastaanota: se vastaa kuten anonyymille vierailijalle, eli näyttää sen, mitä julkinen tietojoukko näyttää.',
+    'Tämä studio kirjaa sinut sisään evästeen avulla, jota API CDN ei koskaan vastaanota: se vastaa kuten anonyymille vierailijalle, eli näyttää sen, mitä julkinen dataset näyttää.',
   /**
    * Why the API CDN is asked for but not used: the perspective is the one the perspective
    * select shows, such as "Global (drafts)"
@@ -666,7 +667,7 @@ export default removeUndefinedLocaleResources({
   /** Label of the "Lint" tab in the response panel, listing the query's lint findings */
   'vision.panel.lint': 'Lint',
   /** Label of the Mutate tab in the response panel, which runs and applies mutations */
-  'vision.panel.mutate': 'Muokkaa',
+  'vision.panel.mutate': 'Mutaatiot',
   /** Label of the Network tab in the response panel */
   'vision.panel.network': 'Verkko',
   /** Label of the "Options" panel in the request column */
@@ -682,7 +683,7 @@ export default removeUndefinedLocaleResources({
     'Mikä tahansa JSON-arvo; muu teksti lähetetään merkkijonona',
   /** Shown in the params form when the query uses no params */
   'vision.params-form.empty':
-    'Kysely ei käytä parametreja. Jokainen siinä oleva $nimi saa tähän oman kentän.',
+    'Kysely ei käytä parametreja. Jokainen siinä oleva $name saa tähän oman kentän.',
   /** Shown in the params form while the params JSON cannot be parsed */
   'vision.params-form.invalid-json':
     'Parametrit eivät ole kelvollista JSONia. Korjaa ne JSON-näkymässä muokataksesi niitä täällä.',
@@ -763,7 +764,7 @@ export default removeUndefinedLocaleResources({
     'Liitetty URL-osoite käytti varianttia "{{variant}}"; valitse se valikkopalkista suorittaaksesi kyselyn sillä.',
   /** Toast shown when the dataset of a pasted URL is not available here */
   'vision.paste.unknown-dataset':
-    'Liitetyn URL-osoitteen tietojoukko "{{dataset}}" ei ole käytettävissä täällä, säilytetään nykyinen.',
+    'Liitetyn URL-osoitteen dataset "{{dataset}}" ei ole käytettävissä täällä, säilytetään nykyinen.',
   /** Toast shown when the perspective of a pasted URL cannot be used */
   'vision.paste.unsupported-perspective':
     'Liitetyn URL-osoitteen perspektiiviä ei tueta täällä, säilytetään nykyinen.',
@@ -782,9 +783,9 @@ export default removeUndefinedLocaleResources({
   /** Menu item opening the export query dialog */
   'vision.query.export': 'Vie kysely…',
   /** Menu item reformatting the query */
-  'vision.query.prettify': 'Jäsennä kysely',
+  'vision.query.prettify': 'Siisti kysely',
   /** Toast shown when the query could not be reformatted */
-  'vision.query.prettify.failed': 'Kyselyä ei voitu jäsentää',
+  'vision.query.prettify.failed': 'Kyselyä ei voitu siistiä',
   /** Menu item saving the query to the personal saved queries */
   'vision.query.save': 'Tallenna kysely',
   /** The Fetch button while a fetch is running, stopping it; paired with Stop live */
@@ -894,7 +895,7 @@ export default removeUndefinedLocaleResources({
     'Tämä tallennettu kysely käytti varianttia "{{variant}}"; valitse se navigointipalkista suorittaaksesi kyselyn sillä.',
   /** Toast shown when an opened saved query names a dataset that is not available here */
   'vision.saved.unknown-dataset':
-    'Tämän tallennetun kyselyn tietojoukko "{{dataset}}" ei ole käytettävissä täällä, nykyinen säilytetään.',
+    'Tämän tallennetun kyselyn dataset "{{dataset}}" ei ole käytettävissä täällä, säilytetään nykyinen.',
   /** Toast shown when an opened saved query used a content variant, but this workspace has variants switched off */
   'vision.saved.variants-disabled':
     'Tämä tallennettu kysely käytti varianttia "{{variant}}"; tässä työtilassa variantit on poistettu käytöstä, joten kysely suoritetaan ilman sitä.',
@@ -923,7 +924,7 @@ export default removeUndefinedLocaleResources({
   'vision.settings.title': 'Asetukset',
   /** Empty state of the shared queries panel */
   'vision.shared.empty':
-    'Ei vielä jaettuja kyselyitä. Jaa tallennettu kysely tehdäksesi siitä saatavilla kaikille, jotka käyttävät tätä tietojoukkoa.',
+    'Ei vielä jaettuja kyselyitä. Jaa tallennettu kysely, niin se on kaikkien tätä datasettiä käyttävien saatavilla.',
   /** Shortcut description: close dialogs and menus */
   'vision.shortcuts.close': 'Sulje valintaikkunat ja valikot',
   /** Shortcut that lists the functions matching the name being typed in the query editor */

@@ -9,7 +9,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.create.text': '작업 생성',
   /** The label for the button to discard changes */
-  'buttons.discard.text': '취소',
+  'buttons.discard.text': '버리기',
   /** The label for the button to open the draft */
   'buttons.draft.text': '초안',
   /** The label for the button to create a new task */
@@ -22,13 +22,13 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': '이전 작업으로 이동',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': '이 작업을 삭제하시겠습니까?',
+  'dialog.remove-task.body': '삭제하면 작업을 복구할 수 없습니다.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': '취소',
   /** The label for the confirmation button on the remove task dialog */
-  'dialog.remove-task.buttons.confirm.text': '제거',
+  'dialog.remove-task.buttons.confirm.text': '삭제',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': '작업 제거',
+  'dialog.remove-task.title': '이 작업을 삭제하시겠습니까?',
 
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
   'document.footer.open-tasks.placeholder_other': '작업 열기',
@@ -52,7 +52,8 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
   'empty-state.list.subscribed.heading': '구독한 작업이 없습니다',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.text': '작업을 생성, 수정 또는 댓글을 달면 자동으로 구독됩니다',
+  'empty-state.list.subscribed.text':
+    '작업을 생성하거나 수정하거나 댓글을 달면 자동으로 구독됩니다',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': '완료된 작업 없음',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
@@ -67,13 +68,13 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': '모든 작업을 마쳤습니다',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.text': '당신에게 할당된 새 작업이 여기에 표시될 것입니다',
+  'empty-state.status.list.open.assigned.text': '나에게 할당된 새 작업이 여기에 표시됩니다',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.document.heading': '이 문서에 대한 작업 없음',
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.heading': '구독한 작업 없음',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': '구독한 작업이 여기에 표시될 것입니다',
+  'empty-state.status.list.open.subscribed.text': '구독한 작업이 여기에 표시됩니다',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': '할당되지 않음',
@@ -82,7 +83,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': '사용자를 찾을 수 없음',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': '사용자 이름 선택',
+  'form.input.assignee.search.placeholder': '담당자 선택',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': '권한 없음',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -106,7 +107,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': '스키마를 찾을 수 없음',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': '문서 선택',
+  'form.input.target.search.placeholder': '대상 문서 선택',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': '작업 제목',
   /** The status error message presented when creating a task did not complete in time */
@@ -119,7 +120,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': '작업 없음',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': '개선을 도와주세요, <Link>작업에 대한 피드백 공유하기</Link>',
+  'list.feedback.text': '개선을 도와주세요, <Link>작업에 대한 피드백 공유하기</Link> ',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': '작업에 대한 링크 복사',

@@ -7,7 +7,7 @@ export default removeUndefinedLocaleResources({
   'action.link-document': 'Canvas-თან დაკავშირება',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
   'action.link-document-disabled.initial-value-not-resolved':
-    'დაელოდეთ, სანამ დოკუმენტის საწყისი მნიშვნელობები განიხილება',
+    'დაელოდეთ, სანამ დოკუმენტის საწყისი მნიშვნელობები დამუშავდება',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
   'action.link-document-disabled.missing-permissions':
     'თქვენ არ გაქვთ ნებართვა დააკავშიროთ ეს დოკუმენტი Canvas-თან',
@@ -16,7 +16,7 @@ export default removeUndefinedLocaleResources({
     'გახსენით ეს დოკუმენტი Dashboard-ში, რათა დააკავშიროთ Canvas-თან',
   /** The text for the "Link to Canvas" action when the document is a version document. */
   'action.link-document-disabled.version-document':
-    'ვერსიის დოკუმენტები ჯერ არ მხარდაჭერია Canvas-ში',
+    'ვერსიის დოკუმენტები ჯერ არ არის მხარდაჭერილი Canvas-ში',
   /** The text for the "Unlink from Canvas" action. */
   'action.unlink-document': 'Canvas-დან გამორთვა',
 
@@ -31,16 +31,16 @@ export default removeUndefinedLocaleResources({
   'dialog.confirm-document-changes.confirm': 'დამტკიცება და გაგრძელება',
   /** The description for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.description':
-    'ამ დოკუმენტს საჭიროა განახლება, რათა იყოს თანამედროვე Canvas-თან.\n არსებული შინაარსი შეიცვლება ან წაიშლება ამ პროცესის ნაწილად.',
+    'ეს დოკუმენტი უნდა განახლდეს, რათა Canvas-თან თავსებადი გახდეს.\n არსებული შინაარსი შეიძლება შეიცვალოს ან წაიშალოს ამ პროცესის დროს.',
   /** The description for the "Confirm document changes" dialog footer. */
   'dialog.confirm-document-changes.footer-description':
-    'თქვენ შეგიძლიათ Canvas-დან გამორთოთ როდისმე',
+    'თქვენ ნებისმიერ დროს შეგიძლიათ Canvas-დან გამორთოთ',
   /** The title for the "Confirm document changes" dialog. */
   'dialog.confirm-document-changes.title': 'დოკუმენტის ცვლილებების დადასტურება',
   /** The text for the Link to Canvas dialog when there is a error. */
   'dialog.link-to-canvas.error': 'Canvas-თან დაკავშირება ვერ მოხერხდა',
   /** The text for the "Link to Canvas" dialog when the document is being redirected. */
-  'dialog.link-to-canvas.redirecting': 'გადაგიყვანთ Canvas-ზე დაკავშირების დასრულებას...',
+  'dialog.link-to-canvas.redirecting': 'გადაგიყვანთ Canvas-ში დაკავშირების დასასრულებლად...',
   /** The title for the "Link to Canvas" dialog. */
   'dialog.link-to-canvas.title': 'Canvas-თან დაკავშირება',
   /** The text for the "Link to Canvas" dialog when the document is being validated. */
@@ -49,7 +49,7 @@ export default removeUndefinedLocaleResources({
   'dialog.unlink-from-canvas.cancel': 'გაუქმება',
   /** The text for the "Unlink from Canvas" dialog description. */
   'dialog.unlink-from-canvas.description':
-    'გამორთვის შემდეგ, იგი აქ შეიცვლება და მომავალში Canvas-ში გაკეთებული რედაქტირებები აღარ გადაიტანება ამ დოკუმენტზე.',
+    'გამორთვის შემდეგ დოკუმენტი აქ რედაქტირებადი იქნება და Canvas-ში მომავალი რედაქტირებები აღარ გადმოვა ავტომატურად ამ დოკუმენტზე.',
   /** The text for the "Unlink from Canvas" dialog error message. */
   'dialog.unlink-from-canvas.error': 'Canvas-დან გამორთვა ვერ მოხერხდა',
   /** The text for the "Unlink from Canvas" dialog success message. */

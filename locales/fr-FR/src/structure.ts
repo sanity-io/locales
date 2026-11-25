@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': "Copier l'ID du document",
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': "Copier l'URL du document",
+  'action.copy-document-url.label': 'Copier',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': "Copier l'URL du document",
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -146,12 +146,13 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Ce type de document a été déprécié.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Jeter le brouillon',
+  'banners.live-edit-draft-banner.discard.tooltip':
+    'Abandonnez le brouillon pour continuer à modifier.',
   /** The text for publish action for the draft banner */
   'banners.live-edit-draft-banner.publish.tooltip': "Publier pour continuer l'édition",
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    "Le type <strong>{{schemaType}}</strong> a <code>liveEdit</code> activé, mais une version brouillon de ce document existe. Publiez ou jetez le brouillon pour continuer à l'éditer en direct.",
+    'Le type <strong>{{schemaType}}</strong> a <code>liveEdit</code> activé, mais une version brouillon de ce document existe. Publiez ou abandonnez le brouillon pour continuer à le modifier en direct.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Comparer le brouillon',
   /** Tooltip when compare draft is disabled because the published document does not exist */
@@ -169,10 +170,10 @@ export default removeUndefinedLocaleResources({
     "Planification en pause pendant l'édition. Appuyez sur Planifier pour réactiver ou choisissez une nouvelle date.",
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    "Votre rôle <Roles/> n'a pas les autorisations pour créer ce document.",
+    "Votre rôle <Roles/> n'a pas l'autorisation de publier ce document.",
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    "Vos rôles <Roles/> n'ont pas les autorisations pour créer ce document.",
+    "Vos rôles <Roles/> n'ont pas l'autorisation de publier ce document.",
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
     "Votre rôle <Roles/> n'a pas les autorisations pour mettre à jour ce document.",
@@ -240,7 +241,7 @@ export default removeUndefinedLocaleResources({
     "Nous n'avons pas pu trouver la révision du document sélectionnée, veuillez sélectionner une autre entrée dans la liste de l'historique.",
   /** The text content for the scheduled draft override banner */
   'banners.scheduled-draft-override-banner.text':
-    'Un brouillon programmé pour ce document existe. Si vous publiez des modifications maintenant, elles seront écrasées lorsque le programme sera exécuté.',
+    "Un brouillon planifié existe pour ce document. Si vous publiez des modifications maintenant, elles seront écrasées lors de l'exécution de la planification.",
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
     'Ce document sera retiré de la publication dans le cadre de la publication <VersionBadge>{{title}}</VersionBadge>',
@@ -276,13 +277,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Actions du document',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Réduire tous les volets',
+  'buttons.focus-pane-button.aria-label.collapse': 'Quitter le mode focus (afficher la navigation)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Concentrer le volet',
+  'buttons.focus-pane-button.aria-label.focus': 'Activer le mode focus (masquer la navigation)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Réduire tous les volets',
+  'buttons.focus-pane-button.tooltip.collapse': 'Quitter le mode focus',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Concentrer le volet',
+  'buttons.focus-pane-button.tooltip.focus': 'Activer le mode focus',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Diviser le volet à droite',
   /** The tool tip for the split pane button on the document panel header */
@@ -311,7 +312,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': 'En savoir plus',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas vous permet de rédiger dans un éditeur libre qui se cartographie automatiquement dans le Studio sous forme de contenu structuré - pendant que vous tapez.',
+    'Canvas vous permet de rédiger dans un éditeur libre dont le contenu est automatiquement reporté dans Studio sous forme de contenu structuré, au fur et à mesure de votre saisie.',
   /** The heading for the canvas linked banner popover */
   'canvas.banner.popover-heading': "Rédaction axée sur l'idée",
 
@@ -769,7 +770,7 @@ export default removeUndefinedLocaleResources({
   'request-permission-dialog.confirm-button.text': 'Envoyer la demande',
   /** The description text for the request permission dialog used in the permissions banner */
   'request-permission-dialog.description.text':
-    'Votre demande sera envoyée aux administrateur(s) du projet. Si vous le souhaitez, vous pouvez également inclure une note',
+    'Votre demande sera envoyée au(x) administrateur(s) du projet. Si vous le souhaitez, vous pouvez également inclure une note',
   /** The header/title for the request permission dialog used in the permissions banner */
   'request-permission-dialog.header.text': "Demander l'accès à l'édition",
   /** The text describing the note input for the request permission dialog used in the permissions banner */

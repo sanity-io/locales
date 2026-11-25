@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Denne API-versjonen støttar ikkje komplekse perspektiv. Bruk {{apiVersion}} eller nyare.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Denne API-versjonen støttar ikkje innhaldsvariantar. Bruk den eksperimentelle API-versjonen ({{apiVersion}}).',
+    'Denne API-versjonen støttar ikkje innhaldsvariantar. Bruk {{apiVersion}} eller nyare.',
   /** Label for "Query" editor/input */
   'query.label': 'Forespørsel',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -115,7 +115,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'API-versjon',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
-  'settings.api-version-locked-for-variant': 'Når ein variant er vald, må API-versjonen vere vX.',
+  'settings.api-version-locked-for-variant':
+    'Når ein variant er vald, må API-versjonen vere {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Tilpassa API-versjon',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -135,7 +136,7 @@ export default removeUndefinedLocaleResources({
   /** Call to action to read the docs related to "Perspectives" */
   'settings.perspectives.action.docs-link': 'Les dokumentasjon',
   /** Option for selecting default perspective */
-  'settings.perspectives.default': 'Ingen perspektiv (API standard)',
+  'settings.perspectives.default': 'Ingen perspektiv (API-standard)',
   /** Description for popover that explains what "Perspectives" are */
   'settings.perspectives.description':
     'Perspektiv lar forespørselen din køyre mot ulike "utsyn" av innhaldet i datasettet ditt',

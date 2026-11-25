@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Kopier dokument-ID',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Kopier dokumentets URL',
+  'action.copy-document-url.label': 'Kopiér',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Kopier dokumentets URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -124,12 +124,12 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Du ser et skrivebeskyttet dokument, der blev arkiveret som en del af <VersionBadge>{{title}}</VersionBadge>. Det kan ikke redigeres',
+    'Denne dokumentversion tilhører den arkiverede udgivelse <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Denne planlagte kladde er arkiveret',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document':
-    'Kan ikke oprette et kladde dokument.',
+    'Kan ikke oprette et kladdedokument.',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
   'banners.choose-new-document-destination.cannot-create-published-document':
     'Kan ikke oprette et offentliggjort dokument.',
@@ -138,7 +138,7 @@ export default removeUndefinedLocaleResources({
     'Vælg en destination for dette dokument:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge> udgivelsen er ikke aktiv.',
+    'Udgivelsen <VersionBadge>{{title}}</VersionBadge> er ikke aktiv.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Gendan seneste version',
   /** The text content for the deleted document banner */
@@ -146,9 +146,10 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Denne dokumenttype er blevet udfaset.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Kassér kladde',
+  'banners.live-edit-draft-banner.discard.tooltip': 'Kassér kladden for at fortsætte redigeringen.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Udgiv for at fortsætte redigering',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Publicér kladden for at fortsætte redigeringen.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'Typen <strong>{{schemaType}}</strong> har <code>liveEdit</code> aktiveret, men der findes en kladdeversion af dette dokument. Udgiv eller kassér kladden for at fortsætte med at redigere den live.',
@@ -156,7 +157,7 @@ export default removeUndefinedLocaleResources({
   'banners.obsolete-draft.actions.compare-draft.text': 'Sammenlign kladde',
   /** Tooltip when compare draft is disabled because the published document does not exist */
   'banners.obsolete-draft.actions.compare-draft.tooltip':
-    'Det publicerede dokument findes ikke, så dette udkast kan ikke sammenlignes.',
+    'Det publicerede dokument findes ikke, så denne kladde kan ikke sammenlignes.',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'Kassér kladde',
   /** The label for the "publish draft" action */
@@ -215,10 +216,10 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-end_other': 'udgivelserne',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Dette dokument er en del af <VersionBadge/> udgivelsen og {{count}} yderligere udgivelse.',
+    'Dette dokument er en del af udgivelsen <VersionBadge/> og {{count}} yderligere udgivelse.',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    'Dette dokument er en del af <VersionBadge/> udgivelsen og {{count}} yderligere udgivelser',
+    'Dette dokument er en del af udgivelsen <VersionBadge/> og {{count}} yderligere udgivelser',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
@@ -226,9 +227,9 @@ export default removeUndefinedLocaleResources({
     'Dette dokument er ikke en del af nogen udgivelse',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
-    'Dette dokument er en del af <VersionBadge/> udgivelsen',
+    'Dette dokument er en del af udgivelsen <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': 'Ikke i <VersionBadge>{{title}}</VersionBadge> udgivelsen.',
+  'banners.release.not-in-release': 'Ikke i udgivelsen <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
     'Vent venligst mens dokumentet tilføjes til udgivelsen. Det burde ikke tage mere end et par sekunder.',
@@ -242,7 +243,7 @@ export default removeUndefinedLocaleResources({
     'Der findes en planlagt kladde for dette dokument. Hvis du offentliggør ændringer nu, vil de blive overskrevet, når planen udføres.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Dette dokument vil blive afpubliseret som en del af <VersionBadge>{{title}}</VersionBadge> udgivelsen',
+    'Dette dokument vil blive afpubliceret som en del af udgivelsen <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Viser den nuværende <strong>offentliggjorte</strong> version:',
@@ -303,20 +304,20 @@ export default removeUndefinedLocaleResources({
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Dette udkastdokument er linket til Canvas',
   /** The text for the canvas linked banner when the document is a live document */
-  'canvas.banner.linked-text.published': 'Dette live dokument er linket til Canvas',
+  'canvas.banner.linked-text.published': 'Dette live-dokument er linket til Canvas',
   /** The text for the canvas linked banner when the document is a version document */
   'canvas.banner.linked-text.version': 'Dette versionsdokument er linket til Canvas',
   /** The text for the canvas linked banner popover button */
   'canvas.banner.popover-button-text': 'Lær mere',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas lader dig forfatte i en fri-form redaktør, der automatisk kortlægger tilbage til Studio som struktureret indhold - mens du skriver.',
+    'Med Canvas kan du skrive i et frit formet redigeringsværktøj, der automatisk afspejles i Studio som struktureret indhold – mens du skriver.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Idé først forfatterskab',
+  'canvas.banner.popover-heading': 'Skrivning med idéen først',
 
   /** The description for the changes banner */
   'changes.banner.description':
-    'Viser historikken for <strong>{{perspective}}</strong> versionen af dette dokument.',
+    'Viser historikken for <strong>{{perspective}}</strong>-versionen af dette dokument.',
   /** The tooltip for the changes banner */
   'changes.banner.tooltip':
     'Denne visning viser de ændringer, der er sket i en specifik version af dette dokument. Vælg en anden version for at se dens ændringer',
@@ -329,11 +330,11 @@ export default removeUndefinedLocaleResources({
 
   /** The error message shown when the specified document comparison mode is not supported */
   'compare-version.error.invalidModeParam':
-    '"{{input}}" er ikke en understøttet dokument sammenligningsmodus.',
+    '"{{input}}" er ikke en understøttet sammenligningsmodus for dokumenter.',
   /** The error message shown when the next document for comparison could not be extracted from the URL */
   'compare-version.error.invalidNextDocumentParam': 'Den næste dokumentparameter er ugyldig.',
   /** The error message shown when the document comparison URL could not be parsed */
-  'compare-version.error.invalidParams.title': 'Ude af stand til at sammenligne dokumenter',
+  'compare-version.error.invalidParams.title': 'Kan ikke sammenligne dokumenter',
   /** The error message shown when the previous document for comparison could not be extracted from the URL */
   'compare-version.error.invalidPreviousDocumentParam': 'Den forrige dokumentparameter er ugyldig.',
   /** The error message shown when releases failed to load */
@@ -532,20 +533,20 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Vi kan ikke indlæse ændringerne for dette dokument, sandsynligvis på grund af historikbevaringspolitikken for din plan, dette viser dig hvordan <strong>{{version}}</strong> versionen sammenlignes med <strong>udgivet</strong> version.',
+    'Vi kan ikke indlæse ændringerne for dette dokument, sandsynligvis på grund af din plans politik for historikbevaring. Her ser du, hvordan versionen <strong>{{version}}</strong> sammenlignes med den <strong>udgivne</strong> version.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'Sammenligning med udgivet',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Inspekter <VersionBadge>{{releaseTitle}}</VersionBadge> dokument',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': 'Åbn <VersionBadge>kladde</VersionBadge> dokument',
+  'events.open.draft': 'Åbn <VersionBadge>kladde</VersionBadge>-dokument',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
-  'events.open.release': 'Åbn <VersionBadge>{{releaseTitle}}</VersionBadge> udgivelse',
+  'events.open.release': 'Åbn udgivelsen <VersionBadge>{{releaseTitle}}</VersionBadge>',
 
   /** The text for the add reference item in the incoming references input */
   'incoming-references-input.add-reference-item': 'Tilføj element',
   /** The aria-label for the incoming references list */
-  'incoming-references-input.list-label': 'Indkommende referencer af typen {{type}}',
+  'incoming-references-input.list-label': 'Indgående referencer af typen {{type}}',
   /** The text for the no items in the incoming references input */
   'incoming-references-input.no-items': 'Ingen elementer',
   /** The text for the reference from in the incoming references input */
@@ -558,10 +559,10 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-loading': 'Indlæser dokumenter...',
   /** The text for the loading state in the incoming references input */
   'incoming-references-input.types-loading-cross-dataset':
-    'Indlæser dokumenter på tværs af datasæt...',
+    'Indlæser dokumenter på tværs af datasets...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
-    'Ingen indkommende referencer defineret for denne type, se dokumentationen for mere information.',
+    'Ingen indgående referencer defineret for denne type, se dokumentationen for mere information.',
 
   /** The text shown if there are no incoming references in the inspector */
   'incoming-references-pane.no-references': 'Ingen indgående referencer fundet.',

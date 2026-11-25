@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.configuration-issue.header': 'Problemă de configurare detectată',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
   'about-dialog.configuration-issue.missing-appid':
-    'Actualizările automate sunt activate, dar nu este configurat niciun <code>deployment.appId</code> în <code>sanity.cli.ts</code>. Acest Studio se actualizează împotriva canalului <strong>latest</strong>.',
+    'Actualizările automate sunt activate, dar nu este configurat niciun <code>deployment.appId</code> în <code>sanity.cli.ts</code>. Acest Studio se actualizează de pe canalul <strong>latest</strong>.',
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'Vezi documentația',
   /** "Disabled" status for auto-updates in About-dialog */
@@ -1476,16 +1476,16 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Publică acum',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Vă rugăm să încercați din nou sau verificați conexiunea. Documentul va rămâne nepublicat la lansare.',
+    'Vă rugăm să încercați din nou sau să verificați conexiunea. Documentul va fi în continuare nepublicat la lansare.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Eșec la revenirea de la setarea de a nu publica la lansare.',
+    'Nu s-a reușit anularea setării de nepublicare la lansare.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Acum puteți edita această versiune.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Revenirea de la setarea de a nu publica la lansare a fost realizată cu succes.',
+    'Setarea de nepublicare la lansare a fost anulată cu succes.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Programează publicarea',
   /** Error message for when a version is set to be unpublished */
@@ -1543,13 +1543,12 @@ export default removeUndefinedLocaleResources({
   'release.dialog.create.title': 'Lansare nouă',
   /** Body text when deleting scheduled draft and draft is already up to date */
   'release.dialog.delete-schedule-draft.body-already-current':
-    'Ștergeți această programare a draftului? Draftul dumneavoastră este deja actualizat.',
+    'Ștergeți acest draft programat? Draftul dumneavoastră este deja actualizat.',
   /** Body text when deleting scheduled draft and changes will be saved to draft */
   'release.dialog.delete-schedule-draft.body-will-save-to-draft':
-    'Ștergeți această programare a draftului? Modificările dumneavoastră vor fi salvate în draft.',
+    'Ștergeți acest draft programat? Modificările dumneavoastră vor fi salvate în draft.',
   /** Body text when deleting scheduled draft with checkbox shown for user choice */
-  'release.dialog.delete-schedule-draft.body-with-choice':
-    'Ștergeți această programare a draftului?',
+  'release.dialog.delete-schedule-draft.body-with-choice': 'Ștergeți acest draft programat?',
   /** Confirm button text for deleting a scheduled draft */
   'release.dialog.delete-schedule-draft.confirm': 'Da, șterge programarea',
   /** Checkbox label for copying scheduled draft to draft before deletion */
@@ -1694,7 +1693,7 @@ export default removeUndefinedLocaleResources({
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': 'Selectează când ar trebui publicat acest document.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': 'Programează publicarea ciornelor',
+  'schedule-publish-dialog.header': 'Programează ciorna pentru publicare',
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': 'Publicare programată',
@@ -2077,7 +2076,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.dialog-info.content-releases':
     'Fusul orar selectat va schimba modul în care datele sunt reprezentate în lansările de conținut.',
   'time-zone.dialog-info.input':
-    'Fusul orar selectat va schimba modul în care datele sunt reprezentate doar pentru această intrare în acest document.',
+    'Fusul orar selectat va schimba modul în care datele sunt reprezentate doar pentru acest câmp din acest document.',
   'time-zone.dialog-info.scheduled-publishing':
     'Fusul orar selectat va schimba modul în care datele sunt reprezentate în programe.',
   'time-zone.local-time': 'ora locală',

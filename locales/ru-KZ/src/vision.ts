@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Эта версия API не поддерживает сложные перспективы. Используйте {{apiVersion}} или более позднюю версию.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Эта версия API не поддерживает варианты контента. Используйте экспериментальную версию API ({{apiVersion}}).',
+    'Эта версия API не поддерживает варианты контента. Используйте {{apiVersion}} или более позднюю версию.',
   /** Label for "Query" editor/input */
   'query.label': 'Запрос',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,8 @@ export default removeUndefinedLocaleResources({
   /** Label for the "API version" dropdown in settings */
   'settings.api-version-label': 'Версия API',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
-  'settings.api-version-locked-for-variant': 'Когда выбран вариант, версия API должна быть vX.',
+  'settings.api-version-locked-for-variant':
+    'Когда выбран вариант, версия API должна быть {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Пользовательская версия API',
   /** Label for the "Dataset" dropdown in vision settings */

@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automaattiset päivitykset',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Kuinka ottaa käyttöön',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Ota käyttöön',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Hallitse versiota',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -41,7 +41,7 @@ export default removeUndefinedLocaleResources({
   /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
   'about-dialog.version-info.deprecated.reason': 'Syy: {{reason}}',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Kuinka päivittää',
+  'about-dialog.version-info.how-to-upgrade': 'Päivitä nyt',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Uusin versio',
   /** Info text when auto updates is enabled and a new version is available */
@@ -373,7 +373,7 @@ export default removeUndefinedLocaleResources({
   /** File diff: Fallback title for the meta info section when there is no original filename to use  */
   'changes.file.meta-info-fallback-title': 'Nimetön',
   /** The label displayed to indicate a document's value is different to its base variant. */
-  'changes.from-base-variant.label': 'Muutettu perusversiosta',
+  'changes.from-base-variant.label': 'Muutettu perusvariantista',
   /** Image diff: Text shown in tooltip when hovering hotspot that has changed in diff view */
   'changes.image.crop-changed': 'Rajaus muuttunut',
   /** Image diff: Text shown if the previous image asset was deleted (shouldn't theoretically happen) */
@@ -400,7 +400,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Ladataan muutoksia…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    'Emme löytäneet dokumentin versiota tunnuksella: <code>{{revisionId}}</code>, jota yrität verrata. <Break/> Tämä johtuu todennäköisesti suunnitelmasi historian säilytyskäytännöstä. <Break/> Valitse eri <strong>From</strong> -merkintä.',
+    'Emme löytäneet asiakirjan versiota tunnuksella: <code>{{revisionId}}</code>, jota yrität verrata. <Break/> Tämä johtuu todennäköisesti tilauksesi historian säilytyskäytännöstä. <Break/> Valitse toinen <strong>Alkaen</strong>-merkintä.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Muokkaa asiakirjaa tai valitse vanhempi versio aikajanalta nähdäksesi muutoslistan tässä paneelissa.',
@@ -450,7 +450,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Poistettu',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Olet valinnut saman <strong>from</strong> ja <strong>to</strong> version, valitse eri versiot vertaillaksesi niiden välisiä muutoksia.',
+    'Olet valinnut saman version kohtiin <strong>alkaen</strong> ja <strong>päättyen</strong>, valitse eri versiot vertaillaksesi niiden välisiä muutoksia.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'Sama versio valittu',
   /** Title for the Review Changes pane */
@@ -540,7 +540,7 @@ export default removeUndefinedLocaleResources({
   'document-group-inventory.action.manage-versions': 'Hallinnoi versioita',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
   'document-group-inventory.feedback.sentiment-label':
-    'Kuinka helppoa tai vaikeaa uuden version inventaarin käyttäminen on?',
+    'Kuinka helppoa tai vaikeaa uuden versioluettelon käyttäminen on?',
   /** The label for the input that filters the variants in the document group inventory */
   'document-group-inventory.filter-string.label': 'Suodata {{subject}}',
   /** The document inventory title (plural) */
@@ -548,13 +548,13 @@ export default removeUndefinedLocaleResources({
   /** The document inventory title (plural) */
   'document-group-inventory.title_other': '{{count}} {{subject}}',
   /** The label text that indicates an item in the document group inventory is currently being viewed */
-  'document-group-inventory.viewing-item-label': 'tarkastellaan',
+  'document-group-inventory.viewing-item-label': 'Muokataan',
 
   /** --- Document group --- */
   /** The label given to a document group's base variant */
-  'document-group.base-variant': 'Kaikki käyttäjät (Oletus)',
+  'document-group.base-variant': 'Oletus',
   /** The text of the actions that open the variant creation form and confirm the creation */
-  'document-group.create-variant': 'Luo variantti',
+  'document-group.create-variant': 'Luo versio',
   /** Describes the variant creation form's picker for the version the new variant starts from */
   'document-group.create-variant.base-description': 'Mistä se alkaa',
   /** The label of the variant creation form's picker for the version the new variant starts from */
@@ -588,9 +588,10 @@ export default removeUndefinedLocaleResources({
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
   'document-group.delete.cdr-summary.subtitle_other': 'Datasetit: {{datasets}}',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Ei saatavilla oleva dataset',
+  'document-group.delete.cdr-summary.subtitle_unavailable_one': 'Saatavilla olematon dataset',
   /** The text that appears in the subtitle `<summary>` that lists the datasets below the title */
-  'document-group.delete.cdr-summary.subtitle_unavailable_other': 'Ei saatavilla olevat datasetit',
+  'document-group.delete.cdr-summary.subtitle_unavailable_other':
+    'Saatavilla olemattomat datasetit',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (singular) */
   'document-group.delete.cdr-summary.title_one': '{{documentCount}} toisessa datasetissä',
   /** The text that appears in the title `<summary>` that includes the list of CDRs (plural) */
@@ -1041,7 +1042,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.title': 'Hotspot & Crop',
   /** Warnings displayed to developers when using the crop/hotspot tool on vector images, notifying them that crops/hotspot are not respected when serving the image in vector format. For the crop/hotspot to apply, images must be served in a raster format such as JPG or PNG, by appending eg `fm=jpg` to the image url, or calling `format('jpg')` if using `@sanity/image-url` */
   'inputs.imagetool.vector-warning.developer-info':
-    "Asset Pipeline ei tue hotspot- ja crop-toimintoja vektorigrafiikkaformaatteihin. Ota hotspot & crop käyttöön tulostamalla tämä kuva mihin tahansa tuetuista rasterimuodoista. Esimerkiksi: <code>fm=jpg</code> <ImageUrlDocumentationLink>kuva-URL-osoitteeseen</ImageUrlDocumentationLink> tai kutsu <code>.format('png')</code> käyttäen <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
+    "Asset Pipeline ei tue hotspot- ja crop-toimintoja vektorimuodoille. Jos haluat käyttää hotspotia ja cropia, tuota tämä kuva johonkin tuetuista rasterimuodoista. Esimerkiksi lisää <code>fm=jpg</code> <ImageUrlDocumentationLink>kuvan URL-osoitteeseen</ImageUrlDocumentationLink> tai kutsu <code>.format('png')</code> käyttäen pakettia <ImageUrlPackageDocumentationLink>@sanity/image-url</ImageUrlPackageDocumentationLink>.",
   /** See developer info */
   'inputs.imagetool.vector-warning.expand-developer-info': 'Katso kehittäjän tiedot',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
@@ -1585,7 +1586,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated Label for button that will make the browser reload when users' studio version is out-of-date */
   'package-version.new-package-available.reload-button': 'Lataa uudelleen',
   /** @deprecated Title of the alert for studio users when packages in their studio are out-of-date */
-  'package-version.new-package-available.title': 'Sanity Studio päivitettiin',
+  'package-version.new-package-available.title': 'Sanity Studio on valmis päivitettäväksi!',
 
   /** Accessible name and tooltip for the button that clears the selected global perspective */
   'perspective.action.clear': 'Tyhjennä valinta',
@@ -1776,10 +1777,9 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Julkaise luonnos nyt',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'Tämän avulla on mahdollista näyttää, ovatko asiakirjat ristiriidassa työskenneltäessä useiden versioiden parissa.',
+    'Tämä on tarkoitettu vain suunnitteluun, esikatseluihin ja vihjeisiin siitä, ovatko asiakirjat ristiriidassa keskenään. Ajan asettaminen tässä ei ajasta julkaisuasi. Sinun on silti suoritettava tai ajastettava julkaisu, kun kaikki asiakirjat ovat valmiita.',
   /** Label for noting that a release time is not final */
-  'release.dialog.tooltip.note':
-    'HUOM: Voit muuttaa julkaisun aikaa ja asettaa tarkan ajan ajoitetulle julkaisulle myöhemmin.',
+  'release.dialog.tooltip.note': 'Voit aina muuttaa sitä myöhemmin.',
   /** Title for tooltip to explain release time */
   'release.dialog.tooltip.title': 'Arvioitu julkaisun aika',
   /** The placeholder text when the release doesn't have a description */
@@ -1803,7 +1803,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Julkaistu',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Julkaisut',
+  'release.navbar.tooltip': 'Näytä ajastus',
   /** Accessible label for the link that opens a release's page from the global perspective menu */
   'release.navbar.view-release-aria-label': 'Näytä julkaisu {{title}}',
   /** The placeholder text when the release doesn't have a title */
@@ -1812,7 +1812,7 @@ export default removeUndefinedLocaleResources({
   'release.schedule-dialog.publish-date-in-past-warning':
     'Ajoita tämä julkaisu tulevaisuuden ajankohtaan.',
   /** Label for date picker when scheduling a release */
-  'release.schedule-dialog.select-publish-date-label': 'Ajoita',
+  'release.schedule-dialog.select-publish-date-label': 'Julkaisuajankohta',
   /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'Tämä julkaisu on poistettu kiinnityksestä',
   /** The toast title that will be shown when the user has a release perspective which is now archived */
@@ -1864,7 +1864,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the release type 'as soon as possible' */
   'release.type.asap': 'Mahdollisimman pian',
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
-  'release.type.scheduled': 'Ajastettu',
+  'release.type.scheduled': 'Tiettynä ajankohtana',
   /** Label for the release type 'undecided' */
   'release.type.undecided': 'Ei päätetty',
   /** Tooltip for the dropdown to show all versions of document */
@@ -1889,7 +1889,7 @@ export default removeUndefinedLocaleResources({
   'scheduled-drafts.release.title': 'Ajoitettu julkaisu',
 
   /** Label for the dataset of the workspace whose schema failed to compile */
-  'schema-errors.location.dataset': 'Tietojoukko',
+  'schema-errors.location.dataset': 'Dataset',
   /** Label for the project ID of the workspace whose schema failed to compile */
   'schema-errors.location.project-id': 'Projektin tunnus',
   /** Label for the source within the workspace whose schema failed to compile */
@@ -2289,19 +2289,19 @@ export default removeUndefinedLocaleResources({
   'time-zone.action.search-for-timezone-placeholder': 'Etsi kaupunkia tai aikavyöhykettä',
   'time-zone.action.select-local-time-zone': 'Valitse paikallinen aikavyöhyke',
   'time-zone.dialog-info.content-releases':
-    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään sisällön julkaisuissa.',
+    'Valittu aikavyöhyke muuttaa tapaa, jolla päivämäärät esitetään sisällön julkaisuissa.',
   'time-zone.dialog-info.input':
-    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään vain tässä syötteessä tässä dokumentissa.',
+    'Valittu aikavyöhyke muuttaa tapaa, jolla päivämäärät esitetään vain tässä kentässä tässä dokumentissa.',
   'time-zone.dialog-info.scheduled-publishing':
-    'Valitun aikavyöhykkeen mukaan muuttuu tapa, jolla päivämäärät esitetään aikatauluissa.',
+    'Valittu aikavyöhyke muuttaa tapaa, jolla päivämäärät esitetään aikatauluissa.',
   'time-zone.local-time': 'paikallinen aika',
   'time-zone.time-zone': 'Aikavyöhyke',
   'time-zone.time-zone-tooltip-content-releases':
-    'Näyttää julkaisut {{alternativeName}} GMT{{offset}}',
+    'Näytetään julkaisut aikavyöhykkeessä {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-input':
-    'Näyttää <em>{{title}}</em> {{alternativeName}} GMT{{offset}}',
+    'Näytetään <em>{{title}}</em> aikavyöhykkeessä {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':
-    'Näyttää aikataulut {{alternativeName}} GMT{{offset}}',
+    'Näytetään aikataulut aikavyöhykkeessä {{alternativeName}} GMT{{offset}}',
 
   /** Title for the changes tooltip in the history inspector*/
   'timeline.changes.title': 'Muutokset tekijältä',
@@ -2399,7 +2399,7 @@ export default removeUndefinedLocaleResources({
   /** Title placeholder for search input in array of objects */
   'tree-editing-dialog.search-placeholder': 'Haku',
   /** Menu aria label for the search menu */
-  'tree-editing-dialog.search.menu-label': 'Hakumenun selite',
+  'tree-editing-dialog.search.menu-label': 'Hakuvalikko',
   /** Title label for when no search results are found on the tree of objects */
   'tree-editing-dialog.search.no-results-title': 'Tuloksia ei löytynyt',
   /** Label to close the sidebar */

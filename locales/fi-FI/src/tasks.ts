@@ -22,7 +22,7 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': 'Siirry edelliseen tehtävään',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'Oletko varma, että haluat poistaa tämän tehtävän?',
+  'dialog.remove-task.body': 'Poistettua tehtävää ei voi palauttaa.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Peruuta',
   /** The label for the confirmation button on the remove task dialog */
@@ -69,7 +69,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.status.list.closed.subscribed.heading': 'Ei valmiita tehtäviä',
   /** The text in the tasks sidebar, in the subscribed tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.subscribed.text':
-    'Tehtävät, joihin olet tilannut ja merkinnyt tehdyiksi, näkyvät täällä',
+    'Tilaamasi tehtävät, jotka on merkitty tehdyiksi, näkyvät täällä',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.heading': 'Olet ajan tasalla',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
@@ -79,7 +79,7 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.subscribed.heading': 'Ei tilattuja tehtäviä',
   /** The text in the tasks sidebar, in the subscribed tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.subscribed.text': 'Tehtävät, joihin tilaat, näkyvät täällä',
+  'empty-state.status.list.open.subscribed.text': 'Tilaamasi tehtävät näkyvät täällä',
 
   /** Text used in the assignee input when there is no user assigned */
   'form.input.assignee.no-user-assigned.text': 'Ei määrätty',
@@ -88,7 +88,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Käyttäjiä ei löytynyt',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'Valitse käyttäjätunnus',
+  'form.input.assignee.search.placeholder': 'Valitse vastuuhenkilö',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Ei oikeuksia',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -112,7 +112,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': 'Skeemaa ei löytynyt',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': 'Valitse dokumentti',
+  'form.input.target.search.placeholder': 'Valitse kohdedokumentti',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Tehtävän otsikko',
   /** The status error message presented when creating a task did not complete in time */

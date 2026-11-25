@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Kopiuj ID dokumentu',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Kopiuj adres URL dokumentu',
+  'action.copy-document-url.label': 'Kopiuj',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Kopiuj URL dokumentu',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
     'Ten dokument jeszcze nie istnieje lub został już usunięty',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'Ten dokument nie może zostać usunięty, ponieważ znajduje się w zaplanowanych publikacjach',
+    'Ten dokument nie może zostać usunięty, ponieważ znajduje się w zaplanowanych wydaniach',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'Wybrana wersja lub wariant nie zawiera tego dokumentu',
@@ -123,7 +123,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Przeglądasz dokument tylko do odczytu, który został zarchiwizowany jako część <VersionBadge>{{title}}</VersionBadge>. Nie można go edytować',
+    'Ta wersja dokumentu należy do zarchiwizowanego wydania <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Ten zaplanowany szkic jest zarchiwizowany',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -137,7 +137,7 @@ export default removeUndefinedLocaleResources({
     'Wybierz miejsce docelowe dla tego dokumentu:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge> wersja nie jest aktywna.',
+    'Wydanie <VersionBadge>{{title}}</VersionBadge> nie jest aktywne.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Przywróć najnowszą wersję',
   /** The text content for the deleted document banner */
@@ -145,9 +145,9 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Ten typ dokumentu został wycofany.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Odrzuć szkic',
+  'banners.live-edit-draft-banner.discard.tooltip': 'Odrzuć szkic, aby kontynuować edycję.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Opublikuj, aby kontynuować edycję',
+  'banners.live-edit-draft-banner.publish.tooltip': 'Opublikuj szkic, aby kontynuować edycję.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'Typ <strong>{{schemaType}}</strong> ma włączoną opcję <code>liveEdit</code>, ale istnieje szkic tego dokumentu. Opublikuj lub odrzuć szkic, aby móc kontynuować edycję na żywo.',
@@ -165,7 +165,7 @@ export default removeUndefinedLocaleResources({
     'Przestrzeń robocza nie ma włączonych wersji roboczych, ale istnieje wersja robocza tego dokumentu.',
   /** The text content for the paused scheduled draft banner */
   'banners.paused-scheduled-draft.text':
-    'Harmonogram wstrzymany podczas edycji. Naciśnij Harmonogram, aby ponownie aktywować lub wybrać nową datę.',
+    'Harmonogram wstrzymany podczas edycji. Naciśnij Zaplanuj, aby ponownie go aktywować lub wybrać nową datę.',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
     'Twoja rola <Roles/> nie ma uprawnień do utworzenia tego dokumentu.',
@@ -195,19 +195,19 @@ export default removeUndefinedLocaleResources({
   /** The text that appears for the action button to add the current document to the global release */
   'banners.release.action.add-to-release': 'Dodaj do wydania',
   /** The text that appears for the action button to add the current document to the global release */
-  'banners.release.action.open-to-edit': 'Otwórz wersję do edycji',
+  'banners.release.action.open-to-edit': 'Otwórz wydanie do edycji',
   /** Toast description in case an error occurs when adding a document to a release  */
   'banners.release.error.description':
-    'Wystąpił błąd podczas dodawania dokumentu do wersji: {{message}}',
+    'Wystąpił błąd podczas dodawania dokumentu do wydania: {{message}}',
   /** Toast title in case an error occurs when adding a document to a release  */
-  'banners.release.error.title': 'Błąd dodawania dokumentu do wersji',
+  'banners.release.error.title': 'Błąd dodawania dokumentu do wydania',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description': 'Dokument istnieje tylko w',
   /** The text for the banner that appears when a document only has versions but is in a draft or published pinned release */
-  'banners.release.navigate-to-edit-description-end_one': 'wersji',
+  'banners.release.navigate-to-edit-description-end_one': 'wydaniu',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, only one extra releases */
   'banners.release.navigate-to-edit-description-multiple_one':
-    'Ten dokument jest częścią wersji <VersionBadge/> i {{count}} innej wersji.',
+    'Ten dokument jest częścią wydania <VersionBadge/> i {{count}} innego wydania.',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
@@ -215,14 +215,14 @@ export default removeUndefinedLocaleResources({
     'Ten dokument nie jest częścią żadnego wydania',
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single':
-    'Ten dokument jest częścią wersji <VersionBadge/>',
+    'Ten dokument jest częścią wydania <VersionBadge/>',
   /** The text for the banner that appears when a document is not in the current global release */
   'banners.release.not-in-release': 'Nie w wydaniu <VersionBadge>{{title}}</VersionBadge>.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
-    'Proszę czekać, aż dokument zostanie dodany do wersji. Nie powinno to trwać dłużej niż kilka sekund.',
+    'Proszę czekać, aż dokument zostanie dodany do wydania. Nie powinno to trwać dłużej niż kilka sekund.',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
-  'banners.release.waiting.title': 'Dodawanie dokumentu do wersji…',
+  'banners.release.waiting.title': 'Dodawanie dokumentu do wydania…',
   /** The text for the revision not found banner */
   'banners.revision-not-found.description':
     'Nie udało się znaleźć wybranej wersji dokumentu, proszę wybrać inny wpis z listy historii.',
@@ -231,7 +231,7 @@ export default removeUndefinedLocaleResources({
     'Istnieje zaplanowany szkic tego dokumentu. Jeśli teraz opublikujesz zmiany, zostaną one nadpisane, gdy harmonogram zostanie uruchomiony.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Ten dokument zostanie wycofany jako część wydania <VersionBadge>{{title}}</VersionBadge>',
+    'Publikacja tego dokumentu zostanie cofnięta w ramach wydania <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Pokazuje aktualną <strong>opublikowaną</strong> wersję:',
@@ -264,13 +264,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Akcje dokumentu',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Zwiń wszystkie panele',
+  'buttons.focus-pane-button.aria-label.collapse': 'Wyjdź z trybu skupienia (pokaż nawigację)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Skup się na panelu',
+  'buttons.focus-pane-button.aria-label.focus': 'Włącz tryb skupienia (ukryj nawigację)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Zwiń wszystkie panele',
+  'buttons.focus-pane-button.tooltip.collapse': 'Wyjdź z trybu skupienia',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Skup się na panelu',
+  'buttons.focus-pane-button.tooltip.focus': 'Włącz tryb skupienia',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Podziel panel po prawej',
   /** The tool tip for the split pane button on the document panel header */
@@ -299,9 +299,9 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': 'Dowiedz się więcej',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas pozwala na tworzenie w edytorze swobodnej formy, który automatycznie mapuje się z powrotem do Studio jako strukturalna treść - podczas pisania.',
+    'Canvas pozwala tworzyć treści w edytorze o swobodnej formie, który podczas pisania automatycznie przenosi je z powrotem do Studio jako treść ustrukturyzowaną.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Autorstwo z ideą na pierwszym miejscu',
+  'canvas.banner.popover-heading': 'Tworzenie od pomysłu',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -328,7 +328,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.invalidPreviousDocumentParam':
     'Parametr poprzedniego dokumentu jest nieprawidłowy.',
   /** The error message shown when releases failed to load */
-  'compare-version.error.loadReleases.title': 'Nie udało się załadować publikacji',
+  'compare-version.error.loadReleases.title': 'Nie udało się załadować wydań',
   /** The error message shown when document versions or variants failed to load */
   'compare-version.error.loadVersions.title': 'Nie udało się wczytać wersji',
 
@@ -508,7 +508,7 @@ export default removeUndefinedLocaleResources({
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
   'events.inspect.release': 'Zbadaj dokument <VersionBadge>{{releaseTitle}}</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish draft event to inspect the draft document*/
-  'events.open.draft': 'Otwórz dokument <VersionBadge>draft</VersionBadge>',
+  'events.open.draft': 'Otwórz dokument <VersionBadge>szkic</VersionBadge>',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the release*/
   'events.open.release': 'Otwórz wydanie <VersionBadge>{{releaseTitle}}</VersionBadge>',
 

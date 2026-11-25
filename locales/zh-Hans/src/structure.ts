@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': '复制文档 ID',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': '复制文档 URL',
+  'action.copy-document-url.label': '复制',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': '复制文档 URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -12,7 +12,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when action button is disabled because the document does not exist */
   'action.delete.disabled.nothing-to-delete': '此文档尚未存在或已被删除',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
-  'action.delete.disabled.scheduled-release': '由于该文档存在于预定发布中，因此无法删除',
+  'action.delete.disabled.scheduled-release': '由于该文档存在于已计划的发布中，因此无法删除',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found': '所选版本或变体不包含此文档',
   /** Label for the "Delete" document action button */
@@ -54,7 +54,7 @@ export default removeUndefinedLocaleResources({
   /** Tooltip when publish button is disabled because the document is already published.*/
   'action.publish.already-published.tooltip': '已发布 {{timeSincePublished}} 前',
   /** Tooltip when action is disabled because the version is published as part of its release */
-  'action.publish.disabled.not-publishable': '此版本已作为其发布版本的一部分发布',
+  'action.publish.disabled.not-publishable': '此版本随其所属发布一同发布',
   /** Tooltip when action is disabled because the studio is not ready.*/
   'action.publish.disabled.not-ready': '操作尚未准备好',
   /** Tooltip when action is disabled because the selected release or variant does not contain this document */
@@ -108,9 +108,9 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    '您正在查看作为<VersionBadge>发布</VersionBadge>的一部分而存档的只读文档。它不能被编辑',
+    '此文档版本属于已归档的 <VersionBadge>{{title}}</VersionBadge> 发布',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
-  'banners.archived-scheduled-draft.description': '此计划草稿已存档',
+  'banners.archived-scheduled-draft.description': '此计划草稿已归档',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
   'banners.choose-new-document-destination.cannot-create-draft-document': '无法创建草稿文档。',
   /** The explanation displayed when a user attempts to create a new published document, but the schema type doesn't support live-editing */
@@ -128,25 +128,26 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': '此文档类型已被弃用。',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': '放弃草稿',
+  'banners.live-edit-draft-banner.discard.tooltip': '放弃草稿以继续编辑。',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': '发布以继续编辑',
+  'banners.live-edit-draft-banner.publish.tooltip': '发布草稿以继续编辑。',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    '类型 <strong>{{schemaType}}</strong> 已启用 <code>liveEdit</code>，但此文档的草稿版本存在。发布或放弃草稿以继续实时编辑。',
+    '类型 <strong>{{schemaType}}</strong> 已启用 <code>liveEdit</code>，但此文档存在草稿版本。请发布或放弃该草稿，以继续对其进行实时编辑。',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': '比较草稿',
   /** Tooltip when compare draft is disabled because the published document does not exist */
-  'banners.obsolete-draft.actions.compare-draft.tooltip': '已发布的文档不存在,因此无法比较此草稿。',
+  'banners.obsolete-draft.actions.compare-draft.tooltip':
+    '已发布的文档不存在，因此无法比较此草稿。',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': '丢弃草稿',
   /** The label for the "publish draft" action */
   'banners.obsolete-draft.actions.publish-draft.text': '发布草稿',
   /** The warning displayed when editing a document that has an obsolete draft because the draft model is not switched on */
   'banners.obsolete-draft.draft-model-inactive.text':
-    '工作区未启用草稿功能，但此文档的草稿版本存在。',
+    '工作区未启用草稿功能，但此文档存在草稿版本。',
   /** The text content for the paused scheduled draft banner */
-  'banners.paused-scheduled-draft.text': '编辑时暂停计划。按下计划以重新激活或选择新日期。',
+  'banners.paused-scheduled-draft.text': '编辑时已暂停计划。点击“计划”可重新激活，或选择新日期。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
     '您的角色<Roles/>没有权限创建此文档。',
@@ -159,7 +160,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.text': '申请编辑权限',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
-    '您正在查看作为<VersionBadge>发布</VersionBadge>的一部分而发布的只读文档。它不能被编辑',
+    '您正在查看一份只读文档，它已作为 <VersionBadge>{{title}}</VersionBadge> 发布的一部分而发布。该文档无法编辑',
   /** Action that switches from the published perspective to drafts */
   'banners.published.see-draft.action': '查看草稿',
   /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
@@ -188,7 +189,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-end_other': '发布中',
   /** The text for the banner that appears when there are multiple versions but no drafts or published, more than one extra releases */
   'banners.release.navigate-to-edit-description-multiple_other':
-    '此文档是<VersionBadge/>发布的一部分，以及{{count}}个更多发布',
+    '此文档属于 <VersionBadge/> 发布，以及另外 {{count}} 个发布',
   /** The text for the banner that appears when a document is not part of any release
    * @deprecated – no longer in use
    * */
@@ -196,7 +197,7 @@ export default removeUndefinedLocaleResources({
   /** The text for the banner that appears when a document only has one version but is in a draft or published pinned release */
   'banners.release.navigate-to-edit-description-single': '此文档是<VersionBadge/>发布的一部分',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': '不在<Label>{{title}}</Label>发布中。',
+  'banners.release.not-in-release': '不在 <VersionBadge>{{title}}</VersionBadge> 发布中。',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description': '请耐心等待，文档正在添加到发布中。这通常不会超过几秒钟。',
   /** Title of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
@@ -239,13 +240,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': '文档操作',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': '折叠所有面板',
+  'buttons.focus-pane-button.aria-label.collapse': '退出专注模式（显示导航）',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': '聚焦面板',
+  'buttons.focus-pane-button.aria-label.focus': '进入专注模式（隐藏导航）',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': '折叠所有面板',
+  'buttons.focus-pane-button.tooltip.collapse': '退出专注模式',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': '聚焦面板',
+  'buttons.focus-pane-button.tooltip.focus': '进入专注模式',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': '向右分割窗格',
   /** The tool tip for the split pane button on the document panel header */
@@ -274,9 +275,9 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': '了解更多',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas允许您在一个自由形式的编辑器中创作，这个编辑器会自动将内容映射回Studio作为结构化内容 - 当您输入时。',
+    'Canvas 让您在自由形式的编辑器中创作，内容会在您输入时自动映射回 Studio，成为结构化内容。',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': '首先构思创作',
+  'canvas.banner.popover-heading': '构思优先的创作方式',
 
   /** The description for the changes banner */
   'changes.banner.description': '显示此文档<strong>{{perspective}}</strong>版本的历史。',
@@ -285,7 +286,7 @@ export default removeUndefinedLocaleResources({
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': '从',
   'changes.tab.history': '历史',
-  'changes.tab.review-changes': '审查变更',
+  'changes.tab.review-changes': '审查更改',
   /** The label used in the changes inspector for the to selector */
   'changes.to.label': '到',
 
@@ -303,7 +304,7 @@ export default removeUndefinedLocaleResources({
   'compare-version.error.loadVersions.title': '加载版本失败',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
-  'compare-versions.menu-item.disabled-reason': '没有其他版本的文档可以比较。',
+  'compare-versions.menu-item.disabled-reason': '此文档没有其他可供比较的版本。',
   /** The text for the "Compare versions" action for a document */
   'compare-versions.menu-item.title': '比较版本',
   /** The string used to label draft documents */
@@ -449,7 +450,7 @@ export default removeUndefinedLocaleResources({
   'document-panel-navigation.variants.section.has-variants_other': '有 {{count}} 个变体',
   /** Tooltip on the "Has 0 variants" section header of the variants menu in the document header */
   'document-panel-navigation.variants.section.no-variants-tooltip':
-    '此文档尚未加入任何变体。请在下方选择一个将其创建。',
+    '此文档尚未加入任何变体。请在下方选择一个变体以创建。',
   /** Section header listing the variants the document has no version in */
   'document-panel-navigation.variants.section.other': '其他变体',
   /** Tooltip on the version count of a variants menu item. `{{bundles}}` lists the bundle titles */
@@ -492,7 +493,7 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    '由于您计划的历史保留政策，我们无法加载此文档的更改，这显示了<strong>{{version}}</strong>版本与<strong>已发布</strong>版本的比较。',
+    '我们无法加载此文档的更改，可能是由于您所用套餐的历史记录保留策略所致。此处显示的是 <strong>{{version}}</strong> 版本与<strong>已发布</strong>版本的比较。',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': '与已发布版本比较',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */

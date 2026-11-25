@@ -134,7 +134,7 @@ export default removeUndefinedLocaleResources({
     '公開ドキュメントを作成できません。',
   /** The prompt displayed when a user must select a different perspective in order to create a document */
   'banners.choose-new-document-destination.choose-destination':
-    'このドキュメントの行き先を選択してください：',
+    'このドキュメントの作成先を選択してください：',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
     '<VersionBadge>{{title}}</VersionBadge>リリースはアクティブではありません。',
@@ -168,16 +168,16 @@ export default removeUndefinedLocaleResources({
     '編集中にスケジュールが一時停止されました。スケジュールを再開するか、新しい日付を選択してください。',
   /** The text for the permission check banner if the user only has one role, and it does not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_one':
-    'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
+    'あなたのロール<Roles/>にはこのドキュメントを公開する権限がありません。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow publishing this document */
   'banners.permission-check-banner.missing-permission_create_other':
-    'あなたの役割<Roles/>はこのドキュメントを作成する権限がありません。',
+    'あなたのロール<Roles/>にはこのドキュメントを公開する権限がありません。',
   /** The text for the permission check banner if the user only has one role, and it does not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_one':
-    'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
+    'あなたのロール<Roles/>にはこのドキュメントを編集する権限がありません。',
   /** The text for the permission check banner if the user only has multiple roles, but they do not allow editing this document */
   'banners.permission-check-banner.missing-permission_update_other':
-    'あなたの役割<Roles/>はこのドキュメントを更新する権限がありません。',
+    'あなたのロール<Roles/>にはこのドキュメントを編集する権限がありません。',
   /** The pending text for the request permission button that appears for viewer roles */
   'banners.permission-check-banner.request-permission-button.sent':
     '編集リクエストが送信されました',
@@ -270,13 +270,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'ドキュメントアクション',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'すべてのペインを折りたたむ',
+  'buttons.focus-pane-button.aria-label.collapse': 'フォーカスモードを終了（ナビゲーションを表示）',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'ペインにフォーカス',
+  'buttons.focus-pane-button.aria-label.focus': 'フォーカスモードに入る（ナビゲーションを非表示）',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'すべてのペインを折りたたむ',
+  'buttons.focus-pane-button.tooltip.collapse': 'フォーカスモードを終了',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'ペインにフォーカス',
+  'buttons.focus-pane-button.tooltip.focus': 'フォーカスモードに入る',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': '右にペインを分割',
   /** The tool tip for the split pane button on the document panel header */
@@ -380,7 +380,8 @@ export default removeUndefinedLocaleResources({
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_delete': 'それでも削除',
   /** The text in the "Delete anyway" button when the document has multiple versions */
-  'confirm-delete-dialog.confirm-anyway-button.text_delete_other': 'すべてのバージョンを削除する',
+  'confirm-delete-dialog.confirm-anyway-button.text_delete_other':
+    'それでもすべてのバージョンを削除',
   /** The text in the "Unpublish anyway" button in the confirm delete dialog that confirms the action */
   'confirm-delete-dialog.confirm-anyway-button.text_unpublish': 'それでも公開を取り消す',
   /** The text in the "Delete now" button in the confirm delete dialog that confirms the action */

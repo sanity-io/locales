@@ -64,7 +64,7 @@ export default removeUndefinedLocaleResources({
   /**Text to be used in the tooltip in the button in the studio announcement card */
   'announcement.floating-button.dismiss': 'Закрити',
   /**Aria label to be used in the floating button in the studio announcement card, to dismiss the card */
-  'announcement.floating-button.dismiss-label': 'Скасувати оголошення',
+  'announcement.floating-button.dismiss-label': 'Закрити оголошення',
   /**Aria label to be used in the floating button in the studio announcement card */
   'announcement.floating-button.open-label': 'Відкрити оголошення',
 
@@ -192,7 +192,7 @@ export default removeUndefinedLocaleResources({
     'Щось пішло не так при спробі вирішити Media Library для цього проекту.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'Медіатека для цієї організації не була налаштована.',
+    'Для цієї організації не налаштовано Media Library.',
   /** Menu Items for Media Library Asset Source */
   'asset-sources.media-library.file.title': 'Media Library',
   'asset-sources.media-library.image.title': 'Media Library',
@@ -909,7 +909,7 @@ export default removeUndefinedLocaleResources({
   'inputs.imagetool.vector-warning.expand-developer-info': 'Дивитися інформацію для розробників',
   /** Gotcha: Serving vector images with hotspot and crop from the Sanity Image API */
   'inputs.imagetool.vector-warning.title':
-    'Увага: Гарячі точки та обрізання можуть не бути застосовані до цього зображення, де воно представлене.',
+    'Увага: гаряча точка й обрізання можуть не застосовуватися до цього зображення там, де воно відображається.',
   /** Convert to `{{targetType}}` */
   'inputs.invalid-value.convert-button.text': 'Перетворити на {{targetType}}',
   /** The current value (<code>`{{actualType}}`</code>) */
@@ -1474,16 +1474,16 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Опублікувати зараз',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    "Будь ласка, спробуйте ще раз або перевірте ваше з'єднання. Документ все ще буде неопублікованим після випуску.",
+    "Будь ласка, спробуйте ще раз або перевірте з'єднання. Документ усе одно буде знято з публікації під час релізу.",
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Не вдалося скасувати налаштування на зняття з публікації при випуску.',
+    'Не вдалося скасувати налаштування зняття з публікації у релізі.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Тепер ви можете редагувати цю версію.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Успішно скасовано налаштування на зняття з публікації при випуску.',
+    'Успішно скасовано налаштування зняття з публікації у релізі.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Запланувати публікацію',
   /** Error message for when a version is set to be unpublished */
@@ -1633,7 +1633,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "Реліз '{{title}}' не вдалося знайти",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Не вдалося призупинити запланований документ чернетки <strong>{{title}}</strong>: {{error}}',
+    'Не вдалося призупинити заплановану чернетку документа <strong>{{title}}</strong>: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Не вдалося опублікувати документ запланованої чернетки <strong>{{title}}</strong>: {{error}}',
@@ -2069,7 +2069,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.action.search-for-timezone-placeholder': 'Пошук міста або часового поясу',
   'time-zone.action.select-local-time-zone': 'Вибрати локальний часовий пояс',
   'time-zone.dialog-info.content-releases':
-    'Обраний часовий пояс змінить спосіб відображення дат у випусках контенту.',
+    'Обраний часовий пояс змінить спосіб відображення дат у релізах контенту.',
   'time-zone.dialog-info.input':
     'Обраний часовий пояс змінить спосіб відображення дат лише для цього поля у цьому документі.',
   'time-zone.dialog-info.scheduled-publishing':
@@ -2077,7 +2077,7 @@ export default removeUndefinedLocaleResources({
   'time-zone.local-time': 'місцевий час',
   'time-zone.time-zone': 'Часовий пояс',
   'time-zone.time-zone-tooltip-content-releases':
-    'Відображення випусків у {{alternativeName}} GMT{{offset}}',
+    'Відображення релізів у {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-input':
     'Відображення <em>{{title}}</em> у {{alternativeName}} GMT{{offset}}',
   'time-zone.time-zone-tooltip-scheduled-publishing':

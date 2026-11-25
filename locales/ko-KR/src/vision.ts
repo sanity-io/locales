@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     '이 API 버전은 복합 perspective를 지원하지 않습니다. {{apiVersion}} 이상을 사용하세요.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    '이 API 버전은 콘텐츠 variant를 지원하지 않습니다. 실험적 API 버전({{apiVersion}})을 사용하세요.',
+    '이 API 버전은 콘텐츠 variant를 지원하지 않습니다. {{apiVersion}} 이상을 사용하세요.',
   /** Label for "Query" editor/input */
   'query.label': '쿼리',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -115,7 +115,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'API 버전',
   /** Tooltip shown when the API version selector is locked because a variant is selected */
   'settings.api-version-locked-for-variant':
-    '변형(variant)이 선택된 경우, API 버전은 vX여야 합니다.',
+    '변형(variant)이 선택된 경우 API 버전은 {{apiVersion}}(이)어야 합니다.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': '사용자 정의 API 버전',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -141,7 +141,7 @@ export default removeUndefinedLocaleResources({
     '관점은 여러분의 쿼리가 데이터셋의 콘텐츠에 대한 다양한 "뷰"를 대상으로 실행될 수 있게 해줍니다',
   /** Description for upcoming default perspective change */
   'settings.perspectives.new-default.description':
-    '기본 관점이 곧 "<code>raw</code>"에서 "<code>published</code>"로 변경될 예정입니다. 자세한 내용은 문서를 참조하십시오.',
+    '기본 관점이 곧 "<code>raw</code>"에서 "<code>published</code>"로 변경될 예정입니다. 자세한 내용은 문서를 참조하세요.',
   /** Label for the pinned release perspective */
   'settings.perspectives.pinned-release-label': '고정된 릴리스',
   /** Label for the scheduled drafts perspective */
@@ -189,7 +189,7 @@ export default removeUndefinedLocaleResources({
    * perspective select names it, keeps queries on the API
    */
   'vision.api-version.tooltip-cdn-blocked':
-    '쿼리는 API 버전 {{version}}으로 API에 대해 실행되며, API CDN이 아닙니다: {{perspective}} 퍼스펙티브를 지원하지 않기 때문입니다. 옵션에서 변경하려면 선택하세요.',
+    '쿼리는 API 버전 {{version}}으로 API에 대해 실행되며, API CDN이 아닙니다: {{perspective}} 관점을 지원하지 않기 때문입니다. 옵션에서 변경하려면 선택하세요.',
   /** Tooltip of the API version button while the "Other" input holds an unfinished version */
   'vision.api-version.tooltip-invalid':
     '옵션의 API 버전이 미완성되어, 완료될 때까지 아무것도 가져올 수 없습니다.',
@@ -212,7 +212,7 @@ export default removeUndefinedLocaleResources({
   /** Shown when the After document is not valid JSON */
   'vision.delta.invalid-after': '이후 문서가 유효한 JSON이 아닙니다: {{message}}',
   /** Shown when the Before document is not valid JSON */
-  'vision.delta.invalid-before': 'Before가 유효한 JSON이 아닙니다: {{message}}',
+  'vision.delta.invalid-before': '이전 문서가 유효한 JSON이 아닙니다: {{message}}',
   /** Button loading the document's revisions from the History API */
   'vision.delta.load': '기록 불러오기',
   /** Shown when the history could not be loaded */
@@ -321,7 +321,7 @@ export default removeUndefinedLocaleResources({
   'vision.functions.editor.declared-on': '사용자 지정 함수, {{line}}번째 줄에서 선언됨',
   /** Note in the hover documentation of the functions that only work in delta mode */
   'vision.functions.editor.delta-only':
-    '델타 모드에서만 작동하며, 웹훅과 Sanity 함수가 필터를 실행하는 방식입니다',
+    '델타 모드에서만 작동하며, 웹훅과 Sanity Functions가 필터를 실행하는 방식입니다',
   /** Button over a selected projection in the query editor, turning it into a custom function */
   'vision.functions.editor.extract': '함수로 추출',
   /** Note in the hover documentation of a library function the query does not declare */
@@ -431,7 +431,7 @@ export default removeUndefinedLocaleResources({
   /** History reason: the fetch button was pressed */
   'vision.history.reason.manual': '가져오기 버튼',
   /** History reason: mutations were applied from the Mutate panel */
-  'vision.history.reason.mutation': '변경 사항 적용됨',
+  'vision.history.reason.mutation': '뮤테이션 적용됨',
   /** History reason: dataset, API version or perspective changed while refetching automatically */
   'vision.history.reason.options': '옵션 변경됨',
   /** History reason: a query URL was pasted into the tab, which runs it */
@@ -479,7 +479,7 @@ export default removeUndefinedLocaleResources({
   /** The Live fetch button while the tab refetches automatically, stopping it */
   'vision.live.stop': '실시간 중지',
   /** Button in the Mutate panel adding a mutation to the list */
-  'vision.mutate.add': '변경 작업 추가',
+  'vision.mutate.add': '뮤테이션 추가',
   /** Adds a mutation creating a document, with the type of the result's first document */
   'vision.mutate.add.create': '문서 생성',
   /** Adds a mutation deleting a document, its ID to fill in */
@@ -607,11 +607,11 @@ export default removeUndefinedLocaleResources({
   /** Hint under the dataset field while the tab follows the workspace's dataset */
   'vision.options.dataset.follows-workspace': '워크스페이스를 따름',
   /** Button that pins the current dataset so the tab stops following the workspace */
-  'vision.options.dataset.pin': '데이터세트 고정',
+  'vision.options.dataset.pin': '데이터셋 고정',
   /** Hint under the dataset field while a dataset is pinned */
-  'vision.options.dataset.pinned': '고정됨; 워크스페이스는 다른 데이터세트를 사용할 수 있습니다',
+  'vision.options.dataset.pinned': '고정됨; 워크스페이스는 다른 데이터셋을 사용할 수 있습니다',
   /** Button that makes the tab follow the workspace's dataset again */
-  'vision.options.dataset.use-workspace': '워크스페이스 데이터세트 사용',
+  'vision.options.dataset.use-workspace': '워크스페이스 데이터셋 사용',
   /** Label for the "Include content source map" switch */
   'vision.options.include-source-map': '콘텐츠 소스 맵 포함',
   /** Description for the "Include content source map" switch */
@@ -623,20 +623,20 @@ export default removeUndefinedLocaleResources({
   'vision.options.use-cdn': 'API CDN 사용',
   /** Note under the API CDN switch while the studio signs in with a cookie */
   'vision.options.use-cdn.anonymous':
-    '이 스튜디오는 쿠키로 로그인하지만, API CDN은 이를 전혀 받지 않습니다: 익명 방문자에게 응답하는 방식으로, 공개 데이터세트가 보여주는 내용을 반환합니다.',
+    '이 스튜디오는 쿠키로 로그인하지만, API CDN은 이를 전혀 받지 않습니다: 익명 방문자에게 응답하는 방식으로, 공개 데이터셋이 보여주는 내용을 반환합니다.',
   /**
    * Why the API CDN is asked for but not used: the perspective is the one the perspective
    * select shows, such as "Global (drafts)"
    */
   'vision.options.use-cdn.blocked':
-    'API CDN은 초안이나 릴리스를 제공하지 않으므로, {{perspective}} 퍼스펙티브의 쿼리는 API로 전송됩니다. 게시됨 또는 원본의 경우 CDN을 사용합니다.',
+    'API CDN은 초안이나 릴리스를 제공하지 않으므로, {{perspective}} 관점의 쿼리는 API로 전송됩니다. 게시됨 또는 원본의 경우 CDN을 사용합니다.',
   /** Heading of the notice shown while the perspective keeps queries off the API CDN */
   'vision.options.use-cdn.blocked.title': '쿼리가 CDN이 아닌 API로 전송됩니다',
   /** Description of the API CDN switch */
   'vision.options.use-cdn.description':
-    '@sanity/client의 useCdn: true와 같이, 게시됨 및 원본 퍼스펙티브로 쿼리를 API CDN에 전송합니다: 초안과 릴리스는 항상 API로 전송됩니다. 응답은 최대 1분 동안 캐시되며, 네트워크 패널에서 캐시에서 가져온 응답을 확인할 수 있습니다.',
+    '@sanity/client의 useCdn: true와 같이, 게시됨 및 원본 관점으로 쿼리를 API CDN에 전송합니다: 초안과 릴리스는 항상 API로 전송됩니다. 응답은 최대 1분 동안 캐시되며, 네트워크 패널에서 캐시에서 가져온 응답을 확인할 수 있습니다.',
   /** Button in the API CDN notice switching the tab to the published perspective */
-  'vision.options.use-cdn.use-published': '게시됨 퍼스펙티브 사용',
+  'vision.options.use-cdn.use-published': '게시됨 관점 사용',
   /** Label of the variant field */
   'vision.options.variant-label': '변형',
   /** Variant option sending the navbar's variant, named */
@@ -656,11 +656,11 @@ export default removeUndefinedLocaleResources({
   /** Label of the Functions tab in the response panel */
   'vision.panel.functions': '함수',
   /** Label of the "History" tab in the response panel */
-  'vision.panel.history': '히스토리',
+  'vision.panel.history': '기록',
   /** Label of the "Lint" tab in the response panel, listing the query's lint findings */
-  'vision.panel.lint': 'Lint',
+  'vision.panel.lint': '린트',
   /** Label of the Mutate tab in the response panel, which runs and applies mutations */
-  'vision.panel.mutate': 'Mutate',
+  'vision.panel.mutate': '뮤테이션',
   /** Label of the Network tab in the response panel */
   'vision.panel.network': '네트워크',
   /** Label of the "Options" panel in the request column */
@@ -712,7 +712,7 @@ export default removeUndefinedLocaleResources({
   /** Accessible label of the button removing an item from a list param */
   'vision.params-form.remove-item': '항목 제거',
   /** Shown in the params form when the query does not parse */
-  'vision.params-form.syntax-error': '쿼리가 파싱되지 않아 매개변수가 타입 없이 나열됩니다.',
+  'vision.params-form.syntax-error': '쿼리가 파싱되지 않아 매개변수가 유형 없이 나열됩니다.',
   /** Type hint of a params form field: any JSON value */
   'vision.params-form.type.any': '모든 JSON 값',
   /** Type hint of a params form field: true or false */
@@ -722,7 +722,7 @@ export default removeUndefinedLocaleResources({
   /** Type hint of a params form field: a document ID */
   'vision.params-form.type.document-id': '문서 ID',
   /** Type hint of a params form field: one of the workspace's document types */
-  'vision.params-form.type.document-type': '문서 타입',
+  'vision.params-form.type.document-type': '문서 유형',
   /** Type hint of a params form field: a whole number */
   'vision.params-form.type.integer': '정수',
   /** Type hint of a params form field: a list of values */
@@ -881,13 +881,13 @@ export default removeUndefinedLocaleResources({
   'vision.saved.save-current': '현재 쿼리 저장',
   /** Toast shown when an opened saved query used a content variant the tab does not send */
   'vision.saved.unavailable-variant':
-    '이 저장된 쿼리는 "{{variant}}" variant를 사용했습니다. 이 쿼리를 실행하려면 내비게이션 바에서 선택하세요.',
+    '이 저장된 쿼리는 "{{variant}}" 변형을 사용했습니다. 이 변형으로 쿼리를 실행하려면 내비게이션 바에서 선택하세요.',
   /** Toast shown when an opened saved query names a dataset that is not available here */
   'vision.saved.unknown-dataset':
     '이 저장된 쿼리의 데이터셋 "{{dataset}}"은(는) 여기에서 사용할 수 없어 현재 데이터셋을 유지합니다.',
   /** Toast shown when an opened saved query used a content variant, but this workspace has variants switched off */
   'vision.saved.variants-disabled':
-    '이 저장된 쿼리는 "{{variant}}" variant를 사용했지만, 이 워크스페이스에서는 variant가 비활성화되어 있어 해당 variant 없이 쿼리가 실행됩니다.',
+    '이 저장된 쿼리는 "{{variant}}" 변형을 사용했지만, 이 워크스페이스는 변형 기능이 꺼져 있어 변형 없이 쿼리가 실행됩니다.',
   /** Button in the settings dialog that clears the stored state */
   'vision.settings.clear-storage': '저장소 지우기',
   /** Confirmation button for clearing the storage */
@@ -934,7 +934,7 @@ export default removeUndefinedLocaleResources({
   /** Sidebar toggle: show labels next to the icons */
   'vision.sidebar.expand': '사이드바 펼치기',
   /** Accessible label for the sidebar navigation */
-  'vision.sidebar.label': '비전 사이드바',
+  'vision.sidebar.label': 'Vision 사이드바',
   /** Sidebar item and drawer title for personal saved queries */
   'vision.sidebar.saved-queries': '저장된 쿼리',
   /** Sidebar item opening the settings dialog */

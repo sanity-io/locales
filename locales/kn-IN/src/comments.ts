@@ -73,9 +73,9 @@ export default removeUndefinedLocaleResources({
   /** Text shown in popover when hovering the button above fields to add a comment, when the field currently do not have any comments */
   'field-button.title': 'ಕಾಮೆಂಟ್ ಸೇರಿಸಿ',
 
-  'inline-add-comment-button.disabled-overlap-title': 'ಪ್ರತಿಕ್ರಿಯೆಗಳು ಅತಿಕ್ರಮಿಸಬಾರದು',
+  'inline-add-comment-button.disabled-overlap-title': 'ಕಾಮೆಂಟ್‌ಗಳು ಅತಿಕ್ರಮಿಸಬಾರದು',
   /** The text shown in the inline comment button */
-  'inline-add-comment-button.title': 'ಪ್ರತಿಕ್ರಿಯೆ ಸೇರಿಸಿ',
+  'inline-add-comment-button.title': 'ಕಾಮೆಂಟ್ ಸೇರಿಸಿ',
 
   /** The title of the error card shown in the comments inspector */
   'inspector-error.title': 'ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡುವಾಗ ಏನೋ ತಪ್ಪಾಗಿದೆ',

@@ -33,12 +33,12 @@ export default removeUndefinedLocaleResources({
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
   'document.footer.open-tasks.placeholder_other': '開啟任務',
   /** The label used in the button in the footer action in a document with multiple tasks */
-  'document.footer.open-tasks.text_other': '{{count}} 個開放任務',
+  'document.footer.open-tasks.text_other': '{{count}} 個未完成的任務',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': '你還沒有被分配任何任務',
+  'empty-state.list.assigned.heading': '您還沒有被分配任何任務',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': '一旦你被分配任務，它們將顯示在這裡',
+  'empty-state.list.assigned.text': '一旦您被分配任務，它們將顯示在這裡',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': '創建新任務',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
@@ -48,11 +48,11 @@ export default removeUndefinedLocaleResources({
   /** The heading in the tasks sidebar, when viewing the document tab, but there is not an active document*/
   'empty-state.list.no-active-document.heading': '開啟文件以查看它的任務',
   /** The text in the tasks sidebar, when viewing the document tab, but there is not an active document*/
-  'empty-state.list.no-active-document.text': '你活躍文件上的任務將會在這裡顯示。',
+  'empty-state.list.no-active-document.text': '您目前開啟的文件上的任務將顯示在這裡。',
   /** The heading in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.heading': '你還沒有訂閱任何任務',
+  'empty-state.list.subscribed.heading': '您還沒有訂閱任何任務',
   /** The text in the tasks sidebar, in the subscriber tab, when the user is not subscribed to any task*/
-  'empty-state.list.subscribed.text': '當你創建、修改或評論任務時，你將自動訂閱',
+  'empty-state.list.subscribed.text': '當您創建、修改任務或對任務留言時，將自動訂閱該任務',
   /** The heading in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
   'empty-state.status.list.closed.assigned.heading': '沒有完成的任務',
   /** The text in the tasks sidebar, in the assigned tab, under the closed details, when it's empty.*/
@@ -97,7 +97,7 @@ export default removeUndefinedLocaleResources({
   /** The label used in the date input button tooltip when it has value */
   'form.input.date.buttons.tooltip': '更改截止日期',
   /** Placeholder text used in the description input */
-  'form.input.description.placeholder': '添加描述',
+  'form.input.description.placeholder': '新增描述',
   /**  Text used in the tooltip in the status change button  */
   'form.input.status.button.tooltip': '更改狀態',
   /** The label used in the target input to remove the current value */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   /** The text displayed when no tasks are found */
   'list.empty.text': '沒有任務',
   /** The text displayed at the bottom of the tasks list inviting users provide feedback */
-  'list.feedback.text': '幫助我們改進，<Link>分享關於任務的反饋</Link>',
+  'list.feedback.text': '協助我們改進，<Link>分享您對任務的回饋</Link> ',
 
   /** The label for the copy link menu item */
   'menuitem.copylink.text': '複製任務連結',
@@ -136,9 +136,9 @@ export default removeUndefinedLocaleResources({
   /** The tooltip for the close button for the task panel */
   'panel.close.tooltip': '關閉側邊欄',
   /** The placeholder text for the comment text box */
-  'panel.comment.placeholder': '添加評論...',
+  'panel.comment.placeholder': '新增留言...',
   /** The placeholder text for the comment text box when mode is upsell */
-  'panel.comment.placeholder.upsell': '升級以對任務評論',
+  'panel.comment.placeholder.upsell': '升級以對任務留言',
   /** The title used in the task panel when showing the create task form */
   'panel.create.title': '創建',
   /** The title used in the drafts pulldown */

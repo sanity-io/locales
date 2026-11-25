@@ -356,7 +356,7 @@ export default removeUndefinedLocaleResources({
   /** The header for the document ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.document-id.label': 'ದಾಖಲೆ ಐಡಿ',
   /** The toast title when the copy button has been clicked but copying failed */
-  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'ಡಾಕ್ಯುಮೆಂಟ್ ID ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ',
+  'confirm-delete-dialog.cdr-table.id-copied-toast.title-failed': 'ದಾಖಲೆ ID ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ',
   /** The header for the project ID column in the list of cross-dataset references found */
   'confirm-delete-dialog.cdr-table.project-id.label': 'ಪ್ರಾಜೆಕ್ಟ್ ಐಡಿ',
   /** The text in the "Delete anyway" button in the confirm delete dialog that confirms the action */

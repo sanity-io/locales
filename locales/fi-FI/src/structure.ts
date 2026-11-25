@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Kopioi dokumentin ID',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Kopioi dokumentin URL',
+  'action.copy-document-url.label': 'Kopioi',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Kopioi dokumentin URL',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -123,7 +123,7 @@ export default removeUndefinedLocaleResources({
 
   /** Description for the archived release banner, rendered when viewing the history of a version document from the publihed view */
   'banners.archived-release.description':
-    'Katsot vain luku -dokumenttia, joka arkistoitiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
+    'Tämä dokumenttiversio kuuluu arkistoituun julkaisuun <VersionBadge>{{title}}</VersionBadge>',
   /** Description for the archived scheduled draft banner, rendered when viewing the history of a cardinality one release document */
   'banners.archived-scheduled-draft.description': 'Tämä aikataulutettu luonnos on arkistoitu',
   /** The explanation displayed when a user attempts to create a new draft document, but the draft model is not switched on */
@@ -144,9 +144,9 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Tämä dokumenttityyppi on vanhentunut.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Hylkää luonnos',
+  'banners.live-edit-draft-banner.discard.tooltip': 'Hylkää luonnos jatkaaksesi muokkausta.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Julkaise jatkaaksesi muokkausta',
+  'banners.live-edit-draft-banner.publish.tooltip': 'Julkaise luonnos jatkaaksesi muokkausta.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
     'Tyypillä <strong>{{schemaType}}</strong> on <code>liveEdit</code> käytössä, mutta tästä dokumentista on olemassa luonnosversio. Julkaise tai hylkää luonnos jatkaaksesi sen live-muokkausta.',
@@ -183,7 +183,7 @@ export default removeUndefinedLocaleResources({
   'banners.permission-check-banner.request-permission-button.text': 'Pyydä muokkausoikeutta',
   /** Description for the archived release banner, rendered when viewing the history of a version document from the published view */
   'banners.published-release.description':
-    'Katsot vain luku -dokumenttia, joka julkaistiin osana <VersionBadge>julkaisua</VersionBadge>. Sitä ei voi muokata',
+    'Katsot vain luku -tilassa olevaa dokumenttia, joka julkaistiin osana julkaisua <VersionBadge>{{title}}</VersionBadge>. Sitä ei voi muokata',
   /** Action that switches from the published perspective to drafts */
   'banners.published.see-draft.action': 'Näytä luonnos',
   /** Banner shown for non-live-edit documents with a published sibling in the published perspective */
@@ -231,7 +231,7 @@ export default removeUndefinedLocaleResources({
   'banners.release.navigate-to-edit-description-single':
     'Tämä asiakirja on osa <VersionBadge/> julkaisua',
   /** The text for the banner that appears when a document is not in the current global release */
-  'banners.release.not-in-release': 'Ei ole <Label>{{title}}</Label> julkaisussa.',
+  'banners.release.not-in-release': 'Ei <VersionBadge>{{title}}</VersionBadge>-julkaisussa.',
   /** Description of toast that will appear in case of latency between the user adding a document to a release and the UI reflecting it */
   'banners.release.waiting.description':
     'Odota hetki, kun asiakirjaa lisätään julkaisuun. Sen ei pitäisi kestää kauempaa kuin muutama sekunti.',
@@ -245,7 +245,7 @@ export default removeUndefinedLocaleResources({
     'Tälle asiakirjalle on olemassa aikataulutettu luonnos. Jos julkaiset muutoksia nyt, ne korvataan, kun aikataulu suoritetaan.',
   /** The text content for the unpublished document banner when is part of a release */
   'banners.unpublished-release-banner.text':
-    'Tämä dokumentti poistetaan julkaisemattomana osana <VersionBadge>{{title}}</VersionBadge> julkaisua',
+    'Tämän dokumentin julkaisu perutaan osana julkaisua <VersionBadge>{{title}}</VersionBadge>.',
   /** The text content for the unpublished document banner letting the user know that the current published version is being shown */
   'banners.unpublished-release-banner.text-with-published':
     'Näytetään nykyinen <strong>julkaistu</strong> versio:',
@@ -278,13 +278,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Asiakirjatoiminnot',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Kutista kaikki paneelit',
+  'buttons.focus-pane-button.aria-label.collapse': 'Poistu keskittymistilasta (näytä navigointi)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Keskity paneeliin',
+  'buttons.focus-pane-button.aria-label.focus': 'Siirry keskittymistilaan (piilota navigointi)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Kutista kaikki paneelit',
+  'buttons.focus-pane-button.tooltip.collapse': 'Poistu keskittymistilasta',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Keskity paneeliin',
+  'buttons.focus-pane-button.tooltip.focus': 'Siirry keskittymistilaan',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Jaa ruutu oikealle',
   /** The tool tip for the split pane button on the document panel header */
@@ -302,7 +302,7 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.editable.popover-description':
     'Canvasin avulla voit kirjoittaa vapaasti ja sen jälkeen päivittää sisältöä Studioon ilman manuaalista kenttä kentältä -kopioimista.',
   /** The heading for the canvas linked banner popover in editable mode*/
-  'canvas.banner.editable.popover-heading': 'Vapaa muotoilu',
+  'canvas.banner.editable.popover-heading': 'Vapaamuotoinen kirjoittaminen',
   /** The text for the canvas linked banner when the document is a draft */
   'canvas.banner.linked-text.draft': 'Tämä luonnosdokumentti on linkitetty Canvasiin',
   /** The text for the canvas linked banner when the document is a live document */
@@ -313,16 +313,16 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': 'Lue lisää',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas antaa sinun kirjoittaa vapaamuotoisessa editorissa, joka automaattisesti kuvaa takaisin Studioon rakenteellisena sisältönä - kirjoittaessasi.',
+    'Canvasissa voit kirjoittaa vapaamuotoisessa editorissa, jonka sisältö siirtyy automaattisesti takaisin Studioon rakenteisena sisältönä kirjoittaessasi.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Idea ensin kirjoittaminen',
+  'canvas.banner.popover-heading': 'Aloita ideasta',
 
   /** The description for the changes banner */
   'changes.banner.description':
-    'Näytetään historian <strong>{{perspective}}</strong> versiolle tästä dokumentista.',
+    'Näytetään tämän dokumentin <strong>{{perspective}}</strong>-version historia.',
   /** The tooltip for the changes banner */
   'changes.banner.tooltip':
-    'Tämä näkymä näyttää muutokset, jotka ovat tapahtuneet tietyn version tässä dokumentissa. Valitse eri versio nähdäksesi sen muutokset',
+    'Tämä näkymä näyttää tämän dokumentin tietyssä versiossa tapahtuneet muutokset. Valitse toinen versio nähdäksesi sen muutokset',
   /** The label used in the changes inspector for the from selector */
   'changes.from.label': 'Alkaen',
   'changes.tab.history': 'Historia',
@@ -572,7 +572,7 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Emme pysty lataamaan muutoksia tähän dokumenttiin, todennäköisesti johtuen suunnitelmasi historian säilytyskäytännöstä, tämä näyttää kuinka <strong>{{version}}</strong> versio vertautuu <strong>julkaistuun</strong> versioon.',
+    'Tämän dokumentin muutoksia ei voitu ladata, todennäköisesti tilauksesi historian säilytyskäytännön vuoksi. Tässä näytetään, miten <strong>{{version}}</strong>-versio eroaa <strong>julkaistusta</strong> versiosta.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'Vertailu julkaistuun',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
@@ -598,7 +598,7 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-loading': 'Ladataan dokumentteja...',
   /** The text for the loading state in the incoming references input */
   'incoming-references-input.types-loading-cross-dataset':
-    'Ladataan ristiin datasettien dokumentteja...',
+    'Ladataan dataset-rajat ylittäviä dokumentteja...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
     'Tälle tyypille ei ole määritelty saapuvia viitteitä, katso lisätietoja dokumentaatiosta.',
@@ -757,7 +757,7 @@ export default removeUndefinedLocaleResources({
     'Dokumentin julkaisu on peruttu. Uusin julkaistu versio on luotu luonnokseksi.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'Versio perutaan julkaisusta, kun julkaisu julkaistaan',
+    'Version julkaisu perutaan, kun julkaisu julkaistaan',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Nimetön',
   /** The loading message for the document not found pane */

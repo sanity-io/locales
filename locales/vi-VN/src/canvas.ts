@@ -7,7 +7,7 @@ export default removeUndefinedLocaleResources({
   'action.link-document': 'Liên kết với Canvas',
   /** The text for the "Link to Canvas" action when the document is not yet resolved. */
   'action.link-document-disabled.initial-value-not-resolved':
-    'Vui lòng đợi cho đến khi giá trị ban đầu của tài liệu được giải quyết',
+    'Vui lòng đợi cho đến khi giá trị ban đầu của tài liệu được xác định',
   /** The text for the "Link to Canvas" action when the user doesn't have permissions to link the document to Canvas. */
   'action.link-document-disabled.missing-permissions':
     'Bạn không có quyền để liên kết tài liệu này với Canvas',

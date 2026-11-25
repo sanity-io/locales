@@ -2,7 +2,7 @@ import {removeUndefinedLocaleResources} from 'sanity'
 
 export default removeUndefinedLocaleResources({
   /** "Configuration issue" header */
-  'about-dialog.configuration-issue.header': 'Uppsetningavandamál greint',
+  'about-dialog.configuration-issue.header': 'Uppsetningarvandamál greint',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
   'about-dialog.configuration-issue.missing-appid':
     'Sjálfvirkar uppfærslur eru virkjaðar, en engin <code>deployment.appId</code> stillt í <code>sanity.cli.ts</code>. Þetta Studio er að uppfæra gegn <strong>latest</strong>-rásinni.',
@@ -43,7 +43,7 @@ export default removeUndefinedLocaleResources({
   /** "New version available" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.new-version-available': 'Ný útgáfa í boði',
   /** "Prerelease" tooltip in About-dialog */
-  'about-dialog.version-info.tooltip.prerelease': 'Forskoðun',
+  'about-dialog.version-info.tooltip.prerelease': 'Forútgáfa',
   /** "Up to date" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.up-to-date': 'Uppfært',
   /** @deprecated "Up to date" status in About-dialog */
@@ -126,7 +126,7 @@ export default removeUndefinedLocaleResources({
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
-    'Villa við að setja inn eign. Sjáðu ráskjáinn fyrir frekari upplýsingar.',
+    'Villa við að setja inn eign. Sjá stjórnborðið fyrir frekari upplýsingar.',
   /** Toast title shown when the list of assets failed to load */
   'asset-source.dialog.load-error': 'Tókst ekki að hlaða inn eignum',
   /** Select asset dialog load more items */
@@ -188,7 +188,7 @@ export default removeUndefinedLocaleResources({
 
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description':
-    'Sjáðu ráskjáinn fyrir frekari upplýsingar.',
+    'Sjá stjórnborðið fyrir frekari upplýsingar.',
   'asset-sources.common.uploader.upload-failed.title': 'Upphleðsla mistókst',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'Vinnusvæðisskrár',
@@ -365,7 +365,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Hleður breytingum…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    'Við gátum ekki fundið skjalsendurskoðunina með auðkenni: <code>{{revisionId}}</code> sem þú ert að reyna að bera saman. <Break/> Þetta er líklega vegna sögubevarandi stefnu áætlunar þinnar. <Break/> Vinsamlegast veldu annan <strong>Frá</strong> færslu.',
+    'Við fundum ekki útgáfu skjalsins með auðkenni: <code>{{revisionId}}</code> sem þú ert að reyna að bera saman. <Break/> Þetta stafar líklega af varðveislustefnu áskriftarleiðar þinnar. <Break/> Veldu aðra <strong>Frá</strong>-færslu.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Breyttu skjalinu eða veldu eldri útgáfu í tímalínunni til að sjá lista yfir breytingar birtast á þessum glugga.',
@@ -609,7 +609,7 @@ export default removeUndefinedLocaleResources({
   'document-status.revision-not-found': 'Útgáfa fannst ekki',
 
   /** Toast description shown when saving changes is taking longer than expected */
-  'document-store.slow-commit.description': 'Breytingar þínar eru enn að vera vistaðar.',
+  'document-store.slow-commit.description': 'Enn er verið að vista breytingarnar þínar.',
   /** Toast title shown when saving changes is taking longer than expected */
   'document-store.slow-commit.title': 'Vistun tekur lengri tíma en búist var við',
 
@@ -745,7 +745,7 @@ export default removeUndefinedLocaleResources({
   'help-resources.version': 'útgáfa {{version}}',
 
   /**Incoming references inspector title */
-  'incoming-references.title': 'Innkoma tilvísanir',
+  'incoming-references.title': 'Innkomandi tilvísanir',
 
   /** Text for button to cancel an ongoing upload */
   'input.files.common.cancel-upload': 'Hætta við',
@@ -1275,7 +1275,8 @@ export default removeUndefinedLocaleResources({
   /** Error title for when the search for a reference failed. Note that the message sent by the backend may not be localized. */
   'inputs.reference.error.search-failed-title': 'Leit að tilvísun mistókst',
   /** Label for when the GDR points to an invalid type  */
-  'inputs.reference.global.invalid-type': 'Tilvísuð skjal er af ógildri gerð ({{typeName}})',
+  'inputs.reference.global.invalid-type':
+    'Skjalið sem vísað er til er af ógildri gerð ({{typeName}})',
   /** Alternative text for the image shown in cross-dataset reference input */
   'inputs.reference.image-preview-alt-text': 'Myndforskoðun af tilvísaðu skjali',
   /** Description for alert shown when a reference in a live-edit document is marked as being weak, the referenced document exists, AND the reference is supposed to be have been strengthened on publish */
@@ -1435,7 +1436,7 @@ export default removeUndefinedLocaleResources({
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': 'Lærðu meira',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
-  'network-check.slow-protocol-warning.snooze-button.text': 'Sýna ekki aftur í þessum lotu',
+  'network-check.slow-protocol-warning.snooze-button.text': 'Ekki sýna aftur í þessari lotu',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
   'network-check.slow-protocol-warning.title': 'Þú ert með bremsurnar á',
 
@@ -1547,7 +1548,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Skoða útgáfu',
   /** Action message for when the view scheduled drafts is pressed */
-  'release.action.view-scheduled-drafts': 'Skoða tímasettar drög',
+  'release.action.view-scheduled-drafts': 'Skoða tímasett drög',
   /** Label for banner when release is scheduled */
   'release.banner.scheduled-for-publishing-on': 'Áætlað til birtingar á {{date}}',
   /** Label for button to show other variants in the document perspective list */
@@ -1565,7 +1566,7 @@ export default removeUndefinedLocaleResources({
   /** Label for Published chip in document header */
   'release.chip.published': 'Birt',
   /** Label for tooltip in chip when document is in an archived release */
-  'release.chip.tooltip.archived': 'Þessi útgáfa er skjalasafnað og ekki hægt að breyta henni.',
+  'release.chip.tooltip.archived': 'Þessi útgáfa er í safnvistun og ekki er hægt að breyta henni.',
   /** Label for tooltip in chip with the created date */
   'release.chip.tooltip.created-date': 'Búið til {{date}}',
   /** Label for tooltip in draft chip when it's a live edit document */
@@ -1650,7 +1651,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the release menu */
   'release.menu.label': 'Valmynd útgáfu',
   /** Menu item label for scheduled drafts */
-  'release.menu.scheduled-drafts': 'Skoða Áætlaðar Drög',
+  'release.menu.scheduled-drafts': 'Skoða tímasett drög',
   /** Tooltip for the release menu */
   'release.menu.tooltip': 'Aðgerðir',
   /** Menu item label for viewing content releases */
@@ -1671,7 +1672,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.description': 'Þessi útgáfa hefur verið afnæld',
+  'release.toast.archived-release.description': 'Þessi útgáfa hefur verið losuð.',
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
@@ -1692,7 +1693,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "Ekki tókst að finna '{{title}}' útgáfuna",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Tókst ekki að setja á bið áætlaðan drögskjal <strong>{{title}}</strong>: {{error}}',
+    'Mistókst að setja tímasettu drögin <strong>{{title}}</strong> í bið: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Mistókst að birta tímasettu drögin <strong>{{title}}</strong>: {{error}}',
@@ -1702,7 +1703,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.description': 'Þessi útgáfa hefur verið afnæld',
+  'release.toast.published-release.description': 'Þessi útgáfa hefur verið losuð.',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    **/
@@ -2218,7 +2219,7 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Breytt í beinni: {{timestamp, datetime}}',
   /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
-  'timeline.operation.history-cleared': 'Eydd af varðveislustefnu',
+  'timeline.operation.history-cleared': 'Eytt vegna varðveislustefnu',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Birt',
   /** Label shown in review changes timeline when a document was published, with a timestamp */
@@ -2232,9 +2233,9 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document version has been created, with a timestamp */
   'timeline.operation.version-created_timestamp': 'Útgáfa búin til: {{timestamp, datetime}}',
   /** Label shown in review changes timeline when a document version has been discarded */
-  'timeline.operation.version-discarded': 'Útgáfa hafnað',
+  'timeline.operation.version-discarded': 'Útgáfu hafnað',
   /** Label shown in review changes timeline when a document version has been discarded, with a timestamp */
-  'timeline.operation.version-discarded_timestamp': 'Útgáfa hafnað: {{timestamp, datetime}}',
+  'timeline.operation.version-discarded_timestamp': 'Útgáfu hafnað: {{timestamp, datetime}}',
   /**
    * Label for determining since which version the changes for timeline menu dropdown are showing.
    * Receives the time label as a parameter (`timestamp`).
@@ -2329,7 +2330,7 @@ export default removeUndefinedLocaleResources({
    */
   'workspaces.action.choose-another-workspace': 'Veldu annað vinnusvæði',
   /** Label for title to switch workspace before workspaces are listed */
-  'workspaces.action.switch-workspace': 'Skiptu um vinnurými',
+  'workspaces.action.switch-workspace': 'Skiptu um vinnusvæði',
   /** Label for heading that indicates that you can choose your workspace */
   'workspaces.choose-your-workspace-label': 'Veldu þitt vinnusvæði',
   /** Label for the workspace menu */

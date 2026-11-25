@@ -1542,15 +1542,15 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Nu publiceren',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Probeer het opnieuw of controleer uw verbinding. Het document zal nog steeds niet gepubliceerd worden bij vrijgave.',
+    'Probeer het opnieuw of controleer uw verbinding. Het document wordt bij release nog steeds ongepubliceerd gemaakt.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Het terugdraaien van de instelling om niet te publiceren bij vrijgave is mislukt.',
+    'Het terugdraaien van het ongepubliceerd maken bij release is mislukt.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description': 'U kunt nu deze versie bewerken.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Succesvol teruggekeerd van de instelling om niet te publiceren bij vrijgave.',
+    'Het ongepubliceerd maken bij release is succesvol teruggedraaid.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Publicatie plannen',
   /** Error message for when a version is set to be unpublished */
@@ -1708,7 +1708,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.not-found-release.title': "De release '{{title}}' kon niet worden gevonden",
   /** Error toast for pausing a scheduled draft */
   'release.toast.pause-scheduled-draft.error':
-    'Mislukt om het geplande conceptdocument <strong>{{title}}</strong> te pauzeren: {{error}}',
+    'Het pauzeren van het geplande conceptdocument <strong>{{title}}</strong> is mislukt: {{error}}',
   /** Error toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.error':
     'Het is niet gelukt om het geplande conceptdocument <strong>{{title}}</strong> onmiddellijk te publiceren: {{error}}',
@@ -1730,7 +1730,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.reschedule-scheduled-draft.success':
     'Het geplande conceptdocument <strong>{{title}}</strong> is opnieuw gepland.',
   /** Error toast for scheduling a paused draft */
-  'release.toast.schedule-publish.error': 'Mislukt om concept te plannen: {{error}}',
+  'release.toast.schedule-publish.error': 'Het plannen van het concept is mislukt: {{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'Concept succesvol gepland',
   /** The toast title that will be shown when the user has a scheduled draft perspective which is now published

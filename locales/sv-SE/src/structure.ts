@@ -14,7 +14,7 @@ export default removeUndefinedLocaleResources({
     'Detta dokument existerar inte än eller är redan raderat',
   /** Tooltip when action button is disabled because the document exists in scheduled releases */
   'action.delete.disabled.scheduled-release':
-    'Detta dokument kan inte raderas eftersom det finns inom schemalagda utgåvor',
+    'Detta dokument kan inte raderas eftersom det finns i schemalagda releaser',
   /** Tooltip when action button is disabled because the selected release or variant does not contain this document */
   'action.delete.disabled.target-not-found':
     'Den valda versionen eller varianten innehåller inte det här dokumentet',
@@ -139,7 +139,7 @@ export default removeUndefinedLocaleResources({
     'Välj en destination för detta dokument:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    '<VersionBadge>{{title}}</VersionBadge> utgåvan är inte aktiv.',
+    'Releasen <VersionBadge>{{title}}</VersionBadge> är inte aktiv.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Återställ senaste versionen',
   /** The text content for the deleted document banner */
@@ -276,13 +276,13 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Dokumentåtgärder',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Kollapsa alla paneler',
+  'buttons.focus-pane-button.aria-label.collapse': 'Avsluta fokusläge (visa navigering)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Fokusera panel',
+  'buttons.focus-pane-button.aria-label.focus': 'Aktivera fokusläge (dölj navigering)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Kollapsa alla paneler',
+  'buttons.focus-pane-button.tooltip.collapse': 'Avsluta fokusläge',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Fokusera panel',
+  'buttons.focus-pane-button.tooltip.focus': 'Aktivera fokusläge',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Dela ruta till höger',
   /** The tool tip for the split pane button on the document panel header */
@@ -311,9 +311,9 @@ export default removeUndefinedLocaleResources({
   'canvas.banner.popover-button-text': 'Läs mer',
   /** The description for the canvas linked banner popover */
   'canvas.banner.popover-description':
-    'Canvas låter dig skapa innehåll i en fri-form redigerare som automatiskt mappas tillbaka till Studion som strukturerat innehåll - medan du skriver.',
+    'Canvas låter dig skriva i en friformsredigerare som automatiskt mappas tillbaka till Studion som strukturerat innehåll – medan du skriver.',
   /** The heading for the canvas linked banner popover */
-  'canvas.banner.popover-heading': 'Idé först författande',
+  'canvas.banner.popover-heading': 'Skapa med idén först',
 
   /** The description for the changes banner */
   'changes.banner.description':
@@ -534,7 +534,7 @@ export default removeUndefinedLocaleResources({
 
   /** The description for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.description':
-    'Vi kan inte ladda ändringarna för detta dokument, troligen på grund av historikbevarandepolicyn för din plan, detta visar dig hur <strong>{{version}}</strong>-versionen jämförs med <strong>publicerad</strong> version.',
+    'Vi kan inte läsa in ändringarna för detta dokument, troligen på grund av historikbevarandepolicyn för din plan. Detta visar hur versionen <strong>{{version}}</strong> jämförs med den <strong>publicerade</strong> versionen.',
   /** The title for the events inspector when we can't load the document so we default to compare with published */
   'events.compare-with-published.title': 'Jämför med publicerad',
   /**The title for the menu items that will be shown when expanding a publish release event to inspect the document */
@@ -716,7 +716,7 @@ export default removeUndefinedLocaleResources({
     'Dokumentet avpublicerades. Ett utkast har skapats från den senaste publicerade versionen.',
   /** The text when an unpublish operation succeeded for a document in a release */
   'panes.document-operation-results.operation-success_unpublishVersion':
-    'Versionen kommer att avpubliceras när utgåvan publiceras',
+    'Versionen kommer att avpubliceras när releasen publiceras',
   /** The document title shown when document title is "undefined" in operation message */
   'panes.document-operation-results.operation-undefined-title': 'Namnlös',
   /** The loading message for the document not found pane */

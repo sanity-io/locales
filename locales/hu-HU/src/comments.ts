@@ -120,7 +120,7 @@ export default removeUndefinedLocaleResources({
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */
   'list-item.origin.draft': 'Piszkozatból',
   /** Badge shown when a comment was created on the published document but is viewed elsewhere */
-  'list-item.origin.published': 'Publikáltból',
+  'list-item.origin.published': 'Közzétett verzióból',
   /** The button text to re-open a resolved comment  */
   'list-item.re-open-resolved': 'Újranyitás',
   /** The button aria label to re-open a comment that is resolved */

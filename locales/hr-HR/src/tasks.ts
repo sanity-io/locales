@@ -40,9 +40,9 @@ export default removeUndefinedLocaleResources({
   'document.footer.open-tasks.text_other': '{{count}} otvorenih zadataka',
 
   /** The heading in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.heading': 'Niste dodijeljeni nijednom zadatku',
+  'empty-state.list.assigned.heading': 'Nijedan vam zadatak nije dodijeljen',
   /** The text in the tasks sidebar, in the assigned tab, when the user hasn't been assigned to any task*/
-  'empty-state.list.assigned.text': 'Kada budete dodijeljeni zadacima, oni će se ovdje prikazati',
+  'empty-state.list.assigned.text': 'Kada vam se dodijele zadaci, prikazat će se ovdje',
   /** The text in the tasks sidebar button any of the empty states is rendered*/
   'empty-state.list.create-new': 'Stvori novi zadatak',
   /** The heading in the tasks sidebar, in the document tab, when the document doesn't have any task*/
@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
   'empty-state.status.list.closed.subscribed.text':
     'Zadaci na koje ste pretplaćeni i označeni kao dovršeni će se pojaviti ovdje',
   /** The heading in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
-  'empty-state.status.list.open.assigned.heading': 'Sve ste stigli',
+  'empty-state.status.list.open.assigned.heading': 'Sve je ažurno',
   /** The text in the tasks sidebar, in the assigned tab, under the open details, when it's empty.*/
   'empty-state.status.list.open.assigned.text': 'Novi zadaci dodijeljeni vama će se pojaviti ovdje',
   /** The heading in the tasks sidebar, in the document tab, under the open details, when it's empty.*/

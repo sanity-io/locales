@@ -9,7 +9,7 @@ export default removeUndefinedLocaleResources({
   /** The label for the button to create a new task */
   'buttons.create.text': 'Crea Compito',
   /** The label for the button to discard changes */
-  'buttons.discard.text': 'Annulla',
+  'buttons.discard.text': 'Scarta',
   /** The label for the button to open the draft */
   'buttons.draft.text': 'Bozza',
   /** The label for the button to create a new task */

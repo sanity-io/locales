@@ -13,8 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     "L'accès au presse-papiers est nécessaire pour copier ce contenu. Autorisez les permissions du presse-papiers dans les paramètres de votre navigateur, puis essayez de copier à nouveau.",
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title':
-    'Votre navigateur ne prend pas en charge cette action',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Accès au presse-papiers bloqué',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'Valeur vide, rien à copier',
   /** --- On copy --- */

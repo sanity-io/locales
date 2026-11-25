@@ -22,13 +22,13 @@ export default removeUndefinedLocaleResources({
   'buttons.previous.tooltip': 'Quay lại nhiệm vụ trước',
 
   /** Text for the remove task dialog asking for confirmation of deletion */
-  'dialog.remove-task.body': 'Bạn có chắc chắn muốn xóa nhiệm vụ này không?',
+  'dialog.remove-task.body': 'Sau khi xóa, nhiệm vụ sẽ không thể khôi phục.',
   /** The label for the cancel button on the remove task dialog */
   'dialog.remove-task.buttons.cancel.text': 'Hủy',
   /** The label for the confirmation button on the remove task dialog */
   'dialog.remove-task.buttons.confirm.text': 'Xóa',
   /** The title for the remove task dialog */
-  'dialog.remove-task.title': 'Xóa nhiệm vụ',
+  'dialog.remove-task.title': 'Xóa nhiệm vụ này?',
 
   /** The text used as a placeholder for the footer action in a document with multiple tasks */
   'document.footer.open-tasks.placeholder_other': 'Mở nhiệm vụ',
@@ -87,7 +87,7 @@ export default removeUndefinedLocaleResources({
   /** Text used in the assignee input when searching and no users are found */
   'form.input.assignee.search.no-users.text': 'Không tìm thấy người dùng nào',
   /** Placeholder text used in the search box in the assignee input */
-  'form.input.assignee.search.placeholder': 'Chọn tên người dùng',
+  'form.input.assignee.search.placeholder': 'Chọn người được giao',
   /** Text used in the assignee input when user is not authorized */
   'form.input.assignee.unauthorized.text': 'Không được phép',
   /** Text used in the assignee input tooltip when there is no user assigned */
@@ -99,7 +99,7 @@ export default removeUndefinedLocaleResources({
   /** The label used in the date input button tooltip when it's empty */
   'form.input.date.buttons.empty.tooltip': 'Đặt hạn chót',
   /** The label used in the date input to remove the current value */
-  'form.input.date.buttons.remove.text': 'Xóa bỏ',
+  'form.input.date.buttons.remove.text': 'Xóa',
   /** The label used in the date input button tooltip when it has value */
   'form.input.date.buttons.tooltip': 'Thay đổi hạn chót',
   /** Placeholder text used in the description input */
@@ -111,7 +111,7 @@ export default removeUndefinedLocaleResources({
   /** The text used in the target input when encountering a schema error */
   'form.input.target.error.schema-not-found': 'Không tìm thấy lược đồ',
   /** The placeholder text used in the target input for the search component */
-  'form.input.target.search.placeholder': 'Chọn tài liệu',
+  'form.input.target.search.placeholder': 'Chọn tài liệu đích',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Tiêu đề nhiệm vụ',
   /** The status error message presented when the user does not supply a title */

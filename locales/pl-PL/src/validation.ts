@@ -67,7 +67,8 @@ export default removeUndefinedLocaleResources({
   /** Title for the actual "Validation" panel/feature */
   'panel.title': 'Walidacja',
   /** Message shown when the validation panel is opened but the document is going to unpublish */
-  'panel.unpublish-message': 'Dokument zostanie wycofany, nie są wyświetlane błędy walidacji',
+  'panel.unpublish-message':
+    'Publikacja dokumentu zostanie cofnięta, błędy walidacji nie są wyświetlane',
 
   /** Slug is an object, but is missing a `current` string property */
   'slug.missing-current': 'Slug musi mieć wartość',

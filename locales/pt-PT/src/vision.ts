@@ -74,7 +74,7 @@ export default removeUndefinedLocaleResources({
     'Esta versão da API não suporta perspectivas complexas. Use {{apiVersion}} ou posterior.',
   /** Extra explanation when a 400 is returned for a variant on an incompatible API version */
   'query.error.unsupported-variant':
-    'Esta versão da API não suporta variantes de conteúdo. Use a versão experimental da API ({{apiVersion}}).',
+    'Esta versão da API não suporta variantes de conteúdo. Use {{apiVersion}} ou posterior.',
   /** Label for "Query" editor/input */
   'query.label': 'Consulta',
   /** Label for the "Query URL" field, shown after executing a query, and allows for copying */
@@ -116,7 +116,7 @@ export default removeUndefinedLocaleResources({
   'settings.api-version-label': 'Versão da API',
   /** Tooltip shown when the API version selector is locked to vX because a variant is selected */
   'settings.api-version-locked-for-variant':
-    'Quando uma variante é selecionada, a versão da API precisa ser vX.',
+    'Quando uma variante é selecionada, a versão da API precisa ser {{apiVersion}}.',
   /** Label for the "Custom API version" input in settings, shown when "other" is chosen as API version */
   'settings.custom-api-version-label': 'Versão da API personalizada',
   /** Label for the "Dataset" dropdown in vision settings */
@@ -144,7 +144,7 @@ export default removeUndefinedLocaleResources({
   'settings.perspectives.new-default.description':
     'A perspectiva padrão mudará de "<code>raw</code>" para "<code>published</code>" em uma versão futura da API. Por favor, consulte a documentação para mais detalhes.',
   /** Label for the pinned release perspective */
-  'settings.perspectives.pinned-release-label': 'Versão fixada',
+  'settings.perspectives.pinned-release-label': 'Release fixado',
   /** Label for the scheduled drafts perspective */
   'settings.perspectives.scheduled-drafts': 'Rascunhos agendados',
   /** Title for popover that explains what "Perspectives" are */

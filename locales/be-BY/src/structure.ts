@@ -4,7 +4,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the "Copy document ID" menu item */
   'action.copy-document-id.label': 'Скапіраваць ID дакумента',
   /** Tooltip for the copy actions dropdown button in the document panel header */
-  'action.copy-document-url.label': 'Капіяваць URL дакумента',
+  'action.copy-document-url.label': 'Капіяваць',
   /** Label for the "Copy document URL" menu item */
   'action.copy-link-to-document.label': 'Скапіраваць URL дакумента',
   /** Tooltip when action button is disabled because the operation is not ready   */
@@ -140,12 +140,14 @@ export default removeUndefinedLocaleResources({
   /** The text content for the deprecated document type banner */
   'banners.deprecated-document-type-banner.text': 'Гэты тып дакумента застарэў.',
   /** The text for publish action for discarding the version */
-  'banners.live-edit-draft-banner.discard.tooltip': 'Адхіліць чарнавік',
+  'banners.live-edit-draft-banner.discard.tooltip':
+    'Адхіліце чарнавік, каб працягнуць рэдагаванне.',
   /** The text for publish action for the draft banner */
-  'banners.live-edit-draft-banner.publish.tooltip': 'Апублікаваць, каб працягнуць рэдагаванне',
+  'banners.live-edit-draft-banner.publish.tooltip':
+    'Апублікуйце чарнавік, каб працягнуць рэдагаванне.',
   /** The text content for the live edit document when it's a draft */
   'banners.live-edit-draft-banner.text':
-    'Тып <strong>{{schemaType}}</strong> мае <code>liveEdit</code> уключаны, але існуе чарнавіковая версія гэтага дакумента. Апублікуйце або адхіліце чарнавік, каб працягнуць яго рэдагаванне.',
+    'Для тыпу <strong>{{schemaType}}</strong> уключаны <code>liveEdit</code>, але існуе чарнавая версія гэтага дакумента. Апублікуйце або адхіліце чарнавік, каб працягнуць яго рэдагаванне ў рэальным часе.',
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'Параўнаць чарнавік',
   /** Tooltip when compare draft is disabled because the published document does not exist */
@@ -522,7 +524,7 @@ export default removeUndefinedLocaleResources({
   'incoming-references-input.types-loading': 'Загрузка дакументаў...',
   /** The text for the loading state in the incoming references input */
   'incoming-references-input.types-loading-cross-dataset':
-    'Загрузка дакументаў з розных набораў дадзеных...',
+    'Загрузка дакументаў з розных dataset...',
   /** The text for the no references defined in the incoming references input */
   'incoming-references-input.types-not-defined':
     'Для гэтага тыпу не вызначаны ўваходныя спасылкі, глядзіце дакументацыю для атрымання дадатковай інфармацыі.',

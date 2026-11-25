@@ -138,7 +138,7 @@ export default removeUndefinedLocaleResources({
     'Trieu una destinació per a aquest document:',
   /** The explanation displayed when a user attempts to create a new document in a release, but the selected release is inactive */
   'banners.choose-new-document-destination.release-inactive':
-    'La <VersionBadge>{{title}}</VersionBadge> versió no està activa.',
+    'El llançament <VersionBadge>{{title}}</VersionBadge> no està actiu.',
   /** The text for the restore button on the deleted document banner */
   'banners.deleted-document-banner.restore-button.text': 'Restaurar la revisió més recent',
   /** The text content for the deleted document banner */
@@ -276,13 +276,15 @@ export default removeUndefinedLocaleResources({
   /** The action menu button tooltip */
   'buttons.action-menu-button.tooltip': 'Accions del document',
   /** The aria-label for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.collapse': 'Col·lapsa tots els panells',
+  'buttons.focus-pane-button.aria-label.collapse':
+    'Surt del mode de concentració (mostra la navegació)',
   /** The aria-label for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.aria-label.focus': 'Centra el panell',
+  'buttons.focus-pane-button.aria-label.focus':
+    'Entra al mode de concentració (amaga la navegació)',
   /** The tooltip for the collapse pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.collapse': 'Col·lapsa tots els panells',
+  'buttons.focus-pane-button.tooltip.collapse': 'Surt del mode de concentració',
   /** The tooltip for the focus pane button on the document panel header */
-  'buttons.focus-pane-button.tooltip.focus': 'Centra el panell',
+  'buttons.focus-pane-button.tooltip.focus': 'Entra al mode de concentració',
   /** The aria-label for the split pane button on the document panel header */
   'buttons.split-pane-button.aria-label': 'Divideix el panell a la dreta',
   /** The tool tip for the split pane button on the document panel header */

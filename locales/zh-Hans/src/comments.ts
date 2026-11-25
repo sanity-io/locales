@@ -113,7 +113,7 @@ export default removeUndefinedLocaleResources({
   /** The text for retrying posting a comment */
   'list-item.layout-retry': '重试',
   /** The text shown when the value a comment references has been deleted */
-  'list-item.missing-referenced-value-tooltip-content': '已删除已评论的文本',
+  'list-item.missing-referenced-value-tooltip-content': '被评论的文本已删除',
   /** The aria label for the comments menu button to open the actions menu */
   'list-item.open-menu-aria-label': '打开评论操作菜单',
   /** Badge shown when a comment was created on the draft but is viewed elsewhere */

@@ -5,7 +5,7 @@ export default removeUndefinedLocaleResources({
   'about-dialog.configuration-issue.header': 'Konfigurációs probléma észlelve',
   /** Message shown if sanity.cli.ts is missing deployment.appId */
   'about-dialog.configuration-issue.missing-appid':
-    'Az automatikus frissítések engedélyezve vannak, de nincs <code>deployment.appId</code> konfigurálva a <code>sanity.cli.ts</code>-ben. Ez a Stúdió a <strong>legújabb</strong>-csatorna ellen frissül.',
+    'Az automatikus frissítések engedélyezve vannak, de a <code>sanity.cli.ts</code> fájlban nincs beállítva <code>deployment.appId</code>. Ez a Stúdió a <strong>latest</strong> csatornáról frissül.',
   /** "View documentation" link for auto-updating studios */
   'about-dialog.configuration-issue.missing-appid.view-documentation': 'Dokumentáció megtekintése',
   /** "Disabled" status for auto-updates in About-dialog */
@@ -15,7 +15,7 @@ export default removeUndefinedLocaleResources({
   /** @deprecated "Auto Updates" status header in About-dialog */
   'about-dialog.version-info.auto-updates.header': 'Automatikus frissítések',
   /** "How to enable" next to Disabled state for Auto updates in version info dialog */
-  'about-dialog.version-info.auto-updates.how-to-enable': 'Hogyan engedélyezhető',
+  'about-dialog.version-info.auto-updates.how-to-enable': 'Engedélyezés',
   /** "Manage version" link text */
   'about-dialog.version-info.auto-updates.manage-version': 'Verzió kezelése',
   /** Text displayed on the "Copy to clipboard"-button after clicked */
@@ -26,7 +26,7 @@ export default removeUndefinedLocaleResources({
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': 'Jelenlegi verzió',
   /** @deprecated "How to upgrade" link text */
-  'about-dialog.version-info.how-to-upgrade': 'Hogyan frissíthető',
+  'about-dialog.version-info.how-to-upgrade': 'Frissítés most',
   /** "Latest version" header in version info dialog */
   'about-dialog.version-info.latest-version.header': 'Legújabb verzió',
   /** Info text when auto updates is enabled and a new version is available */
@@ -199,13 +199,13 @@ export default removeUndefinedLocaleResources({
   'asset-sources.dataset.image.title': 'Munkaterület képek',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
-    'Valami hiba történt a Média Könyvtár projektben való feloldásakor.',
+    'Hiba történt a projekt Media Library-jének feloldásakor.',
   /** Error message shown when no media library has been provisioned for the current organization */
   'asset-sources.media-library.error.no-media-library-provisioned':
-    'Ehhez a szervezethez nem lett média könyvtár létrehozva.',
+    'Ehhez a szervezethez nincs Media Library kiépítve.',
   /** Menu Items for Media Library Asset Source */
-  'asset-sources.media-library.file.title': 'Média Könyvtár',
-  'asset-sources.media-library.image.title': 'Média Könyvtár',
+  'asset-sources.media-library.file.title': 'Media Library',
+  'asset-sources.media-library.image.title': 'Media Library',
   /** Done button text */
   'asset-sources.media-library.open-in-source-dialog.button.done': 'Kész',
   /** Select new asset button text with target title */
@@ -367,7 +367,7 @@ export default removeUndefinedLocaleResources({
   'changes.loading-changes': 'Változások betöltése…',
   /** Error message shown when the document revision could not be found */
   'changes.missing-since-document-error':
-    'Nem találjuk a dokumentum revízióját azonosítóval: <code>{{revisionId}}</code>, amit össze szeretne hasonlítani. <Break/> Ez valószínűleg a tervek történetmegőrzési szabályzata miatt van. <Break/> Kérjük, válasszon egy másik <strong>Kezdő</strong> bejegyzést.',
+    'Nem található a(z) <code>{{revisionId}}</code> azonosítójú dokumentumrevízió, amelyet össze szeretne hasonlítani. <Break/> Ennek valószínűleg a csomagja előzménymegőrzési szabályzata az oka. <Break/> Kérjük, válasszon egy másik <strong>Eredeti</strong> bejegyzést.',
   /** No Changes description in the Review Changes pane */
   'changes.no-changes-description':
     'Szerkessze a dokumentumot vagy válasszon egy régebbi verziót az idővonalon, hogy megjelenjen a változások listája ebben a panelben.',
@@ -417,7 +417,7 @@ export default removeUndefinedLocaleResources({
   'changes.removed-label': 'Eltávolítva',
   /** Same Revision Selected description in the Review Changes pane */
   'changes.same-revision-selected-description':
-    'Ugyanazt a <strong>from</strong> és <strong>to</strong> revíziót választotta ki, kérjük, válasszon különböző revíziókat a közöttük lévő változások összehasonlításához.',
+    'Ugyanazt a revíziót választotta ki <strong>eredetiként</strong> és <strong>újként</strong> is, kérjük, válasszon két különböző revíziót a közöttük lévő változások összehasonlításához.',
   /** Same Revision Selected title in the Review Changes pane */
   'changes.same-revision-selected-title': 'Ugyanaz a revízió lett kiválasztva',
   /** Title for the Review Changes pane */
@@ -608,7 +608,7 @@ export default removeUndefinedLocaleResources({
   /** Label to show in document versions status for a published (non-live-edit) document */
   'document-status.published-at': 'Közzétéve: {{date}}',
   /** Label to show in the document footer indicating the revision from date of the document */
-  'document-status.revision-from': 'Felülvizsgálat ekkortól: <em>{{date}}</em>',
+  'document-status.revision-from': '<em>{{date}}</em> dátumú revízió',
   /** Label to show in the document footer indicating that the revision was not found */
   'document-status.revision-not-found': 'A revízió nem található',
 
@@ -1533,7 +1533,7 @@ export default removeUndefinedLocaleResources({
   /** Action message for editing the schedule of a scheduled publish */
   'release.action.edit-schedule': 'Ütemezés szerkesztése',
   /** Action message for when a new release is created off an existing version, draft or published document */
-  'release.action.new-release': 'Új Kiadás',
+  'release.action.new-release': 'Új kiadás',
   'release.action.new-release.limit-reached_other':
     'Ez a munkaterület korlátozva van {{count}} kiadásra',
   /** Tooltip message for not having permissions for creating new releases */
@@ -1542,24 +1542,24 @@ export default removeUndefinedLocaleResources({
   'release.action.publish-now': 'Közzététel most',
   /** Error message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.description':
-    'Kérjük, próbálja újra vagy ellenőrizze a kapcsolatot. A dokumentum továbbra is közzétételre kerül a kiadásnál.',
+    'Kérjük, próbálja újra, vagy ellenőrizze a kapcsolatot. A dokumentum közzététele továbbra is vissza lesz vonva a kiadáskor.',
   /** Error message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.failure.title':
-    'Nem sikerült visszavonni a közzététel beállítását a kiadásnál.',
+    'Nem sikerült megszüntetni a kiadáskori közzététel-visszavonás beállítását.',
   /** Action message description for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.description':
     'Most már szerkesztheti ezt a verziót.',
   /** Action message title for when a version is reverted from being unpublished */
   'release.action.revert-unpublish-version.success.title':
-    'Sikeresen visszavonva a közzététel beállítása a kiadásnál.',
+    'A kiadáskori közzététel-visszavonás beállítása sikeresen megszüntetve.',
   /** Action message for scheduling a paused draft */
   'release.action.schedule-publish': 'Közzététel ütemezése',
   /** Error message for when a version is set to be unpublished */
   'release.action.unpublish-version.failure':
-    'Nem sikerült beállítani a verziót közzétételre váró állapotba a kiadásban',
+    'Nem sikerült beállítani, hogy a verzió közzététele vissza legyen vonva a kiadáskor',
   /** Action message for when a version is set to be unpublished successfully */
   'release.action.unpublish-version.success':
-    'Sikeresen beállítva a(z) <strong>{{title}}</strong> verzió közzétételre váró állapotba a kiadásban',
+    'Sikeresen beállítva, hogy a(z) <strong>{{title}}</strong> közzététele vissza lesz vonva a kiadáskor',
   /** Action message for when the view release is pressed */
   'release.action.view-release': 'Kiadás megtekintése',
   /** Action message for when the view scheduled drafts is pressed */
@@ -1573,7 +1573,7 @@ export default removeUndefinedLocaleResources({
   /** Label for button to show other versions in the document perspective list*/
   'release.chip.button.other-versions_one': '+{{count}} verzió',
   /** Label for button to show other versions in the document perspective list */
-  'release.chip.button.other-versions_other': '+{{count}} verziók',
+  'release.chip.button.other-versions_other': '+{{count}} verzió',
   /** Label for Draft chip in document header */
   'release.chip.draft': 'Vázlat',
   /** Label for Draft chip in global header */
@@ -1598,7 +1598,7 @@ export default removeUndefinedLocaleResources({
   'release.chip.tooltip.other-variants_one': 'Egy változat',
   'release.chip.tooltip.other-variants_other': '{{count}} változat',
   'release.chip.tooltip.other-versions_one': 'Egy további verzió a kiadásokon kívül',
-  'release.chip.tooltip.other-versions_other': '{{count}} további verziók a kiadásokon kívül',
+  'release.chip.tooltip.other-versions_other': '{{count}} további verzió a kiadásokon kívül',
   /** Label for tooltip in chip with the published date */
   'release.chip.tooltip.published-date': 'Közzétéve {{date}}',
   /** Label for tooltip in chip when document is in a release that has been scheduled */
@@ -1655,7 +1655,7 @@ export default removeUndefinedLocaleResources({
   'release.dialog.publish-scheduled-draft.header': 'Vázlat közzététele most',
   /** Label for description in tooltip to explain release types */
   'release.dialog.tooltip.description':
-    'A tervezett kiadási időt arra használjuk, hogy jobb előnézeteket és utalásokat készítsünk arról, hogy a dokumentumok ütköznek-e.',
+    'Ez csak tervezéshez, előnézetekhez és a dokumentumok közötti ütközések jelzéséhez szolgál. Az itt megadott időpont nem ütemezi a kiadást. A kiadást továbbra is el kell indítania vagy ütemeznie, amint minden dokumentum készen áll.',
   /** Label for noting that a release time is not final */
   'release.dialog.tooltip.note': 'Később mindig megváltoztathatja.',
   /** Title for tooltip to explain release time */
@@ -1677,7 +1677,7 @@ export default removeUndefinedLocaleResources({
   /** Label for published releases in navbar */
   'release.navbar.published': 'Közzétéve',
   /** Tooltip for releases navigation in navbar */
-  'release.navbar.tooltip': 'Kiadások',
+  'release.navbar.tooltip': 'Ütemezés megtekintése',
   /** The placeholder text when the release doesn't have a title */
   'release.placeholder-untitled-release': 'Cím nélküli kiadás',
   /** Description for warning that the published schedule time is in the past */
@@ -1687,11 +1687,11 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.description': 'Ez a kiadás le lett választva',
+  'release.toast.archived-release.description': 'A kiadás rögzítése fel lett oldva',
   /** The toast title that will be shown when the user has a release perspective which is now archived
    * @deprecated – no longer needed
    * */
-  'release.toast.archived-release.title': "Az '{{title}}' kiadás archiválva lett",
+  'release.toast.archived-release.title': "A(z) '{{title}}' kiadás archiválva lett",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'A kiadás létrehozása sikertelen',
   /** Error toast for deleting a scheduled draft */
@@ -1718,7 +1718,7 @@ export default removeUndefinedLocaleResources({
   /** The toast description that will be shown when the user has a release perspective which is now published
    * @deprecated – no longer needed
    **/
-  'release.toast.published-release.description': 'Ez a kiadás le lett választva',
+  'release.toast.published-release.description': 'A kiadás rögzítése fel lett oldva',
   /** The toast title that will be shown when the user has a release perspective which is now deleted
    * @deprecated – no longer needed
    **/
@@ -1747,7 +1747,7 @@ export default removeUndefinedLocaleResources({
   /** Label for the release type 'at time', meaning it's a release with a scheduled date */
   'release.type.scheduled': 'Meghatározott időpontban',
   /** Label for the release type 'undecided' */
-  'release.type.undecided': 'Döntetlen',
+  'release.type.undecided': 'Határozatlan',
   /** Tooltip for the dropdown to show all versions of document */
   'release.version-list.tooltip': 'Az összes dokumentumverzió megtekintése',
 
@@ -1764,10 +1764,10 @@ export default removeUndefinedLocaleResources({
   /** Description for the schedule publish dialog */
   'schedule-publish-dialog.description': 'Válassza ki, mikor legyen közzétéve ez a dokumentum.',
   /** Header for the schedule publish dialog */
-  'schedule-publish-dialog.header': 'Tervezett vázlat közzététele',
+  'schedule-publish-dialog.header': 'Vázlat közzétételének ütemezése',
 
   /** Title for a scheduled draft release */
-  'scheduled-drafts.release.title': 'Tervezett közzététel',
+  'scheduled-drafts.release.title': 'Ütemezett közzététel',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': 'Keresés megnyitása',
@@ -2238,7 +2238,7 @@ export default removeUndefinedLocaleResources({
   /** Label shown in review changes timeline when a document has been edited live, with a timestamp */
   'timeline.operation.edited-live_timestamp': 'Élőben szerkesztve: {{timestamp, datetime}}',
   /** Label shown in review changes timeline event when transactions have been deleted by retention policy */
-  'timeline.operation.history-cleared': 'Törlés visszatartási szabályzat által',
+  'timeline.operation.history-cleared': 'Törölve a megőrzési szabályzat alapján',
   /** Label shown in review changes timeline when a document was published */
   'timeline.operation.published': 'Közzétéve',
   /** Label shown in review changes timeline when a document was published, with a timestamp */

@@ -298,7 +298,7 @@ export default removeUndefinedLocaleResources({
   'overview.action.documentation': 'Dokumentation',
   /** Label for the back button on a release detail page (returns to the releases list). The
    * leading arrow already conveys "back", so the label names the destination only. */
-  'overview.back-to-all-releases': 'Alla utgåvor',
+  'overview.back-to-all-releases': 'Alla releaser',
   /** Tooltip for the calendar button in the release overview */
   'overview.calendar.tooltip': 'Visa kalender',
   /** Description for the release tool */

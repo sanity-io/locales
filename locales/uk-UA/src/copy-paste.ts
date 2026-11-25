@@ -11,7 +11,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.field-action-paste-button.field.title': 'Вставити поле',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
-    'Для копіювання цього вмісту потрібен доступ до буфера обміну. Дозвольте дозволи на буфер обміну у налаштуваннях вашого браузера, а потім спробуйте скопіювати знову.',
+    'Для копіювання цього вмісту потрібен доступ до буфера обміну. Дозвольте доступ до буфера обміну в налаштуваннях браузера, а потім спробуйте скопіювати ще раз.',
   /** The error message that is shown when the clipboard is not supported */
   'copy-paste.on-copy.validation.clipboard-not-supported.title': 'Ваш браузер не підтримує цю дію',
   /** The error message that is shown when there is no value to copy */
@@ -58,7 +58,7 @@ export default removeUndefinedLocaleResources({
     'Посилання типу "{{sourceReferenceType}}" не дозволені в полі посилань, яке приймає типи "{{targetReferenceTypes}}"',
   /** The validation message that is shown when reference does not exist */
   'copy-paste.on-paste.validation.reference-validation-failed.description':
-    'Документ, на який посилається "{{ref}}", не існує',
+    'Документ "{{ref}}", на який є посилання, не існує',
   /** The validation message that is shown when the source and target schema types are incompatible */
   'copy-paste.on-paste.validation.schema-type-incompatible.description':
     'Типи схем джерела та призначення не сумісні',

@@ -13,7 +13,7 @@ export default removeUndefinedLocaleResources({
   'copy-paste.on-copy.validation.clipboard-not-supported.description':
     'ಈ ವಿಷಯವನ್ನು ನಕಲಿಸಲು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಪ್ರವೇಶ ಅಗತ್ಯವಿದೆ. ನಿಮ್ಮ ಬ್ರೌಸರ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಅನುಮತಿಗಳನ್ನು ಅನುಮತಿಸಿ, ನಂತರ ನಕಲಿಸಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.',
   /** The error message that is shown when the clipboard is not supported */
-  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'ನಿಮ್ಮ ಬ್ರೌಸರ್ ಈ ಕ್ರಿಯೆಯನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ',
+  'copy-paste.on-copy.validation.clipboard-not-supported.title': 'ಕ್ಲಿಪ್‌ಬೋರ್ಡ್ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ',
   /** The error message that is shown when there is no value to copy */
   'copy-paste.on-copy.validation.no-value.title': 'ಖಾಲಿ ಮೌಲ್ಯ, ನಕಲಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** --- On copy --- */
@@ -22,10 +22,10 @@ export default removeUndefinedLocaleResources({
     'ಮಾರ್ಗ: {{path}} ಗಾಗಿ ಸ್ಕೀಮಾ ಪ್ರಕಾರವನ್ನು ಬಗೆಹರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ',
   /** The validation message that is shown when array types are incompatible */
   'copy-paste.on-paste.validation.array-type-incompatible.description':
-    'ಈ ಅರೆ ಕ್ಷೇತ್ರದಲ್ಲಿ "{{type}}" ಪ್ರಕಾರದ ಮೌಲ್ಯ ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
+    'ಈ ಅರೇ ಕ್ಷೇತ್ರದಲ್ಲಿ "{{type}}" ಪ್ರಕಾರದ ಮೌಲ್ಯವನ್ನು ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
   /** The validation message that is shown when array values are incompatible */
   'copy-paste.on-paste.validation.array-value-incompatible.description':
-    'ಈ ಅರೆ ಕ್ಷೇತ್ರದಲ್ಲಿ "{{type}}" ಪ್ರಕಾರದ ಮೌಲ್ಯ ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
+    'ಈ ಅರೇ ಕ್ಷೇತ್ರದಲ್ಲಿ "{{type}}" ಪ್ರಕಾರದ ಮೌಲ್ಯವನ್ನು ಅನುಮತಿಸಲಾಗಿಲ್ಲ',
   /** The validation message that is shown when the clipboard is empty */
   'copy-paste.on-paste.validation.clipboard-empty.title': 'ಅಂಟಿಸಲು ಏನೂ ಇಲ್ಲ',
   /** The validation message that is shown when the clipboard item is invalid */
