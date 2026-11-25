@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': '必須是整數',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': undefined, // 'File type "{{mimeType}}" is not accepted'
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': undefined, // 'File type "{{mimeType}}" is not accepted'
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': undefined, // 'Image type "{{mimeType}}" is not accepted'
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': '需要資產',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,8 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': '必須是對文件的引用',
   /** Object references a document which is not published */
   'object.reference-not-published': '引用的文件必須已發布',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch': undefined, // 'Referenced document has type "{{actualType}}"; expected one of: {{allowedTypes}}'
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': '關閉驗證',
