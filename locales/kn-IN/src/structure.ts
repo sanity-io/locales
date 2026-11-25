@@ -141,7 +141,8 @@ export default removeUndefinedLocaleResources({
   /** The label for the "compare draft" action */
   'banners.obsolete-draft.actions.compare-draft.text': 'ಡ್ರಾಫ್ಟ್ ಹೋಲಿಸಿ',
   /** Tooltip when compare draft is disabled because the published document does not exist */
-  'banners.obsolete-draft.actions.compare-draft.tooltip': undefined, // 'The published document doesn\'t exist, so this draft can\'t be compared.'
+  'banners.obsolete-draft.actions.compare-draft.tooltip':
+    'ಪ್ರಕಟಿತ ದಾಖಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ, ಆದ್ದರಿಂದ ಈ ಡ್ರಾಫ್ಟ್ ಅನ್ನು ಹೋಲಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.',
   /** The label for the "discard draft" action */
   'banners.obsolete-draft.actions.discard-draft.text': 'ಡ್ರಾಫ್ಟ್ ತ್ಯಜಿಸಿ',
   /** The label for the "publish draft" action */
@@ -318,7 +319,7 @@ export default removeUndefinedLocaleResources({
   /** The error message shown when releases failed to load */
   'compare-version.error.loadReleases.title': 'ಬಿಡುಗಡೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
   /** The error message shown when document versions or variants failed to load */
-  'compare-version.error.loadVersions.title': undefined, // 'Failed to load versions'
+  'compare-version.error.loadVersions.title': 'ಆವೃತ್ತಿಗಳನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ',
 
   /** The text for the tooltip when the "Compare versions" action for a document is disabled */
   'compare-versions.menu-item.disabled-reason': 'ಈ ದಾಖಲೆಯ ಇತರ ಆವೃತ್ತಿಗಳನ್ನು ಹೋಲಿಸಲು ಯಾವುದೂ ಇಲ್ಲ.',
