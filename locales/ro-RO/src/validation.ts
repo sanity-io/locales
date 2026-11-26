@@ -46,6 +46,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Trebuie să fie un număr întreg',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Tipul de fișier "{{mimeType}}" nu este acceptat',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Tipul de fișier "{{mimeType}}" nu este acceptat',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Tipul de imagine "{{mimeType}}" nu este acceptat',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Asset este necesar',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -61,6 +67,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Trebuie să fie o referință la un document',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Documentul referențiat trebuie să fie publicat',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Documentul referențiat are tipul "{{actualType}}"; se aștepta unul dintre: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Închide validarea',
