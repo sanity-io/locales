@@ -25,6 +25,21 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.copy-to-clipboard-button.text': 'クリップボードにコピー',
   /** "Current version" header in version info dialog  */
   'about-dialog.version-info.current-version.header': '現在のバージョン',
+  /** Deprecation warning in About-dialog: the running (or pinned) version is deprecated */
+  'about-dialog.version-info.deprecated.current':
+    'v{{version}} は非推奨となったため、使用しないでください。',
+  /** Deprecation warning in About-dialog: header */
+  'about-dialog.version-info.deprecated.header': '非推奨のバージョン',
+  /** Deprecation warning in About-dialog: what to do when the studio is auto-updating but pinned to the deprecated version */
+  'about-dialog.version-info.deprecated.next-step.pinned':
+    'このStudioは非推奨のバージョンに固定されています。Manageで別のバージョンを選択してください。',
+  /** Deprecation warning in About-dialog: what to do when the studio is not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade':
+    'sanityパッケージを新しいバージョンに更新し、Studioを再デプロイしてください。',
+  /** Deprecation warning in About-dialog: link to the upgrade guide for studios that are not auto-updating */
+  'about-dialog.version-info.deprecated.next-step.upgrade.learn-how': '更新方法を見る',
+  /** Deprecation warning in About-dialog: the reason given when the version was deprecated */
+  'about-dialog.version-info.deprecated.reason': '理由: {{reason}}',
   /** @deprecated "How to upgrade" link text */
   'about-dialog.version-info.how-to-upgrade': 'アップグレード方法',
   /** "Latest version" header in version info dialog */
@@ -38,6 +53,8 @@ export default removeUndefinedLocaleResources({
   'about-dialog.version-info.reload': 'リロード',
   /** "Reload to update"-tooltip when auto updates is enabled and a new version is available */
   'about-dialog.version-info.reload-to-update': '更新するためにStudioをリロードする',
+  /** "Deprecated" tooltip in About-dialog */
+  'about-dialog.version-info.tooltip.deprecated': '非推奨',
   /** "Development" tooltip in About-dialog */
   'about-dialog.version-info.tooltip.development': '開発',
   /** "New version available" tooltip in About-dialog */
@@ -123,6 +140,12 @@ export default removeUndefinedLocaleResources({
   'asset-source.dialog.button.cancel': 'キャンセル',
   /** Select asset dialog select-button */
   'asset-source.dialog.button.select': '選択',
+  /** Fallback title of the select asset dialog for files, when the input provides none */
+  'asset-source.dialog.default-title_file': 'ファイルを選択',
+  /** Fallback title of the select asset dialog for images, when the input provides none */
+  'asset-source.dialog.default-title_image': '画像を選択',
+  /** Fallback title of the select asset dialog for videos, when the input provides none */
+  'asset-source.dialog.default-title_video': '動画を選択',
   /** Keys shared between both image asset source and file asset source */
   /** Insert asset error */
   'asset-source.dialog.insert-asset-error':
@@ -192,9 +215,17 @@ export default removeUndefinedLocaleResources({
   /** Common (all) Asset Source texts. Note that all translation keys starting with 'asset-source.' is for the built in asset source. */
   'asset-sources.common.uploader.upload-failed.description': '詳細はコンソールを参照してください。',
   'asset-sources.common.uploader.upload-failed.title': 'アップロードに失敗しました',
+  /** Warning shown when an uploaded file already exists in the selected asset source */
+  'asset-sources.common.warning.file-already-exist.description':
+    'このソースに既存のファイルが見つかったため、それを使用します。',
+  'asset-sources.common.warning.file-already-exist.title':
+    'ファイル「{{filename}}」はすでに存在します',
   /** Menu Items for Dataset Asset Source (will be replaced with workspace name by default) */
   'asset-sources.dataset.file.title': 'ワークスペースファイル',
   'asset-sources.dataset.image.title': 'ワークスペース画像',
+  /** Error message shown when a federated (workbench-brokered) asset source view fails to load */
+  'asset-sources.federated.error.unavailable':
+    'このアセットソースの読み込みに失敗しました。ダイアログを閉じてもう一度お試しください。',
   /** Error messages for the Media Library Asset Source  */
   'asset-sources.media-library.error.library-could-not-be-resolved':
     'このプロジェクトのメディアライブラリを解決しようとして何か問題が発生しました。',
@@ -213,14 +244,19 @@ export default removeUndefinedLocaleResources({
     '新しいアセットを選択',
   /** Title for the open in source dialog */
   'asset-sources.media-library.open-in-source-dialog.title': 'アセットを編集',
+  /** Fallback title of the Media Library select dialog for files, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_file':
+    '{{targetTitle}}のファイルを選択しています',
+  /** Fallback title of the Media Library select dialog for images, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_image': '{{targetTitle}}の画像を選択しています',
+  /** Fallback title of the Media Library select dialog for videos, when the input provides none */
+  'asset-sources.media-library.select-dialog.title_video': '{{targetTitle}}の動画を選択しています',
   /** Title for the upload dialog (component mode) */
   'asset-sources.media-library.upload-dialog.title': 'メディアライブラリにアップロード',
-  /** Warning message shown when uploading already existing files to the Media Library Asset Source */
-  'asset-sources.media-library.warning.file-already-exist.description':
-    'ライブラリにある既存のファイルを使用しています。',
-  'asset-sources.media-library.warning.file-already-exist.title':
-    "ファイル: '{{filename}}' は既に存在します",
 
+  /** Banner shown on a document when the selected release has been archived */
+  'banners.archived-release-banner.text':
+    '「<strong>{{title}}</strong>」リリースはアーカイブされました。',
   /** Label when a release has been deleted by a different user */
   'banners.deleted-bundle-banner.text': "リリース '<strong>{{title}}</strong>' が削除されました。",
 
@@ -491,8 +527,6 @@ export default removeUndefinedLocaleResources({
     '{{versionName}}バージョンに{{count}}件の未解決の変更があります',
 
   /** --- Document inventory --- */
-  /** The label shown when dismissing the document group inventory */
-  'document-group-inventory.action.cancel': 'キャンセル',
   /** The label for the button that opens the document group inventory */
   'document-group-inventory.action.manage-versions': 'バージョンを管理',
   /** The label used in the feedback dialog asking how easy the document group inventory is to use */
@@ -714,6 +748,8 @@ export default removeUndefinedLocaleResources({
   'help-resources.studio-auto-update-now': 'v{{newVersion}}に更新するためにリロードする',
   /** Information for what studio version the current studio is running */
   'help-resources.studio-version': 'Sanity Studioバージョン {{studioVersion}}',
+  /** Subtitle for the studio version menu item when the running or pinned version is deprecated */
+  'help-resources.studio-version-deprecated': 'v{{version}} は非推奨です',
   /** Title for help and resources menus */
   'help-resources.title': 'ヘルプとリソース',
   /** Label for studio's which are up to date */
@@ -721,6 +757,8 @@ export default removeUndefinedLocaleResources({
   /** Version text */
   'help-resources.version': 'v{{version}}',
 
+  /** Accessibility label for the close button of the incoming references inspector */
+  'incoming-references.close-button-aria-label': '受信参照を閉じる',
   /**Incoming references inspector title */
   'incoming-references.title': '参照元',
 
@@ -761,11 +799,18 @@ export default removeUndefinedLocaleResources({
   'inputs.array.action.remove': '削除',
   /** Label for removing action when an array item has an error  */
   'inputs.array.action.remove-invalid-item': '削除',
+  /** Label for expanding a collapsed array to show every item */
+  'inputs.array.action.show-all-items_other': 'すべての{{count}}件のアイテムを表示',
+  /** Label for collapsing an expanded array back to a limited number of items */
+  'inputs.array.action.show-fewer-items': '表示を減らす',
   /** Label for viewing the item of a specific type, eg "View Person" */
   'inputs.array.action.view': '{{itemTypeTitle}}を見る',
   /** Error description for the array item tooltip that explains that the current item can still be moved or deleted but not edited since the schema definition is not found */
   'inputs.array.error.can-delete-but-no-edit-description':
     'このアイテムは移動または削除することはできますが、そのタイプのスキーマ定義が見つからないため編集はできません。',
+  /** Error description for toast when array could not resolve the initial value */
+  'inputs.array.error.cannot-resolve-initial-value-description':
+    'タイプ「{{schemaTypeTitle}}」の初期値を解決できませんでした: {{errorMessage}}。',
   /** Error label for toast when array could not resolve the initial value */
   'inputs.array.error.cannot-resolve-initial-value-title':
     'タイプの初期値を解決できません: {{schemaTypeTitle}}: {{errorMessage}}。',
@@ -1199,6 +1244,15 @@ export default removeUndefinedLocaleResources({
   'inputs.portable-text.table.row-handle': '行ハンドル',
   /** Label for the table menu item that selects the whole table */
   'inputs.portable-text.table.select-table': 'テーブルを選択',
+  /** Tooltip on text whose annotation type is not defined in the schema */
+  'inputs.portable-text.unknown-value.annotation': 'スキーマで定義されていない注釈: {{name}}',
+  /** Tooltip on a block whose list type is not defined in the schema */
+  'inputs.portable-text.unknown-value.list-item':
+    'スキーマで定義されていないリストタイプ: {{name}}',
+  /** Tooltip on text carrying a mark that is not defined in the schema */
+  'inputs.portable-text.unknown-value.mark': 'スキーマで定義されていないマーク: {{name}}',
+  /** Tooltip on a block whose style is not defined in the schema */
+  'inputs.portable-text.unknown-value.style': 'スキーマで定義されていないスタイル: {{name}}',
   /** Label for action to clear the current value of the reference field */
   'inputs.reference.action.clear': 'クリア',
   /** Label for action to copy the current item (used within arrays) */
@@ -1420,6 +1474,9 @@ export default removeUndefinedLocaleResources({
     'お使いのブラウザは、Sanityと通信するために古いHTTPプロトコルを使用しています。これにより、パフォーマンスが大幅に低下する可能性があります。',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.learn-more-button.text': '詳しくはこちら',
+  /** Tooltip for the link that takes the user to the Sanity documentation about the HTTP1 issue */
+  'network-check.slow-protocol-warning.learn-more-button.tooltip':
+    '新しいタブでSanityのドキュメントを開きます',
   /** Text for link that takes the user to the Sanity documentation to learn more about the HTTP1 issue */
   'network-check.slow-protocol-warning.snooze-button.text': 'このセッションでは再表示しない',
   /** Title text for the warning dialog when browser is using HTTP1 to communicate with the Sanity API */
@@ -1470,6 +1527,13 @@ export default removeUndefinedLocaleResources({
   'presence.not-in-a-document': 'ドキュメントにいません',
   /** Tooltip content text for presence menu button */
   'presence.tooltip-content': '誰がここにいる',
+  /** Tooltip text for document previews when one user is editing the document in a release */
+  'presence.tooltip.one':
+    '{{displayName}}が現在「{{releaseTitle}}」リリースでこのドキュメントを編集しています',
+  /** Tooltip text for document previews when one user is editing a published or draft document */
+  'presence.tooltip.one-without-release': '{{displayName}}が現在このドキュメントを編集しています',
+  /** Release title used in the document preview presence tooltip when the release has no title */
+  'presence.tooltip.untitled-release': '無題',
 
   /** Fallback title shown when a preview does not provide a title */
   'preview.default.title-fallback': '無題',
@@ -1508,6 +1572,8 @@ export default removeUndefinedLocaleResources({
   'release.action.new-release': '新規リリース',
   'release.action.new-release.limit-reached_other':
     'このワークスペースは{{count}}リリースに制限されています',
+  /** Action message for pausing a scheduled draft so it can be edited */
+  'release.action.pause-to-edit': '一時停止して編集',
   /** Tooltip message for not having permissions for creating new releases */
   'release.action.permission.error': 'このアクションを実行する権限がありません',
   /** Action message for running a scheduled draft immediately */
@@ -1598,6 +1664,12 @@ export default removeUndefinedLocaleResources({
     'あなたのスケジュールされたドラフトは現在のドラフトと異なる変更があります。',
   /** Header for the dialog confirming deletion of a scheduled draft */
   'release.dialog.delete-schedule-draft.header': '予定された下書きを削除',
+  /** Explanation text shown when the current draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-draft-explanation':
+    '現在の下書きを読み込めませんでした。予約された変更をコピーすると、これが上書きされます。',
+  /** Explanation text shown when the scheduled draft could not be read */
+  'release.dialog.delete-schedule-draft.unresolved-scheduled-draft-explanation':
+    '予約された下書きを読み込めませんでした。それをコピーすると、誤った内容で下書きが上書きされる可能性があります。',
   /** Body text for change schedule dialog */
   'release.dialog.edit-schedule.body': '予定された公開のための新しい日付と時間を選択してください。',
   /** Confirm button text for change schedule dialog */
@@ -1652,13 +1724,9 @@ export default removeUndefinedLocaleResources({
     '将来の時間と日付にスケジュールしてください。',
   /** Label for date picker when scheduling a release */
   'release.schedule-dialog.select-publish-date-label': '公開日',
-  /** The toast description that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast description that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.description': 'このリリースはピン留めが解除されました',
-  /** The toast title that will be shown when the user has a release perspective which is now archived
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a release perspective which is now archived */
   'release.toast.archived-release.title': "'{{title}}' リリースはアーカイブされました",
   /** The toast title that will be shown the creating a release fails */
   'release.toast.create-release-error.title': 'リリースの作成に失敗しました',
@@ -1683,13 +1751,9 @@ export default removeUndefinedLocaleResources({
   /** Success toast for running a scheduled publish immediately */
   'release.toast.publish-scheduled-draft.success':
     '予定された下書きドキュメント <strong>{{title}}</strong> が公開されました。',
-  /** The toast description that will be shown when the user has a release perspective which is now published
-   * @deprecated – no longer needed
-   **/
+  /** The toast description that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.description': 'このリリースはピン留めが解除されました',
-  /** The toast title that will be shown when the user has a release perspective which is now deleted
-   * @deprecated – no longer needed
-   **/
+  /** The toast title that will be shown when the user has a release perspective which is now published */
   'release.toast.published-release.title': "'{{title}}' リリースが公開されました",
   /** Error toast for rescheduling a draft */
   'release.toast.reschedule-scheduled-draft.error':
@@ -1701,9 +1765,7 @@ export default removeUndefinedLocaleResources({
   'release.toast.schedule-publish.error': '下書きのスケジュールに失敗しました：{{error}}',
   /** Success toast for scheduling a paused draft */
   'release.toast.schedule-publish.success': 'ドラフトのスケジュール設定に成功しました',
-  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published
-   * @deprecated – no longer needed
-   * */
+  /** The toast title that will be shown when the user has a scheduled draft perspective which is now published */
   'release.toast.scheduled-draft-published.title': '予定されていたドラフトが公開されました',
   /** Label for when a version of a document has already been added to the release */
   'release.tooltip.already-added': 'このドキュメントのバージョンはすでに追加されています',
@@ -1736,6 +1798,19 @@ export default removeUndefinedLocaleResources({
 
   /** Title for a scheduled draft release */
   'scheduled-drafts.release.title': '予定された公開',
+
+  /** Label for the dataset of the workspace whose schema failed to compile */
+  'schema-errors.location.dataset': 'データセット',
+  /** Label for the project ID of the workspace whose schema failed to compile */
+  'schema-errors.location.project-id': 'プロジェクトID',
+  /** Label for the source within the workspace whose schema failed to compile */
+  'schema-errors.location.source': 'ソース',
+  /** Title for the section naming the workspace whose schema failed to compile */
+  'schema-errors.location.title': 'エラーの場所',
+  /** Label for the workspace whose schema failed to compile */
+  'schema-errors.location.workspace': 'ワークスペース',
+  /** Title for the schema errors screen */
+  'schema-errors.title': 'スキーマエラー',
 
   /** Accessibility label to open search action when the search would go fullscreen (eg on narrower screens) */
   'search.action-open-aria-label': '検索を開く',
