@@ -45,6 +45,12 @@ export default removeUndefinedLocaleResources({
   /** Number is not an integer ("whole number") */
   'number.non-integer': 'Musi być liczbą całkowitą',
 
+  /** Asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted': 'Typ pliku „{{mimeType}}” nie jest akceptowany',
+  /** File asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_file': 'Typ pliku „{{mimeType}}” nie jest akceptowany',
+  /** Image asset's file type does not match the `accept` option of its field */
+  'object.asset-not-accepted_image': 'Typ obrazu „{{mimeType}}” nie jest akceptowany',
   /** Object is missing a reference to an asset document in its `asset` field */
   'object.asset-required': 'Asset jest wymagany',
   /** Object is missing a reference to a file asset document in its `asset` field */
@@ -59,6 +65,9 @@ export default removeUndefinedLocaleResources({
   'object.not-reference': 'Musi być odniesieniem do dokumentu',
   /** Object references a document which is not published */
   'object.reference-not-published': 'Odniesiony dokument musi być opublikowany',
+  /** Reference target type is not among the types declared by the reference field */
+  'object.reference-target-type-mismatch':
+    'Dokument, do którego prowadzi odwołanie, ma typ „{{actualType}}”; oczekiwano jednego z: {{allowedTypes}}',
 
   /** Accessibility label for closing the validation panel */
   'panel.close-button-aria-label': 'Zamknij panel walidacji',

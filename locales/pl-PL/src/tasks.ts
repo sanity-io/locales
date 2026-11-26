@@ -115,6 +115,8 @@ export default removeUndefinedLocaleResources({
   'form.input.target.search.placeholder': 'Wybierz docelowy dokument',
   /** The placeholder text for the title input */
   'form.input.title.placeholder': 'Tytuł zadania',
+  /** The status error message presented when creating a task did not complete in time */
+  'form.status.error.creation-failed': 'Nie udało się utworzyć zadania, spróbuj ponownie',
   /** The status error message presented when the user does not supply a title */
   'form.status.error.title-required': 'Tytuł jest wymagany',
   /** The status message upon successful creation of a task */
@@ -154,6 +156,8 @@ export default removeUndefinedLocaleResources({
   'panel.navigation.tooltip': 'Otwórz zadania',
   /** Title of the Tasks panel   */
   'panel.title': 'Zadania',
+  /** Shown in the panel when the tasks feature check failed, so tasks cannot be used right now */
+  'panel.unavailable.text': 'Zadania są teraz niedostępne. Spróbuj ponownie później.',
 
   /** Label for the Assigned Tab */
   'tab.assigned.label': 'Przypisane',
